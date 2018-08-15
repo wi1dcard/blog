@@ -15,7 +15,7 @@ categories: tutorials
 
 直接使用brew命令安装即可。
 
-![背后的Hardwell／2333](https://jootu.org/zb_users/upload/2017/11/4855316b9db836a5fe375113fe0e86d8.png)
+![背后的Hardwell／2333](https://i.loli.net/2018/08/15/5b73a5a523533.png)
 
 安装完成不要忘记`valet restart`。
 
@@ -23,7 +23,7 @@ categories: tutorials
 
 打开WebStation，切换到PHP设置页面，选中pdo_dblib扩展，应用即可。
 
-![](https://jootu.org/zb_users/upload/2017/11/c29bc70ce29014071838a1d7febc9746.png)
+![](https://i.loli.net/2018/08/15/5b73a5a723b8e.png)
 
 个人感觉，群晖WebStation做得还是蛮方便的。
 
@@ -50,7 +50,7 @@ categories: tutorials
 
 运行：
 
-![](https://jootu.org/zb_users/upload/2017/11/2134db825f7c6800b039a64d5c1e29bf.png)
+![](https://i.loli.net/2018/08/15/5b73a5a7caf4c.png)
 
 DONE！
 

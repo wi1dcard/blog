@@ -122,4 +122,4 @@ VS Code强大之处不在于本身，而在于强大的可扩展性、以及日�
 
 今晚会议桌，不要错过。／斜眼笑
 
-![](https://jootu.org/zb_users/upload/2017/10/b0182387a9983ee77b863f4c5a164cf0.png)
+![](https://i.loli.net/2018/08/15/5b73a5a0c4dac.png)

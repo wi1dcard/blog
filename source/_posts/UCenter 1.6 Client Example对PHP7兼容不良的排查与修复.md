@@ -71,7 +71,7 @@ UCenter是原DZ团队（现已被腾讯收购）开发的一套统一认证系�
 
 但问题依旧存在，又一个新的错误发生。说到这里我不禁想起一个段子：
 
-![](https://jootu.org/zb_users/upload/2017/10/7d73fde97a99d301d9cfc2b234ec882b.jpg)
+![](https://i.loli.net/2018/08/15/5b73a5aaaf10e.jpg)
 
 胜利在望，接着修bug。
 
@@ -95,7 +95,3 @@ UCenter是原DZ团队（现已被腾讯收购）开发的一套统一认证系�
 除了本身的bug，uc提供的例子比较复杂，感觉有点绕，还需要较强的php功底才能理清思路，这就导致了一整天的还是没有搞定的坑...
 
 对于第三方的组件、SDK，不要畏惧于看源码，刚开始阅读可能比较困难，但万万不能浮躁，静下心来一行一行理清思路，没见过的多谷歌，大部分问题都是可以靠自己解决的；而解决问题的过程给自己带来的学习和提升，比解决问题本身重要的多。
-
-经过简易修复的UCenter 1.6下载：
-
-[Download UCenter 1.6 Modified by Hongchuan](https://jootu.org/zb_users/upload/2017/10/UCenter_Modified_by_Hongchuan.zip)

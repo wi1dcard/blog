@@ -15,17 +15,17 @@ so，用c#写windows，要的就是它的轮子多。遇到这种情况，果断
 
 于是果断去微软官方的包管理器nuget里找，（keyword：smart card）……
 
-![blob.png](https://jootu.org/zb_users/upload/2017/09/201709071504774661789738.png)（右键单击引用，选择管理nuget程序包）
+![blob.png](https://i.loli.net/2018/08/15/5b73a59a8ec2a.png)（右键单击引用，选择管理nuget程序包）
 
-![blob.png](https://jootu.org/zb_users/upload/2017/09/201709071504774699816376.png)（单击浏览，然后搜索）
+![blob.png](https://i.loli.net/2018/08/15/5b73a59b6b293.png)（单击浏览，然后搜索）
 
-![blob.png](https://jootu.org/zb_users/upload/2017/09/201709071504774749153233.png)
+![blob.png](https://i.loli.net/2018/08/15/5b73a59c00073.png)
 
 看这个名字比较像我们需要的东西，于是点击右边的下载按钮下载即可自动下载安装，非常方便。如遇到下载缓慢的情况请自行科学上网。
 
 安装完成之后，直接不找文档了，这种小东西直接看类声明：
 
-![blob.png](https://jootu.org/zb_users/upload/2017/09/201709071504774880331755.png)（左侧引用->命名空间名，右侧新Tab里双击展开，就能看到命名空间和包含的类型）
+![blob.png](https://i.loli.net/2018/08/15/5b73a59cd251b.png)（左侧引用->命名空间名，右侧新Tab里双击展开，就能看到命名空间和包含的类型）
 
 可以看到，这个库非常简洁，只有两个类，我喜欢2333~
 

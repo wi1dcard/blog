@@ -71,7 +71,7 @@ And test it. Open your browser and type: `http://<YOUR_PI_IP>/phpinfo.php`
 
 It should return a response like this:
 
-![](https://jootu.org/zb_users/upload/2018/02/847ab964316cd2a90bc68e5db35a0812.png)
+![](https://i.loli.net/2018/08/15/5b73a52fe1beb.png)
 
 Enjoy PHP in your Raspberry Pi!
 
@@ -81,11 +81,11 @@ Here are some PHP projects that I found useful for your Pi. Hope  you like it.
 
 [KODExplorer](https://github.com/kalcaddle/KodExplorer)
 
-![](https://jootu.org/zb_users/upload/2018/02/d1911cb6f89ec5f44eed1f0bcd9ab432.png)
+![](https://i.loli.net/2018/08/15/5b73a533de95d.png)
 
 [Pi Dashboard](https://github.com/spoonysonny/pi-dashboard)
 
-![](https://jootu.org/zb_users/upload/2018/02/ba92b40ce792181b63ad86ba85a6a8ac.png)
+![](https://i.loli.net/2018/08/15/5b73a538463a7.png)
 
 ## 0x05
 

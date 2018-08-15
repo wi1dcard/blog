@@ -76,6 +76,6 @@ Thanks for using, please star if helps. And do not hesitate to report any issue.
 
 Hope you enjoy it.
 
-![](https://jootu.org/zb_users/upload/2018/03/a474b40b77d32920d184d9cfd28278c5.png)
+![](https://i.loli.net/2018/08/15/5b73a543d4fa1.png)
 
 -- Wi1dcard

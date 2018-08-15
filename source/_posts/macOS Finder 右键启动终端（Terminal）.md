@@ -15,8 +15,8 @@ Windows 系统可以使用修改注册表的方式实现右键在当前目录打
 
 这里我设置为：`Command` + `-`
 
-![](https://jootu.org/zb_users/upload/2017/11/10271d3558d18dc39b04e4bf9ca55b24.png)
+![](https://i.loli.net/2018/08/15/5b73a51e85526.png)
 
 ##### 3. 测试效果。
 
-![](https://jootu.org/zb_users/upload/2017/11/46f517b08458f20d357e2469c9fd24bb.png)
+![](https://i.loli.net/2018/08/15/5b73a521ebecd.png)
