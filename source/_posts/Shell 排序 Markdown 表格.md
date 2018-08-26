@@ -7,13 +7,13 @@ categories:
 
 ## 序
 
-最近新项目写 README，在编排实体命名协定中英对照的时候，有使用到 Markdown 的表格。那么如何根据某列的字母顺序排序 Markdown 表格呢？实际上，一条 Shell 命令就足以解决。请看大佬的实现。
+最近新项目写 README，在编排实体命名协定中英对照的时候，有使用到 Markdown 的表格。那么如何按照某列的字母顺序排序 Markdown 表格呢？实际上，一条 Shell 命令就足以解决。请看大佬的实现。
 
 ## 正文
 
-TableFlip doesn't sort tables by column as of yet. So we all have to resort to other solutions – like shell or Terminal commands.
+TableFlip 目前还无法根据列排序表格. 所以我们不得不使用其他方法，比如 Shell 或者 Terminal 命令.
 
-Let's say your (Multi)Markdown table starts with a header (=2 rows) and has leading pipes like this:
+首先，我们假设你的 Markdown 表格由一个两行的表头开始，并且每行开头都有管道操作符（`|`），就像这样：
 
 ```
 | a | b | c | d |
@@ -23,18 +23,18 @@ Let's say your (Multi)Markdown table starts with a header (=2 rows) and has lead
 | 3 | 4 | 5 | 6 |
 ```
 
-You can sort the table by the 3rd column (column "c") like so:
+接下来，你便可以使用如下命令，按照第三列（`c` 列）对表格进行排序：
 
 ```bash
 tail -n +3 table.md | sort --field-separator=\| --key=4
 ```
 
-Explanation:
+解释:
 
-- `tail` reads a file from the end; `tail -n +3` reads a file from the end until the 3rd row, leaving out the first 2 rows, aka the header.
-- `sort` sorts the textual input; `--field-separator=\|` configures the sort command to not use tab stops but pipes as column separators; and `--key=4` sets the 4th field (3rd column if your table starts with a pipe, which is counted by sort, too) as the input.
+- `tail` 命令读取文件的尾部；`tail -n +3` 从尾部开始读取一个文件，直到第三行结束；排除了前两行，也就是表头。
+- `sort` 命令排序文本输入；`--field-separator=\|` 指定排序命令使用管道分隔符（`|`）而非 tab 作为列分隔符；`--key=4` 设置根据第 4 列进行排序（注意，此处实际上是第 3 列；因为如果表格行由列分隔符也就是管道操作符开头，那它也会被算进排序列里）。
 
-The output will be:
+输出为:
 
 ```
 | 9 | 1 | 2 | 3 |
@@ -42,7 +42,7 @@ The output will be:
 | 3 | 4 | 5 | 6 |
 ```
 
-You can add the header back by combining tail with head, where head outputs the topmost 2 lines:
+你可以通过使用 `head` 合并 `tail` 把表头重新添加回去，`head` 命令将会输出文件的开头两行。
 
 ```bash
 head -n 2 table.md && tail -n +3 table.md | sort --field-separator=\| --key=4
@@ -58,7 +58,7 @@ head -n 2 table.md && tail -n +3 table.md | sort --field-separator=\| --key=4
 | 3 | 4 | 5 | 6 |
 ```
 
-Ready to be saved as a new file by routing the output to a new file name with `> sorted_file.md`:
+最后，只需要使用 `> sorted_file.md` 把输出重定向到一个新文件即可保存：
 
 ```bash
 (head -n 2 table.md && tail -n +3 table.md | sort --field-separator=\| --key=4) > sorted_table.md
