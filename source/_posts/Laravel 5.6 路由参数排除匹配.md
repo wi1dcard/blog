@@ -1,7 +1,7 @@
 ---
 id: laravel-route-pattern-exclude
 date: 2018-08-18 01:52:37
-title: Laravel 5.6 路由参数匹配排除
+title: Laravel 5.6 路由参数排除匹配
 categories: snippets
 ---
 

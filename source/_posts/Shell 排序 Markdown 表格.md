@@ -2,7 +2,7 @@
 id: sort-markdown-tables-shell
 date: 2018-08-26 10:51:16
 title: Shell 排序 Markdown 表格（译）
-categories:
+categories: tutorials
 ---
 
 ## 序
