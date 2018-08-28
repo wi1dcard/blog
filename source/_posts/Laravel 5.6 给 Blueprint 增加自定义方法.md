@@ -34,10 +34,21 @@ Schema::create('foo', function (Blueprint $table) {
 
 ## 0x02 解决
 
-首先定义一个服务提供者。
+首先定义一个服务提供者，并修改 `config/app.php` 的 `providers` 内增加此服务提供者。
 
 ```bash
 php artisan make:provider BlueprintMacroProvider
+```
+
+```php
+// config/app.php
+'providers' => [
+    // ...
+    /*
+     * Application Service Providers...
+     */
+    App\Providers\BlueprintMacroProvider::class,
+]
 ```
 
 在此提供者的 `register` 方法内，创建 `Macro` 即可。
