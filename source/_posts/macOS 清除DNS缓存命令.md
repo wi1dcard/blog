@@ -6,5 +6,5 @@ categories: snippets
 ---
 
 ```bash
-dscacheutil -flushcache
+sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache
 ```
