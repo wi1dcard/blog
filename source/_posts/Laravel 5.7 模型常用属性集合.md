@@ -34,6 +34,18 @@ $attributes = [
     '字段名' => '字段默认值'
 ];
 
+$casts = [
+    '字段名' => '自动类型转换的目标类型'
+];
+
+$dates = [
+    '应当被转换为日期时间的字段'
+];
+
+$touches = [
+    '模型更新时应当一并更新的关联关系'
+];
+
 // 以下为扩展包使用的属性
 
 // https://github.com/dwightwatson/validating
