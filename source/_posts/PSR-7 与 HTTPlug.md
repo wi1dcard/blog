@@ -9,6 +9,8 @@ categories: documents
 
 最近国庆期间没继续开发项目，据说要有大变动，等国庆后开会讨论，内心有点方张。
 
+> Updated: 国庆后的第一天，果然砍了。难受。
+
 趁着假期，封装了两个扩展包。
 
 - [中国行政区划地址库 SDK + 爬虫 + 数据](https://github.com/wi1dcard/china-divisions)
