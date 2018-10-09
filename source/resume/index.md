@@ -8,6 +8,8 @@ thumbnail: "https://i.loli.net/2018/06/03/5b12c21dd5284.jpg"
 
 本人简历永久地址：**<https://wi1dcard.github.io/resume/>**（<a href="javascript:window.print()">打印</a>）
 
+#### 如果您是一家有 Golang 大佬又缺少 PHP 的公司，请直接联系我！不谈工资，只求学习。
+
 ## 快速了解
 
 - **Wi1dcard**／男／1998-02 <img src="https://i.loli.net/2018/06/05/5b15abc0ef1c0.png" width="30%" style="float:right;"/>
