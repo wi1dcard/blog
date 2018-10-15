@@ -1,16 +1,21 @@
 ---
 title: "Laravel 二级域名绑定子目录 Nginx 配置"
-date: 2018-04-30 21:33:45
+date: 2018-10-15 16:55:07
 id: laravel-nginx-subdomains
-categories: projects
+categories: snippets
 ---
 
 二级域名绑定子目录 Nginx + PHP-FPM 配置，内置 Laravel 重写规则，可用于本地多项目开发。
 
-本代码已托管至：<https://github.com/wi1dcard/laravel-nginx-subdomains>
+在 Nginx 的站点配置目录新增站点后，增加以下代码块即可。
 
-## 使用说明
+```
+server_name ~^(.*)\.laravel\.test$; # 正则二级域名
+root /Users/jootu/web/$1/public;
 
-安装 `Nginx` + `PHP 7.1` + `PHP-FPM` 后覆盖本配置，并修改 `sites-available/default` 内 `server_name ~^(.*)\.jootu\.tech$;`。
+index index.html index.htm index.php;
 
-例：将域名更换为：`demo.com`，则修改为 `server_name ~^(.*)\.demo\.com$;` 即可。
+location / {
+    try_files $uri $uri/ /index.php?$query_string;
+}
+```

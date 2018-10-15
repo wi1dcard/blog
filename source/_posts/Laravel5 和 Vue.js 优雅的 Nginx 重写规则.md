@@ -7,7 +7,7 @@ categories: collections
 
 > 本文总结常用重写规则。
 
-## laravel 5
+## Laravel 5
 
 ```
 location / {
@@ -15,7 +15,7 @@ location / {
 }
 ```
 
-## vue.js
+## Vue.js
 
 <https://router.vuejs.org/zh-cn/essentials/history-mode.html>
 
@@ -25,7 +25,7 @@ location / {
 }
 ```
 
-## yii 2
+## Yii 2
 
 ```
 location / {
