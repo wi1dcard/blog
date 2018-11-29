@@ -4,11 +4,9 @@ date: 2018-07-28 10:00:00
 thumbnail: "https://i.loli.net/2018/06/03/5b12c21dd5284.jpg"
 ---
 
-> 世界在发展。尤其软件行业，日新月异。努力追赶技术浪潮，从未停止学习的脚步。所以，请务必访问我的在线简历以获取最新信息。
+> 世界在发展，尤其软件行业日新月异。追随技术浪潮，从未停止学习的脚步，请务必访问我的在线简历以获取最新信息。
 
 本人简历永久地址：**<https://wi1dcard.github.io/resume/>**（<a href="javascript:window.print()">打印</a>）
-
-**如果您是一家有 Golang 大佬又缺少 PHP 的公司，请直接联系我！不谈工资，只求学习。**
 
 ## 快速了解
 
@@ -17,11 +15,10 @@ thumbnail: "https://i.loli.net/2018/06/03/5b12c21dd5284.jpg"
 - 项目经验：**2013年至今**
 - 职场经验：**2015年至今**
 - 期望岗位：**高级 PHP / GO 实习生**
-- 兴趣：智能硬件、树莓派、摄影、无人机等
-- 小癖好：听电音写代码效率飞快（很嗨的那种）
+- 工作癖好：听电音写代码效率飞快（很嗨的那种）
 - E-Mail：[wi1dcard.cn@gmail.com](mailto:wi1dcard.cn@gmail.com)
 
-基础扎实，学东西快，脑子灵活。十岁开始学习 `Pascal` 语言参加信息学奥赛；后自学 `C` 和 `C++`，初中获得青岛市信息学竞赛第一名，对常见数据结构与算法进行过系统性学习；高中退学专注于编程。
+基础扎实，学东西快，脑子灵活。十岁开始学习 `Pascal` 语言参加信息学奥赛；后自学 `C` 和 `C++`，初中获得青岛市竞赛第一名，对常见数据结构与算法有过系统性学习；高中退学专注于软件开发。
 
 接触面广泛，擅长独立解决问题。早期从事 `HTTP` 协议抓包分析和 `MFC` 开发，之后转型服务端，自学 `PHP` / `.NET Core` / `Swoole` 等。
 
@@ -56,12 +53,13 @@ thumbnail: "https://i.loli.net/2018/06/03/5b12c21dd5284.jpg"
 ## 自我修养
 
 - 具备良好的开发、测试、文档习惯，对自己一贯高标准要求。
-- 热爱科学上网，善于 Google，手搭 SS 服务，路由器装 SS-libev。
-- 喜爱英语，至少不是短板。
-- 社区活跃，每天必看 `GitHub`、`StackOverflow`。
 - 坚持写技术博客，总结项目过程中的经验教训，同时锻炼自己的表达能力。
+- 热爱科学上网，善于 Google，手搭各路 Shadowsocks 服务。
+- 喜爱英语，至少不是短板。
+- 社区活跃，每天必看 `GitHub`、`StackOverflow`、`Laravel-China`。
 - 参与贡献开源项目。
   - [Yii Framework](https://github.com/yiisoft/yii2/pull/16528)
+  - [Swoole MySQL Proxy](https://github.com/louislivi/smproxy)
   - [PHPBrew 中文文档](https://github.com/phpbrew/phpbrew/pull/957)
   - [百度 AIP - Speech VAD Demo](https://github.com/Baidu-AIP/speech-vad-demo/pull/1)
   - [腾讯云 - 对象存储 PHP SDK](https://github.com/tencentyun/cos-php-sdk-v5/pull/72)
