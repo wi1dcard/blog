@@ -1,5 +1,5 @@
 ---
-title: "On my way..."
+title: "Curriculum Vitae"
 date: 2018-06-01 10:00:00
 thumbnail: "https://i.loli.net/2018/06/03/5b12c21dd5284.jpg"
 ---
