@@ -10,7 +10,7 @@ thumbnail: "https://i.loli.net/2018/06/03/5b12c21dd5284.jpg"
 
 ## 快速了解
 
-- **Wi1dcard**／男／1998-02 <img src="https://i.loli.net/2018/06/05/5b15abc0ef1c0.png" width="30%" style="float:right;"/>
+- **Wi1dcard**／男／1998-02
 - 学习编程：**2010年至今**
 - 项目经验：**2013年至今**
 - 职场经验：**2015年至今**
