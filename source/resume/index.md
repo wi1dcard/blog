@@ -17,6 +17,7 @@ thumbnail: "https://i.loli.net/2018/06/03/5b12c21dd5284.jpg"
 - 期望岗位：**高级 PHP / GO 实习生**
 - 工作癖好：听电音写代码效率飞快（很嗨的那种）
 - E-Mail：[wi1dcard.cn@gmail.com](mailto:wi1dcard.cn@gmail.com)
+- Telegram: [@wi1dcard_cn](https://t.me/wi1dcard_cn)
 
 基础扎实，学东西快，脑子灵活。十岁开始学习 `Pascal` 语言参加信息学奥赛；后自学 `C` 和 `C++`，初中获得青岛市竞赛第一名，对常见数据结构与算法有过系统性学习；高中退学专注于软件开发。
 
