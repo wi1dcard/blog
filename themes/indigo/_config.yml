@@ -75,7 +75,7 @@ toc:
   list_number: false  # 是否显示数字排序
 
 # 文章页留言内容，hexo中所有变量及辅助函数等均可调用，具体请查阅 hexo.io
-postMessage: false
+postMessage: "我感谢自己平凡，敢爱敢恨没负担；我感谢自己不凡，可爱可恨都包揽。"
 
 # 站长统计，如要开启，输入CNZZ站点id，如 cnzz: 1255152447
 cnzz: false
