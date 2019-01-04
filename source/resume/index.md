@@ -40,13 +40,13 @@ thumbnail: "https://i.loli.net/2018/06/03/5b12c21dd5284.jpg"
 
 ## 我的优势
 
-- 日常 `macOS` 开发；命令行狂热爱好者，日常 `Git`、`Bash`、`Zsh`、`SCP`、`Rsync`、`Docker` 等；折腾过路由器固件、树莓派、黑群晖、黑苹果，熟悉 `Ubuntu`、`Debian` 常用操作。
-- 熟悉 `Nginx` 和 `Tengine`，可手搭 `Nginx` + `PHP-FPM` 生产环境。
-- 熟悉 `MySQL`、`MariaDB`，了解常见的性能调优方法，熟悉主流 GUI 管理工具 `Navicat`、`Adminer`。
-- `PHP` 狂热爱好者，熟练使用 `Composer`、`PHPize`、`PECL`，熟悉 PHP 版本差异、PHPUnit 单元测试、OPCache 工作原理和调优、XDebug 性能分析 等高级专题，了解主流扩展包或框架 `Symfony`、`Laravel 5`、`Yii 2` 等。
+- 日常 `macOS` 开发，了解 `Ubuntu`、`Debian`；相比 GUI 更喜欢 CLI，折腾过路由器固件、树莓派、黑群晖、黑苹果。
+- 熟悉 `Nginx` + `PHP-FPM` 安装与配置，不习惯一键安装包。
+- 熟悉 `MySQL`、`MariaDB`，了解常见的性能调优方法，熟悉 `Navicat`、`Adminer`。
+- `PHP` 狂热爱好者，熟练使用 `Composer`、`PHPize`、`PECL`，熟悉 PHP 版本差异、PHPUnit 单元测试、OPCache 工作原理和调优、XDebug 性能分析等高级专题，了解主流扩展包或框架 `Symfony`、`Laravel 5`、`Yii 2` 等。
 - 代码风格方面，严格遵守 `PSR-1`、`PSR-2`、`PSR-12`，熟悉 `PHP-CS`、`PHP-CS-Fixer`、`PHPMD`、`PHPStan`、`PHPCPD` 各路神器。
-- 第三方服务方面，熟悉 `Travis CI`、`Scrutinizer CI`、`Style CI`、`Coveralls`、`Sentry` 等。
-- 前些年从事抓包分析工作，深入了解过 `HTTP 1.1` 协议和正则表达式，如今成为后端开发者，对应用安全有把握。
+- 第三方服务方面，熟悉 `GitLab`、`Travis CI`、`Scrutinizer CI`、`Style CI`、`Coveralls`、`Sentry` 等。
+- 对应用安全有把握，熟悉 `HTTP 1.1` 协议抓包分析和正则表达式。
 - 熟悉长链接服务，目前正在学习 `Golang`。
 
 ## 自我修养
