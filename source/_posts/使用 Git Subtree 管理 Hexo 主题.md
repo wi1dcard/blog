@@ -55,13 +55,16 @@ categories: wtf
 OK，说了这么多，来看看实际操作命令。
 
 ```bash
-git subtree add --prefix themes/indigo git@github.com:yscoder/hexo-theme-indigo.git card --squash
+git subtree add \
+    --prefix themes/indigo \
+    git@github.com:yscoder/hexo-theme-indigo.git card \
+    --squash
 ```
 
 在以上例子中：
 
 - `themes/indigo` 可以理解为引入的 Subtree 的存放路径；
-- `git@github.com:yscoder/hexo-theme-indigo.git` 是该主题的 GitHub 仓库链接，
+- <code>git@github.com:yscoder/hexo-theme-indigo.git</code> 是该主题的 GitHub 仓库链接，
 - `card` 是该主题仓库的特定分支名（例如通常为 `master`）
 - `--squash` 表示压缩此 Subtree 此前的提交记录为单条，概念类似于 Git Rebase 时的 Squash。
 
