@@ -407,6 +407,7 @@ Prometheus 内置一个简易的 Web 服务，可通过 `http://your.server.ip:9
 
 - <https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-on-ubuntu-16-04>
 - <https://songjiayang.gitbooks.io/prometheus/content/>
+- <https://yunlzheng.gitbook.io/prometheus-book/>
 
 推荐看板：
 
