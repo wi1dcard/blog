@@ -405,9 +405,10 @@ Prometheus 内置一个简易的 Web 服务，可通过 `http://your.server.ip:9
 
 拓展阅读：
 
-- <https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-on-ubuntu-16-04>
-- <https://songjiayang.gitbooks.io/prometheus/content/>
 - <https://yunlzheng.gitbook.io/prometheus-book/>
+- <https://prometheus.io/docs/guides/node-exporter/>
+- <https://songjiayang.gitbooks.io/prometheus/content/>
+- <https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-on-ubuntu-16-04>
 
 推荐看板：
 
