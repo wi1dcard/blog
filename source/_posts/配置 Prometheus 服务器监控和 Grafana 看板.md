@@ -5,15 +5,20 @@ title: 配置 Prometheus 服务器监控和 Grafana 看板
 categories: translations
 ---
 
-> 译者序：Prometheus
+> 译者序：Prometheus 是服务器监控系统的后起之秀，可以和 Kubernetes 完美结合用于监控大量集群和应用。Grafana 是一款数据可视化看板，可指定多个数据源执行查询，将枯燥的数据转化为多维度的面板。两者均为开源项目，通过配置可实现直观强大的监控、报警、分析系统，实属运维神器。
 
 <!--more-->
 
-原文地址：<https://www.scaleway.com/docs/configure-prometheus-monitoring-with-grafana/>
+效果预览：
+
+![](https://grafana.com/api/dashboards/1860/images/1718/image)
+![](https://i.loli.net/2019/01/10/5c36b2bf5f1a8.png)
+
+> 原文地址：<https://www.scaleway.com/docs/configure-prometheus-monitoring-with-grafana/>
 
 本文将介绍如何使用 Prometheus + Grafana 看板监控服务器状态。
 
-Prometheus（普罗米修斯）是一款从 2012 年开始研发的弹性监控解决方案。该软件将其数据存储至时序数据库，且提供了多个维度的数据模型和强大的查询语言来生成已监控资源的报表。
+Prometheus（普罗米修斯）是一款从 2012 年开始研发的弹性监控解决方案。该系统将其数据存储至时序数据库，且提供了多维度的数据模型和强大的查询语言来生成被监控资源的报表。
 
 要使用 Prometheus 和 Grafana 大约有五个步骤：
 
@@ -50,7 +55,7 @@ Prometheus（普罗米修斯）是一款从 2012 年开始研发的弹性监控�
 
 ## 下载并安装 Node Exporter
 
-由于 Prometheus 仅具备采集系统指标的功能，因此我们需要通过 **Node Exporter** 来扩展它的能力。**Node Exporter** 是一款收集系统 CPU、磁盘、内存用量信息，并将它们公开以供抓取的工具。
+由于 Prometheus 仅具备采集系统指标的功能，因此我们需要通过 **Node Exporter** 来扩展它的能力。**Node Exporter** 是一款收集系统 CPU、磁盘、内存用量信息并将它们公开以供抓取的工具。
 
 1. 下载 Node Exporter 的最新版本。
 
@@ -60,7 +65,7 @@ Prometheus（普罗米修斯）是一款从 2012 年开始研发的弹性监控�
 
     > 译者注：由于本文项目仍在持续更新，故请到 GitHub 查看最新版本 Release 链接再下载。以下类同，不再赘述。
 
-2. 解压压缩包后，会发现创建了一个名为 `node_exporter-0.16.0.linux-amd64` 的目录，包含了可执行文件、README 以及许可证文件：
+2. 解压压缩包后，会发现一个名为 `node_exporter-0.16.0.linux-amd64` 的目录，包含了可执行文件、README 以及许可证文件：
 
     ```bash
     tar xvf node_exporter-0.16.0.linux-amd64.tar.gz
@@ -73,7 +78,7 @@ Prometheus（普罗米修斯）是一款从 2012 年开始研发的弹性监控�
     sudo chown node_exporter:node_exporter /usr/local/bin/node_exporter
     ```
 
-4. Node Exporter 内剩余的文件已不需要，删除即可：
+4. Node Exporter 剩余的文件已不需要，删除即可：
 
     ```bash
     rm -rf node_exporter-0.16.0.linux-amd64.tar.gz node_exporter-0.16.0.linux-amd64
@@ -103,7 +108,7 @@ Prometheus（普罗米修斯）是一款从 2012 年开始研发的弹性监控�
     WantedBy=multi-user.target
     ```
 
-7. 在 Node Exporter 中，收集器（`Collectors`）用于搜集系统信息。默认情况下，一部分收集器已经被开启。你可以在 [README](https://github.com/prometheus/node_exporter/blob/master/README.md#enabled-by-default) 文件中查看具体是哪些收集器。如果你想要使用某些特定的收集器，可以在以上文件的 `ExecStart` 配置中进行定义。例如：
+7. 在 Node Exporter 中，收集器（`Collectors`）用于搜集系统信息。默认情况下，一部分收集器已被开启，你可以在 [README](https://github.com/prometheus/node_exporter/blob/master/README.md#enabled-by-default) 文件中查看具体列表。如果你想要使用某些特定的收集器，可以在以上文件的 `ExecStart` 配置中进行定义。例如：
 
     ```ini
     ExecStart=/usr/local/bin/node_exporter --collectors.enabled meminfo,hwmon,entropy
@@ -117,7 +122,7 @@ Prometheus（普罗米修斯）是一款从 2012 年开始研发的弹性监控�
     sudo systemctl daemon-reload
     ```
 
-9. 使用一下命令启动 Node Exporter：
+9. 使用以下命令启动 Node Exporter：
 
     ```bash
     sudo systemctl start node_exporter
@@ -167,37 +172,37 @@ Prometheus（普罗米修斯）是一款从 2012 年开始研发的弹性监控�
 
 2. 复制可执行文件到 `/usr/local/bin/` 目录。
 
-```bash
-sudo cp ./prometheus /usr/local/bin/
-sudo cp ./promtool /usr/local/bin/
-```
+    ```bash
+    sudo cp ./prometheus /usr/local/bin/
+    sudo cp ./promtool /usr/local/bin/
+    ```
 
 3. 设置以上文件的拥有者为上文创建的 `prometheus` 用户。
 
-```bash
-sudo chown prometheus:prometheus /usr/local/bin/prometheus
-sudo chown prometheus:prometheus /usr/local/bin/promtool
-```
+    ```bash
+    sudo chown prometheus:prometheus /usr/local/bin/prometheus
+    sudo chown prometheus:prometheus /usr/local/bin/promtool
+    ```
 
 4. 复制 `console` 和 `console_libraries` 目录到 `/etc/prometheus`。
 
-```bash
-sudo cp -r ./consoles /etc/prometheus
-sudo cp -r ./console_libraries /etc/prometheus
-```
+    ```bash
+    sudo cp -r ./consoles /etc/prometheus
+    sudo cp -r ./console_libraries /etc/prometheus
+    ```
 
 5. 设置以上目录及其子目录和文件的拥有者为 `prometheus` 用户。
 
-```bash
-sudo chown -R prometheus:prometheus /etc/prometheus/consoles
-sudo chown -R prometheus:prometheus /etc/prometheus/console_libraries
-```
+    ```bash
+    sudo chown -R prometheus:prometheus /etc/prometheus/consoles
+    sudo chown -R prometheus:prometheus /etc/prometheus/console_libraries
+    ```
 
-6. 回到先前下载的目录，删除掉我们不再需要的原始文件。
+6. 回到先前下载的目录，删除不再需要的原始文件。
 
-```bash
-cd .. && rm -rf prometheus-*
-```
+    ```bash
+    cd .. && rm -rf prometheus-*
+    ```
 
 ## 配置 Prometheus
 
@@ -233,11 +238,11 @@ cd .. && rm -rf prometheus-*
             - targets: ['localhost:9090']
     ```
 
-    全局的 `scrape_interval` 设置为了适用于多数情况的 15 秒。
+    全局 `scrape_interval` 设置为了适用于多数情况的 15 秒。
 
     我们目前还没有任何规则文件，所以 `rule_files` 部分已使用 `#` 注释。
 
-    在 `scrape_configs` 部分，我们定义了第一个导出器（`Exporter`），用于 Prometheus 监控它自己。由于我们需要更加精确的 Prometheus 状态信息，我们该任务（`Job`）的 `scrape_interval` 降低为 5 秒。`static_configs` 的 `targets` 参数表示导出器的监听地址。在本例中是同一服务器，所以我们使用 `localhost` 以及 Prometheus 自己的端口 `9090`。
+    在 `scrape_configs` 部分，我们定义了第一个导出器（`Exporter`），用于 Prometheus 监控它自己。由于我们需要更加精确的 Prometheus 状态信息，我们将该任务（`Job`）的 `scrape_interval` 降低为 5 秒。`static_configs` 的 `targets` 参数表示导出器的监听地址。在本例中是同一服务器，所以我们使用 `localhost` 以及 Prometheus 自己的端口 `9090`。
 
     Prometheus 将会抓取在 `scrape_configs` 内定义的导出器，因此我们需要将 Node Exporter 添加至该文件，就像上文中监控 Prometheus 自己一样。
 
@@ -252,7 +257,7 @@ cd .. && rm -rf prometheus-*
 
     如上，我们再次覆盖了 `scrape_interval` 配置并设置为 5 秒。并且 Node Exporter 与 Prometheus 运行在统一服务器，所以我们可以直接使用 `localhost` 以及 Node Exporter 的默认端口：`9100`。
 
-    若是需要从外部服务器抓取数据，你需要使用远程服务器的 IP 地址替换 `localhost`。
+    若是从外部服务器抓取数据，你需要使用远程服务器的 IP 地址替换 `localhost`。
 
     欲知 Prometheus 全部配置项，请阅读 [官方配置文档](https://prometheus.io/docs/prometheus/latest/configuration/configuration/)。
 
@@ -262,83 +267,153 @@ cd .. && rm -rf prometheus-*
     sudo chown prometheus:prometheus /etc/prometheus/prometheus.yml
     ```
 
-好了，Prometheus 服务已经准备好开始大显身手了！
+好了，Prometheus 服务已经准备好大显身手了！
 
 ## 运行 Prometheus
 
 1. 直接使用以下命令启动 Prometheus 即可，该命令将会以 `prometheus` 用户的身份运行。
 
-```bash
-sudo -u prometheus /usr/local/bin/prometheus --config.file /etc/prometheus/prometheus.yml --storage.tsdb.path /var/lib/prometheus/ --web.console.templates=/etc/prometheus/consoles --web.console.libraries=/etc/prometheus/console_libraries
-```
+    ```bash
+    sudo -u prometheus /usr/local/bin/prometheus --config.file /etc/prometheus/prometheus.yml --storage.tsdb.path /var/lib/prometheus/ --web.console.templates=/etc/prometheus/consoles --web.console.libraries=/etc/prometheus/console_libraries
+    ```
 
-接着，你会看到一些状态输出，以及服务已启动的信息：
+    接着，你会看到一些状态输出，以及服务已启动的信息：
 
-```
-level=info ts=2018-04-12T11:56:53.084000977Z caller=main.go:220 msg="Starting Prometheus" version="(version=2.2.1, branch=HEAD, revision=bc6058c81272a8d938c05e75607371284236aadc)"
-level=info ts=2018-04-12T11:56:53.084463975Z caller=main.go:221 build_context="(go=go1.10, user=root@149e5b3f0829, date=20180314-14:15:45)"
-level=info ts=2018-04-12T11:56:53.084632256Z caller=main.go:222 host_details="(Linux 4.4.127-mainline-rev1 #1 SMP Sun Apr 8 10:38:32 UTC 2018 x86_64 scw-041406 (none))"
-level=info ts=2018-04-12T11:56:53.084797692Z caller=main.go:223 fd_limits="(soft=1024, hard=65536)"
-level=info ts=2018-04-12T11:56:53.09190775Z caller=web.go:382 component=web msg="Start listening for connections" address=0.0.0.0:9090
-level=info ts=2018-04-12T11:56:53.091908126Z caller=main.go:504 msg="Starting TSDB ..."
-level=info ts=2018-04-12T11:56:53.102833743Z caller=main.go:514 msg="TSDB started"
-level=info ts=2018-04-12T11:56:53.103343144Z caller=main.go:588 msg="Loading configuration file" filename=/etc/prometheus/prometheus.yml
-level=info ts=2018-04-12T11:56:53.104047346Z caller=main.go:491 msg="Server is ready to receive web requests."
-```
+    ```
+    level=info ts=2018-04-12T11:56:53.084000977Z caller=main.go:220 msg="Starting Prometheus" version="(version=2.2.1, branch=HEAD, revision=bc6058c81272a8d938c05e75607371284236aadc)"
+    level=info ts=2018-04-12T11:56:53.084463975Z caller=main.go:221 build_context="(go=go1.10, user=root@149e5b3f0829, date=20180314-14:15:45)"
+    level=info ts=2018-04-12T11:56:53.084632256Z caller=main.go:222 host_details="(Linux 4.4.127-mainline-rev1 #1 SMP Sun Apr 8 10:38:32 UTC 2018 x86_64 scw-041406 (none))"
+    level=info ts=2018-04-12T11:56:53.084797692Z caller=main.go:223 fd_limits="(soft=1024, hard=65536)"
+    level=info ts=2018-04-12T11:56:53.09190775Z caller=web.go:382 component=web msg="Start listening for connections" address=0.0.0.0:9090
+    level=info ts=2018-04-12T11:56:53.091908126Z caller=main.go:504 msg="Starting TSDB ..."
+    level=info ts=2018-04-12T11:56:53.102833743Z caller=main.go:514 msg="TSDB started"
+    level=info ts=2018-04-12T11:56:53.103343144Z caller=main.go:588 msg="Loading configuration file" filename=/etc/prometheus/prometheus.yml
+    level=info ts=2018-04-12T11:56:53.104047346Z caller=main.go:491 msg="Server is ready to receive web requests."
+    ```
 
 2. 打开浏览器，输入 `http://IP.OF.YOUR.SERVER:9090` 便能够访问到 Prometheus 的 Web 页面了。如果一切正常，我们需要先暂时在命令行按下 `Ctrl` + `C` 结束进程。
 
-> 如果启动 Prometheus 服务时有错误信息输出，请再次确认配置文件是否存在语法错误。错误信息将会指明应当如何检查。
+    > 如果启动 Prometheus 服务时有错误信息输出，请再次确认配置文件是否存在语法错误。错误信息将会指明应当如何检查。
 
-1. 好了，Prometheus 已经能够正常工作，但它还没有跟随系统启动。接下来我们再次创建一个 Systemd 服务文件来告知系统开机启动它：
+3. 好了，Prometheus 已经能够正常工作，但它还没有跟随系统启动。接下来我们再次创建一个 Systemd 服务文件来告知系统开机启动：
 
-```bash
-sudo nano /etc/systemd/system/prometheus.service
-```
+    ```bash
+    sudo nano /etc/systemd/system/prometheus.service
+    ```
 
-该文件将会指明使用 `prometheus` 用户运行 Prometheus，并指定其配置文件的路径。
+    该文件将会指明使用 `prometheus` 用户运行 Prometheus，并指定其配置文件的路径。
 
 4. 复制以下内容并粘贴，保存后退出文本编辑器。
 
-```ini
-[Unit]
-  Description=Prometheus Monitoring
-  Wants=network-online.target
-  After=network-online.target
+    ```ini
+    [Unit]
+      Description=Prometheus Monitoring
+      Wants=network-online.target
+      After=network-online.target
 
-[Service]
-  User=prometheus
-  Group=prometheus
-  Type=simple
-  ExecStart=/usr/local/bin/prometheus \
-  --config.file /etc/prometheus/prometheus.yml \
-  --storage.tsdb.path /var/lib/prometheus/ \
-  --web.console.templates=/etc/prometheus/consoles \
-  --web.console.libraries=/etc/prometheus/console_libraries
-  ExecReload=/bin/kill -HUP $MAINPID
+    [Service]
+      User=prometheus
+      Group=prometheus
+      Type=simple
+      ExecStart=/usr/local/bin/prometheus \
+      --config.file /etc/prometheus/prometheus.yml \
+      --storage.tsdb.path /var/lib/prometheus/ \
+      --web.console.templates=/etc/prometheus/consoles \
+      --web.console.libraries=/etc/prometheus/console_libraries
+      ExecReload=/bin/kill -HUP $MAINPID
 
-[Install]
-  WantedBy=multi-user.target
-```
+    [Install]
+      WantedBy=multi-user.target
+    ```
 
-1. 重载 `systemd` 后才能使用新创建的服务：
+5. 重载 `systemd` 后才能使用新创建的服务：
 
-```bash
-sudo systemctl daemon-reload
-```
+    ```bash
+    sudo systemctl daemon-reload
+    ```
 
-启动 Prometheus 服务，实现开机自启：
+    开启 Prometheus 服务，实现开机自启：
 
-```bash
-sudo systemctl enable prometheus
-```
+    ```bash
+    sudo systemctl enable prometheus
+    ```
 
 6. 启动 Prometheus：
 
-```bash
-sudo systemctl start prometheus
-```
+    ```bash
+    sudo systemctl start prometheus
+    ```
 
-搞定，我们成功安装好 Prometheus 来监控你的服务器，Prometheus 服务已经可以正常访问了。
+搞定，我们成功安装 Prometheus 用来监控服务器，Prometheus 服务已经可以正常访问了。
 
-##
+## Prometheus Web 端
+
+Prometheus 内置一个简易的 Web 服务，可通过 `http://your.server.ip:9000` 访问。通过它能够查询其收集到的数据。
+
+我们可以使用它验证 Prometheus 服务的运行状态：
+
+![](https://www.scaleway.com/assets/images/docs/prometheus_targets.png)
+
+此外，还可以查询被收集的数据：
+
+![](https://www.scaleway.com/assets/images/docs/prometheus_graph.png)
+
+此 Web 页面十分轻量，如果你不仅仅只想测试一下效果，Prometheus 团队建议使用类似 Grafana 的工具来替代它。
+
+## 安装 Grafana
+
+1. 下载并安装 Grafana。
+
+    ```bash
+    wget https://dl.grafana.com/oss/release/grafana_5.4.2_amd64.deb
+    sudo apt-get install -y adduser libfontconfig
+    sudo dpkg -i grafana_5.4.2_amd64.deb
+    ```
+
+2. 使用 `systemd` 开启 Grafana 的开机自启动。
+
+    ```bash
+    sudo systemctl daemon-reload && sudo systemctl enable grafana-server && sudo systemctl start grafana-server
+    ```
+
+    Grafana 已经开始运行，我们可以通过 `http://your.server.ip:3000` 访问。默认的用户名和密码是 `admin` / `admin`。
+
+    ![](https://www.scaleway.com/assets/images/docs/grafana_dashboard.png)
+
+3. 现在你需要创建一个数据源（`Data Source`），也就是 Prometheus：
+
+   - 点击 Grafana Logo 打开侧边栏。
+   - 在侧边栏内，点击「Data Sources」。
+   - 选择「Add New」。
+   - 选择「Prometheus」作为数据源。
+   - 设置 Prometheus 服务的 URL（在本例中为：`http://localhost:9090/`）。
+   - 点击 「Add」即可测试连接并保存为新的数据源。
+
+   如上配置应当类似：
+
+   ![](https://www.scaleway.com/assets/images/docs/grafana_datasource.png)
+
+4. 现在你可以创建第一个看板（`Dashboard`）用于展示 Prometheus 收集到的信息了。你也可以从[共享看板集合](https://grafana.com/dashboards?dataSource=prometheus)导入一些现成的看板。
+
+    如下是一个例子看板，它查询了节点服务器的 CPU 使用量并展示在 Grafana 内：
+
+    ![](https://www.scaleway.com/assets/images/docs/grafana_stats.png)
+
+在本教程中，我们安装了 Prometheus 服务以及两个数据导出器供 Prometheus 抓取，并配置了由 Peometheus 提供数据的 Grafana 看板。不要犹豫，快去看看 [Prometheus](https://prometheus.io/docs/introduction/overview/) 和 [Grafana](http://docs.grafana.org/) 的官方文档吧。
+
+## 译者推荐
+
+拓展阅读：
+
+- <https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-on-ubuntu-16-04>
+- <https://songjiayang.gitbooks.io/prometheus/content/>
+
+推荐看板：
+
+- Node Exporter
+  - <https://grafana.com/dashboards/405>
+  - <https://grafana.com/dashboards/1860>
+
+- Process Exporter
+  - <https://grafana.com/dashboards/249>
+  - <https://grafana.com/dashboards/8378>
