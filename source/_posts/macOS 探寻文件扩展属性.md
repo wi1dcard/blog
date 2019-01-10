@@ -2,7 +2,7 @@
 id: macos-ls-extended-attributes
 date: 2018-08-29 16:31:08
 title: macOS 探寻文件扩展属性
-categories: wtf
+categories: WTF
 ---
 
 ## 过程

@@ -2,7 +2,7 @@
 id: php-array-map-instead-of-foreach
 date: 2018-07-11 14:44:18
 title: PHP 使用 array_map 替代 foreach
-categories: snippets
+categories: Snippets
 ---
 
 讲个 PHP 的骚操作。论如何实现：把二维数组内某二维元素的值，单独提出来组成一维数组。

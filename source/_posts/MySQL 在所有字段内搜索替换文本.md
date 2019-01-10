@@ -2,7 +2,7 @@
 id: mysql-replace-text-in-all-fields
 date: 2018-06-12 17:12:28
 title: MySQL 在所有字段内搜索替换文本
-categories: snippets
+categories: Snippets
 ---
 
 又是项目所需，继续造轮子。替换指定数据库的「所有表」内「所有记录」的「所有字段」的值，以下为 SQL 语句。

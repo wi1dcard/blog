@@ -2,7 +2,7 @@
 title: "UCenter 1.6 Client Example对PHP7兼容不良的排查与修复"
 date: 2017-10-27 00:24:36
 id: php7-ucenter-client-example-issue
-categories: wtf
+categories: WTF
 ---
 
 > 没错又踩坑了。

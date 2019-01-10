@@ -2,7 +2,7 @@
 id: php-json-serializer
 date: 2018-08-21 19:14:26
 title: PHP JSON Serializer
-categories: tools
+categories: Tools
 ---
 
 Serialize & unserialize data to & from JSON. Compatible with `serialize`d data and supported accessing unserialized data as a object & array.

@@ -2,7 +2,7 @@
 id: php-class-name-without-namespace
 date: 2018-07-24 00:24:40
 title: PHP 获取不带命名空间的类名
-categories: snippets
+categories: Snippets
 ---
 
 方法很多，列出几个，以供参考。

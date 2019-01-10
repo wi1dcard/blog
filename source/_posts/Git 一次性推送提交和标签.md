@@ -2,7 +2,7 @@
 id: git-push-with-tags
 date: 2018-09-07 09:18:53
 title: Git 一次性推送提交和标签
-categories: snippets
+categories: Snippets
 ---
 
 > How to push commits and tags in git using the same command...

@@ -2,7 +2,7 @@
 id: php-copy-paste-detector
 date: 2018-07-04 11:12:14
 title: "PHPCPD - 检查复制粘贴的 PHP 代码"
-categories: tools
+categories: Tools
 ---
 
 最近突然对代码质量检查感兴趣，决定对公司项目的代码冗余进行彻查。经过搜索发现一款不错的工具，针对复制粘贴的代码有不错的识别率，在此推荐。

@@ -2,7 +2,7 @@
 title: "Laravel + Swoole 实现 TCP-UDP Socket 服务端"
 date: 2018-03-06 10:32:22
 id: swoole-in-laravel
-categories: tutorials
+categories: Tutorials
 ---
 
 > Laravel + Swoole 实现更快的请求处理速度、更高并发有扩展包可供选择，那么如何在 Laravel 框架内优雅地嵌入 Swoole 实现 TCP/UDP Socket 服务端呢？

@@ -2,7 +2,7 @@
 id: custom-themes-for-any-website
 date: 2018-06-14 07:26:27
 title: Stylish - 自定义 GitHub / Google / Youtube 主题
-categories: tools
+categories: Tools
 ---
 
 昨天发文截图，GitHub 是黑色（Dark）主题，本文将介绍：如何快速给网站加特技（duang，duang，duang）。

@@ -2,7 +2,7 @@
 id: php-fastest-create-tree-from-list
 date: 2018-08-06 11:40:06
 title: PHP 快速扫描列表创建无限极分类树
-categories: wtf
+categories: WTF
 ---
 
 书接上回。上文结尾，讲解了引用的妙用。刚好，在我现在所处公司的业务里有一处用递归实现的「省市区」分级列表；本文将这一用途搬进生产环境，通过优化此省市区列表，试试真正的效果如何。

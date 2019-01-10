@@ -2,7 +2,7 @@
 id: amh-loaded-mysql-module-twice
 date: 2018-06-14 14:38:42
 title: AMH 面板重复加载 MySQL 扩展
-categories: wtf
+categories: WTF
 ---
 
 真是天下没有不坑的面板... 相继宝塔和 WDCP 之后，AMH 也出了问题。

@@ -2,7 +2,7 @@
 id: yii2-return-array-in-controller
 date: 2018-07-13 12:01:36
 title: Yii2 允许控制器内直接返回数组
-categories: snippets
+categories: Snippets
 ---
 
 类似 Laravel 的效果：直接 `return` 数组输出 JSON 响应。办法有很多，目前我找到的最优解决方案如下。

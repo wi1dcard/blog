@@ -2,7 +2,7 @@
 id: ridiculous-guys-on-github
 date: 2018-08-07 11:22:07
 title: GitHub 上那些荒谬可笑的人
-categories: documents
+categories: Documents
 ---
 
 GitHub Star 造假？

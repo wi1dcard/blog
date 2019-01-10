@@ -2,7 +2,7 @@
 id: pack-incremental-updates-using-git
 date: 2018-07-08 15:06:09
 title: Git 仓库打包增量更新包
-categories: tutorials
+categories: Tutorials
 ---
 
 目前任职公司，每周一日常更新需要打包「上个版本」到「最新代码」的压缩包，图方便写成命令，以便后续使用。

@@ -2,7 +2,7 @@
 title: "PHPBrew - 多版本PHP共存开发神器"
 date: 2018-03-17 09:37:18
 id: phpbrew-documention
-categories: tools
+categories: Tools
 ---
 
 > phpbrew 是一个构建、安装多版本 PHP 到用户根目录的工具。

@@ -2,7 +2,7 @@
 title: 'PHP 实现类似 C# MakeRelativeUri 方法'
 date: 2018-06-04 10:32:08
 id: php-getting-releative-path
-categories: snippets
+categories: Snippets
 ---
 
 在使用 C# 的过程中，几乎可以全程只靠 MSDN，很多方法微软在 .NET 内封装了很规范的实现；而近期在使用 PHP 开发项目时遇到个小问题：获取文件或目录 A 相对与 B 的路径，翻了下 PHP Manual 发现 PHP 内核并没有提供官方实现，于是谷歌之，找到一份比较规范的实现，在此记录，以备查询。

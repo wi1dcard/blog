@@ -2,7 +2,7 @@
 id: laravel-logging-with-mongodb
 date: 2018-08-15 12:36:19
 title: Laravel 5.6 使用 MongoDB 存储框架日志
-categories: tutorials
+categories: Tutorials
 ---
 
 网上的文章普遍是 Laravel 5.5 版本，而日志系统在 5.6 版本升级时进行了部分改动，原有方法基本都失效了。本文根据 Laravel 5.6 文档的指引，实现使用 MongoDB 存储框架日志。

@@ -2,7 +2,7 @@
 id: say-goodbye-to-macdown
 date: 2018-07-10 13:27:35
 title: 对 MacDown 说再见
-categories: documents
+categories: Documents
 ---
 
 这两天又在折腾编辑器，早上刚更新了关于 VSCode 的最新配置。

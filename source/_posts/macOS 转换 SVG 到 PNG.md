@@ -2,7 +2,7 @@
 id: macos-convert-svg-to-png
 date: 2018-09-06 20:44:12
 title: macOS 转换 SVG 到 PNG
-categories: tools
+categories: Tools
 ---
 
 论如何以程序员的方式，轻量、快速、优雅地转换 SVG 到 PNG。

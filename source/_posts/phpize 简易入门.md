@@ -2,7 +2,7 @@
 title: "phpize 简易入门"
 date: 2018-04-30 22:31:53
 id: phpize-get-started
-categories: tutorials
+categories: Tutorials
 ---
 
 > 本文以安装 mongodb 扩展为例，简单讲解使用 phpize 给多版本 php 编译安装扩展。

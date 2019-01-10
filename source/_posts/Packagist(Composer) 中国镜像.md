@@ -2,7 +2,7 @@
 id: packagist-mirror-in-china
 date: 2018-09-05 09:31:33
 title: Packagist(Composer) 中国镜像
-categories: documents
+categories: Documents
 ---
 
 从七月份得知国内镜像开始「体检」之后，一直没有收到恢复的消息。

@@ -2,7 +2,7 @@
 id: yii2-redirect-controller-in-module
 date: 2018-07-13 15:56:08
 title: Yii2 在模块内映射 Controller 到其它控制器
-categories: tutorials
+categories: Tutorials
 ---
 
 上文讲解关于如何映射 Action，本文讲解如何映射 Controller。

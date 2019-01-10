@@ -2,7 +2,7 @@
 id: yii2-get-current-request-route
 date: 2018-08-29 13:48:19
 title: Yii2 获取当前请求的路由信息
-categories: collections
+categories: Collections
 ---
 
 如题，有两种方案实现。

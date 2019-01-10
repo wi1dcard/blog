@@ -2,7 +2,7 @@
 title: "树莓派折腾随手记 - Time Machine"
 date: 2018-06-21 10:05:47
 id: raspberry-pi-time-machine
-categories: tutorials
+categories: Tutorials
 ---
 
 > 群晖太贵！若是不介意 USB 2.0 和 100 Mbps 带宽的话，用树莓派 + 移动硬盘做个低功耗小型 NAS 也是不错的选择；搭建 Samba 的教程到处都是，本篇将介绍以正确的姿势搭建 AFP 共享 + Time Machine。

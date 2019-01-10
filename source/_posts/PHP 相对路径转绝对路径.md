@@ -2,7 +2,7 @@
 title: PHP 相对路径转绝对路径（转载）
 date: 2018-06-08 14:11:22
 id: php-true-realpath
-categories: snippets
+categories: Snippets
 ---
 
 PHP has a very handy function to convert relative pathnames to absolute paths: `realpath()`. However, it’s limited in at least two aspects which both make it inconvenient (and sometimes impossible) to use:

@@ -2,7 +2,7 @@
 id: laravel-eloquent-model-properties
 date: 2018-09-18 09:15:25
 title: Laravel 5.7 模型常用属性集合
-categories: collections
+categories: Collections
 ---
 
 Laravel 5.7 于前几天发布，迫不及待给正在开发的新项目做了升级。

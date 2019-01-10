@@ -2,7 +2,7 @@
 title: "LGTM（？？？）迷之骚缩写"
 date: 2018-05-31 13:33:47
 id: github-abbrs-collection
-categories: collections
+categories: Collections
 ---
 
 转载一些 GitHub 常见骚缩写，以备查询使用。

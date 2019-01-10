@@ -2,7 +2,7 @@
 id: psr7-and-httplug
 date: 2018-10-06 16:05:41
 title: PSR-7 与 HTTPlug
-categories: documents
+categories: Documents
 ---
 
 ## 前言

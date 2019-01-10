@@ -2,7 +2,7 @@
 id: yii2-redirect-action-in-controller
 date: 2018-07-13 12:02:50
 title: Yii2 在控制器内映射 Action 到其它动作
-categories: tutorials
+categories: Tutorials
 ---
 
 本文讲解：如何把控制器内的任意一个 Action 映射到另一个 Action。

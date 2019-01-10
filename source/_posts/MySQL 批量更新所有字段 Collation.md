@@ -2,7 +2,7 @@
 title: "MySQL 批量更新所有字段 Collation"
 date: 2017-09-06 19:31:39
 id: mysql-update-all-collations
-categories: snippets
+categories: Snippets
 ---
 
 今天项目部署遇到个坑，之前建数据库的时候，把所有的collation都写成了utf8，在测试服务器上也没怎么注意，部署正式服务器果断用mb4，故需要修改上百个字段的collation。 

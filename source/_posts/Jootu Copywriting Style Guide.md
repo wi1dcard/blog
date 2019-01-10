@@ -2,7 +2,7 @@
 title: "Jootu Copywriting Style Guide"
 date: 2017-11-10 13:00:38
 id: jootu-copywriting-style-guide
-categories: documents
+categories: Documents
 ---
 
 > 椒图科技书写风格指南，本文同时适用于团队博客、技术文档、产品手册、项目方案等。

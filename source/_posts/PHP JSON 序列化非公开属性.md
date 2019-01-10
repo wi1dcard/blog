@@ -2,7 +2,7 @@
 title: "PHP: json_encode() 方法序列化非公开属性"
 date: 2018-06-08 10:56:00
 id: json-encode-non-public-properties
-categories: tutorials
+categories: Tutorials
 ---
 
 近期项目过程中，有一处场景需要使用 `json_encode` 方法序列化某对象内的 `protected` 属性。

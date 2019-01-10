@@ -2,7 +2,7 @@
 id: laravel-route-pattern-exclude
 date: 2018-08-18 01:52:37
 title: Laravel 5.6 路由参数排除匹配
-categories: snippets
+categories: Snippets
 ---
 
 Laravel 提供 `where` 方法和 `Route::pattern` 方法，用于设置某个路由参数必须匹配指定表达式，则此路由才会被匹配。
