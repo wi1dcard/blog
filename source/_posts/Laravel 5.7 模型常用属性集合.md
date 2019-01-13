@@ -74,4 +74,3 @@ $searchable = [
     'joins' => [],
 ];
 ```
-
