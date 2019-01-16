@@ -4,6 +4,8 @@ thumbnail: "https://i.loli.net/2018/06/03/5b12c21dd5284.jpg"
 comments: false
 ---
 
+<!--more-->
+
 ### RightCapital / PHP 工程师、运维工程师 / 2018年11月 ~
 
 @card{
