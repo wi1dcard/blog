@@ -1,0 +1,15 @@
+language: php
+
+services:
+  - docker
+
+before_script:
+  - docker pull arachnysdocker/athenapdf
+  - wget -o qshell.zip http://devtools.qiniu.com/qshell-v2.3.5.zip
+  - unzip qshell.zip
+  - mv qshell_linux_x64 /usr/bin/qshell
+
+script:
+  - docker run --rm -v $(pwd):/converted/ arachnysdocker/athenapdf athenapdf --margins=none https://wi1dcard.github.io/resume/ resume.pdf
+  - qshell account $QINIU_AK $QINIU_SK yokka47@qq.com
+  - qshell fput rainshine get-resume resume.pdf -w
