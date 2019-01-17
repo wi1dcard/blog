@@ -4,7 +4,7 @@ comments: false
 ---
 
 > 世界在发展，尤其软件行业日新月异。我从未停止学习的脚步，请务必访问我的在线简历以获取最新信息。
-> 本人简历永久地址：**<https://wi1dcard.github.io/resume/>**（<a href="javascript:window.print()">打印</a>）
+> 本人简历永久地址：**<https://wi1dcard.github.io/resume/>**（[下载 PDF](http://dl.yokka.cc/get-resume)）
 
 <!--more-->
 

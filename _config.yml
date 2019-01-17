@@ -81,3 +81,4 @@ theme: indigo
 deploy:
   type: git
   repo: git@github.com:wi1dcard/wi1dcard.github.io.git
+  ignore_hidden: false
