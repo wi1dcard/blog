@@ -10,34 +10,22 @@ branches:
   only:
     - master
 
-stages:
-  - generate
-  - render
-  - deploy
-
 install:
   - npm install
   - npm install hexo-cli -g
   - docker pull arachnysdocker/athenapdf
 
-jobs:
-  include:
-    - stage: generate
-    - script:
-      - hexo generate
-
-    - stage: render
-      before_script:
-        - docker run --name web -d -p 80:80 -v $(pwd)/public:/usr/share/nginx/html:ro nginx
-      script:
-        - docker run --rm -v $(pwd)/resume:/converted/ arachnysdocker/athenapdf athenapdf --margins=none http://localhost/resume/ wi1dcard.pdf
-      after_script:
-        - docker stop web
-
-    - stage: deploy
-      before_script:
-        - rm -f ~/.ssh/id_rsa
-        - (echo $GH_DEPLOY_KEY | base64 --decode) > ~/.ssh/id_rsa
-        - chmod 400 ~/.ssh/id_rsa
-      script:
-        - hexo deploy
+script:
+  # Generate
+  - hexo generate
+  # Render
+  - docker run --name web -d -p 80:80 -v $(pwd)/public:/usr/share/nginx/html:ro nginx
+  - IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' web)
+  - docker run --rm -v $(pwd)/public/resume:/converted arachnysdocker/athenapdf athenapdf --margins=none http://$IP/resume/ wi1dcard.pdf
+  - docker stop web
+  # Replace ssh key
+  - rm -f ~/.ssh/id_rsa
+  - (echo $GH_DEPLOY_KEY | base64 --decode) > ~/.ssh/id_rsa
+  - chmod 400 ~/.ssh/id_rsa
+  # Deploy
+  - hexo deploy
