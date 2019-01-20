@@ -1,7 +1,19 @@
-language: node
+language: node_js
 
 install:
   - npm install hexo-cli -g
+
+before_script:
+  - echo $GH_DEPLOY_KEY > ~/.ssh/id_rsa_deploy
+  - chmod 400 ~/.ssh/id_rsa_deploy
+  - |
+    cat <<EOT >> ~/.ssh/config
+    Host GitHub
+      HostName github.com
+      User git
+      IdentityFile ~/.ssh/id_rsa_deploy
+      IdentitiesOnly yes
+    EOT
 
 script:
   - hexo deploy -g
