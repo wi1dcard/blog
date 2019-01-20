@@ -1,14 +1,18 @@
 language: node_js
 
 node_js:
-  - "7"
+  - "10"
+
+branches:
+  only:
+  - master
 
 install:
   - npm install
   - npm install hexo-cli -g
 
 before_script:
-  - chmod 600 ~/.ssh/id_rsa
+  - rm -f ~/.ssh/id_rsa
   - (echo $GH_DEPLOY_KEY | base64 --decode) > ~/.ssh/id_rsa
   - chmod 400 ~/.ssh/id_rsa
 
