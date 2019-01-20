@@ -8,16 +8,9 @@ install:
   - npm install hexo-cli -g
 
 before_script:
-  - echo $GH_DEPLOY_KEY > ~/.ssh/id_rsa_deploy
-  - chmod 400 ~/.ssh/id_rsa_deploy
-  - |
-    cat <<EOT >> ~/.ssh/config
-    Host GitHub
-      HostName github.com
-      User git
-      IdentityFile ~/.ssh/id_rsa_deploy
-      IdentitiesOnly yes
-    EOT
+  - chmod 600 ~/.ssh/id_rsa
+  - (echo $GH_DEPLOY_KEY | base64 --decode) > ~/.ssh/id_rsa
+  - chmod 400 ~/.ssh/id_rsa
 
 script:
   - hexo deploy -g
