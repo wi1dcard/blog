@@ -1,0 +1,7 @@
+language: node
+
+install:
+  - npm install hexo-cli -g
+
+script:
+  - hexo deploy -g
