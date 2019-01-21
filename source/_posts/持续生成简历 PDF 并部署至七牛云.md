@@ -2,7 +2,7 @@
 id: convert-html-to-pdf-with-ci
 date: 2019-01-21 09:20:23
 title: 持续生成简历 PDF 并部署至七牛云
-categories: tutorials
+categories: Tutorials
 ---
 
 大概想法：`转换我的简历 HTML 到 PDF` -> `将 PDF 部署到七牛云` -> `访客可直接下载最新版本 PDF 且与在线简历同步`。

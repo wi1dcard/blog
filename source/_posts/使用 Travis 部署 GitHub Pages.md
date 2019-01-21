@@ -2,7 +2,7 @@
 id: deploy-github-pages-with-travis-ci
 date: 2019-01-17 17:27:22
 title: 使用 Travis 部署 GitHub Pages
-categories: documents
+categories: Documents
 ---
 
 原来 Travis CI 官方一直提供着部署到 GitHub Pages 的方式...
