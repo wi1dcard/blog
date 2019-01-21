@@ -2,7 +2,7 @@
 id: convert-html-to-pdf-with-ci
 date: 2019-01-21 09:20:23
 title: 持续生成简历 PDF 并部署至七牛云
-categories: tutorials 
+categories: tutorials
 ---
 
 大概想法：`转换我的简历 HTML 到 PDF` -> `将 PDF 部署到七牛云` -> `访客可直接下载最新版本 PDF 且与在线简历同步`。
@@ -90,7 +90,7 @@ hexo.on('generateAfter', function () {
 
 原因有二：
 
-1. 垃圾七牛貌似没有对国外访问做良好的优化支持，以至于 CI 机器使用 CURL 下载时极其不稳定，动不动就无法拿到 `qshell`，而在 GitHub Releases 内又没有编译好的可执行文件。唉，国内企业的通病。
+1. 垃圾七牛貌似没有对国外访问做良好的优化支持，以至于 CI 机器使用 CURL 下载时极其不稳定，动不动就无法拿到 `qshell`，而在 GitHub Releases 内又没有编译好的可执行文件。我已经提交 [Issue](https://github.com/qiniu/qshell/issues/224) 但不确定何时才会得到答复。唉，国内企业的通病。
 2. 使用国内 CDN 域名要备案。还好我有一个多年前通过个人备案的域名，暂时能够撑一下，但不是长久之计。
 
 目前，我已经重新配置 CI，回头再另写博文吧。
