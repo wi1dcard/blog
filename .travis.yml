@@ -10,6 +10,9 @@ branches:
   only:
     - master
 
+before_install:
+  - export TZ=Asia/Shanghai
+
 install:
   - npm install
   - npm install hexo-cli -g
