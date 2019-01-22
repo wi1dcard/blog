@@ -27,10 +27,11 @@ before_script:
   # Prepare nginx
   - docker run --name web -d -p 80:80 -v $(pwd)/public:/usr/share/nginx/html:ro nginx
   - NGX_IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' web)
-  - echo $NGX_IP
+  - RESUME_URL=http://$NGX_IP/resume/
   - ./wait-for-it.sh 127.0.0.1:80
+  - curl $RESUME_URL
   # Render
-  - docker run --rm -v $(pwd)/public/resume:/converted arachnysdocker/athenapdf athenapdf --margins=none http://$NGX_IP/resume/ wi1dcard.pdf
+  - docker run --rm -v $(pwd)/public/resume:/converted arachnysdocker/athenapdf athenapdf --margins=none $RESUME_URL wi1dcard.pdf
   - docker stop web
   # Replace ssh key
   - rm -f ~/.ssh/id_rsa
