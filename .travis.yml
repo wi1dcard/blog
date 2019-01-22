@@ -19,6 +19,8 @@ install:
   - chmod +x wait-for-it.sh
 
 before_script:
+  # Lint first
+  - ./lint.sh
   # Generate
   - hexo generate
   # Prepare nginx
