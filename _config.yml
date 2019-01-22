@@ -4,12 +4,12 @@
 
 # Site
 title: Wi1dcard
-subtitle: 
+subtitle:
 description: Go be a wild card.
-keywords: 
+keywords:
 author: Wi1dcard
 language: zh-CN
-timezone: PRC
+# timezone: PRC
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -44,7 +44,7 @@ highlight:
   line_number: false
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -53,7 +53,7 @@ index_generator:
   path: ''
   per_page: 8
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
