@@ -1,5 +1,5 @@
 ---
-title: "纠结！纯内网Web控制智能硬件的技术选型之路"
+title: "纠结！纯内网 Web 控制智能硬件的技术选型之路"
 date: 2018-03-11 12:22:48
 id: controlling-smart-device-on-web
 categories: Documents
@@ -49,7 +49,7 @@ categories: Documents
 
 于是看了下 [walkor/workerman-for-win](https://github.com/walkor/workerman-for-win)，凉凉。
 
-相比于 Workerman Linux 版本几千个 Star，简直尬啊。再加上 README 标明的：「此版本可用于windows下开发使用，不建议用在生产环境」。最后，看了看[文档](http://doc3.workerman.net/install/requirement.html)，Win 版本少了些对于提高性能十分有益的重要特性。
+相比于 Workerman Linux 版本几千个 Star，简直尬啊。再加上 README 标明的：「此版本可用于 windows 下开发使用，不建议用在生产环境」。最后，看了看[文档](http://doc3.workerman.net/install/requirement.html)，Win 版本少了些对于提高性能十分有益的重要特性。
 
 毙了。
 
@@ -72,11 +72,11 @@ categories: Documents
 
 尽管我首先想到的是微软的亲儿子 .NET，但另一门语言也浮现在我的脑海里：Node.js。
 
-Node.js 本身所具有的事件驱动、非阻塞IO等特性十分适合用来开发 Socket 服务端；这一点在各类社区也得到印证，使用 Node 开发的WebSocket、Socket 服务端层出不穷，且十分活跃；而微软的支持也不差，VS Code 就是基于 Node 开发。
+Node.js 本身所具有的事件驱动、非阻塞 IO 等特性十分适合用来开发 Socket 服务端；这一点在各类社区也得到印证，使用 Node 开发的 WebSocket、Socket 服务端层出不穷，且十分活跃；而微软的支持也不差，VS Code 就是基于 Node 开发。
 
 但痛点也有，例如：全是回调，随着项目规模增长，回调越来越多，参数类型不明确，异常处理困难，万一哪里没写好造成隐藏 BUG，动不动就崩溃，麻烦可就大了。何况公司目前还没有专业玩 Node 的程序员。
 
-> 个人认为，Node.js自己玩玩入门简单，几行代码就能上手运行，但想要在生产环境下玩转 Node：一方面需要很强的编程思维功底，不然很难理解这种完全非阻塞的模式；另一方面需要对 Node 文档进行通读，具有一定了解、经验，否则万一某个变量类型搞错抛出异常，或是 Buffer 使用不当导致内存泄露，那都是隐性且致命的。
+> 个人认为，Node.js 自己玩玩入门简单，几行代码就能上手运行，但想要在生产环境下玩转 Node：一方面需要很强的编程思维功底，不然很难理解这种完全非阻塞的模式；另一方面需要对 Node 文档进行通读，具有一定了解、经验，否则万一某个变量类型搞错抛出异常，或是 Buffer 使用不当导致内存泄露，那都是隐性且致命的。
 
 忍痛割爱！毙了。
 

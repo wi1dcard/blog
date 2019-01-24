@@ -10,7 +10,7 @@ categories: Documents
 ### [*] Part 1
 
 1.  是什么？
-2.  用途？（搜索、替换、提取、验证、格式化、Rewrite等）
+2.  用途？（搜索、替换、提取、验证、格式化、Rewrite 等）
 3.  怎么用？
 4.  常见正则引擎（PCRE / DEELX ...）。
 5.  常见正则测试工具（[Deelx Regex Match Tracer](http://www.regexlab.com/zh/mtracer/) / [Regex 101](https://regex101.com/) / [RegExr](https://regexr.com/) / For PHPer: [PHP Live Regex](http://www.phpliveregex.com/)）

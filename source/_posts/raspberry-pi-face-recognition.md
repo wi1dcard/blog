@@ -9,7 +9,7 @@ categories: Tutorials
 
 ## 0x00 思路
 
-最开始我的想法是由树莓派独立完成摄像头图像捕捉、人脸检测、比对；转念一想，后期这玩意可以迎合公司项目，放到政企专网内部运作，还是 C／S 比较合适（更新方便、统一管理、Client 端平台无限制）；后来受到公司另一个小伙伴的启发，既然采用 C／S 架构，那服务器端肯定是 x64 的CPU，可以调用虹软人脸 SDK，避免使用开源算法头疼优化问题，所以最终的结构基本是这样的：
+最开始我的想法是由树莓派独立完成摄像头图像捕捉、人脸检测、比对；转念一想，后期这玩意可以迎合公司项目，放到政企专网内部运作，还是 C／S 比较合适（更新方便、统一管理、Client 端平台无限制）；后来受到公司另一个小伙伴的启发，既然采用 C／S 架构，那服务器端肯定是 x64 的 CPU，可以调用虹软人脸 SDK，避免使用开源算法头疼优化问题，所以最终的结构基本是这样的：
 
 ![](https://i.loli.net/2018/08/15/5b73a57eea40e.png)
 
@@ -35,13 +35,13 @@ categories: Tutorials
 
 - [操作系统大全](http://wiki.nxez.com/rpi:list-of-oses)
 - [在 macOS 上写入系统镜像](https://www.cnblogs.com/bindong/p/5818497.html)
-- [连接WiFi - 方法1](http://www.52pi.net/archives/58)
-- [连接WiFi - 方法2](https://www.embbnux.com/2016/04/10/raspberry_pi_3_wifi_and_bluetooth_setting_on_console/)
-- [连接WiFi - 方法3](http://blog.csdn.net/messidona11/article/details/73649278)
+- [连接 WiFi - 方法 1](http://www.52pi.net/archives/58)
+- [连接 WiFi - 方法 2](https://www.embbnux.com/2016/04/10/raspberry_pi_3_wifi_and_bluetooth_setting_on_console/)
+- [连接 WiFi - 方法 3](http://blog.csdn.net/messidona11/article/details/73649278)
 - [安全关机重启命令](http://shumeipai.nxez.com/2013/08/25/raspberry-pi-how-to-safely-shutdown-restart.html)
 - [VNC 可视化远程](https://www.realvnc.com/en/connect/docs/raspberry-pi.html#raspberry-pi-setup)
 
-#### 树莓派: USB摄像头支持列表
+#### 树莓派: USB 摄像头支持列表
 
 - [USB Webcams](https://elinux.org/RPi_USB_Webcams)
 
@@ -53,8 +53,8 @@ categories: Tutorials
 
 #### 树莓派: Node.js 连接摄像头
 
-- [web调试树莓派摄像头](https://www.jianshu.com/p/a386081d1627)
-- [树莓派+摄像头: Node.js打造1D/2D条码扫描仪](http://blog.csdn.net/yushulx/article/details/60763737)
+- [web 调试树莓派摄像头](https://www.jianshu.com/p/a386081d1627)
+- [树莓派+摄像头: Node.js 打造 1D/2D 条码扫描仪](http://blog.csdn.net/yushulx/article/details/60763737)
 - [node-v4l2camera](https://github.com/bellbind/node-v4l2camera)
 - [jpeg-js](https://github.com/eugeneware/jpeg-js)
 - [jsmpeg](https://github.com/phoboslab/jsmpeg)
@@ -68,10 +68,10 @@ categories: Tutorials
 
 #### 服务器(C): 封装并编译动态链接库
 
-- [C编译: 动态连接库 (.so文件)](https://www.cnblogs.com/vamei/archive/2013/04/04/2998850.html)
+- [C 编译: 动态连接库 (.so 文件)](https://www.cnblogs.com/vamei/archive/2013/04/04/2998850.html)
 - [GCC 编译动态链接库](http://blog.csdn.net/orzlzro/article/details/6460058)
-- [.so动态库makefile的嵌套调用](http://blog.csdn.net/nana_93/article/details/8274052)
-- [Linux下so导出指定函数](http://blog.csdn.net/seeklm/article/details/39208801)
+- [.so 动态库 makefile 的嵌套调用](http://blog.csdn.net/nana_93/article/details/8274052)
+- [Linux 下 so 导出指定函数](http://blog.csdn.net/seeklm/article/details/39208801)
 
 #### 服务器(Node): 调用动态链接库
 
@@ -79,14 +79,14 @@ categories: Tutorials
 
 #### 服务器(Bash): 图片转 YUV 通道原始数据
 
-- [ffmpeg jpeg 转yuv422p(420p)](http://blog.csdn.net/smilestone_322/article/details/21104871)
+- [ffmpeg jpeg 转 yuv422p(420p)](http://blog.csdn.net/smilestone_322/article/details/21104871)
 
 #### 服务器(Node): 实现人脸 HTTP API
 
 - [Node.js 远程调试](https://nodejs.org/en/docs/inspector/)
 - [node.js 如何完美的从命令行接收参数所传递进来的值](https://segmentfault.com/q/1010000000367285)
-- [Nodejs进阶：基于express+multer的文件上传](https://www.cnblogs.com/chyingp/p/express-multer-file-upload.html)
-- [nodejs中的中间件--Multer](http://blog.csdn.net/charlene0824/article/details/51154059)
+- [Nodejs 进阶：基于 express+multer 的文件上传](https://www.cnblogs.com/chyingp/p/express-multer-file-upload.html)
+- [nodejs 中的中间件--Multer](http://blog.csdn.net/charlene0824/article/details/51154059)
 
 #### 树莓派: 调用人脸 API
 
@@ -95,10 +95,10 @@ categories: Tutorials
 #### 其它
 
 - [OpenCV and Pi Camera Board](https://thinkrpi.wordpress.com/opencv-and-pi-camera-board/)
-- [树莓派人脸识别门禁系统代码以及代码分析——opencv拍照调用FACE++处理](https://baijiahao.baidu.com/s?id=1571031364102290&wfr=spider&for=pc)
-- [【Raspberry Pi 3试用体验】+Opencv+python的人脸识别](http://bbs.elecfans.com/forum.php?mod=viewthread&tid=607153&extra=)
+- [树莓派人脸识别门禁系统代码以及代码分析——opencv 拍照调用 FACE++处理](https://baijiahao.baidu.com/s?id=1571031364102290&wfr=spider&for=pc)
+- [【Raspberry Pi 3 试用体验】+Opencv+python 的人脸识别](http://bbs.elecfans.com/forum.php?mod=viewthread&tid=607153&extra=)
 - [使用树莓派进行简易人脸识别](http://www.shumeipaiba.com/xiangmu/zhineng/78.html) / [使用树莓派进行简易人脸识别](http://7xrb89.com1.z0.glb.clouddn.com/demo_1.gif)
-- [树莓派一键部署系列之二：openface人脸识别程序](https://www.jianshu.com/p/05f4c2c2d6be)
+- [树莓派一键部署系列之二：openface 人脸识别程序](https://www.jianshu.com/p/05f4c2c2d6be)
 
 ## 0x03 成果
 

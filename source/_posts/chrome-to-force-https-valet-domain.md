@@ -1,5 +1,5 @@
 ---
-title: "Chrome占用.dev域名后缀导致Valet失效的解决方案"
+title: "Chrome 占用.dev 域名后缀导致 Valet 失效的解决方案"
 date: 2018-02-04 19:53:26
 id: chrome-to-force-https-valet-domain
 categories: WTF
@@ -9,7 +9,7 @@ categories: WTF
 
 ### 0x01
 
-最开始意味是dnsmasq挂了，经过一番谷歌和 ping 检查，发现能够正常解析到 127.0.0.1。
+最开始意味是 dnsmasq 挂了，经过一番谷歌和 ping 检查，发现能够正常解析到 127.0.0.1。
 
 [Valet (Laravel): DNS address can not be found](https://stackoverflow.com/questions/37172691/valet-laravel-dns-address-can-not-be-found/37174256)
 

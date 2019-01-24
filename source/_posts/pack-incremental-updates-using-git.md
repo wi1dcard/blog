@@ -25,7 +25,7 @@ git diff --diff-filter=d --name-only <COMMIT_ID> HEAD | xargs tar cvf <FILE_NAME
 - `<FILE_NAME>`：打包的文件路径
 - `<EXCLUDE>`：排除文件或目录
 
-另外，如不需要打包，只需拷贝，可将 `tar` 替换为 `cp` 命令：
+另外，如不需要打包，只需拷贝，可将 `tar` 替换为 `cp` 命令：
 
 ```bash
 xargs -I{} cp --parents {} <DIR_NAME>
@@ -33,7 +33,7 @@ xargs -I{} cp --parents {} <DIR_NAME>
 
 - `<DIR_NAME>`：复制到的目录名
 
-可选使用7z打包（Windows下需要先配置7z的环境变量）
+可选使用 7z 打包（Windows 下需要先配置 7z 的环境变量）
 
 ```bash
 git diff --diff-filter=d --name-only <COMMIT_ID> HEAD | xargs 7z a <FILE_NAME>

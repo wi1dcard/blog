@@ -19,6 +19,6 @@ categories: Tutorials
 
 扩展：
 
-[相对路径Or绝对路径--前端优化(一)](https://segmentfault.com/a/1190000004629039)
+[相对路径 Or 绝对路径--前端优化(一)](https://segmentfault.com/a/1190000004629039)
 
 [Uniform Resource Identifier - Wikipedia](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier#Syntax)

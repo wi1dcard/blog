@@ -1,5 +1,5 @@
 ---
-title: "PHPBrew - 多版本PHP共存开发神器"
+title: "PHPBrew - 多版本 PHP 共存开发神器"
 date: 2018-03-17 09:37:18
 id: phpbrew-documention
 categories: Tools
@@ -116,7 +116,7 @@ $ phpbrew known --more
 $ phpbrew update
 ```
 
-刷新旧版本（低于5.4）：
+刷新旧版本（低于 5.4）：
 
 > 请注意：我们不保证能够正确编译 PHP 官方停止维护的版本，请不要提交关于编译旧版本的 Issus，此类 Issue 将不会修复。
 
@@ -124,7 +124,7 @@ $ phpbrew update
 $ phpbrew update --old
 ```
 
-列出已知的旧版本（低于5.4）：
+列出已知的旧版本（低于 5.4）：
 
 ```bash
 $ phpbrew known --old
@@ -158,7 +158,7 @@ $ phpbrew install --test 5.4.0
 $ phpbrew -d install --test 5.4.0
 ```
 
-安装旧版本（低于5.3）：
+安装旧版本（低于 5.3）：
 
 ```bash
 $ phpbrew install --old 5.2.13

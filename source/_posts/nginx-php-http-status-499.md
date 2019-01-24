@@ -1,5 +1,5 @@
 ---
-title: "Nginx+PHP环境499错误码排查过程小记"
+title: "Nginx+PHP 环境 499 错误码排查过程小记"
 date: 2018-02-02 18:09:48
 id: nginx-php-http-status-499
 categories: WTF
@@ -14,29 +14,29 @@ categories: WTF
 #### 0x01
 
 经搜索得知：
-[哪些情况下会使Nginx返回HTTP CODE 499？](https://segmentfault.com/q/1010000004193105)
+[哪些情况下会使 Nginx 返回 HTTP CODE 499？](https://segmentfault.com/q/1010000004193105)
 
 > 即：「客户端主动关闭连接」
 
 但某一时间段内全部请求均为返回 499，这显然不是所有客户端主动意识上的「关闭」，可能是因为客户端等待超时，自动关闭连接；加上 499 的时间段内包含部分 502，让我不得不怀疑：
 
-> PHP进程「死」了。
+> PHP 进程「死」了。
 
 #### 0x02
 
 这里的死，不一定是进程结束，也有可能是僵尸，或是陷入死循环，一直在执行某个脚本……
 
 若是逐个检查代码时间来不及（以先解决问题为重），遂排查：
-[Nginx+FastCGI到底是谁影响超时时间](http://www.linuxidc.com/Linux/2014-10/108012.htm)
+[Nginx+FastCGI 到底是谁影响超时时间](http://www.linuxidc.com/Linux/2014-10/108012.htm)
 
 以及：
-[PHP-max_execution_time与fpm.request_terminate_timeout介绍](http://blog.csdn.net/mijar2016/article/details/53709777)
+[PHP-max_execution_time 与 fpm.request_terminate_timeout 介绍](http://blog.csdn.net/mijar2016/article/details/53709777)
 
 #### 0x03
 
 经过上面的调整，大约一周后再次维护服务器。发现情况有所改善—— 499 错误已经由某一时段大量、集中出现变为偶尔发生，且只出现在某几个特定 URI 请求上。
 
-我决定对这几个 URI 对应的接口控制器代码进行检查。由于系统开发时间紧张，代码质量并不高，怀疑是否是程序内有BUG。
+我决定对这几个 URI 对应的接口控制器代码进行检查。由于系统开发时间紧张，代码质量并不高，怀疑是否是程序内有 BUG。
 
 首先查看代码执行时间，约为 1900 ms 左右，简直太慢！经过仔细检查，发现几个严重问题：
 
@@ -61,12 +61,12 @@ foreach(posts as post){
 }
 ```
 
-在 Laravel 框架内使用类似如上的方式查询，假设作者的文章数为 n，每篇文章关联的模型有 2 个（likes & comments），则执行此控制器，对于数据库的时间复杂度为：O(n*2+1)，需要执行如此大量的SQL语句！这在后端设计中应该是需要完全避免的，理想情况的时间复杂度应该是 O(n)，n为常量，不受数据规模的影响。
+在 Laravel 框架内使用类似如上的方式查询，假设作者的文章数为 n，每篇文章关联的模型有 2 个（likes & comments），则执行此控制器，对于数据库的时间复杂度为：O(n*2+1)，需要执行如此大量的 SQL 语句！这在后端设计中应该是需要完全避免的，理想情况的时间复杂度应该是 O(n)，n 为常量，不受数据规模的影响。
 
 于是修改代码，过程不再详叙，参见 Laravel 官方文档，或：
-[Laravel学习笔记之模型关联预加载](https://segmentfault.com/a/1190000005769956)
+[Laravel 学习笔记之模型关联预加载](https://segmentfault.com/a/1190000005769956)
 
-经过修改，在 Chrome 开发者工具内查看请求 Timing，缩短为原来时间的一半，800ms左右。
+经过修改，在 Chrome 开发者工具内查看请求 Timing，缩短为原来时间的一半，800ms 左右。
 
 （但此值仍然不够理想，受到视图渲染、操作系统等原因的影响，后期继续优化，不属于本文讨论范围。）
 

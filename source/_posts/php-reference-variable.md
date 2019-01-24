@@ -147,6 +147,6 @@ var_export($treeData);
 
 - [PHP: 引用的解释 - Manual](http://php.net/manual/zh/language.references.php)
 - [PHP: 引用计数基本知识 - Manual](http://php.net/manual/zh/features.gc.refcounting-basics.php)
-- [第六章 » 第六节 写时复制（Copy On Write） | TIPI: 深入理解PHP内核](http://www.php-internals.com/book/?p=chapt06/06-06-copy-on-write)
-- [PHP的引用，你知道多少 - 掘金](https://juejin.im/post/5a33320a5188252970793494)
-- [深入理解PHP原理之变量分离/引用(Variables Separation) | 风雪之隅](http://www.laruence.com/2008/09/19/520.html)
+- [第六章 » 第六节 写时复制（Copy On Write） | TIPI: 深入理解 PHP 内核](http://www.php-internals.com/book/?p=chapt06/06-06-copy-on-write)
+- [PHP 的引用，你知道多少 - 掘金](https://juejin.im/post/5a33320a5188252970793494)
+- [深入理解 PHP 原理之变量分离/引用(Variables Separation) | 风雪之隅](http://www.laruence.com/2008/09/19/520.html)

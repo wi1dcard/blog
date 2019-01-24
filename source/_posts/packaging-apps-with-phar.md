@@ -15,7 +15,7 @@ categories: Stared Repos
 
 Box 的可配置项有很多，为了能够快速帮助大家了解用法，接下来我将使用 [SMProxy](https://github.com/louislivi/SMProxy) 的 [box.json](https://github.com/louislivi/SMProxy/blob/master/box.json) 作为例子给大家做一个简单的介绍。
 
-> 推荐一篇预备知识，可以帮你简单了解 PHAR 的部分用途：[使用phar上线你的代码包](https://segmentfault.com/a/1190000002166235)。
+> 推荐一篇预备知识，可以帮你简单了解 PHAR 的部分用途：[使用 phar 上线你的代码包](https://segmentfault.com/a/1190000002166235)。
 
 首先，正如 Box 作者的描述：
 

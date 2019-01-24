@@ -1,5 +1,5 @@
 ---
-title: "Thumb —— 自带缓存配置的单文件PHP缩略图库"
+title: "Thumb —— 自带缓存配置的单文件 PHP 缩略图库"
 date: 2018-03-09 17:22:51
 id: php-thumb
 categories: Tools
@@ -43,9 +43,9 @@ categories: Tools
 
 你可以将请求 URL 改为图片后缀名结尾（例如：`xxx.jpg`），利用 Nginx 的`try_files`指令，尝试访问源文件，不存在再走缩略图库。
 
-当然，如今也有 Nginx 直接实现缩略图的模块，GitHub上搜索关键词：`thumb nginx`。不过需要重新编译 Nginx，略显麻烦。
+当然，如今也有 Nginx 直接实现缩略图的模块，GitHub 上搜索关键词：`thumb nginx`。不过需要重新编译 Nginx，略显麻烦。
 
-还有一个比较懒的办法——挂CDN，缓存全部`thumb.php`请求。
+还有一个比较懒的办法——挂 CDN，缓存全部`thumb.php`请求。
 
 ## 0x03 感言
 

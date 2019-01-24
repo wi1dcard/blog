@@ -5,7 +5,7 @@ id: macos-write-ntfs-driver
 categories: Tutorials
 ---
 
-1. 打开terminal
+1. 打开 terminal
 
 2. 执行如下命令：
 
@@ -13,7 +13,7 @@ categories: Tutorials
 diskutil list
 ```
 
-可查看全部分区的名字，MAC系统默认挂载全部分区到 /Volumes 目录，
+可查看全部分区的名字，MAC 系统默认挂载全部分区到 /Volumes 目录，
 
 3. 执行如下命令：
 
@@ -21,7 +21,7 @@ diskutil list
 sudo vim /etc/fstab
 ```
 
-编辑fstab文件，添加如下一行并保存：
+编辑 fstab 文件，添加如下一行并保存：
 
 ```
 LABEL=「分区名」 none ntfs rw,auto,nobrowse,nosuid
@@ -29,12 +29,12 @@ LABEL=「分区名」 none ntfs rw,auto,nobrowse,nosuid
 
 具体参数值含义可以自行谷歌。
 
-4. 由于设置好之后，磁盘不会在Finder内显示，所以我们需要建个软链接到桌面方便访问：
+4. 由于设置好之后，磁盘不会在 Finder 内显示，所以我们需要建个软链接到桌面方便访问：
 
 ```
 sudo ln -s /Volumes ~/Desktop/Volumes
 ```
 
-注：MAC系统默认挂载全部分区到 /Volumes 目录，所以你也可以单独链接某个Volume。
+注：MAC 系统默认挂载全部分区到 /Volumes 目录，所以你也可以单独链接某个 Volume。
 
 5. Reboot!

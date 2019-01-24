@@ -1,5 +1,5 @@
 ---
-title: "OpenSSL随手记 - 生成自签证书"
+title: "OpenSSL 随手记 - 生成自签证书"
 date: 2018-03-04 20:56:49
 id: openssl-generate-cert
 categories: Snippets

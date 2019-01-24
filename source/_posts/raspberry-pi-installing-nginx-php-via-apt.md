@@ -1,11 +1,11 @@
 ---
-title: "树莓派折腾随手记 - 使用apt-get安装Nginx+PHP"
+title: "树莓派折腾随手记 - 使用 apt-get 安装 Nginx+PHP"
 date: 2018-02-28 19:40:01
 id: raspberry-pi-installing-nginx-php-via-apt
 categories: Tutorials
 ---
 
-> 百度来的教程都是源码编译安装，对于我这种强迫症人群来说简直是不得已才会采用的方案，于是果断自己尝试使用apt-get安装 Nginx + PHP 运行环境。
+> 百度来的教程都是源码编译安装，对于我这种强迫症人群来说简直是不得已才会采用的方案，于是果断自己尝试使用 apt-get 安装 Nginx + PHP 运行环境。
 
 ## 0x00
 

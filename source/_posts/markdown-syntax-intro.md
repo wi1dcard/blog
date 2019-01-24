@@ -89,4 +89,4 @@ This is a *example* text.
 
 - 扩展阅读：<https://www.jianshu.com/p/3dbef7dd9c8e>、<https://www.jianshu.com/p/468f111d8fd3>。
 
-- 支持预览的在线编辑器：<https://www.zybuluo.com/mdeditor>。
+- 支持预览的在线编辑器：<https://www.zybuluo.com/mdeditor>。

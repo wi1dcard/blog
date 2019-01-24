@@ -35,7 +35,7 @@ categories: Documents
 
 *   样式太“简约”；
 
-*   没有Markdown编辑器；
+*   没有 Markdown 编辑器；
 
 *   功能缺失；
 

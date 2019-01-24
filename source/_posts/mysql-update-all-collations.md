@@ -5,9 +5,9 @@ id: mysql-update-all-collations
 categories: Snippets
 ---
 
-今天项目部署遇到个坑，之前建数据库的时候，把所有的collation都写成了utf8，在测试服务器上也没怎么注意，部署正式服务器果断用mb4，故需要修改上百个字段的collation。 
+今天项目部署遇到个坑，之前建数据库的时候，把所有的 collation 都写成了 utf8，在测试服务器上也没怎么注意，部署正式服务器果断用 mb4，故需要修改上百个字段的 collation。 
 
-根据一次可以，两次能忍，三次绝对不行的懒人原则orz，决定写个脚本实现一键修改，废话不多说先去网上找了个轮子。
+根据一次可以，两次能忍，三次绝对不行的懒人原则 orz，决定写个脚本实现一键修改，废话不多说先去网上找了个轮子。
 
 referer: <https://my.oschina.net/xuqiang/blog/507629>
 
@@ -35,7 +35,7 @@ begin
 end
 ```
 
-其中，construction_online是数据库名，utf8mb4和utf8mb4_unicode_ci修改成你想替换的charset和collation即可。
+其中，construction_online 是数据库名，utf8mb4 和 utf8mb4_unicode_ci 修改成你想替换的 charset 和 collation 即可。
 
 最后：call ……();
 

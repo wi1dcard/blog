@@ -158,7 +158,7 @@ composer require pusher/pusher-php-server
 
 注册`App\Providers\BroadcastServiceProvider`。
 
-对于Laravel 5.6，只需要取消`config/app.php`内`providers`数组中的对应注释即可。
+对于 Laravel 5.6，只需要取消`config/app.php`内`providers`数组中的对应注释即可。
 
 #### (4)
 
@@ -201,7 +201,7 @@ npm install -g laravel-echo-server
 
 顾名思义，将`appId`和`key`分别填入相应配置项或修改`.env`文件即可。
 
-接下来，我们便可以使用命令`laravel-echo-server start`来启动服务器，监听来自Laravel的「广播」请求、以及来自客户端的「收听」请求，并转发相应广播消息。
+接下来，我们便可以使用命令`laravel-echo-server start`来启动服务器，监听来自 Laravel 的「广播」请求、以及来自客户端的「收听」请求，并转发相应广播消息。
 
 #### (5)
 
@@ -277,7 +277,7 @@ Laravel 默认已经定义首页路由渲染`welcome.blade.php`模板，现在�
 
 如果查看 Chrome 控制台，没有任何错误产生；查看命令行窗口，没有错误输出；则说明客户端与服务器似乎已经正常建立 WebSocket 连接。
 
-这时，你可以重新打开Postman，发送上一节中的请求。
+这时，你可以重新打开 Postman，发送上一节中的请求。
 
 再次查看如上两个窗口，会有惊喜哟。
 

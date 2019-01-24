@@ -17,9 +17,9 @@ categories: WTF
 
 这次打算换一下，尝试更节省业务服务资源的直传对象存储方式：
 
-1.  客户端 -> 业务服务器拿Token
+1.  客户端 -> 业务服务器拿 Token
 2.  客户端 -> 直传七牛云
-3.  七牛云 -> 回调业务服务器HTTP API接口
+3.  七牛云 -> 回调业务服务器 HTTP API 接口
 4.  业务服务器收到上传通知, 验证来自七牛服务器 -> done.
 
 Just like this：
@@ -32,23 +32,23 @@ Just like this：
 
 故寻找七牛文档：
 
-*   [七牛云对象存储PHP SDK - 场景化实例](https://developer.qiniu.com/kodo/sdk/1241/php#3)
+*   [七牛云对象存储 PHP SDK - 场景化实例](https://developer.qiniu.com/kodo/sdk/1241/php#3)
 *   [七牛云对象存储产品手册 - 安全机制](https://developer.qiniu.com/kodo/manual/1644/security)
 *   [七牛云对象存储产品手册 - 上传资源 - 回调通知](https://developer.qiniu.com/kodo/manual/1653/callback)
 
-1.  第一条链接压根没提到验证回调的问题。（难道七牛的PHP工程师压根忽略了这个安全问题么？）
+1.  第一条链接压根没提到验证回调的问题。（难道七牛的 PHP 工程师压根忽略了这个安全问题么？）
 2.  第二条链接内同样不存在相关解答。
 3.  终于，在第三条链接的末尾找到了关于这个问题的解答：
 
 ![](https://i.loli.net/2018/08/15/5b73a5baaeb78.png)
 
-“值得庆幸的是”，有PHP的代码实现。
+“值得庆幸的是”，有 PHP 的代码实现。
 
 `但我们那时候还高兴的太早了。`
 
 ## 排查
 
-接下来我们使用此函数来验证权限，但经过多轮调试，无论如何都无法验证通过。最开始我以为是潘昭宇代码没有认真看，粗心大意引起的错误，但后来我亲自看代码，一步一步检查可能的编码问题、参数问题，甚至用Fiddler做代理看服务器发来的数据包是否正常、XDebug下断一步一步调试，最终发现的确是没问题的。
+接下来我们使用此函数来验证权限，但经过多轮调试，无论如何都无法验证通过。最开始我以为是潘昭宇代码没有认真看，粗心大意引起的错误，但后来我亲自看代码，一步一步检查可能的编码问题、参数问题，甚至用 Fiddler 做代理看服务器发来的数据包是否正常、XDebug 下断一步一步调试，最终发现的确是没问题的。
 
 这就奇了怪了！为什么会出错呢？
 
@@ -58,22 +58,22 @@ Just like this：
 
 认真“研读”之后，我们发现：在`安全机制 - 上传策略`的文档内，对`callbackBody`的解释如下：
 
-> 上传成功后，七牛云向业务服务器发送Content-Type: application/x-www-form-urlencoded 的 POST 请求。该字段 App-Server 可以通过直接读取请求的 query 来获得，支持魔法变量和自定义变量。callbackBody 要求是合法的 url query string。如：key=$(key)&hash=$(etag)&w=$(imageInfo.width)&h=$(imageInfo.height)。
+> 上传成功后，七牛云向业务服务器发送 Content-Type: application/x-www-form-urlencoded 的 POST 请求。该字段 App-Server 可以通过直接读取请求的 query 来获得，支持魔法变量和自定义变量。callbackBody 要求是合法的 url query string。如：key=$(key)&hash=$(etag)&w=$(imageInfo.width)&h=$(imageInfo.height)。
 
 这句话有点迷，毕竟下一行的`callbackBodyType`是这样说的：
 
-> 上传成功后，七牛云向业务服务器发送回调通知callbackBody的Content-Type。默认为application/x-www-form-urlencoded，也可设置为application/json。
+> 上传成功后，七牛云向业务服务器发送回调通知 callbackBody 的 Content-Type。默认为 application/x-www-form-urlencoded，也可设置为 application/json。
 
 *   `callbackBody 要求是合法的 url query string`
 *   `也可设置为application/json`
 
-按照正常思维，这应该是不受影响的，默认是url query stirng，可以改为json格式。但这两句相互有所冲突的描述引起了我们的重视，遂开始动工：原本我们使用统一的json格式作为callbackBody发送到业务服务器，现尝试改为query string测试看会不会有问题。
+按照正常思维，这应该是不受影响的，默认是 url query stirng，可以改为 json 格式。但这两句相互有所冲突的描述引起了我们的重视，遂开始动工：原本我们使用统一的 json 格式作为 callbackBody 发送到业务服务器，现尝试改为 query string 测试看会不会有问题。
 
 经过测试，七牛的回调通过了验证……
 
 当时的心情……!@#^@)##^@!@
 
-我和潘昭宇调了一整天的问题，居然TM是因为七牛的锅。
+我和潘昭宇调了一整天的问题，居然 TM 是因为七牛的锅。
 
 ## 解决
 
@@ -87,10 +87,10 @@ Just like this：
 
 *   经过两小时得到的答复：是否得到解决？
 *   再次回复后，得到的答复是文档显而易见的，答非所问。`由此可见：七牛客服人员没有、或是没有认真阅读我工单最初提出的问题，直接匆忙给出了答复，再次拖慢了沟通效率。`
-*   再次回复，直接附上官方文档链接，为了防止不认账我把代码也顺便贴了上去，同时把我们找到的问题关键点：callbackBodyType参数也作了说明。
-*   终于得到一篇看起来像是有所眉目的答复：[链接](https://developer.qiniu.com/kodo/kb/1409/seven-cattle-callback-and-callback-authentication)，发现一重要线索：居然用到了`$contentType`参数，这不就是callbackBodyType吗！虽然此文档内代码非常“简略”，就连`$contentType`都是写死的，但也至少给我们提供了解决思路。
-*   于是，github下载七牛PHP SDK源码，果然SDK内有此函数实现。而以上列举的三篇文档内却从未看到一处提及。
-*   过了一会七牛官方发来github链接，虽然已经没什么卵用。
+*   再次回复，直接附上官方文档链接，为了防止不认账我把代码也顺便贴了上去，同时把我们找到的问题关键点：callbackBodyType 参数也作了说明。
+*   终于得到一篇看起来像是有所眉目的答复：[链接](https://developer.qiniu.com/kodo/kb/1409/seven-cattle-callback-and-callback-authentication)，发现一重要线索：居然用到了`$contentType`参数，这不就是 callbackBodyType 吗！虽然此文档内代码非常“简略”，就连`$contentType`都是写死的，但也至少给我们提供了解决思路。
+*   于是，github 下载七牛 PHP SDK 源码，果然 SDK 内有此函数实现。而以上列举的三篇文档内却从未看到一处提及。
+*   过了一会七牛官方发来 github 链接，虽然已经没什么卵用。
 
 #### 题外话
 
@@ -109,12 +109,12 @@ em...
 然而今天（2017-10-19）和潘昭宇偶然聊起来：
 
 *   “话说最近要开新项目了，不知道七牛那边文档有没有更新？之前调了那么久的坑。”
-*   “不知道啊，我看看”…… “em... 貌似... 没有....”
+*   “不知道啊，我看看”…… “em... 貌似... 没有……”
 *   。。。
 
-不知道七牛官方口中的`尽快`是20+天？还是技术人员`整理文档`整理了几个周还没写完。
+不知道七牛官方口中的`尽快`是 20+天？还是技术人员`整理文档`整理了几个周还没写完。
 
-幕后的原因我们不得而知，大概是我们这种创业小公司遇到的问题，dalao们也不会放在眼里吧。
+幕后的原因我们不得而知，大概是我们这种创业小公司遇到的问题，dalao 们也不会放在眼里吧。
 
 弃坑，下个项目换又拍云。
 

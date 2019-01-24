@@ -25,11 +25,11 @@ categories: Collections
 
 ### 转码推（截取指定时间段）
 
-`-ss 1:00:00 -t 00:00:10 -accurate_seek`（从ss开始截取t）
+`-ss 1:00:00 -t 00:00:10 -accurate_seek`（从 ss 开始截取 t）
 
 ### More...
 
-[FFmpeg常用推流命令](https://www.jianshu.com/p/d541b317f71c)
-[使用FFmpeg将字幕文件集成到视频文件](http://www.yaosansi.com/post/ffmpeg-burn-subtitles-into-video/)
-[potplayer录制+ffmpeg推流到直播间的方法！](https://www.bilibili.com/video/av9266440/)
+[FFmpeg 常用推流命令](https://www.jianshu.com/p/d541b317f71c)
+[使用 FFmpeg 将字幕文件集成到视频文件](http://www.yaosansi.com/post/ffmpeg-burn-subtitles-into-video/)
+[potplayer 录制+ffmpeg 推流到直播间的方法！](https://www.bilibili.com/video/av9266440/)
 [推流新技能，potplayer+ffmpeg](http://blog.sina.com.cn/s/blog_4618a6280102xf68.html)

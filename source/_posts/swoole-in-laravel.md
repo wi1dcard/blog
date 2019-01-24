@@ -7,7 +7,7 @@ categories: Tutorials
 
 > Laravel + Swoole 实现更快的请求处理速度、更高并发有扩展包可供选择，那么如何在 Laravel 框架内优雅地嵌入 Swoole 实现 TCP/UDP Socket 服务端呢？
 
-本文源代码已托管至GitHub：[wi1dcard/swoole-in-laravel](https://github.com/wi1dcard/swoole-in-laravel)
+本文源代码已托管至 GitHub：[wi1dcard/swoole-in-laravel](https://github.com/wi1dcard/swoole-in-laravel)
 
 ## 0x00 Why
 
@@ -19,13 +19,13 @@ categories: Tutorials
 
 物联网场景下，Swoole 作为与硬件对接的后端服务，接收到硬件发来的数据包后，多数情况需要直接入库，所以有一个方便易用的 ORM 就显得尤为重要重要。
 
-而目前公司的情况，我们与Web端对接的后端框架是 Laravel；若是能结合一下，又能利用现成的数据模型，不需要再重复定义，岂不是美滋滋～
+而目前公司的情况，我们与 Web 端对接的后端框架是 Laravel；若是能结合一下，又能利用现成的数据模型，不需要再重复定义，岂不是美滋滋～
 
 ## 0x01 How
 
 首先创建项目：`laravel new`
 
-根据 [Server - Swoole文档](https://wiki.swoole.com/wiki/page/p-server.html)，「swoole_server只能用于php-cli环境」，而 Laravel 提供的 [Artisan 命令行](https://laravel-china.org/docs/laravel/5.5/artisan) 功能就是基于 PHP-CLI 的；
+根据 [Server - Swoole 文档](https://wiki.swoole.com/wiki/page/p-server.html)，「swoole_server 只能用于 php-cli 环境」，而 Laravel 提供的 [Artisan 命令行](https://laravel-china.org/docs/laravel/5.5/artisan) 功能就是基于 PHP-CLI 的；
 
 按照这个思路，我们可以创建一条名为`swoole:start`的 Artisan Command，不需要破坏框架原有结构，部署时只需要执行此命令启动 Swoole 服务端监听硬件通信端口即可。
 
@@ -37,7 +37,7 @@ categories: Tutorials
 php artisan make:command Swoole
 ```
 
-其中，Swoole是类名。
+其中，Swoole 是类名。
 
 ### 修改必要参数
 
@@ -116,7 +116,7 @@ use App\User;
 
 接着新打开一个命令行窗口，执行`telnet 127.0.0.1 9503`。
 
-> Telnet 是一个类似 SSH 的东西，现在基本已经被淘汰，但 Telnet 客户端仍常用来测试 TCP 连接。更多关于 Telnet 的知识，可参考：[telnet命令](http://www.cnblogs.com/peida/archive/2013/03/13/2956992.html)
+> Telnet 是一个类似 SSH 的东西，现在基本已经被淘汰，但 Telnet 客户端仍常用来测试 TCP 连接。更多关于 Telnet 的知识，可参考：[telnet 命令](http://www.cnblogs.com/peida/archive/2013/03/13/2956992.html)
 
 这时，可以看到执行 Artisan 命令的窗口会输出：
 
