@@ -12,7 +12,7 @@ branches:
 
 install:
   - npm install
-  - npm install hexo-cli -g
+  - export PATH=$PATH:$(pwd)/node_modules/.bin
   - docker pull arachnysdocker/athenapdf
   - docker pull nginx
   - wget https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh
