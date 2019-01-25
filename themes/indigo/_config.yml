@@ -25,13 +25,13 @@ menu:
     url: /resume/
 
 # 你的头像url
-avatar: "https://i.loli.net/2018/08/11/5b6e90657e159.png"
+avatar: "/resources/_icon.png"
 # avatar link
 avatar_link: /
 # 头像背景图
 brand: /img/brand.jpg
 # favicon
-favicon: "https://i.loli.net/2018/08/11/5b6e90657e159.png"
+favicon: "/resources/_icon.png"
 
 # email
 email: wi1dcard.cn@gmail.com
