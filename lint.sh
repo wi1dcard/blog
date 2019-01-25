@@ -1,8 +1,10 @@
 #!/bin/bash -eu
 
 cd $(dirname $0)
+
 dir=$(pwd)
-cd "$dir/source/_posts"
+posts="$dir/source/_posts"
+cd $posts
 
 file_list=$(grep -LE '^categories:(\s[A-Z][a-zA-Z]*)+$' *)
 
@@ -15,7 +17,9 @@ then
   exit 1
 fi
 
-file_list=$(echo *.md | tr ' ' "\n" | grep -v "jootu-copywriting-style-guide" | tr "\n" ' ')
+file_list=$(ls | grep -vE "jootu-copywriting-style-guide.md")
+
+echo $file_list
 
 lint-md $file_list --config "$dir/lint-md.json"
 
