@@ -86,4 +86,4 @@ crontab -e                                  �
 
 done!
 
-referer: <http://blog.csdn.net/david_xtd/article/details/10149617>
+reference: <https://blog.csdn.net/david_xtd/article/details/10149617>

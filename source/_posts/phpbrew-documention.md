@@ -551,7 +551,6 @@ A: 截至目前，你可以安装 php-5.x.x 并重命名其目录 /Users/phpbrew
 
 
 [t-link]: https://travis-ci.org/phpbrew/phpbrew "Travis Build"
-[s-link]: https://scrutinizer-ci.com/g/phpbrew/phpbrew/?branch=master "Code Quality"
 [p-link]: https://packagist.org/packages/marc/phpbrew "Packagist"
 [sl-link]: https://insight.sensiolabs.com/projects/02d1fd01-8a70-4fe4-a550-381a3c0e33f3 "Sensiolabs Insight"
 [c-badge]: https://coveralls.io/repos/phpbrew/phpbrew/badge.png?branch=master

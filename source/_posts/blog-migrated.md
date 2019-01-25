@@ -2,7 +2,6 @@
 title: "博客迁移 —— 全新的开始"
 date: 2018-06-02 08:59:00
 id: blog-migrated
-thumbnail: https://i.loli.net/2018/06/07/5b1892be0331f.png
 categories: Documents
 ---
 

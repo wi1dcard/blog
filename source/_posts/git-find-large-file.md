@@ -37,5 +37,5 @@ git rev-list --objects --all | grep -E "`git verify-pack -v .git/objects/pack/*.
 
 ### 参考
 
-- <https://stackoverflow.com/questions/10622179/how-to-find-identify-large-files-commits-in-git-history>
+- <https://stackoverflow.com/questions/10622179/how-to-find-identify-large-commits-in-git-history>
 - <http://git.mydoc.io/?t=83153>

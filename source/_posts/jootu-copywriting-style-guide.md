@@ -27,11 +27,11 @@ categories: Documents
 
 ## 常用网址
 
-*   公司官网：[http://www.jootu.net/](http://www.jootu.net/)
+*   公司官网：<http://www.jootu.net/>
 
-*   技术博客：[https://jootu.org/](https://jootu.org/)
+*   技术博客：<https://jootu.org/>
 
-*   招聘页面：[http://join.jootu.org/](http://join.jootu.org/)
+*   招聘页面：<http://join.jootu.org/>
 
 ## 文案风格
 

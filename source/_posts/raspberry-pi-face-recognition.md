@@ -97,7 +97,7 @@ categories: Tutorials
 - [OpenCV and Pi Camera Board](https://thinkrpi.wordpress.com/opencv-and-pi-camera-board/)
 - [树莓派人脸识别门禁系统代码以及代码分析——opencv 拍照调用 FACE++处理](https://baijiahao.baidu.com/s?id=1571031364102290&wfr=spider&for=pc)
 - [【Raspberry Pi 3 试用体验】+Opencv+python 的人脸识别](http://bbs.elecfans.com/forum.php?mod=viewthread&tid=607153&extra=)
-- [使用树莓派进行简易人脸识别](http://www.shumeipaiba.com/xiangmu/zhineng/78.html) / [使用树莓派进行简易人脸识别](http://7xrb89.com1.z0.glb.clouddn.com/demo_1.gif)
+- [使用树莓派进行简易人脸识别](http://www.shumeipaiba.com/xiangmu/zhineng/78.html)
 - [树莓派一键部署系列之二：openface 人脸识别程序](https://www.jianshu.com/p/05f4c2c2d6be)
 
 ## 0x03 成果
@@ -117,6 +117,3 @@ categories: Tutorials
 ## 0x04 后记
 
 没有后记, 祝自己生日快乐的同时, 也希望 2018 大吉大利, 妹子到手 (正经脸).
-
-![](https://i.loli.net/2018/08/15/5b73a598e1c6b.gif)
-

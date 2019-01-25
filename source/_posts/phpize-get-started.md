@@ -13,7 +13,7 @@ categories: Tutorials
 
 ![](https://i.loli.net/2018/08/15/5b73a5252ef15.png)
 
-接下来下载你的扩展源码包，多数扩展源码都能在 [github](https://github.com/) 或 [pecl](http://pecl.php.net/package/) 下载到。
+接下来下载你的扩展源码包，多数扩展源码都能在 [github](https://github.com/) 或 [pecl](https://pecl.php.net/package/) 下载到。
 
 这里我们下载 mongodb 扩展并解压：
 

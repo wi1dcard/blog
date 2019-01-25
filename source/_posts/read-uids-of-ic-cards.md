@@ -5,13 +5,13 @@ id: read-uids-of-ic-cards
 categories: Tutorials
 ---
 
-今天沈同学来问 c#读 ic 卡的问题，我第一反应是想到了 windows 提供的智能卡驱动 API，之前用 c++实现过一套。
+今天沈同学来问 c# 读 ic 卡的问题，我第一反应是想到了 windows 提供的智能卡驱动 API，之前用 c++实现过一套。
 
-reference：<https://msdn.microsoft.com/en-us/library/dd627646(v=vs.85).aspx>
+reference：<https://docs.microsoft.com/zh-cn/previous-versions/windows/desktop/secsmart/smart-card-api-portal>
 
 可只有英语，对于没有阅读过原版 MSDN 的实习生来说有一定难度，即便有复杂的 c++源码参照，估计也要研究个几天。
 
-so，用 c#写 windows，要的就是它的轮子多。遇到这种情况，果断网上搜一下先，但结果不尽人意，大多都是专门用于某个型号读卡器的厂家提供的 SDK。
+so，用 c# 写 windows，要的就是它的轮子多。遇到这种情况，果断网上搜一下先，但结果不尽人意，大多都是专门用于某个型号读卡器的厂家提供的 SDK。
 
 于是果断去微软官方的包管理器 nuget 里找，（keyword：smart card）……
 

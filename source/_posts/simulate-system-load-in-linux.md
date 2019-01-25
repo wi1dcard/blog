@@ -82,7 +82,6 @@ lookbusy -c 0 -d 1GB -b 1MB -D 10 # 每 10 毫秒，循环进行 1MB 磁盘写�
 - <https://stackoverflow.com/questions/1971422/linux-how-to-put-a-load-on-system-memory>
 - <https://www.cyberciti.biz/faq/stress-test-linux-unix-server-with-stress-ng/>
 - <https://unix.stackexchange.com/questions/99334/how-to-fill-90-of-the-free-memory>
-- <https://www.binarylane.com.au/support/articles/1000055889-how-to-benchmark-disk-i-o>
 
 ### 拓展
 

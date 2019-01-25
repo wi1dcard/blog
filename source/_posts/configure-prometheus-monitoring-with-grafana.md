@@ -291,7 +291,7 @@ Prometheus（普罗米修斯）是一款从 2012 年开始研发的弹性监控�
     level=info ts=2018-04-12T11:56:53.104047346Z caller=main.go:491 msg="Server is ready to receive web requests."
     ```
 
-2. 打开浏览器，输入 `http://IP.OF.YOUR.SERVER:9090` 便能够访问到 Prometheus 的 Web 页面了。如果一切正常，我们需要先暂时在命令行按下 `Ctrl` + `C` 结束进程。
+2. 打开浏览器，输入 `http://your.server.ip:9090` 便能够访问到 Prometheus 的 Web 页面了。如果一切正常，我们需要先暂时在命令行按下 `Ctrl` + `C` 结束进程。
 
     > 如果启动 Prometheus 服务时有错误信息输出，请再次确认配置文件是否存在语法错误。错误信息将会指明应当如何检查。
 

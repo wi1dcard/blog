@@ -7,7 +7,7 @@ categories: Tutorials
 
 > Laravel 集成众多开包即用的功能, 虽然它真的很"胖", 但这并不影响它是个好框架. 本篇文章将采用 Laravel 5.6 版本由浅入深为大家演示: 如何使用内置的 Broadcast（广播）功能实现与客户端实时通信.
 
-Tips: 此[仓库](https://github.com/wi1dcard/laravel-broadcasting)实现[本文](https://wi1dcard.github.io/tutorials/laravel-broadcasting/)中的 `0x02 广播` 代码。
+Tips: 此[仓库](https://github.com/wi1dcard/laravel-broadcasting)实现[本文](https://wi1dcard.cn/tutorials/laravel-broadcasting/)中的 `0x02 广播` 代码。
 
 ## 0x00 准备
 
@@ -179,7 +179,7 @@ npm install -g laravel-echo-server
 打开`laravel-echo-server.json`，检查部分关键配置项是否正确：
 
 ```json
-"authHost": "http://xxx" // 确保能够访问到你的 Laravel 项目
+"authHost": "http://your.host" // 确保能够访问到你的 Laravel 项目
 "port": "6001" // 建议不作修改，这是与客户端通信的端口
 "protocol": "http" // 与客户端通信的协议，支持 HTTPS
 ```
@@ -495,13 +495,13 @@ $request->setUserResolver(function ($guard = null) use ($app) {
 
 - [Laravel Broadcast——广播系统源码剖析](https://laravel-china.org/articles/7137/laravel-broadcast-an-analysis-of-the-source-code-of-the-broadcasting-system)
 
-- [Laravel 中服务端与客户端事件广播实现](http://laravelacademy.org/post/8379.html)
+- [Laravel 中服务端与客户端事件广播实现](https://laravelacademy.org/post/8379.html)
 
 ## 0x05 总结
 
 至此，你已经建立对 Laravel Boardcast 的基本认识，成功入门「广播系统」。
 
-另外，Laravel 5.6 新增一条关于 Broadcast 的新特性，避免在 `routes/channels.php` 文件内编写众多闭包导致的难以维护。详情可查看：[Laravel 5.6 新版特性](http://laravelacademy.org/post/8230.html)。
+另外，Laravel 5.6 新增一条关于 Broadcast 的新特性，避免在 `routes/channels.php` 文件内编写众多闭包导致的难以维护。详情可查看：[Laravel 5.6 新版特性](https://laravelacademy.org/post/8230.html)。
 
 其实，本文只不过抛砖引玉而已。对于部署到生产环境，仍然存在许多问题，例如：
 

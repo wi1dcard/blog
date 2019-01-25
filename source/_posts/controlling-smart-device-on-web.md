@@ -30,7 +30,7 @@ categories: Documents
 
 > 前端之所以不采用 WebSocket，浏览器兼容性。
 
-这也是我前几天的技术博客：[Laravel + Swoole 实现 TCP/UDP Socket 服务端](https://jootu.org/post/161) 所设想的，但很快这种方案被毙了，原因很简单：
+这也是我前几天的技术博客「Laravel + Swoole 实现 TCP/UDP Socket 服务端」所设想的，但很快这种方案被毙了，原因很简单：
 
 - Swoole 不支持 Windows。
 
@@ -60,7 +60,7 @@ categories: Documents
 - [reactphp/socket](https://github.com/reactphp/socket)
 - [hoaproject/Socket](https://github.com/hoaproject/Socket)
 
-前者内部没有对 [TCP 粘包处理](https://blog.insanecoder.top/tcp-packet-splice-and-split-issue/) 的支持，手动处理对于 PHP 组来说难度相当……巨大。
+前者内部未处理 `TCP 粘包` 问题，手动处理对于 PHP 组来说难度相当……巨大。
 
 后者文档不全，非事件驱动，居然还是单进程、单线程的 while 循环。
 
