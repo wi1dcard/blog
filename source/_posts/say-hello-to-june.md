@@ -2,7 +2,6 @@
 title: "六月，你好。"
 date: 2018-06-01 00:00:00
 id: say-hello-to-june
-thumbnail: https://i.loli.net/2018/06/02/5b1276eea53b8.jpg
 categories: Documents
 ---
 
