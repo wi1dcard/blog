@@ -68,7 +68,7 @@ head -n 2 table.md && tail -n +3 table.md | sort --field-separator=\| --key=4
 
 ## 碎碎念
 
-印象中，七月结束也有过[感叹](https://wi1dcard.cn/snippets/git-randomize-commit-message/)。时间飞快，马上到了八月底，一转眼就到了九月开学（<del>和女朋友见面</del>）的日子。
+印象中，七月结束也有过[感叹](https://wi1dcard.cn/posts/git-randomize-commit-message/)。时间飞快，马上到了八月底，一转眼就到了九月开学（<del>和女朋友见面</del>）的日子。
 
 emmmm，这个月做个简单总结。
 

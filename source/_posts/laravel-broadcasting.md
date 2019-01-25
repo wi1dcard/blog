@@ -7,7 +7,7 @@ categories: Tutorials
 
 > Laravel 集成众多开包即用的功能, 虽然它真的很"胖", 但这并不影响它是个好框架. 本篇文章将采用 Laravel 5.6 版本由浅入深为大家演示: 如何使用内置的 Broadcast（广播）功能实现与客户端实时通信.
 
-Tips: 此[仓库](https://github.com/wi1dcard/laravel-broadcasting)实现[本文](https://wi1dcard.cn/tutorials/laravel-broadcasting/)中的 `0x02 广播` 代码。
+Tips: 此[仓库](https://github.com/wi1dcard/laravel-broadcasting)实现[本文](https://wi1dcard.cn/posts/laravel-broadcasting/)中的 `0x02 广播` 代码。
 
 ## 0x00 准备
 
@@ -68,7 +68,7 @@ class OrderShipped implements ShouldBroadcast
 `ShouldBroadcast` 接口要求实现 `broadcastOn` 方法，用于告知框架：此事件应该被发送到哪个「频道」。
 
 > Laravel 的广播系统允许有多个频道存在，你可以使用用户名区别不同频道，这样不同的用户收听不同频道，即可获得不同消息，也就能实现和不同客户端进行单独通信。
-> 
+>
 > 当然，你也可以任意命名频道，但最好具有有一定规则。
 
 因为我们刚刚使用 artisan 命令生成的事件代码，所以在文件最下方，你已经能够看到 `broadcastOn` 方法的定义了。我们稍作修改：
