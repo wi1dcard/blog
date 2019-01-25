@@ -30,6 +30,6 @@ categories: Documents
 
 合个影：
 
-![](https://i.loli.net/2018/07/10/5b4449b423e9e.png)
+![](/resources/legacy/5b4449b423e9e.png)
 
 Goodbye, MacDown.

@@ -21,7 +21,7 @@ categories: WTF
 
 找到官方解决方案，使用命令：`valet domain ***`，即可替换原有域名后缀。
 
-![](https://i.loli.net/2018/08/15/5b73a616c2e43.png)
+![](/resources/legacy/5b73a616c2e43.png)
 
 如图，我将域名后缀修改为`.localhost`，随即 valet 自动重启，问题解决。
 

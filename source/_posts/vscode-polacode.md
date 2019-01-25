@@ -11,7 +11,7 @@ categories: Tools
 
 废话不多说，先上效果图：
 
-![](https://i.loli.net/2018/08/15/5b73a517a1dd8.png)
+![](/resources/legacy/5b73a517a1dd8.png)
 
 ## 0x01
 
@@ -31,7 +31,7 @@ categories: Tools
 
 于是按照步骤将编辑器切换为垂直布局即可，这样调出 Polacode 的时候就会是垂直切分的两个窗口，如下图：
 
-![](https://i.loli.net/2018/08/15/5b73a51c8cd4a.png)
+![](/resources/legacy/5b73a51c8cd4a.png)
 
 问题解决。
 

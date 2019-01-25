@@ -15,4 +15,4 @@ categories: Documents
 
 我会继续努力的。
 
-![](https://i.loli.net/2018/06/07/5b1892be0331f.png)
+![](/resources/legacy/5b1892be0331f.png)

@@ -9,7 +9,7 @@ categories: WTF
 
 `此问题于2017年9月29日发现，至今（2017年10月19日）七牛文档仍未进行修复，故发此文，希望引起七牛官方重视。`
 
-![](https://i.loli.net/2018/08/15/5b73a5b25cc74.png)
+![](/resources/legacy/5b73a5b25cc74.png)
 
 前些日子项目需要，用上七牛对象存储，因之前都是用的传统架构：
 
@@ -24,7 +24,7 @@ categories: WTF
 
 Just like this：
 
-![Refer to: Qiniu PHP SDK Document](https://i.loli.net/2018/08/15/5b73a5b5c4cbf.png)
+![Refer to: Qiniu PHP SDK Document](/resources/legacy/5b73a5b5c4cbf.png)
 
 ## 过程
 
@@ -40,7 +40,7 @@ Just like this：
 2.  第二条链接内同样不存在相关解答。
 3.  终于，在第三条链接的末尾找到了关于这个问题的解答：
 
-![](https://i.loli.net/2018/08/15/5b73a5baaeb78.png)
+![](/resources/legacy/5b73a5baaeb78.png)
 
 “值得庆幸的是”，有 PHP 的代码实现。
 
@@ -54,7 +54,7 @@ Just like this：
 
 确定我们的算法没有问题后，我们决定继续研究文档，因为那个时候我们认为这样的大厂更新了这么久的文档，怎么可能会出问题呢，有坑的话我们肯定不是第一个踩下去的人。
 
-![](https://i.loli.net/2018/08/15/5b73a5bec150e.png)
+![](/resources/legacy/5b73a5bec150e.png)
 
 认真“研读”之后，我们发现：在`安全机制 - 上传策略`的文档内，对`callbackBody`的解释如下：
 
@@ -83,7 +83,7 @@ Just like this：
 
 第二天工单的回复，不出意外一波三折。
 
-![](https://i.loli.net/2018/08/15/5b73a5c62ed83.jpg)
+![](/resources/legacy/5b73a5c62ed83.jpg)
 
 *   经过两小时得到的答复：是否得到解决？
 *   再次回复后，得到的答复是文档显而易见的，答非所问。`由此可见：七牛客服人员没有、或是没有认真阅读我工单最初提出的问题，直接匆忙给出了答复，再次拖慢了沟通效率。`

@@ -15,7 +15,7 @@ categories: Stared Repos
 
 例如：
 
-![](https://i.loli.net/2019/01/13/5c3b136260d6a.png)
+![](/resources/legacy/5c3b136260d6a.png)
 
 该项目将会通过 IP 判断你的物理地址，并展示实时以及未来的天气。其中 `?lang=zh` 用于设定语言参数为中文，默认语言为英文。
 

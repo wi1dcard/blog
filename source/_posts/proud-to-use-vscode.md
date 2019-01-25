@@ -13,7 +13,7 @@ PHP Storm 因功能强大被 PHPer 们所熟知，但自身功能愈发强大带
 
 最近发现个新插件，支持同步 VSCode 设置，名叫「[Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)」，因此我使用此插件把配置完全公开至 [GitHub Gist](https://gist.github.com/wi1dcard/32d8cc169104a578d4adb509a91296c2) 以供参考。
 
-![最新效果](https://i.loli.net/2018/07/10/5b4442cd2358e.png)
+![最新效果](/resources/legacy/5b4442cd2358e.png)
 
 ## 安装
 
@@ -122,4 +122,4 @@ VS Code 强大之处不在于本身，而在于强大的可扩展性、以及日
 
 今晚会议桌，不要错过。／斜眼笑
 
-![](https://i.loli.net/2018/08/15/5b73a5a0c4dac.png)
+![](/resources/legacy/5b73a5a0c4dac.png)

@@ -11,7 +11,7 @@ categories: Tutorials
 
 假设你的服务器有多个版本 php，你首先要找到对应版本 php 的 `phpize`、`php-config` 程序。通常它们与 php 所处目录相同。
 
-![](https://i.loli.net/2018/08/15/5b73a5252ef15.png)
+![](/resources/legacy/5b73a5252ef15.png)
 
 接下来下载你的扩展源码包，多数扩展源码都能在 [github](https://github.com/) 或 [pecl](https://pecl.php.net/package/) 下载到。
 
@@ -33,7 +33,7 @@ cd mongodb-1.4.3
 ../../../bin/phpize
 ```
 
-![](https://i.loli.net/2018/08/15/5b73a528c52eb.png)
+![](/resources/legacy/5b73a528c52eb.png)
 
 ## 0x02 正常编译
 
@@ -47,7 +47,7 @@ make install
 
 正常输出：
 
-![](https://i.loli.net/2018/08/15/5b73a52b5e156.png)
+![](/resources/legacy/5b73a52b5e156.png)
 
 记下这个目录，一会儿还要用到。
 

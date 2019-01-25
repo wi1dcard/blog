@@ -19,8 +19,8 @@ categories: Documents
 
 或许国内的开源社区真的做不起来：
 
-![IMG_0601.PNG](https://i.loli.net/2018/12/27/5c23b11589429.png)
-![IMG_0602.PNG](https://i.loli.net/2018/12/27/5c23b11c0a0aa.png)
+![IMG_0601.PNG](/resources/legacy/5c23b11589429.png)
+![IMG_0602.PNG](/resources/legacy/5c23b11c0a0aa.png)
 
 还有，也打算让微信退出我「主力聊天工具」的舞台了，改用干净简单安全的 Telegram，前几天已经更新过了简历，去掉了微信二维码。
 

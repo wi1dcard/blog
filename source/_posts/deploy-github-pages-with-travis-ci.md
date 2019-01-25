@@ -33,5 +33,5 @@ categories: Documents
 
 另，今天看到一图，有点感想，记录一下：
 
-![IMG_0737.PNG](https://i.loli.net/2019/01/17/5c404d85b2156.png)
-![IMG_0738.PNG](https://i.loli.net/2019/01/17/5c404d85c24c3.png)
+![IMG_0737.PNG](/resources/legacy/5c404d85b2156.png)
+![IMG_0738.PNG](/resources/legacy/5c404d85c24c3.png)

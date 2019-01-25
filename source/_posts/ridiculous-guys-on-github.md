@@ -29,6 +29,6 @@ GitHub Star 造假？
 
 不断学习，继续加油。
 
-![screencapture-github-ouvens-frontend-system-map-issues-1-2018-08-07-11_20_39.png](https://i.loli.net/2018/08/07/5b6911d6b7cb6.png)
-![screencapture-zhuanlan-zhihu-p-38791657-2018-08-07-11_18_42.png](https://i.loli.net/2018/08/07/5b6911db0112d.png)
-![screencapture-zhuanlan-zhihu-p-26680889-2018-08-07-11_27_48.png](https://i.loli.net/2018/08/07/5b6911db13e1b.png)
+![screencapture-github-ouvens-frontend-system-map-issues-1-2018-08-07-11_20_39.png](/resources/legacy/5b6911d6b7cb6.png)
+![screencapture-zhuanlan-zhihu-p-38791657-2018-08-07-11_18_42.png](/resources/legacy/5b6911db0112d.png)
+![screencapture-zhuanlan-zhihu-p-26680889-2018-08-07-11_27_48.png](/resources/legacy/5b6911db13e1b.png)

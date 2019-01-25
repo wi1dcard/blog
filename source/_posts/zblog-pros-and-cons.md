@@ -57,9 +57,9 @@ emmm，我会考虑一下的。
 
 忽然想起当年 SS 作者怒撕 SSR 不开源事件的一段对话，自行体会。
 
-![耻辱！](https://i.loli.net/2018/08/15/5b73a5511e1aa.png)
+![耻辱！](/resources/legacy/5b73a5511e1aa.png)
 
-![](https://i.loli.net/2018/08/15/5b73a5565502d.png)
+![](/resources/legacy/5b73a5565502d.png)
 
 ## 0x03
 
@@ -67,6 +67,6 @@ emmm，我会考虑一下的。
 
 至于插件，还是能省则省吧。最后列出目前我们所使用的插件列表，几乎全部被修改过，仅供参考。
 
-![](https://i.loli.net/2018/08/15/5b73a55bb6dd2.png)
+![](/resources/legacy/5b73a55bb6dd2.png)
 
 

@@ -13,18 +13,18 @@ categories: Snippets
 
 <div align=center>
 
-<img src="https://i.loli.net/2018/06/13/5b2060073e544.jpg" width="50%" height="50%">
+<img src="/resources/legacy/5b2060073e544.jpg" width="50%" height="50%">
 
-<img src="https://i.loli.net/2018/06/13/5b2060041294b.jpeg" width="50%" height="50%">
+<img src="/resources/legacy/5b2060041294b.jpeg" width="50%" height="50%">
 
-<img src="https://i.loli.net/2018/06/13/5b206003b00a4.jpeg" width="50%" height="50%">
+<img src="/resources/legacy/5b206003b00a4.jpeg" width="50%" height="50%">
 
 </div>
 
 本着善待接纳的态度，😂这人怕不是刚入计算机系的大一新（la）生（ji）吧。
 
 <div align=center>
-<img src="https://i.loli.net/2018/06/13/5b20600752383.jpg" width="50%" height="50%">
+<img src="/resources/legacy/5b20600752383.jpg" width="50%" height="50%">
 </div>
 
 当场分手 +1。
@@ -69,10 +69,10 @@ result.close()
 
 ## 0x02 效果
 
-![](https://i.loli.net/2018/06/13/5b20600e63807.jpg)
+![](/resources/legacy/5b20600e63807.jpg)
 
 ## 0x03 秀
 
 <div align=center>
-<img src="https://i.loli.net/2018/06/13/5b206008a1fa5.jpg" width="50%" height="50%">
+<img src="/resources/legacy/5b206008a1fa5.jpg" width="50%" height="50%">
 </div>

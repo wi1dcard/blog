@@ -71,7 +71,7 @@ UCenter 是原 DZ 团队（现已被腾讯收购）开发的一套统一认证�
 
 但问题依旧存在，又一个新的错误发生。说到这里我不禁想起一个段子：
 
-![](https://i.loli.net/2018/08/15/5b73a5aaaf10e.jpg)
+![](/resources/legacy/5b73a5aaaf10e.jpg)
 
 胜利在望，接着修 bug。
 

@@ -15,7 +15,7 @@ categories: Tutorials
 
 直接使用 brew 命令安装即可。
 
-![背后的Hardwell／2333](https://i.loli.net/2018/08/15/5b73a5a523533.png)
+![背后的Hardwell／2333](/resources/legacy/5b73a5a523533.png)
 
 安装完成不要忘记`valet restart`。
 
@@ -23,7 +23,7 @@ categories: Tutorials
 
 打开 WebStation，切换到 PHP 设置页面，选中 pdo_dblib 扩展，应用即可。
 
-![](https://i.loli.net/2018/08/15/5b73a5a723b8e.png)
+![](/resources/legacy/5b73a5a723b8e.png)
 
 个人感觉，群晖 WebStation 做得还是蛮方便的。
 
@@ -50,7 +50,7 @@ categories: Tutorials
 
 运行：
 
-![](https://i.loli.net/2018/08/15/5b73a5a7caf4c.png)
+![](/resources/legacy/5b73a5a7caf4c.png)
 
 DONE！
 

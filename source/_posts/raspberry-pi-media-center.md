@@ -47,11 +47,11 @@ categories: Tutorials
 
 硬件：
 
-![](https://i.loli.net/2018/08/15/5b73a568e374e.png)
+![](/resources/legacy/5b73a568e374e.png)
 
 用绝缘胶布贴死继电器模块，避免不小心误触碰。
 
-![](https://i.loli.net/2018/08/15/5b73a575b8ed6.png)
+![](/resources/legacy/5b73a575b8ed6.png)
 
 小插座是常电，接投影仪；大插排是走继电器控制，接音响和机顶盒。这里没有把常电线破开，而是直接在常电插座内接出来地火零。
 
@@ -59,7 +59,7 @@ categories: Tutorials
 
 软件：
 
-![](https://i.loli.net/2018/08/15/5b73a5799d978.png)
+![](/resources/legacy/5b73a5799d978.png)
 
 网页直接嵌入 Dashboard。
 

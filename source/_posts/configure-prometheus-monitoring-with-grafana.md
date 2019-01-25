@@ -12,7 +12,7 @@ categories: Translations
 效果预览：
 
 ![](https://grafana.com/api/dashboards/1860/images/1718/image)
-![](https://i.loli.net/2019/01/10/5c36b2bf5f1a8.png)
+![](/resources/legacy/5c36b2bf5f1a8.png)
 
 > 原文地址：<https://www.scaleway.com/docs/configure-prometheus-monitoring-with-grafana/>
 

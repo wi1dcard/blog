@@ -7,6 +7,6 @@ categories: WTF
 
 不多说了，上图，自己感受吧。
 
-![](https://i.loli.net/2018/06/13/5b2098f922a83.jpg)
+![](/resources/legacy/5b2098f922a83.jpg)
 
 <https://github.com/tencentyun/cos-php-sdk-v5/pull/72>
