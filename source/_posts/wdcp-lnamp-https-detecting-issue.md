@@ -3,6 +3,7 @@ title: "修复 WDCP 面板无法判断 HTTPS 的问题"
 date: 2018-05-29 14:27:08
 id: wdcp-lnamp-https-detecting-issue
 categories: WTF
+tag: [DevOps]
 ---
 
 > WDCP 面板默认采用 LNAMP 的结构，即 Nginx 处理静态页面，并转发动态脚本请求（如 PHP）到 Apache 处理。这在没有 PHP-FPM 的时代是个不错的选择，但若是配置不当，存在的问题也很明显，这就是一例。

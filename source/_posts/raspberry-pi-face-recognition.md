@@ -3,6 +3,7 @@ title: "树莓派折腾随手记 - 人脸门禁"
 date: 2018-02-13 21:31:40
 id: raspberry-pi-face-recognition
 categories: Tutorials
+tags: [RaspberryPi, Node.js]
 ---
 
 > 前几天妹子送了个生日礼物——树莓派，想到公司门禁还是指纹解锁，随即说干就干，开始折腾个人脸门禁顺便入门吧。

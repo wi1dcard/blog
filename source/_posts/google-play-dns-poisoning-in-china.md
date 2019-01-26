@@ -3,6 +3,7 @@ id: google-play-dns-poisoning-in-china
 date: 2018-09-19 10:46:13
 title: 解决 Google Play 翻墙后依旧无法访问
 categories: WTF
+tags: [GFW]
 ---
 
 最近发现个问题，路由器挂了 SS 但是手机访问 Google Play 依旧报错：

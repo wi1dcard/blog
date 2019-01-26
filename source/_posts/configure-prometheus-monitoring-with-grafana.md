@@ -3,6 +3,7 @@ id: configure-prometheus-monitoring-with-grafana
 date: 2019-01-09 20:34:12
 title: 配置 Prometheus 服务器监控和 Grafana 看板
 categories: Translations
+tags: [DevOps]
 ---
 
 > 译者序：Prometheus 是服务器监控系统的后起之秀，可以和 Kubernetes 完美结合用于监控大量集群和应用。Grafana 是一款数据可视化看板，可指定多个数据源执行查询，将枯燥的数据转化为多维度的面板。两者均为开源项目，通过配置可实现直观强大的监控、报警、分析系统，实属运维神器。
@@ -165,7 +166,7 @@ Prometheus（普罗米修斯）是一款从 2012 年开始研发的弹性监控�
     该目录内包含以下两个可执行文件：
         - `prometheus` - Prometheus 主程序
         - `promtool`
-    
+
     以下两个子目录则分别包含了 Web 接口、示例配置以及许可证文件：
         - `console`
         - `console_libraries`

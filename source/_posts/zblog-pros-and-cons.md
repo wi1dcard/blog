@@ -3,6 +3,7 @@ title: "半年小记：Z-Blog 的优势劣势"
 date: 2018-03-09 01:30:54
 id: zblog-pros-and-cons
 categories: Documents
+tags: [Legacy, Blogging]
 ---
 
 > 不知不觉搭建技术博客已经过去半年，半年来自己和团队共同进步成长，也带动网站内容水准越来越高；在此小结一下半年来深度使用 Z-Blog 体会到的优缺点，希望能够给予后来者一定参考。

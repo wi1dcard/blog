@@ -3,6 +3,7 @@ id: upgrade-mysql-5.7-to-8.0
 date: 2018-06-16 00:30:13
 title: 升级 MySQL 5.7 到 8.0 遇到的坑
 categories: WTF
+tags: [MySQL]
 ---
 
 前几天手贱啥也没看执行 `brew upgrade`，随后就后悔了... 凡事没有一帆风顺，在此总结升级经验，以供后人参考。

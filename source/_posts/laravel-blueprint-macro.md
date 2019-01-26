@@ -2,7 +2,8 @@
 id: laravel-blueprint-macro
 date: 2018-08-28 02:41:00
 title: Laravel 5.6 给 Blueprint 增加自定义方法
-categories: Snippets
+categories: Tutorials
+tags: [Laravel]
 ---
 
 PHP 基本功足够扎实的情况下，强烈建议学习 Laravel 的过程除了阅读官方文档外，仔细阅读框架源码；或许会有小惊喜哟。

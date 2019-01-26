@@ -1,8 +1,9 @@
 ---
-id: sort-markdown-tables-shell
+id: sort-markdown-tables-in-terminal
 date: 2018-08-26 10:51:16
-title: Shell 排序 Markdown 表格（译）
-categories: Tutorials
+title: 在终端内排序 Markdown 表格
+categories: Translations
+tags: [CLI, Linux, Reprinted]
 ---
 
 ## 序

@@ -3,6 +3,7 @@ title: "LGTM（？？？）迷之骚缩写"
 date: 2019-01-26 14:18:02
 id: github-abbrs-collection
 categories: Collections
+tags: [Git, Reprinted]
 ---
 
 转载一些 GitHub 常见骚缩写，以备查询使用。

@@ -3,6 +3,7 @@ id: laravel-route-pattern-exclude
 date: 2018-08-18 01:52:37
 title: Laravel 5.6 路由参数排除匹配
 categories: Snippets
+tags: [Laravel]
 ---
 
 Laravel 提供 `where` 方法和 `Route::pattern` 方法，用于设置某个路由参数必须匹配指定表达式，则此路由才会被匹配。
@@ -26,7 +27,7 @@ Route::pattern('user', '???');
 根据业务逻辑，这里分两种情况。
 
 - 全字匹配。
-    
+
     例如，刚刚那种情况。`www` 肯定不可以，但包含 `www` 的字符串是可以的。
 
     正则：`.*(?<!^www)`

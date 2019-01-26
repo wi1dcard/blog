@@ -1,8 +1,9 @@
 ---
-title: "Chrome 占用.dev 域名后缀导致 Valet 失效的解决方案"
+title: "Chrome 占用 *.dev 导致 Valet 失效的解决方案"
 date: 2018-02-04 19:53:26
 id: chrome-to-force-https-valet-domain
 categories: WTF
+tags: [Chrome, Laravel]
 ---
 
 前段时间谷歌把 .dev 买了，我有所耳闻，但这段时间一直没有做 Web 开发，今天忽然发现 ***.dev 打不开了，故排查原因。

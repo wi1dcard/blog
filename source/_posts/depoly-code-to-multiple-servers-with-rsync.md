@@ -3,6 +3,7 @@ title: "服务器源码同步：rsync 配置过程小记"
 date: 2017-09-20 07:07:50
 id: depoly-code-to-multiple-servers-with-rsync
 categories: Tutorials
+tags: [DevOps]
 ---
 
 9.20 updated:

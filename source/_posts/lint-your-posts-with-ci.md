@@ -1,8 +1,9 @@
 ---
 id: lint-your-posts-with-ci
 date: 2019-01-26 08:54:58
-title: 为你的博文增加 Markdown Lint
-categories: Stared Repos
+title: 自动化 Markdown 博文写作规范检查
+categories: Recommendations
+tags: [Blogging, CI/CD]
 ---
 
 [hustcc/lint-md](https://github.com/hustcc/lint-md) 是一款中文 Markdown 写作规范检查工具，检查规则来源于 [ruanyf/document-style-guide](https://github.com/ruanyf/document-style-guide)。

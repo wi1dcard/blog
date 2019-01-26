@@ -3,10 +3,11 @@ title: "UCenter 1.6 Client Example 对 PHP7 兼容不良的排查与修复"
 date: 2017-10-27 00:24:36
 id: php7-ucenter-client-example-issue
 categories: WTF
+tags: [PHP]
 ---
 
 > 没错又踩坑了。
-> 
+>
 > 因项目需要与 DZ 论坛实现 SSO 登录、账号同步等功能，经老司机波波推荐，直接使用 DZ 官方产品 UCenter 集成即可；于是陈晟&潘昭宇折腾了一天 UCenter，可还是遇到了过不去的“拦路虎”，于是接近下班之际，决定接手这个问题，不知不觉踏上了过节依旧加班的不归路。
 
 ## UCenter
@@ -16,15 +17,15 @@ UCenter 是原 DZ 团队（现已被腾讯收购）开发的一套统一认证�
 先来说下 UCenter（下称`UC`）的大致架构吧，这是坑踩完之后总结出来的，为了不影响后续理解所以提前介绍。
 
 > UC 有两端：server / client；
-> 
+>
 > 其中，server 端维护一套自有的表结构，并提供 http api；
-> 
+>
 > 而多个由用户（这里指基于 uc 的二次开发人员）实现的 client 端，通过调用 client sdk，可实现直接操作 server 端数据库或调用 http api 来写入、读取 user 数据，从而实现多 client 端维护同一份 user 数据副本。
 
 那么，对于现有的应用（client），如何集成到 UC 而不需要修改表结构呢？
 
 > UC 提供了一套 Server-->Client 类似“回调”的机制，我们只要参照其 client 端例子编写好符合其规范的 client，那么 server 端即可在收到其他 client 写库请求时，通知本 client；我们只要响应来自 server 端的请求，将用户写入原有逻辑数据库即可。
-> 
+>
 > 这样即可实现不修改原有应用数据库，两套库“同步”的状态。
 
 ## 踩坑

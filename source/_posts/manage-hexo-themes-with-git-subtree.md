@@ -3,6 +3,7 @@ id: manage-hexo-themes-with-git-subtree
 date: 2019-01-04 23:24:40
 title: 使用 Git Subtree 管理 Hexo 主题
 categories: WTF
+tags: [Blogging, Git]
 ---
 
 ## 0x00 废话

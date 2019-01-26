@@ -3,6 +3,7 @@ id: laravel-custom-migration-stub
 date: 2018-08-28 13:33:16
 title: Laravel 5.6 自定义迁移桩代码
 categories: Tutorials
+tags: [Laravel]
 ---
 
 书接上回，前面说到在迁移内给 `Blueprint` 增加自定义的 `Macro`。那么，当我们每次使用 `php artisan make:migration` 都需要手动修改一次模板吗？这不清真 = =。

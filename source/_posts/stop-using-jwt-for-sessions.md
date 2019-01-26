@@ -3,6 +3,7 @@ id: stop-using-jwt-for-sessions
 date: 2019-01-20 11:11:22
 title: 停止使用 JWT 作为 Session 系统
 categories: Translations
+tags: []
 ---
 
 JSON Web Tokens，又称 `JWT`。本文作者将详解：为何 JWT 不适合存储 Session，以及 JWT 引发的安全隐患。望各位使用前三思。

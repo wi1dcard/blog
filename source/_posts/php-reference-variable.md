@@ -3,6 +3,7 @@ id: php-reference-variable
 date: 2018-08-06 10:33:41
 title: PHP 引用详解 - 踩坑与妙用
 categories: Tutorials
+tags: [PHP]
 ---
 
 最近在关注「PHP 引用」这一话题，看过不少深度文章，对 PHP 里的「引用」有了更深的理解。
@@ -55,7 +56,7 @@ foo: (refcount=1, is_ref=0)=array ('hello' => (refcount=2, is_ref=1)='0')
 根据 [PHP: 引用做什么 - Manual](http://php.net/manual/zh/language.references.whatdo.php) 的解释：
 
 > `$a =& $b;` 这意味着 $a 和 $b 指向了同一个变量。
-> 
+>
 > $a 和 $b 在这里是完全相同的，这并不是 $a 指向了 $b 或者相反，而是 $a 和 $b 指向了同一个地方。
 
 结合我们的例子，也就是说，当 `$bar = &$foo['hello'];` 执行时，`$bar` 和 `$foo['hello']` 都成为了「引用变量」，且它们「指向了同一个地方」。

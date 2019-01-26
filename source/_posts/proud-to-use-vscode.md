@@ -2,7 +2,7 @@
 title: "VS Code - 来自微软的骚操作"
 date: 2018-07-10 09:23:17
 id: proud-to-use-vscode
-categories: Tools
+categories: Recommendations
 ---
 
 PHP Storm 因功能强大被 PHPer 们所熟知，但自身功能愈发强大带来的问题也同样明显：功能臃肿／启动缓慢／内存占用高等。VS Code 经过几年的发展算是后起之秀，占领了一部分小众市场。

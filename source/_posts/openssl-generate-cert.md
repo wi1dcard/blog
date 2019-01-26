@@ -3,11 +3,12 @@ title: "OpenSSL 随手记 - 生成自签证书"
 date: 2018-03-04 20:56:49
 id: openssl-generate-cert
 categories: Snippets
+tags: [CLI]
 ---
 
 > 使用 OpenSSL 命令行生成 HTTPS 自签证书。
 
-```
+```bash
 openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout cert.key -out cert.pem
 ```
 

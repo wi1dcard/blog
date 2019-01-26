@@ -3,6 +3,7 @@ title: "FFmpeg 直播推流常用命令总结"
 date: 2018-03-06 22:03:47
 id: ffmpeg-live-stream-useful-commands
 categories: Collections
+tags: []
 ---
 
 > 总结部分 FFmpeg 常用命令行以备查询之用。

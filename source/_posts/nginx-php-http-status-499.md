@@ -3,6 +3,7 @@ title: "Nginx+PHP 环境 499 错误码排查过程小记"
 date: 2018-02-02 18:09:48
 id: nginx-php-http-status-499
 categories: WTF
+tags: [Nginx, PHP]
 ---
 
 ## 前言

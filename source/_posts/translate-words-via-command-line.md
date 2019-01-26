@@ -2,7 +2,8 @@
 id: translate-words-via-command-line
 date: 2019-01-24 01:12:31
 title: 程序员命令行查词好帮手
-categories: Stared Repos
+categories: Recommendations
+tags: [CLI, Node.js]
 ---
 
 [afc163/fanyi](https://github.com/afc163/fanyi) 是一款命令行查词工具。实用、美观，是我对它的第一印象。

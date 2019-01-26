@@ -3,6 +3,7 @@ title: "树莓派折腾随手记——继电器+红外=客厅总控"
 date: 2018-03-24 21:28:06
 id: raspberry-pi-media-center
 categories: Tutorials
+tags: [RaspberryPi, Node.js]
 ---
 
 > 投影仪（电视）+机顶盒+音响设备控制项目，因自用于客厅总控，故命名为`MediaCenter`。

@@ -1,8 +1,9 @@
 ---
 title: "最初的起点"
 date: 2017-08-24 00:04:25
-id: start-here
+id: started-here
 categories: Documents
+tags: [Blogging, Legacy]
 ---
 
 ## 诞生——2017/08/24

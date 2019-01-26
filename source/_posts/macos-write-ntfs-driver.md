@@ -3,6 +3,7 @@ title: "macOS 打开自带 NTFS 写文件功能"
 date: 2017-09-22 16:27:27
 id: macos-write-ntfs-driver
 categories: Tutorials
+tags: [macOS]
 ---
 
 1. 打开 terminal

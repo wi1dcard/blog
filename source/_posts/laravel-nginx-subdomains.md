@@ -3,6 +3,7 @@ title: "Laravel 二级域名绑定子目录 Nginx 配置"
 date: 2018-10-15 16:55:07
 id: laravel-nginx-subdomains
 categories: Snippets
+tags: [Laravel, Nginx]
 ---
 
 二级域名绑定子目录 Nginx + PHP-FPM 配置，内置 Laravel 重写规则，可用于本地多项目开发。

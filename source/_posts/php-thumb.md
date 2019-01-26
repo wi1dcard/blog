@@ -1,8 +1,9 @@
 ---
-title: "Thumb —— 自带缓存配置的单文件 PHP 缩略图库"
+title: "Thumb - 自带缓存配置的单文件 PHP 缩略图库"
 date: 2018-03-09 17:22:51
 id: php-thumb
-categories: Tools
+categories: Recommendations
+tags: [PHP, Package, Nginx]
 ---
 
 > PHP GD 扩展提供了图像处理的接口，本文为大家介绍一款非常小巧易用的缩略图库，支持多种缩放方式、多种输出格式、自带缓存配置……

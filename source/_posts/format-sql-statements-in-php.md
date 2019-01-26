@@ -2,7 +2,8 @@
 id: format-sql-statements-in-php
 date: 2019-01-10 21:27:06
 title: 在 PHP 中格式化并高亮 SQL 语句
-categories: Stared Repos
+categories: Recommendations
+tags: [PHP, MySQL]
 ---
 
 [jdorn/sql-formatter](https://github.com/jdorn/sql-formatter) 是一个轻量级的 PHP 类用于格式化 SQL 语句。
@@ -118,8 +119,8 @@ echo SqlFormatter::removeComments($query);
 ```
 
     SELECT
-    
-    Id 
+
+    Id
     as temp, DateCreated as Created FROM MyTable;
 ```
 

@@ -3,6 +3,7 @@ title: "2017-10-27 腾讯云 CDN 故障记录"
 date: 2017-10-27 17:46:03
 id: qcloud-cdn-breakdown
 categories: WTF
+tags: []
 ---
 
 今日技术博客 POST 请求出现回源异常超时问题，经多方面排查，先后排除 PHP-FPM 慢执行、MySQL 慢查询、HTTPS 协议故障、本地网络故障等问题后发现直接访问源站正常，故怀疑 CDN 问题，随即提交工单并多次电联腾讯云催促，最终得到答复。

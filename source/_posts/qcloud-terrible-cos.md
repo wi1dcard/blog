@@ -3,6 +3,7 @@ title: "腾讯云屎一样的对象存储"
 date: 2018-06-13 12:54:04
 id: qcloud-terrible-cos
 categories: WTF
+tags: []
 ---
 
 不多说了，上图，自己感受吧。

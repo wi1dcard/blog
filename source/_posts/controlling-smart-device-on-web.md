@@ -3,6 +3,7 @@ title: "纠结！纯内网 Web 控制智能硬件的技术选型之路"
 date: 2018-03-11 12:22:48
 id: controlling-smart-device-on-web
 categories: Documents
+tags: [PHP, Swoole, Node.js, .NET, Legacy]
 ---
 
 > 通常情况下，我们采用 TCP Socket 与智能硬件进行通信。外网环境中，有无数种解决方案：Swoole（PHP），Node.js，SuperSocket（.NET）…… 而在政企事业单位的内网环境，事情或许就不那么好办了。
@@ -84,7 +85,7 @@ Node.js 本身所具有的事件驱动、非阻塞 IO 等特性十分适合用�
 
 最后一个方案，.NET。大致思路是这样的。
 
-`Ajax/Axios + PHP + .NET + Hardware` 
+`Ajax/Axios + PHP + .NET + Hardware`
 
 - .NET 方面采用成熟的 TCP/UDP 服务端组件 —— SuperSocket
 - PHP 与 .NET 相互通信，可以采用 Redis 消息队列，MySQL 中转等方案；也可以将 PHP 作为 TCP Client 对 SuperSocket 发送数据，当 SuperSocket 接收到硬件数据时，调用 PHP 编写的 HTTP API 即可。

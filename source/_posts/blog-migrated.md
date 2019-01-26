@@ -3,6 +3,7 @@ title: "博客迁移 —— 全新的开始"
 date: 2018-06-02 08:59:00
 id: blog-migrated
 categories: Documents
+tags: [Blogging]
 ---
 
 最近从前公司离职，内心表示很痛，自己之前的技术文章还都在团队博客那边，将近一年的成果不能就这么放弃，于是开始折腾转移。

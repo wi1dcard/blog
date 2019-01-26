@@ -1,8 +1,9 @@
 ---
-title: "PHP: json_encode() 方法序列化非公开属性"
+title: "json_encode() 序列化非公开属性"
 date: 2018-06-08 10:56:00
 id: json-encode-non-public-properties
 categories: Tutorials
+tags: [PHP]
 ---
 
 近期项目过程中，有一处场景需要使用 `json_encode` 方法序列化某对象内的 `protected` 属性。
@@ -18,7 +19,7 @@ abstract public mixed JsonSerializable::jsonSerialize ( void )
 于是我们可以这样实现：
 
 ```php
-class Foo implements \JsonSerializable 
+class Foo implements \JsonSerializable
 {
     public $fooProperty;
 
@@ -41,7 +42,7 @@ class Foo implements \JsonSerializable
 后来经过 Google，发现 PHP 有个「神奇」的函数：`get_object_vars`，如上代码稍加修改即可：
 
 ```php
-class Foo implements \JsonSerializable 
+class Foo implements \JsonSerializable
 {
     public $fooProperty;
 

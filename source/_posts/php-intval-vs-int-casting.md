@@ -3,6 +3,7 @@ id: php-intval-vs-int-casting
 date: 2018-06-18 20:43:46
 title: PHP intval() 与 (int) 转换的区别
 categories: Tutorials
+tags: [PHP]
 ---
 
 说到字符串转整型，PHP 里常用的两个方法相信各位都有了解，但其中微小的区别缺鲜为人知。本文简单梳理，以备日后查阅。

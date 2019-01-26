@@ -3,6 +3,7 @@ id: laravel-model-override-soft-delete
 date: 2018-09-25 13:47:38
 title: Laravel 5.7 重写软删除字段为时间戳
 categories: WTF
+tags: [Laravel]
 ---
 
 ## 0x00 背景

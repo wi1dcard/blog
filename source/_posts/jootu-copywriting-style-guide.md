@@ -3,6 +3,7 @@ title: "Jootu Copywriting Style Guide"
 date: 2017-11-10 13:00:38
 id: jootu-copywriting-style-guide
 categories: Documents
+tags: [Legacy]
 ---
 
 > 椒图科技书写风格指南，本文同时适用于团队博客、技术文档、产品手册、项目方案等。
@@ -72,7 +73,7 @@ categories: Documents
 *   若正文中部分引用第三方内容，应使用恰当的引用格式并给出出处。如：
 
 > People don't know what they want until you show it to them. - Steve Jobs
-> 
+>
 > 消费者并不知道自己想要什么，直到我们拿出自己的产品。——史蒂夫·乔布斯
 
 *   若为全篇转载，请在全文开头显著位置注明出处并链接至原文，如：

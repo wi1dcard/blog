@@ -3,6 +3,7 @@ id: baota-open-basedir-restriction
 date: 2018-06-13 10:18:52
 title: 宝塔面板 PHP 打开文件失败原因排查
 categories: WTF
+tags: [PHP]
 ---
 
 近期在使用宝塔面板部署 PHP 项目时，上传文件的场景，PHP 无法对临时文件进行打开操作，无法计算`sha1`、`md5`，遂进行排查。

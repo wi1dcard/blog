@@ -3,6 +3,7 @@ title: "How to Read UIDs of IC Cards in C#"
 date: 2017-09-07 16:46:16
 id: read-uids-of-ic-cards
 categories: Tutorials
+tags: [Legacy, .NET]
 ---
 
 今天沈同学来问 c# 读 ic 卡的问题，我第一反应是想到了 windows 提供的智能卡驱动 API，之前用 c++实现过一套。

@@ -3,6 +3,7 @@ title: "Why PHP？浅谈选择 PHP 作为后端主力开发语言的原因"
 date: 2018-01-18 13:14:59
 id: why-php
 categories: Documents
+tags: [Legacy, PHP, Swoole]
 ---
 
 > 在各类交流群，甚至多数老一辈程序员的眼里，认为 PHP 是「轻量的」、「不完善的」、「性能难以优化」的，而这么多年来一直坚挺的 Java 却成了开发「XX 系统」的后端首选语言。为此，本篇文章将尽量从非技术角度告诉大家：Why PHP？

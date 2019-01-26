@@ -3,6 +3,7 @@ title: "树莓派折腾随手记 - 修改 Swap 大小"
 date: 2018-03-01 10:11:07
 id: raspberry-pi-change-swap-size
 categories: Tutorials
+tags: [RaspberryPi, Linux]
 ---
 
 > 树莓派默认情况下，虚拟内存只有区区 100 MB，这完全不能满足正常使用需求，本文将讲解如何修改为合理的值。

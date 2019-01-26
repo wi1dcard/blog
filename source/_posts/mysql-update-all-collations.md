@@ -3,9 +3,10 @@ title: "MySQL 批量更新所有字段 Collation"
 date: 2017-09-06 19:31:39
 id: mysql-update-all-collations
 categories: Snippets
+tags: [MySQL]
 ---
 
-今天项目部署遇到个坑，之前建数据库的时候，把所有的 collation 都写成了 utf8，在测试服务器上也没怎么注意，部署正式服务器果断用 mb4，故需要修改上百个字段的 collation。 
+今天项目部署遇到个坑，之前建数据库的时候，把所有的 collation 都写成了 utf8，在测试服务器上也没怎么注意，部署正式服务器果断用 mb4，故需要修改上百个字段的 collation。
 
 根据一次可以，两次能忍，三次绝对不行的懒人原则 orz，决定写个脚本实现一键修改，废话不多说先去网上找了个轮子。
 
