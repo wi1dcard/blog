@@ -16,6 +16,8 @@ menu:
   th-list:
     text: Categories
     url: /categories
+  tags:
+    url: /tags
   github:
     text: GitHub
     url: https://github.com/wi1dcard
