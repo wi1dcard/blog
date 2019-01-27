@@ -67,13 +67,13 @@ comments: false
 
 @card{
 
-**基础扎实，学东西快，脑子灵活。** 十岁开始学习 `Pascal` 语言参加信息学奥赛；后自学 `C` 和 `C++`，初中获得青岛市竞赛第一名，对常见数据结构与算法有过系统性学习；高中退学专注于软件开发。
+**基础扎实，学东西快，接触面广。** 十岁开始学习 Pascal 参加信息学奥赛，初中获得青岛市竞赛第一名；后自学 C 和 C++ 并从事 HTTP 协议抓包分析和 MFC 开发，高中退学专注于编程。日常折腾，以爱好为驱动研究过 OpenWrt、Raspberry Pi、黑群晖、黑苹果等。
 
-**接触面广泛，擅长独立解决问题。** 早期从事 `HTTP` 协议抓包分析和 `MFC` 开发，之后转型服务端，自学 `PHP` / `.NET Core` / `Swoole` 等。
+**喜欢团队分工合作，善于沟通。** 曾担任技术领导，从零开始组建 30 人技术团队，积累了一笔宝贵的研发协调经验。
 
-**喜欢团队分工合作，善于沟通。** 曾担任技术领导，从零开始组建 30 人技术团队，积累了丰富的研发协调经验。
+**脑子灵活，擅长独立解决问题。** 欢迎阅读本人技术博客 [WTF 分类](https://wi1dcard.cn/categories/wtf/)。
 
-**热爱技术，善于钻研，轻微强迫症，做事追求极致优雅，享受写代码带来的成就感。**
+**热爱技术，热爱钻研，规范与性能强迫症，做事追求极致优雅，享受写代码带来的成就感。**
 
 目前，**后端（Back-End）** 是我的强项；努力成为 `T` 型人才，是我的目标。
 
@@ -83,12 +83,12 @@ comments: false
 
 @card{
 
-- 日常 `macOS` 开发，了解 `Ubuntu`、`Debian`；相比 GUI 更喜欢 CLI，折腾过路由器固件、树莓派、黑群晖、黑苹果。
-- 熟悉 `Nginx` + `PHP-FPM` 安装与配置，不习惯一键安装包。
-- 熟悉 `MySQL`、`MariaDB`，了解常见的性能调优方法，熟悉 `Navicat`、`Adminer`。
-- `PHP` 狂热爱好者，熟练使用 `Composer`、`PHPize`、`PECL`，熟悉 PHP 版本差异、PHPUnit 单元测试、OPCache 工作原理和调优、XDebug 性能分析等高级专题，了解主流扩展包或框架 `Symfony`、`Laravel 5`、`Yii 2` 等。
-- 代码风格方面，严格遵守 `PSR-1`、`PSR-2`、`PSR-12`，熟悉 `PHP-CS`、`PHP-CS-Fixer`、`PHPMD`、`PHPStan`、`PHPCPD` 各路神器。
-- 第三方服务方面，熟悉 `GitLab`、`Travis CI`、`Scrutinizer CI`、`Style CI`、`Coveralls`、`Sentry` 等。
+- 日常 `macOS` 开发，了解 `Ubuntu`、`Debian`，相比 GUI 更喜欢 CLI。
+- 熟悉 `Nginx` + `PHP-FPM`，不使用一键安装包进行配置。
+- `PHP` 狂热爱好者，熟练使用 `Composer`、`PHPize`、`PECL`，熟悉 PHP 版本差异、PHPUnit 单元测试、OPCache 工作原理和调优、XDebug 性能分析等高级专题，了解主流框架和扩展包 `Laravel 5`、`Yii 2`、`Symfony` 等。
+- 代码风格方面，严格遵守 `PSR-1`、`PSR-2`、`PSR-12`，熟悉 `PHP-CS`、`PHP-CS-Fixer`、`PHPStan` 等各路神器。
+- 了解 `MySQL`、`MariaDB` 以及常见的性能调优方法，熟悉 `Navicat`、`Adminer`。
+- 第三方服务方面，熟悉 `AWS`、`GCP`、主流 `CI/CD`、`Coveralls`、`Sentry` 等。
 - 对应用安全有把握，熟悉 `HTTP 1.1` 协议抓包分析和正则表达式。
 - 熟悉长链接服务，目前正在学习 `Golang`。
 
@@ -101,12 +101,14 @@ comments: false
 - 具备良好的开发、测试、文档习惯，对自己一贯高标准要求。
 - 坚持写技术博客，总结项目过程中的经验教训，同时锻炼自己的表达能力。
 - 热爱科学上网，善于 Google，手搭各类代理。
-- 喜爱英语，至少不是短板。
 - 社区活跃，每天必看 `GitHub`、`StackOverflow`、`Laravel-China`。
+- 喜爱英语，至少不是短板。
+  - [PHPBrew 中文文档](https://github.com/phpbrew/phpbrew/pull/957)
+  - [Docker 速查大全](https://github.com/wsargent/docker-cheat-sheet/pull/164)
+  - [Laravel-China 翻译审阅者](https://laravel-china.org/users/32249/translations)
 - 参与贡献开源项目。
   - [Yii Framework](https://github.com/yiisoft/yii2/pull/16528)
   - [Swoole MySQL Proxy](https://github.com/louislivi/SMProxy/commits?author=wi1dcard)
-  - [PHPBrew 中文文档](https://github.com/phpbrew/phpbrew/pull/957)
   - [百度 AIP - Speech VAD Demo](https://github.com/Baidu-AIP/speech-vad-demo/pull/1)
   - [腾讯云 - 对象存储 PHP SDK](https://github.com/tencentyun/cos-php-sdk-v5/pull/72)
   - [Git Wrapper for PHP](https://github.com/cpliakas/git-wrapper/pull/156)
