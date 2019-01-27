@@ -12,12 +12,12 @@ menu:
     text: 主页
     url: /
   archives:
-    url: /archives
+    url: /archives/
   th-list:
     text: Categories
-    url: /categories
+    url: /categories/
   tags:
-    url: /tags
+    url: /tags/
   github:
     text: GitHub
     url: https://github.com/wi1dcard
@@ -25,6 +25,9 @@ menu:
   male:
     text: 求职简历
     url: /resume/
+  pencil:
+    text: 关于本博客
+    url: /tags/blogging/
 
 # 你的头像url
 avatar: "https://en.gravatar.com/userimage/142329077/dd998d3b9a6685cd15da5c805eebec1f"
