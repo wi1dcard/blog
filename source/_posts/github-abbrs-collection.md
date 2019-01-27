@@ -6,7 +6,9 @@ categories: Collections
 tags: [Git, Reprinted]
 ---
 
-转载一些 GitHub 常见骚缩写，以备查询使用。
+搜集一些 GitHub 常见骚缩写，以备查询使用。
+
+<!--more-->
 
 > 原文链接：<https://farer.org/2017/03/01/code-review-acronyms/>
 
