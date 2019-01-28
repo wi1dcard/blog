@@ -1,8 +1,16 @@
+# Windows and macOS
 .DS_Store
 Thumbs.db
+
+# Hexo temp database
 db.json
+
+# Log files
 *.log
-node_modules/
-public/
-.deploy*/
-.vscode/
+
+# Node.js
+/node_modules/
+
+# Hexo generated site
+/public/
+/.deploy*/
