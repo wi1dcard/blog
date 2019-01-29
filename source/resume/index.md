@@ -44,7 +44,6 @@ comments: false
 
 - GitHub：<https://github.com/wi1dcard>
 - 技术博客：<https://wi1dcard.cn/>
-- Laravel-China ID：<https://laravel-china.org/users/32249>
 
 }
 
@@ -75,18 +74,18 @@ comments: false
 
 **热爱技术，热爱钻研，规范与性能强迫症，做事追求极致优雅，享受写代码带来的成就感。**
 
-目前，**后端（Back-End）** 是我的强项；努力成为 `T` 型人才，是我的目标。
+目前，**后端（Back-End）** 是我的强项；努力成为 [T 型人才](https://baike.baidu.com/item/T%E5%9E%8B%E4%BA%BA%E6%89%8D)，是我的目标。
 
 }
 
-## 我的优势
+## 技能优势
 
 @card{
 
 - 日常 `macOS` 开发，了解 `Ubuntu`、`Debian`，相比 GUI 更喜欢 CLI。
 - 熟悉 `Nginx` + `PHP-FPM`，不使用一键安装包进行配置。
-- `PHP` 狂热爱好者，熟练使用 `Composer`、`PHPize`、`PECL`，熟悉 PHP 版本差异、PHPUnit 单元测试、OPCache 工作原理和调优、XDebug 性能分析等高级专题，了解主流框架和扩展包 `Laravel 5`、`Yii 2`、`Symfony` 等。
-- 代码风格方面，严格遵守 `PSR-1`、`PSR-2`、`PSR-12`，熟悉 `PHP-CS`、`PHP-CS-Fixer`、`PHPStan` 等各路神器。
+- PHP 狂热爱好者，熟练使用 `Composer`、`PHPize`、`PECL`，熟悉 PHP 版本差异、PHPUnit 单元测试、OPCache 工作原理和调优、XDebug 性能分析等高级专题，了解主流框架和扩展包 `Laravel 5`、`Yii 2`、`Symfony` 等。
+- 开发规范方面，熟悉 `PSR-N` 以及 `PHP-CS`、`PHP-CS-Fixer`、`PHPStan` 等神器。
 - 了解 `MySQL`、`MariaDB` 以及常见的性能调优方法，熟悉 `Navicat`、`Adminer`。
 - 第三方服务方面，熟悉 `AWS`、`GCP`、主流 `CI/CD`、`Coveralls`、`Sentry` 等。
 - 对应用安全有把握，熟悉 `HTTP 1.1` 协议抓包分析和正则表达式。
@@ -102,17 +101,8 @@ comments: false
 - 坚持写技术博客，总结项目过程中的经验教训，同时锻炼自己的表达能力。
 - 热爱科学上网，善于 Google，手搭各类代理。
 - 社区活跃，每天必看 `GitHub`、`StackOverflow`、`Laravel-China`。
-- 喜爱英语，至少不是短板。
-  - [PHPBrew 中文文档](https://github.com/phpbrew/phpbrew/pull/957)
-  - [Docker 速查大全](https://github.com/wsargent/docker-cheat-sheet/pull/164)
-  - [Laravel-China 翻译审阅者](https://laravel-china.org/users/32249/translations)
-- 参与贡献开源项目。
-  - [Yii Framework](https://github.com/yiisoft/yii2/pull/16528)
-  - [Swoole MySQL Proxy](https://github.com/louislivi/SMProxy/commits?author=wi1dcard)
-  - [百度 AIP - Speech VAD Demo](https://github.com/Baidu-AIP/speech-vad-demo/pull/1)
-  - [腾讯云 - 对象存储 PHP SDK](https://github.com/tencentyun/cos-php-sdk-v5/pull/72)
-  - [Git Wrapper for PHP](https://github.com/cpliakas/git-wrapper/pull/156)
-  - ...
+- 喜爱英语，至少不是短板，[Laravel-China 翻译审阅者](https://laravel-china.org/users/32249/translations)，欢迎阅读本人技术博客 [Translations 分类](https://wi1dcard.cn/categories/translations/)。
+- 乐于贡献开源项目，请登录 GitHub 后查看我的 [Pull Requests](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+sort%3Aupdated-desc+author%3Awi1dcard)。
 
 }
 
