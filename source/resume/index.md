@@ -68,7 +68,7 @@ comments: false
 
 **基础扎实，学东西快，接触面广。** 十岁开始学习 Pascal 参加信息学奥赛，初中获得青岛市竞赛第一名；后自学 C 和 C++ 并从事 HTTP 协议抓包分析和 MFC 开发，高中退学专注于编程。日常折腾，以爱好为驱动研究过无人机、Raspberry Pi、OpenWrt、黑群晖等。
 
-**喜欢团队分工合作，善于沟通。** 曾担任技术领导，从零开始组建 30 人技术团队，积累了一笔宝贵的研发协调经验。
+**喜欢团队分工合作，善于沟通。** 曾担任技术领导，[从零开始](https://www.tianyancha.com/reportContent/2353553379/2016) 组建 [30 人](https://www.tianyancha.com/reportContent/2353553379/2017) 技术团队，积累了一笔宝贵的研发协调经验。
 
 **思维灵活，擅长独立解决问题。** 欢迎阅读本人技术博客 [WTF 分类](https://wi1dcard.cn/categories/wtf/)。
 
