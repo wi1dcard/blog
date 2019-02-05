@@ -3,7 +3,7 @@ id: cli-video-downloader
 tags: [CLI]
 date: 2019-02-04 07:38:44
 title: 在命令行下载第三方网站的视频
-categories: Tools
+categories: Recommendations
 ---
 
 [soimort/you-get](https://github.com/soimort/you-get) 和 [iawia002/annie](https://github.com/iawia002/annie) 是两款十分不错的命令行视频下载工具，支持大量第三方视频站。
