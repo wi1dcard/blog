@@ -74,7 +74,9 @@ comments: false
 
 **热爱技术，热爱钻研，规范与性能强迫症，做事追求极致优雅，享受写代码带来的成就感。**
 
-目前，**后端（Back-End）** 是我的强项；努力成为 [T 型人才](https://baike.baidu.com/item/T%E5%9E%8B%E4%BA%BA%E6%89%8D)，是我的目标。
+短板：熟悉与前端交互的原理（前端能得到什么、后端需要提供什么），但不了解前端具体实现和最新的 ES 标准。对于关系型数据库，停留在少量数据实际应用层面，对深入调优无经验。
+
+**后端 / 运维向** 是我的强项；努力成为 [T 型人才](https://baike.baidu.com/item/T%E5%9E%8B%E4%BA%BA%E6%89%8D) 是我的目标。
 
 }
 
@@ -83,13 +85,12 @@ comments: false
 @card{
 
 - 日常 `macOS` 开发，了解 `Ubuntu`、`Debian`，相比 GUI 更喜欢 CLI。
+- 新时代运维，了解 `Terraform` / `Ansible` / `Prometheus`，正在学习 `Kubernetes`。
 - 熟悉 `Nginx` + `PHP-FPM`，不使用一键安装包进行配置。
 - PHP 狂热爱好者，熟练使用 `Composer`、`PHPize`、`PECL`，熟悉 PHP 版本差异、PHPUnit 单元测试、OPCache 工作原理和调优、XDebug 性能分析等高级专题，了解主流框架和扩展包 `Laravel 5`、`Yii 2`、`Symfony` 等。
 - 开发规范方面，熟悉 `PSR-N` 以及 `PHP-CS`、`PHP-CS-Fixer`、`PHPStan` 等神器。
-- 了解 `MySQL`、`MariaDB` 以及常见的性能调优方法，熟悉 `Navicat`、`Adminer`。
 - 第三方服务方面，熟悉 `AWS`、`GCP`、主流 `CI/CD`、`Coveralls`、`Sentry` 等。
 - 对应用安全有把握，熟悉 `HTTP 1.1` 协议抓包分析和正则表达式。
-- 熟悉长链接服务，目前正在学习 `Golang`。
 
 }
 
