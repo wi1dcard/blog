@@ -18,7 +18,7 @@ comments: false
 - 学习编程：**2010年至今**
 - 项目经验：**2013年至今**
 - 职场经验：**2015年至今**
-- 期望岗位：**高级 PHP / GO 实习生**
+- 期望岗位：暂无跳槽计划
 - 真实性格：[INFJ](mbti.pdf)
 - 工作癖好：听电音写代码效率飞快（很嗨的那种）
 
@@ -67,17 +67,17 @@ comments: false
 
 @card{
 
-**基础扎实，学东西快，接触面广。** 十岁开始学习 Pascal 参加信息学奥赛，初中获得青岛市竞赛第一名；后自学 C 和 C++ 并从事 HTTP 协议抓包分析和 MFC 开发，高中退学专注于编程。日常折腾，以爱好为驱动研究过无人机、Raspberry Pi、OpenWrt、黑群晖等。
+**基础扎实，学东西快，接触面广。** 十岁开始学习 Pascal 参加信息学奥赛，初中获得青岛市竞赛第一名；后自学 C 和 C++ 并从事 HTTP 协议抓包分析和 MFC 开发，高中退学专注于编程。
 
 **喜欢团队分工合作，善于沟通。** 曾担任技术领导，[从零开始](https://www.tianyancha.com/reportContent/2353553379/2016) 组建 [30 人](https://www.tianyancha.com/reportContent/2353553379/2017) 技术团队，积累了一笔宝贵的研发协调经验。
 
-**思维灵活，擅长独立解决问题。** 欢迎阅读本人技术博客 [WTF 分类](https://wi1dcard.cn/categories/wtf/)。
+**思维灵活，擅长独立解决问题。** 欢迎阅读本人技术博客 [WTF 分类](https://wi1dcard.cn/categories/wtf/)。日常折腾，以爱好为驱动研究过无人机、Raspberry Pi、OpenWrt、黑群晖等。
 
 **热爱技术，热爱钻研，规范与性能强迫症，做事追求极致优雅，享受写代码带来的成就感。**
 
-短板：熟悉与前端交互的原理（前端能得到什么、后端需要提供什么），但不了解前端具体实现和最新的 ES 标准。对于关系型数据库，停留在少量数据实际应用层面，对深入调优无经验。
+熟悉与前端交互的原理（前端能得到什么、后端需要提供什么），但不了解前端具体实现和最新的 ES 标准。对于关系型数据库，停留在少量数据实际应用层面，对深入调优无经验。
 
-**后端 / 运维向** 是我的强项；努力成为 [T 型人才](https://baike.baidu.com/item/T%E5%9E%8B%E4%BA%BA%E6%89%8D) 是我的目标。
+**后端、运维向** 是我的强项；正努力成为 [T 型人才](https://baike.baidu.com/item/T%E5%9E%8B%E4%BA%BA%E6%89%8D)。
 
 }
 
@@ -85,13 +85,14 @@ comments: false
 
 @card{
 
-- 日常 `macOS` 开发，了解 `Ubuntu`、`Debian`，相比 GUI 更喜欢 CLI。
-- 新时代运维，了解 `Terraform` / `Ansible` / `Prometheus`，正在学习 `Kubernetes`。
-- 熟悉 `Nginx` + `PHP-FPM`，不使用一键安装包进行配置。
-- PHP 狂热爱好者，熟练使用 `Composer`、`PHPize`、`PECL`，熟悉 PHP 版本差异、PHPUnit 单元测试、OPCache 工作原理和调优、XDebug 性能分析等高级专题，了解主流框架和扩展包 `Laravel 5`、`Yii 2`、`Symfony` 等。
+- 日常 `macOS` + `Zsh`，了解 `Ubuntu`、`Debian`，相比 GUI 更喜欢 CLI。
+- 新时代运维，熟悉 `AWS` 和 `GCP`，了解 `Terraform` / `Ansible` / `Prometheus`，正在学习 `Kubernetes`。
+- 熟悉 `Nginx` + `PHP-FPM` 配置。
+- PHP 狂热爱好者，熟练使用 `Composer`、`PECL`，熟悉 PHP 版本差异、PHPUnit 单元测试、OPCache 工作原理和调优、XDebug 性能分析等高级专题。
+- 具备 `Laravel 5`、`Yii 2`、`Symfony Components` 项目开发经验。
 - 开发规范方面，熟悉 `PSR-N` 以及 `PHP-CS`、`PHP-CS-Fixer`、`PHPStan` 等神器。
-- 第三方服务方面，熟悉 `AWS`、`GCP`、主流 `CI/CD`、`Coveralls`、`Sentry` 等。
-- 对应用安全有把握，熟悉 `HTTP 1.1` 协议抓包分析和正则表达式。
+- 关注应用安全，了解常见漏洞，熟悉 `HTTP 1.1` 协议抓包分析。
+- 熟悉主流 `CI/CD`、`Coveralls`、`Sentry`、`Git Workflow`、正则语法等。
 
 }
 
