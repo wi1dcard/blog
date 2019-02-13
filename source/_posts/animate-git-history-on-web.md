@@ -2,7 +2,7 @@
 id: animate-git-history-on-web
 tags: [Git]
 date: 2019-02-11 14:17:27
-title: 快速直观地查看 Git 文件历史
+title: 以动画方式直观地浏览 Git 文件历史
 categories: Recommendations
 ---
 
