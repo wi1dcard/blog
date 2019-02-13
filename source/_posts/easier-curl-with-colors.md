@@ -12,7 +12,7 @@ categories: Recommendations
 
 效果如下：
 
-![](https://github.com/reorx/httpstat/blob/master/screenshot.png)
+![](https://github.com/reorx/httpstat/raw/master/screenshot.png)
 
 相比于繁复细致的 cURL 选项，使用此项目可快速查看响应头及相关的统计数据。
 
