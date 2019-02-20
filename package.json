@@ -22,6 +22,7 @@
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
     "hexo-util": "^0.6.3",
+    "hexo-wordcount": "^6.0.1",
     "lint-md": "^0.1.0"
   }
 }
