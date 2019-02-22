@@ -31,12 +31,10 @@ before_script:
   - NGX_IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' web)
   - RESUME_URL=http://$NGX_IP/resume/
   - ./wait-for-it.sh 127.0.0.1:80
-  - curl $RESUME_URL
   # Render
   - docker run --rm -v $(pwd)/public/resume:/converted arachnysdocker/athenapdf athenapdf --margins=none $RESUME_URL wi1dcard.pdf
   - docker stop web
   # Replace ssh key
-  - rm -f ~/.ssh/id_rsa
   - (echo $GH_DEPLOY_KEY | base64 --decode) > ~/.ssh/id_rsa
   - chmod 400 ~/.ssh/id_rsa
 
