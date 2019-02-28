@@ -26,14 +26,9 @@ before_script:
   - ./lint.sh
   # Generate
   - hexo generate
-  # Prepare nginx
-  - docker run --name web -d -p 80:80 -v $(pwd)/public:/usr/share/nginx/html:ro nginx
-  - NGX_IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' web)
-  - RESUME_URL=http://$NGX_IP/resume/
-  - ./wait-for-it.sh 127.0.0.1:80
   # Render
-  - docker run --rm -v $(pwd)/public/resume:/converted arachnysdocker/athenapdf athenapdf --margins=none $RESUME_URL wi1dcard.pdf
-  - docker stop web
+  - docker run --net host -d -v $(pwd)/public:/usr/share/nginx/html:ro nginx
+  - docker run --net host --rm -v $(pwd)/public/resume:/converted arachnysdocker/athenapdf athenapdf --margins=none http://localhost/resume/ wi1dcard.pdf
   # Replace ssh key
   - (echo $GH_DEPLOY_KEY | base64 --decode) > ~/.ssh/id_rsa
   - chmod 400 ~/.ssh/id_rsa
