@@ -17,9 +17,6 @@ then
   exit 1
 fi
 
-# file_list=$(ls | grep -vE "jootu-copywriting-style-guide.md")
-# echo $file_list
-
 lint-md . --config "$dir/lint-md.json"
 
 exit 0
