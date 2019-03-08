@@ -6,7 +6,7 @@ title: 你需要哪些云服务基础设施？
 categories: Documents
 ---
 
-本文为 [轻松部署 Laravel 应用](https://github.com/wi1dcard/laravel-deployment) 的预习补充篇。
+本文为《[轻松部署 Laravel 应用](https://github.com/wi1dcard/laravel-deployment)》的预习补充篇。
 
 <!--more-->
 
