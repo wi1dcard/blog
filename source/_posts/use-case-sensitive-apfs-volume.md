@@ -3,7 +3,7 @@ id: use-case-sensitive-apfs-volume
 tags: [macOS, Git]
 date: 2019-02-21 13:20:29
 title: 使用大小写敏感的 APFS 卷存储代码
-categories: Tutotials
+categories: Tutorials
 ---
 
 由于 macOS 默认分区和卷都是大小写不敏感的，对于开发者来说，通常需要面对的是大小写敏感的环境。并且，这个小差异的确带来了一些不便，例如 [使用 Git 时遇到的坑](https://learnku.com/articles/3782/a-pit-reminder-a-class-or-a-trait-suddenly-can-not-find)。然而，自己又没有勇气重新格式化、装系统。直到最近，在跟同事聊天时给了我一个启发……
