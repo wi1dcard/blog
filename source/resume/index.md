@@ -71,7 +71,7 @@ comments: false
 
 **喜欢团队分工合作，善于沟通。** 曾担任技术领导，[从零开始](https://www.tianyancha.com/reportContent/2353553379/2016) 组建 [30 人](https://www.tianyancha.com/reportContent/2353553379/2017) 技术团队，积累了一笔宝贵的研发协调经验。
 
-**思维灵活，擅长独立解决问题。** 欢迎阅读本人技术博客 [WTF 分类](https://wi1dcard.cn/categories/wtf/)。日常折腾，以爱好为驱动研究过无人机、Raspberry Pi、OpenWrt、黑群晖等。
+**思维灵活，擅长独立解决问题。** 欢迎阅读本人技术博客 [WTF 分类](https://wi1dcard.cn/categories/wtf/)。日常折腾，以爱好为驱动研究过无人机、树莓派、音频设备、家用网络设备等。
 
 **热爱技术，热爱钻研，规范与性能强迫症，做事追求极致优雅，享受写代码带来的成就感。**
 
@@ -102,10 +102,9 @@ comments: false
 
 - 优良的开发、测试、文档习惯，对自己一贯高标准要求。
 - 坚持写技术博客，总结项目过程中的经验教训，同时锻炼自己的表达能力。
-- 热爱科学上网，善于 Google，手搭各类代理。
+- 热爱科学上网，重度 Google 用户，自用旁路网关全局墙外。
 - 社区活跃，每天必看 `GitHub`、`StackOverflow`、`Laravel-China`。
 - 喜爱英语，至少不是短板，[Laravel-China 翻译审阅者](https://laravel-china.org/users/32249/translations)，欢迎阅读本人技术博客 [Translations 分类](https://wi1dcard.cn/categories/translations/)。
 - 乐于贡献开源项目，请登录 GitHub 后查看我的 [Pull Requests](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+sort%3Aupdated-desc+author%3Awi1dcard)。
 
 }
-
