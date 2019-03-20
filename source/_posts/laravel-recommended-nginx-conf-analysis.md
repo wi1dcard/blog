@@ -12,7 +12,7 @@ categories: Snippets
 
 方便起见，我在注释中使用 `[]` 包裹引用配置中的值。
 
-```conf
+```nginx
 server {
     # 监听 HTTP 协议默认的 [80] 端口。
     listen 80;
