@@ -79,7 +79,7 @@ docker run --rm -v $dir:/data yuque/lint-md lint-md -c /data/lint-md.json /data/
 
 - `Requests`：包含所有的 HTTP 请求定义，基于 [Buzz](https://github.com/kriswallsmith/Buzz)（一个兼容 PSR-7、PSR-17、PSR-18 的 HTTP 客户端）实现，你可以理解为 MVC 中的 Models。
 - `Extractors`：包含所有的请求解析器，利用正则表达式等字符串处理方式提取文本；你可以理解为 MVC 中的 Views。
-- `Commands`：包含所有的 CLI 命令都在这里，基于 Symfony 的 Console 扩展包实现；在这里实例化并发送 Requests，再交给 Extractors 提取需要的数据。你可以理解为 MVC 中的 Controllers。
+- `Commands`：包含所有的 CLI 命令，基于 Symfony 的 Console 扩展包实现；在这里实例化并发送 Requests，再交给 Extractors 提取需要的数据。你可以理解为 MVC 中的 Controllers。
 
 对于用户（我自己😂）来说，只需关心公开的 Commands 即可，例如验证 Session 的 `session`，更新文章的 `article:update`；数据源 Requests 和 Extractors 由 Commands 进行统一调配。
 
