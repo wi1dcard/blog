@@ -30,4 +30,4 @@ tags: [Chrome]
 
 ## 0x02 补充
 
-[Baidu Lite 百度轻](https://userstyles.org/styles/123858/baidu-lite)，这个主题有些兼容性问题，例如 Logo 重叠等等。作者本身已经很久不维护，我简单修复并整体改为 Dark 色调，放出给大家参考：<https://gist.github.com/wi1dcard/e9e1abe55fa509a588c591ecb55cd8bb>
+[Baidu Lite 百度轻](https://userstyles.org/styles/123858/baidu-lite)，这个主题有些兼容性问题，例如 Logo 重叠等等。原作者已经很久不维护，我简单修复并整体改为 Dark 色调，放出给大家参考：<del><https://gist.github.com/wi1dcard/e9e1abe55fa509a588c591ecb55cd8bb></del>
