@@ -9,9 +9,13 @@ PHP Storm 因功能强大被 PHPer 们所熟知，但自身功能愈发强大带
 
 尝试发现，通过深度配置，VS Code 编写 PHP 代码的体验完全不亚于 PHP Storm。故今天为大家介绍：来自微软的骚操作 —— VS Code。
 
+## 更新（2019 年 4 月 11 日）
+
+由于 Settings 内包含敏感信息，因此 Gist 链接已移除。
+
 ## 更新（2018 年 7 月 10 日）
 
-最近发现个新插件，支持同步 VSCode 设置，名叫「[Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)」，因此我使用此插件把配置完全公开至 [GitHub Gist](https://gist.github.com/wi1dcard/32d8cc169104a578d4adb509a91296c2) 以供参考。
+<del>最近发现个新插件，支持同步 VSCode 设置，名叫「[Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)」，因此我使用此插件把配置完全公开至 [GitHub Gist](https://gist.github.com/wi1dcard/32d8cc169104a578d4adb509a91296c2) 以供参考。</del>
 
 ![最新效果](/resources/legacy/5b4442cd2358e.png)
 
