@@ -63,21 +63,16 @@ comments: false
 
 }
 
-## 自我评价
+## 个人修养
 
 @card{
 
-**基础扎实，学东西快，接触面广。** 十岁开始学习 Pascal 参加信息学奥赛，初中获得青岛市竞赛第一名；后自学 C 和 C++ 并从事 HTTP 协议抓包分析和 MFC 开发，高中退学专注于编程。
-
-**喜欢团队分工合作，善于沟通。** 曾担任技术领导，[从零开始](https://www.tianyancha.com/reportContent/2353553379/2016) 组建 [30 人](https://www.tianyancha.com/reportContent/2353553379/2017) 技术团队，积累了一笔宝贵的研发协调经验。
-
-**思维灵活，擅长独立解决问题。** 欢迎阅读本人技术博客 [WTF 分类](https://wi1dcard.cn/categories/wtf/)。日常折腾，以爱好为驱动研究过无人机、树莓派、音频设备、家用网络设备等。
-
-**热爱技术，热爱钻研，规范与性能强迫症，做事追求极致优雅，享受写代码带来的成就感。**
-
-熟悉与前端交互的原理（前端能得到什么、后端需要提供什么），但不了解前端具体实现和最新的 ES 标准。对于关系型数据库，停留在少量数据实际应用层面，对深入调优无经验。
-
-**后端和运维向** 是我的强项；正努力成为 [T 型人才](https://baike.baidu.com/item/T%E5%9E%8B%E4%BA%BA%E6%89%8D)。
+- 优良的开发、测试、文档习惯，对自己一贯高标准要求。
+- 坚持写技术博客，总结工作中的经验教训，同时锻炼自己的表达能力。
+- 热爱科学上网，重度 Google 用户，使用 Ansible 管理 Ubuntu 作为分流网关。
+- 社区活跃，每天必看 GitHub、StackOverflow、Laravel-China 和 InfoQ。
+- 积极参与开源，请登录 GitHub 后查看我的 [Pull Requests](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+sort%3Aupdated-desc+author%3Awi1dcard)。
+- 喜爱英语，至少不是短板，[Laravel-China 翻译审阅者](https://laravel-china.org/users/32249/translations)，欢迎阅读本人技术博客 [Translations 分类](https://wi1dcard.cn/categories/translations/)。
 
 }
 
@@ -98,17 +93,25 @@ comments: false
 - 开发规范方面，熟悉 `PSR-N` 以及 `PHP-CS`、`PHP-CS-Fixer`、`PHPStan` 等神器。
 - 关注应用安全，了解常见漏洞，熟悉 `HTTP 1.1` 协议抓包分析。
 
+不足：
+
+- 熟悉与前端交互的原理（前端能得到什么、后端需要提供什么），但不了解前端具体实现和最新的 ES 标准。
+- 对于关系型数据库，停留在少量数据实际应用层面，对深入调优无经验。
+
 }
 
-## 个人修养
+## 自我评价
 
 @card{
 
-- 优良的开发、测试、文档习惯，对自己一贯高标准要求。
-- 坚持写技术博客，总结工作中的经验教训，同时锻炼自己的表达能力。
-- 热爱科学上网，重度 Google 用户，使用 Ansible 管理 Ubuntu 作为分流网关。
-- 社区活跃，每天必看 GitHub、StackOverflow、Laravel-China 和 InfoQ。
-- 积极参与开源，请登录 GitHub 后查看我的 [Pull Requests](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+sort%3Aupdated-desc+author%3Awi1dcard)。
-- 喜爱英语，至少不是短板，[Laravel-China 翻译审阅者](https://laravel-china.org/users/32249/translations)，欢迎阅读本人技术博客 [Translations 分类](https://wi1dcard.cn/categories/translations/)。
+**基础扎实，学东西快，接触面广。** 十岁开始学习 Pascal 参加信息学奥赛，初中获得青岛市竞赛第一名；后自学 C 和 C++ 并从事 HTTP 协议抓包分析和 MFC 开发，高中退学专注于编程。
+
+**喜欢团队分工合作，善于沟通。** 曾担任技术领导，[从零开始](https://www.tianyancha.com/reportContent/2353553379/2016) 组建 [30 人](https://www.tianyancha.com/reportContent/2353553379/2017) 技术团队，积累了一笔宝贵的研发协调经验。
+
+**思维灵活，擅长独立解决问题。** 欢迎阅读本人技术博客 [WTF 分类](https://wi1dcard.cn/categories/wtf/)。日常折腾，以爱好为驱动研究过无人机、树莓派、音频设备、家用网络设备等。
+
+**热爱技术，热爱钻研，规范与性能强迫症，做事追求极致优雅，享受写代码带来的成就感。**
+
+**后端和运维向** 是我的强项；正努力成为 [T 型人才](https://baike.baidu.com/item/T%E5%9E%8B%E4%BA%BA%E6%89%8D)。
 
 }
