@@ -77,22 +77,26 @@ comments: false
 
 熟悉与前端交互的原理（前端能得到什么、后端需要提供什么），但不了解前端具体实现和最新的 ES 标准。对于关系型数据库，停留在少量数据实际应用层面，对深入调优无经验。
 
-**后端、运维向** 是我的强项；正努力成为 [T 型人才](https://baike.baidu.com/item/T%E5%9E%8B%E4%BA%BA%E6%89%8D)。
+**后端和运维向** 是我的强项；正努力成为 [T 型人才](https://baike.baidu.com/item/T%E5%9E%8B%E4%BA%BA%E6%89%8D)。
 
 }
 
-## 技能优势
+## 技能列表
 
 @card{
 
 - 日常 `macOS` + `Zsh`，了解 `Ubuntu`、`Debian`，相比 GUI 更喜欢 CLI。
-- 新时代运维，熟悉 `AWS` 和 `GCP`，了解 `Terraform` / `Ansible` / `Prometheus`，正在学习 `Kubernetes`。
+- 新时代运维开发，了解常见云服务，了解 `Terraform`、`Ansible`、`Prometheus`，正在学习 `Kubernetes` 和 `Rust`。
+- 了解主流 `CI/CD`、`Sentry`、`Git Workflow` 等。
+- 熟悉 YAML，JSON，正则表达式。
+
+退化中：
+
 - 熟悉 `Nginx` + `PHP-FPM` 配置。
 - PHP 狂热爱好者，熟练使用 `Composer`、`PECL`，熟悉 PHP 版本差异、PHPUnit 单元测试、OPCache 工作原理和调优、XDebug 性能分析等高级专题。
 - 具备 `Laravel 5`、`Yii 2`、`Symfony Components` 项目开发经验。
 - 开发规范方面，熟悉 `PSR-N` 以及 `PHP-CS`、`PHP-CS-Fixer`、`PHPStan` 等神器。
 - 关注应用安全，了解常见漏洞，熟悉 `HTTP 1.1` 协议抓包分析。
-- 熟悉主流 `CI/CD`、`Coveralls`、`Sentry`、`Git Workflow`、正则语法等。
 
 }
 
@@ -101,10 +105,10 @@ comments: false
 @card{
 
 - 优良的开发、测试、文档习惯，对自己一贯高标准要求。
-- 坚持写技术博客，总结项目过程中的经验教训，同时锻炼自己的表达能力。
-- 热爱科学上网，重度 Google 用户，自用旁路网关全局墙外。
-- 社区活跃，每天必看 `GitHub`、`StackOverflow`、`Laravel-China`。
+- 坚持写技术博客，总结工作中的经验教训，同时锻炼自己的表达能力。
+- 热爱科学上网，重度 Google 用户，使用 Ansible 管理 Ubuntu 作为分流网关。
+- 社区活跃，每天必看 GitHub、StackOverflow、Laravel-China 和 InfoQ。
+- 积极参与开源，请登录 GitHub 后查看我的 [Pull Requests](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+sort%3Aupdated-desc+author%3Awi1dcard)。
 - 喜爱英语，至少不是短板，[Laravel-China 翻译审阅者](https://laravel-china.org/users/32249/translations)，欢迎阅读本人技术博客 [Translations 分类](https://wi1dcard.cn/categories/translations/)。
-- 乐于贡献开源项目，请登录 GitHub 后查看我的 [Pull Requests](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+sort%3Aupdated-desc+author%3Awi1dcard)。
 
 }
