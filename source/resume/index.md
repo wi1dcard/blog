@@ -81,7 +81,7 @@ comments: false
 @card{
 
 - 日常 `macOS` + `Zsh`，了解 `Ubuntu`、`Debian`，相比 GUI 更喜欢 CLI。
-- 新时代运维开发，了解常见云服务，了解 `Terraform`、`Ansible`、`Prometheus`，正在学习 `Kubernetes` 和 `Rust`。
+- 新时代运维开发，了解常见云服务；具备 `Terraform`、`Ansible`、`Prometheus` 应用经验，正在学习 `Kubernetes` 和 `Rust`。
 - 了解主流 `CI/CD`、`Sentry`、`Git Workflow` 等。
 - 熟悉 YAML，JSON，正则表达式。
 
@@ -105,8 +105,6 @@ comments: false
 @card{
 
 **基础扎实，学东西快，接触面广。** 十岁开始学习 Pascal 参加信息学奥赛，初中获得青岛市竞赛第一名；后自学 C 和 C++ 并从事 HTTP 协议抓包分析和 MFC 开发，高中退学专注于编程。
-
-**喜欢团队分工合作，善于沟通。** 曾担任技术领导，[从零开始](https://www.tianyancha.com/reportContent/2353553379/2016) 组建 [30 人](https://www.tianyancha.com/reportContent/2353553379/2017) 技术团队，积累了一笔宝贵的研发协调经验。
 
 **思维灵活，擅长独立解决问题。** 欢迎阅读本人技术博客 [WTF 分类](https://wi1dcard.cn/categories/wtf/)。日常折腾，以爱好为驱动研究过无人机、树莓派、音频设备、家用网络设备等。
 
