@@ -82,8 +82,7 @@ comments: false
 
 - 日常 `macOS` + `Zsh`，了解 `Ubuntu`、`Debian`，相比 GUI 更喜欢 CLI。
 - 新时代运维开发，了解常见云服务；具备 `Terraform`、`Ansible`、`Prometheus` 应用经验，正在学习 `Kubernetes` 和 `Rust`。
-- 了解主流 `CI/CD`、`Sentry`、`Git Workflow` 等。
-- 熟悉 YAML，JSON，正则表达式。
+- 熟悉主流 `CI/CD`、`Git Workflow`、YAML、JSON、正则表达式等技巧。
 
 退化中：
 
