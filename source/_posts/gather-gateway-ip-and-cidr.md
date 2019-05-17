@@ -8,6 +8,8 @@ categories: Snippets
 
 最近折腾科学上网网关，博客停更一段时间；随手记录一段小脚本，以备日后查用。这是目前我找到的最简、最通用方案，只需 `ip` 和 `grep` 命令即可。
 
+<!--more-->
+
 ```bash
 CIDR=$(ip -f inet addr show dev eth0 | grep -Pom1 'inet \K[\d./]+')
 GATEWAY=$(ip -f inet route show default dev eth0 | grep -Pom1 'via \K[\d.]+')
