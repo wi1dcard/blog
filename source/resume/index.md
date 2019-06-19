@@ -3,7 +3,7 @@ title: "I'm Wi1dcard."
 comments: false
 ---
 
-> 世界在发展，尤其软件行业日新月异。我从未停止学习的脚步，请务必访问我的在线简历以获取最新信息。
+> 世界在发展，技术在进步。我从未停止学习的脚步，请务必访问我的在线简历以获取最新信息。
 > 本人简历永久地址：**<https://wi1dcard.github.io/resume/>**（[下载 PDF](wi1dcard.pdf)）
 
 <!--more-->
@@ -68,11 +68,13 @@ comments: false
 @card{
 
 - 优良的开发、测试、文档习惯，对自己一贯高标准要求。
-- 坚持写技术博客，总结工作中的经验教训，同时锻炼自己的表达能力。
-- 热爱科学上网，重度 Google 用户，使用 Ansible 管理 Ubuntu 作为分流网关。
+- 相比 GUI 更喜欢 CLI。
+- 坚持写技术博客，总结工作中的经验教训，同时锻炼表达能力。
+- 热爱科学上网，重度 Google 用户，但抵制 Koolshare 和 iKuai。
 - 社区活跃，每天必看 GitHub、StackOverflow、Laravel-China 和 InfoQ。
 - 积极参与开源，请登录 GitHub 后查看我的 [Pull Requests](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+sort%3Aupdated-desc+author%3Awi1dcard)。
-- 喜爱英语，至少不是短板，[Laravel-China 翻译审阅者](https://laravel-china.org/users/32249/translations)，欢迎阅读本人技术博客 [Translations 分类](https://wi1dcard.cn/categories/translations/)。
+- 喜爱英语，至少不是短板，[LearnKu 翻译审阅者](https://learnku.com/users/32249/translations)，欢迎阅读本人技术博客 [Translations 分类](https://wi1dcard.cn/categories/translations/)。
+- 正努力成为 [T 型人才](https://baike.baidu.com/item/T%E5%9E%8B%E4%BA%BA%E6%89%8D)。
 
 }
 
@@ -80,22 +82,17 @@ comments: false
 
 @card{
 
-- 日常 `macOS` + `Zsh`，了解 `Ubuntu`、`Debian`，相比 GUI 更喜欢 CLI。
-- 新时代运维开发，了解常见云服务；具备 `Terraform`、`Ansible`、`Prometheus` 应用经验，正在学习 `Kubernetes` 和 `Rust`。
-- 熟悉主流 `CI/CD`、`Git Workflow`、YAML、JSON、正则表达式等技巧。
+- 新时代运维开发，具备一定网络知识，日常工作环境 macOS + Zsh。
+- 熟练使用 Ubuntu、Bash、Zsh、Terraform、Ansible、Prometheus、Docker、Nginx、PHP-FPM、AWS、GCP、GitLab CI/CD、Travis CI、Git Workflow、Regex、Unifi、OpenWrt 等。
+- 了解 NewRelic、StatusCake、OpsGenie、Jira、Circle CI、Coveralls、Cloud-Init、Meraki 等。
+- 正在学习 Kubernetes 和 Rust。
 
 退化中：
 
-- 熟悉 `Nginx` + `PHP-FPM` 配置。
-- PHP 狂热爱好者，熟练使用 `Composer`、`PECL`，熟悉 PHP 版本差异、PHPUnit 单元测试、OPCache 工作原理和调优、XDebug 性能分析等高级专题。
-- 具备 `Laravel 5`、`Yii 2`、`Symfony Components` 项目开发经验。
-- 开发规范方面，熟悉 `PSR-N` 以及 `PHP-CS`、`PHP-CS-Fixer`、`PHPStan` 等神器。
-- 关注应用安全，了解常见漏洞，熟悉 `HTTP 1.1` 协议抓包分析。
-
-不足：
-
-- 熟悉与前端交互的原理（前端能得到什么、后端需要提供什么），但不了解前端具体实现和最新的 ES 标准。
-- 对于关系型数据库，停留在少量数据实际应用层面，对深入调优无经验。
+- PHP 狂热爱好者，熟练使用 Composer、PECL，熟悉 PHP 版本差异、PHPUnit 单元测试、OPCache 工作原理和调优、XDebug 性能分析等高级专题。
+- 具备 Laravel 5、Yii 2、Symfony Components 项目开发经验。
+- 熟悉 PSR-N 以及 PHP-CS-Fixer、PHPStan 等神器。
+- 关注应用安全，了解常见漏洞，熟悉 HTTP 1.1 协议。
 
 }
 
@@ -103,12 +100,15 @@ comments: false
 
 @card{
 
-**基础扎实，学东西快，接触面广。** 十岁开始学习 Pascal 参加信息学奥赛，初中获得青岛市竞赛第一名；后自学 C 和 C++ 并从事 HTTP 协议抓包分析和 MFC 开发，高中退学专注于编程。
+**基础扎实，学东西快，接触面广。** 十岁开始学习 Pascal 参加信息学奥赛；初中获得青岛市竞赛第一名；后自学 C 和 C++ 并从事 HTTP 抓包分析和 MFC 开发；高中退学专注于编程。
 
-**思维灵活，擅长独立解决问题。** 欢迎阅读本人技术博客 [WTF 分类](https://wi1dcard.cn/categories/wtf/)。日常折腾，以爱好为驱动研究过无人机、树莓派、音频设备、家用网络设备等。
+**思维灵活，擅长独立解决问题。** 欢迎阅读本人技术博客 [WTF 分类](https://wi1dcard.cn/categories/wtf/)。日常折腾，以爱好为驱动研究过无人机、树莓派、音频设备、网络设备等。
 
 **热爱技术，热爱钻研，规范与性能强迫症，做事追求极致优雅，享受写代码带来的成就感。**
 
-**后端和运维向** 是我的强项；正努力成为 [T 型人才](https://baike.baidu.com/item/T%E5%9E%8B%E4%BA%BA%E6%89%8D)。
+**后端和运维向** 是我的强项，暂时的不足：
+
+- 熟悉与前端交互（前端能得到什么、后端需要提供什么），但不了解前端的具体实现和最新技术。
+- 在 MySQL 等关系型数据库中，缺乏处理大量数据以及深入调优的经验。
 
 }
