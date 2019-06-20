@@ -46,7 +46,11 @@ echo intval($test_string, 8); // == 10
 
 ## 性能
 
-`(int)` 因为不走函数调用，所以性能上无论是理论还是实测，都略高于 `intval()`。
+`(int)` 与 `intval()` 性能几乎无异。以下摘自本文评论（感谢 @CismonX）：
+
+> If you call intval() with only one argument, it will be compiled to ZEND_CAST instruction by function zend_try_compile_special_func(), yielding identical opcode to that of (int). Thus, there's no performance issue with intval() here.
+
+> The same is true for many other internal functions, like strval(), call_user_func(), etc., where function calls are optimized into opcode instructions at compile time. You can try that yourself using phpdbg.
 
 ## 参考
 
