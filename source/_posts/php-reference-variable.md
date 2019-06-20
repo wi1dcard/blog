@@ -45,7 +45,7 @@ print_r($foo);
 输出如下：
 
 ```
-foo: (refcount=1, is_ref=0)=array ('hello' => (refcount=0, is_ref=0)='0')
+foo: (refcount=1, is_ref=0)=array ('hello' => (refcount=1, is_ref=0)='0')
 foo: (refcount=1, is_ref=0)=array ('hello' => (refcount=2, is_ref=1)='0')
 ```
 
