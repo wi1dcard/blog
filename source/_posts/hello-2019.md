@@ -10,11 +10,11 @@ tags: []
 
 近期（emmmm... 几个月前）跳槽后一直没有再继续编写博客，连续跳票，一晃到了 2018 的年底。
 
-不过还是停不下来自己需要写点什么的习惯。由于想要「移民」的倾向越来越强烈，于是便开启了「[翻译](https://laravel-china.org/c/translations)」的旅程。
+不过还是停不下来自己需要写点什么的习惯。由于想要「移民」的倾向越来越强烈，于是便开启了「[翻译](https://learnku.com/laravel/c/translations)」的旅程。
 
 希望几个月后能够在不断的实践和锻炼中，提高自己的英文读写水平吧。
 
-有兴趣的朋友可以关注下我的 [Laravel-China ID](https://laravel-china.org/users/32249)。
+有兴趣的朋友可以关注下我的 [Laravel-China ID](https://learnku.com/users/32249)。
 
 在开始日渐沉迷 Laravel-China 的同时，我决定离开 Gitee —— 也就是码云了。
 

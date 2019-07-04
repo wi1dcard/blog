@@ -40,5 +40,5 @@ tags: [MySQL]
 ## 0xFF 更多...
 
 - <https://www.shiqidu.com/d/358>
-- <https://laravel-china.org/articles/10736/some-craters-in-mysql-8011>
+- <https://learnku.com/articles/10736/some-craters-in-mysql-8011>
 - <https://kn007.net/topics/the-road-to-mysql-8-0-11-update/>

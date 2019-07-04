@@ -12,11 +12,11 @@ Tips: 此[仓库](https://github.com/wi1dcard/laravel-broadcasting)实现[本文
 
 ## 0x00 准备
 
-- [广播系统 - Laravel 5.6 中文文档](https://laravel-china.org/docs/laravel/5.6/broadcasting)
-- [用户认证 - Laravel 5.6 中文文档](https://laravel-china.org/docs/laravel/5.6/authentication)
-- [事件系统 - Laravel 5.6 中文文档](https://laravel-china.org/docs/laravel/5.6/events)
-- [队列系统 - Laravel 5.6 中文文档](https://laravel-china.org/docs/laravel/5.6/queues)
-- [前端指南 - Laravel 5.6 中文文档](https://laravel-china.org/docs/laravel/5.6/frontend)
+- [广播系统 - Laravel 5.6 中文文档](https://learnku.com/docs/laravel/5.6/broadcasting)
+- [用户认证 - Laravel 5.6 中文文档](https://learnku.com/docs/laravel/5.6/authentication)
+- [事件系统 - Laravel 5.6 中文文档](https://learnku.com/docs/laravel/5.6/events)
+- [队列系统 - Laravel 5.6 中文文档](https://learnku.com/docs/laravel/5.6/queues)
+- [前端指南 - Laravel 5.6 中文文档](https://learnku.com/docs/laravel/5.6/frontend)
 - [tlaverdure/laravel-echo-server](https://github.com/tlaverdure/laravel-echo-server)
 
 没错，这是你需要的知识储备。
@@ -494,7 +494,7 @@ $request->setUserResolver(function ($guard = null) use ($app) {
 
 ## 0x04 扩展阅读
 
-- [Laravel Broadcast——广播系统源码剖析](https://laravel-china.org/articles/7137/laravel-broadcast-an-analysis-of-the-source-code-of-the-broadcasting-system)
+- [Laravel Broadcast——广播系统源码剖析](https://learnku.com/articles/7137/laravel-broadcast-an-analysis-of-the-source-code-of-the-broadcasting-system)
 
 - [Laravel 中服务端与客户端事件广播实现](https://laravelacademy.org/post/8379.html)
 

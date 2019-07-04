@@ -24,7 +24,7 @@ tags: [Swoole, Laravel]
 
 首先创建项目：`laravel new`
 
-根据 [Server - Swoole 文档](https://wiki.swoole.com/wiki/page/p-server.html)，「swoole_server 只能用于 php-cli 环境」，而 Laravel 提供的 [Artisan 命令行](https://laravel-china.org/docs/laravel/5.5/artisan) 功能就是基于 PHP-CLI 的；
+根据 [Server - Swoole 文档](https://wiki.swoole.com/wiki/page/p-server.html)，「swoole_server 只能用于 php-cli 环境」，而 Laravel 提供的 [Artisan 命令行](https://learnku.com/docs/laravel/5.5/artisan) 功能就是基于 PHP-CLI 的；
 
 按照这个思路，我们可以创建一条名为`swoole:start`的 Artisan Command，不需要破坏框架原有结构，部署时只需要执行此命令启动 Swoole 服务端监听硬件通信端口即可。
 
