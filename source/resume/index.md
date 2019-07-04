@@ -71,7 +71,7 @@ comments: false
 - 相比 GUI 更喜欢 CLI。
 - 坚持写技术博客，总结工作中的经验教训，同时锻炼表达能力。
 - 热爱科学上网，重度 Google 用户，但抵制 Koolshare 和 iKuai。
-- 社区活跃，每天必看 GitHub、StackOverflow、Laravel-China 和 InfoQ。
+- 社区活跃，每天必看 GitHub、StackOverflow、LearnKu 和 InfoQ。
 - 积极参与开源，请登录 GitHub 后查看我的 [Pull Requests](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+sort%3Aupdated-desc+author%3Awi1dcard)。
 - 喜爱英语，至少不是短板，[LearnKu 翻译审阅者](https://learnku.com/users/32249/translations)，欢迎阅读本人技术博客 [Translations 分类](https://wi1dcard.cn/categories/translations/)。
 - 正努力成为 [T 型人才](https://baike.baidu.com/item/T%E5%9E%8B%E4%BA%BA%E6%89%8D)。
@@ -84,13 +84,13 @@ comments: false
 
 - 新时代运维开发，具备一定网络知识，日常工作环境 macOS + Zsh。
 - 熟练使用 Ubuntu、Bash、Zsh、Terraform、Ansible、Prometheus、Docker、Nginx、PHP-FPM、AWS、GCP、GitLab CI/CD、Travis CI、Git Workflow、Regex、Unifi、OpenWrt 等。
-- 了解 NewRelic、StatusCake、OpsGenie、Jira、Circle CI、Coveralls、Cloud-Init、Meraki 等。
-- 正在学习 Kubernetes 和 Rust。
+- 了解 Grafana、NewRelic、StatusCake、OpsGenie、Jira、Circle CI、Coveralls、Cloud-Init、Meraki 等。
+- 正在学习 Kubernetes、Helm 和 Rust。
 
 退化中：
 
 - PHP 狂热爱好者，熟练使用 Composer、PECL，熟悉 PHP 版本差异、PHPUnit 单元测试、OPCache 工作原理和调优、XDebug 性能分析等高级专题。
-- 具备 Laravel 5、Yii 2、Symfony Components 项目开发经验。
+- ~~具备 Laravel 5、Yii 2、Symfony Components 项目开发经验。~~ 基本已经忘光了，并且没有兴趣再继续钻研这个方向。
 - 熟悉 PSR-N 以及 PHP-CS-Fixer、PHPStan 等神器。
 - 关注应用安全，了解常见漏洞，熟悉 HTTP 1.1 协议。
 
