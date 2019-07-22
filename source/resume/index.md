@@ -41,8 +41,6 @@ comments: false
 
 ### 作品
 
-> Talk is cheap. Show me the code. - Linus Torvalds
-
 - GitHub：<https://github.com/wi1dcard>
 - 技术博客：<https://wi1dcard.cn/>
 
@@ -50,11 +48,7 @@ comments: false
 
 @card{
 
-### 履历
-
-- 请查看：<https://wi1dcard.github.io/cv/>
-
-### 联系
+### 联系我
 
 - E-Mail：[wi1dcard.cn@gmail.com](mailto:wi1dcard.cn@gmail.com)
 - Telegram：[@wi1dcard_cn](https://t.me/wi1dcard_cn)
@@ -95,6 +89,24 @@ comments: false
 - 关注应用安全，了解常见漏洞，熟悉 HTTP 1.1 协议。
 
 }
+
+## 工作经历
+
+@card{
+
+| 公司 / 组织                  | 岗位                                  | 时间                   |
+| ---------------------------- | ------------------------------------- | ---------------------- |
+| [RightCapital]               | PHP 工程师 -> DevOps 工程师           | 2018年11月 ~           |
+| [浙江禾匠信息科技有限公司]   | 高级 PHP 工程师                       | 2018年5月 ~ 2018年10月 |
+| [浙江椒图科技]               | .NET 工程师 -> PHP 工程师 -> 技术管理 | 2017年2月 ~ 2018年5月  |
+| [长沙异次元网络科技有限公司] | C++ 工程师                            | 2015年5月 ~ 2016年12月 |
+
+}
+
+[RightCapital]: /cv/#RightCapital
+[浙江禾匠信息科技有限公司]: /cv/#浙江禾匠信息科技有限公司
+[浙江椒图科技]: /cv/#浙江椒图科技
+[长沙异次元网络科技有限公司]: /cv/#长沙异次元网络科技有限公司
 
 ## 自我评价
 
