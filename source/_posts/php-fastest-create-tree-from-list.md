@@ -109,9 +109,9 @@ public static function getList($catList)
     foreach ($catList as &$item) {
         $parent_id = $item['parent_id'];
         if (isset($catList[$parent_id]) && !empty($catList[$parent_id])) {
-            $catList[$parent_id]['list'][] = &$catList[$item['id']];
+            $catList[$parent_id]['list'][] = $item;
         } else {
-            $treeData[] = &$catList[$item['id']];
+            $treeData[] = $item;
         }
     }
     unset($item);
