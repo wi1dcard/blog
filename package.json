@@ -4,6 +4,10 @@
   "hexo": {
     "version": "3.9.0"
   },
+  "scripts": {
+    "build": "hexo generate",
+    "lint": "lint-md source/_posts --config lint-md.json"
+  },
   "dependencies": {
     "hexo": "^3.9",
     "hexo-cli": "^2.0",

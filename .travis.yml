@@ -13,29 +13,28 @@ branches:
   only:
     - master
 
-install:
-  - yarn install
-  - export PATH=$PATH:$(pwd)/node_modules/.bin
-  - docker pull arachnysdocker/athenapdf
-  - docker pull nginx
-  - wget https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh
-  - chmod +x wait-for-it.sh
-
 before_script:
-  # Lint first
+  # Install
+  - yarn install --production
+  - export PATH=$PATH:$(pwd)/node_modules/.bin
+  # Lint
   - ./lint.sh
-  # Generate
-  - hexo generate
+  # Build
+  - yarn run build
   # Render
   - docker run --net host -d -v $(pwd)/public:/usr/share/nginx/html:ro nginx
   - docker run --net host --rm -v $(pwd)/public/resume:/converted arachnysdocker/athenapdf athenapdf --margins=none http://localhost/resume/ wi1dcard.pdf
-  # Replace ssh key
+  # Build image
+  - docker build -t wi1dcard/blog .
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  # Replace SSH key
   - (echo $GH_DEPLOY_KEY | base64 --decode) > ~/.ssh/id_rsa
   - chmod 400 ~/.ssh/id_rsa
 
 script:
   # Deploy
   - hexo deploy
+  - docker push wi1dcard/blog
 
 notifications:
   email:

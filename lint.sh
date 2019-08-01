@@ -1,12 +1,8 @@
-#!/bin/bash -eu
+#!/bin/sh -eu
 
-cd $(dirname $0)
+yarn run lint
 
-dir=$(pwd)
-posts="$dir/source/_posts"
-cd $posts
-
-file_list=$(grep -LE '^categories:(\s[A-Z][a-zA-Z]*)+$' *)
+file_list=$(grep -LE '^categories:(\s[A-Z][a-zA-Z]*)+$' ./source/_posts/*)
 
 if [ -n "$file_list" ]
 then
@@ -16,7 +12,5 @@ then
 
   exit 1
 fi
-
-lint-md . --config "$dir/lint-md.json"
 
 exit 0
