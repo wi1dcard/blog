@@ -22,8 +22,16 @@ before_script:
   # Build
   - yarn run build
   # Render
-  - docker run --net host -d -v $(pwd)/public:/usr/share/nginx/html:ro nginx
-  - docker run --net host --rm -v $(pwd)/public/resume:/converted arachnysdocker/athenapdf athenapdf --margins=none http://localhost/resume/ wi1dcard.pdf
+  - |
+    docker run --net host -d \
+      -v $(pwd)/Caddyfile:/etc/Caddyfile \
+      -v $(pwd)/public:/srv:ro \
+      abiosoft/caddy
+  - |
+    docker run --net host --rm --add-host wi1dcard.cn:127.0.0.1 \
+      -v $(pwd)/public/resume:/converted \
+      arachnysdocker/athenapdf \
+      athenapdf --margins=none --ignore-certificate-errors https://wi1dcard.cn/resume/ wi1dcard.pdf
   # Build image
   - docker build -t wi1dcard/blog .
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
