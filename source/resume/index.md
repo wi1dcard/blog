@@ -67,7 +67,7 @@ comments: false
 - 热爱科学上网，重度 Google 用户，但抵制 Koolshare 和 iKuai。
 - 社区活跃，每天必看 GitHub、StackOverflow、LearnKu 和 InfoQ。
 - 积极参与开源，请登录 GitHub 后查看我的 [Pull Requests](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+sort%3Aupdated-desc+author%3Awi1dcard)。
-- 喜爱英语，至少不是短板，[LearnKu 翻译审阅者](https://learnku.com/users/32249/translations)，欢迎阅读本人技术博客 [Translations 分类](https://wi1dcard.cn/categories/translations/)。
+- 喜爱英语，至少不是短板，[LearnKu 翻译审阅者](https://learnku.com/users/32249/translations)，欢迎阅读本人技术博客 [Translations 分类](/categories/translations/)。
 - 正努力成为 [T 型人才](https://baike.baidu.com/item/T%E5%9E%8B%E4%BA%BA%E6%89%8D)。
 
 }
