@@ -22,7 +22,7 @@ tags: [CLI]
 
 另外，官方在 README 内还给出了一个实实在在的「实时」图片例子：
 
-![Weather Report](http://wttr.in/MyLocation.png)
+![Weather Report](https://wttr.in/MyLocation.png)
 
 你也可以通过指定参数来获取特定地点的天气，例如：
 
