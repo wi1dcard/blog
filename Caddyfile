@@ -1,4 +1,4 @@
-wi1dcard.cn:443
+https://wi1dcard.cn
 tls self_signed
 log stdout
 errors stdout
