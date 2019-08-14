@@ -8,7 +8,7 @@ tags: [Laravel, Node.js]
 
 > Laravel 集成众多开包即用的功能, 虽然它真的很"胖", 但这并不影响它是个好框架. 本篇文章将采用 Laravel 5.6 版本由浅入深为大家演示: 如何使用内置的 Broadcast（广播）功能实现与客户端实时通信.
 
-Tips: 此[仓库](https://github.com/wi1dcard/laravel-broadcasting)实现[本文](https://wi1dcard.cn/posts/laravel-broadcasting/)中的 `0x02 广播` 代码。
+Tips: 此[仓库](https://github.com/wi1dcard/laravel-broadcasting)实现[本文](https://wi1dcard.dev/posts/laravel-broadcasting/)中的 `0x02 广播` 代码。
 
 ## 0x00 准备
 

@@ -16,7 +16,7 @@ categories: Recommendations
 
 ## tldr
 
-> 关于 TL;DR 的含义参见 [本文](https://wi1dcard.cn/posts/github-abbrs-collection/)。
+> 关于 TL;DR 的含义参见 [本文](https://wi1dcard.dev/posts/github-abbrs-collection/)。
 
 用过 `man` 命令的人，应该还记得被满屏选项以及零高亮支配的恐惧吧...
 

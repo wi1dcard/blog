@@ -43,11 +43,11 @@ categories: Tutorials
 - 发布前确保行文规范，包括标点使用无误、中英文之间空格等；接到 PR 时也能自动检查，方便社区贡献。
 - 发布前对内容预处理，例如去掉内容中的一级标题，插入固定简介、目录等。
 
-前 2 步中 GitHub + Travis 的相关文章有很多，比如 [这篇博客](https://wi1dcard.cn/posts/convert-html-to-pdf-with-ci/)，在此暂不详述；接下来我将重点分析第 3 步的流程。
+前 2 步中 GitHub + Travis 的相关文章有很多，比如 [这篇博客](https://wi1dcard.dev/posts/convert-html-to-pdf-with-ci/)，在此暂不详述；接下来我将重点分析第 3 步的流程。
 
 ## 风格检查
 
-我使用 [这篇博文](https://wi1dcard.cn/posts/lint-your-posts-with-ci/) 中介绍的 Lint-md 项目实现。为了方便 CI 使用，我还特意提交了一个 [Pull Request](https://github.com/hustcc/lint-md/pull/38)，用于支持 Docker 镜像。
+我使用 [这篇博文](https://wi1dcard.dev/posts/lint-your-posts-with-ci/) 中介绍的 Lint-md 项目实现。为了方便 CI 使用，我还特意提交了一个 [Pull Request](https://github.com/hustcc/lint-md/pull/38)，用于支持 Docker 镜像。
 
 具体代码非常简单，只有一行。你可以在 [这里](https://github.com/wi1dcard/laravel-deployment/blob/03c6ce2bd30a53c9c4f5ca3c5cb27e06c5630274/helpers/lint#L5) 找到：
 

@@ -44,7 +44,7 @@ This is a test.
 ### 作品
 
 - GitHub：<https://github.com/wi1dcard>
-- 技术博客：<https://wi1dcard.cn/>
+- 技术博客：<https://wi1dcard.dev/>
 
 }
 
@@ -116,7 +116,7 @@ This is a test.
 
 **基础扎实，学东西快，接触面广。** 十岁开始学习 Pascal 参加信息学奥赛；初中获得青岛市竞赛第一名；后自学 C 和 C++ 并从事 HTTP 抓包分析和 MFC 开发；高中退学专注于编程。
 
-**思维灵活，擅长独立解决问题。** 欢迎阅读本人技术博客 [WTF 分类](https://wi1dcard.cn/categories/wtf/)。日常折腾，以爱好为驱动研究过无人机、树莓派、音频设备、网络设备等。
+**思维灵活，擅长独立解决问题。** 欢迎阅读本人技术博客 [WTF 分类](https://wi1dcard.dev/categories/wtf/)。日常折腾，以爱好为驱动研究过无人机、树莓派、音频设备、网络设备等。
 
 **热爱技术，热爱钻研，规范与性能强迫症，做事追求极致优雅，享受写代码带来的成就感。**
 

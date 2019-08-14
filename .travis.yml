@@ -28,10 +28,10 @@ before_script:
       -v $(pwd)/public:/srv:ro \
       abiosoft/caddy
   - |
-    docker run --net host --rm --add-host wi1dcard.cn:127.0.0.1 \
+    docker run --net host --rm --add-host wi1dcard.dev:127.0.0.1 \
       -v $(pwd)/public/resume:/converted \
       arachnysdocker/athenapdf \
-      athenapdf --margins=none --ignore-certificate-errors https://wi1dcard.cn/resume/ wi1dcard.pdf
+      athenapdf --margins=none --ignore-certificate-errors https://wi1dcard.dev/resume/ wi1dcard.pdf
   # Build image
   - docker build -t wi1dcard/blog .
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin

@@ -52,7 +52,7 @@ categories: WTF
 
 ### 存储（Git-LFS）
 
-根据以上问题，首先需要解决的就是如何存储。直接保存在 Git Repo 内肯定不合适。Git 无法 Diff 二进制文件，如果在博客更新和重构过程中优化、修改、移动这些图片文件，那对于 Git 仓库来说将是「爆炸性」的，你会看到仓库大小成倍增长，CI/CD 执行 Clone 和 Build 时会严重拖慢速度。虽然有方法可 [后期清理](https://wi1dcard.cn/posts/git-find-large-file/)，但我并不喜欢这种怪异的折中方案，除非仓库已经被二进制文件「污染」。
+根据以上问题，首先需要解决的就是如何存储。直接保存在 Git Repo 内肯定不合适。Git 无法 Diff 二进制文件，如果在博客更新和重构过程中优化、修改、移动这些图片文件，那对于 Git 仓库来说将是「爆炸性」的，你会看到仓库大小成倍增长，CI/CD 执行 Clone 和 Build 时会严重拖慢速度。虽然有方法可 [后期清理](https://wi1dcard.dev/posts/git-find-large-file/)，但我并不喜欢这种怪异的折中方案，除非仓库已经被二进制文件「污染」。
 
 针对这个问题，[Git-LFS](https://git-lfs.github.com) 是个不错的解决方案。它是一个 Git 插件，是由 GitHub 而非 Git 官方推出，尽管官网风格的确很像😂。
 
