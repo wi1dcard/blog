@@ -13,6 +13,10 @@ branches:
   only:
     - master
 
+# Travis CI free plan doesn't provide the "artifact" feature.
+# So I have to put multi-stage builds into a single job.
+# Waiting for GitHub Action or I would prefer to moving this blog to GitLab.
+
 before_script:
   # Install
   - yarn install --production
