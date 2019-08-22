@@ -41,8 +41,8 @@ comments: false
 
 ### 作品
 
-- GitHub：<https://github.com/wi1dcard>
-- 技术博客：<https://wi1dcard.dev/>
+- [GitHub Repositories](https://github.com/wi1dcard?utf8=✓&tab=repositories&q=&type=source&language=)
+- 技术博客: <https://wi1dcard.dev/>
 
 }
 
