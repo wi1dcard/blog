@@ -37,7 +37,7 @@ before_script:
       arachnysdocker/athenapdf \
       athenapdf --margins=none --ignore-certificate-errors https://wi1dcard.dev/resume/ wi1dcard.pdf
   # Build image
-  - docker build -t wi1dcard/blog .
+  - docker build -t wi1dcard/blog -t wi1dcard/blog:build-$TRAVIS_BUILD_NUMBER .
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   # Replace SSH key
   - (echo $GH_DEPLOY_KEY | base64 --decode) > ~/.ssh/id_rsa
