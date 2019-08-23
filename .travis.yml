@@ -22,7 +22,7 @@ before_script:
   - yarn install --production
   - export PATH=$PATH:$(pwd)/node_modules/.bin
   # Lint
-  - ./lint.sh
+  - yarn run lint
   # Build
   - yarn run build
   # Render

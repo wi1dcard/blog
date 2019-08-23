@@ -6,7 +6,7 @@
   },
   "scripts": {
     "build": "hexo generate",
-    "lint": "lint-md source/_posts --config lint-md.json"
+    "lint": "lint/lint-categories.sh && lint-md source/_posts --config lint/lint-md.json"
   },
   "dependencies": {
     "hexo": "^3.9",
