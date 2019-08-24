@@ -1,52 +1,31 @@
+dist: bionic
 language: node_js
-
-node_js:
-  - "12"
+node_js: [ "12" ]
+services: [ docker ]
 
 git:
   depth: 1
 
-services:
-  - docker
+env:
+  global:
+    - DOCKER_IMAGE=wi1dcard/blog
+    - DOCKER_TAG=build-$TRAVIS_BUILD_NUMBER
 
 branches:
   only:
     - master
 
-# Travis CI free plan doesn't provide the "artifact" feature.
-# So I have to put multi-stage builds into a single job.
-# Waiting for GitHub Action or I would prefer to moving this blog to GitLab.
+install:
+  - yarn install --production
 
 before_script:
-  # Install
-  - yarn install --production
-  - export PATH=$PATH:$(pwd)/node_modules/.bin
-  # Lint
-  - yarn run lint
-  # Build
-  - yarn run build
-  # Render
-  - |
-    docker run --net host -d \
-      -v $(pwd)/Caddyfile:/etc/Caddyfile \
-      -v $(pwd)/public:/srv:ro \
-      abiosoft/caddy
-  - |
-    docker run --net host --rm --add-host wi1dcard.dev:127.0.0.1 \
-      -v $(pwd)/public/resume:/converted \
-      arachnysdocker/athenapdf \
-      athenapdf --margins=none --ignore-certificate-errors https://wi1dcard.dev/resume/ wi1dcard.pdf
-  # Build image
-  - docker build -t wi1dcard/blog -t wi1dcard/blog:build-$TRAVIS_BUILD_NUMBER .
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  # Replace SSH key
-  - (echo $GH_DEPLOY_KEY | base64 --decode) > ~/.ssh/id_rsa
-  - chmod 400 ~/.ssh/id_rsa
+  - build/build.sh
 
 script:
-  # Deploy
-  - hexo deploy
-  - docker push wi1dcard/blog
+  - deploy/deploy.sh
+
+after_script:
+  - docker stop $(docker container ls -q)
 
 notifications:
   email:

@@ -1,0 +1,22 @@
+repositories:
+  - name: stable
+    url: https://kubernetes-charts.storage.googleapis.com
+
+helmDefaults:
+  tillerless: true
+  tillerNamespace: blog
+
+releases:
+  - name: blog
+    namespace: blog
+    chart: ./chart
+    values:
+      - image:
+          tag: {{ requiredEnv "DOCKER_TAG" }}
+        ingress:
+          hosts:
+            - host: {{ requiredEnv "INGRESS_HOST" }}
+              paths: [ / ]
+          tls:
+            - secretName: ingress-tls
+              hosts: [ {{ requiredEnv "INGRESS_HOST" }} ]
