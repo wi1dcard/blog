@@ -3,8 +3,7 @@ title: "I'm Wi1dcard."
 comments: false
 ---
 
-> 世界在发展，技术在进步。我从未停止学习的脚步，请务必访问我的在线简历以获取最新信息。
-> 本人简历永久地址：**<https://wi1dcard.github.io/resume/>**（[下载 PDF](wi1dcard.pdf)）
+> 我的 [在线简历](https://wi1dcard.dev/resume/) / [获取 PDF 版本](wi1dcard.pdf)。
 
 <!--more-->
 
@@ -83,8 +82,7 @@ comments: false
 
 退化中：
 
-- PHP 狂热爱好者，熟练使用 Composer、PECL，熟悉 PHP 版本差异、PHPUnit 单元测试、OPCache 工作原理和调优、XDebug 性能分析等高级专题。
-- ~~具备 Laravel 5、Yii 2、Symfony Components 项目开发经验。~~ 基本已经忘光了，并且没有兴趣再继续钻研这个方向。
+- PHP 狂热爱好者，熟练使用 Composer、PECL；~~熟悉 PHP 版本差异、PHPUnit 单元测试、OPCache 工作原理和调优、XDebug 性能分析等高级专题。具备 Laravel 5、Yii 2、Symfony Components 项目开发经验。~~ 基本已经忘光，并且没有兴趣再继续研究相关方向。
 - 熟悉 PSR-N 以及 PHP-CS-Fixer、PHPStan 等神器。
 - 关注应用安全，了解常见漏洞，熟悉 HTTP 1.1 协议。
 
@@ -114,13 +112,13 @@ comments: false
 
 **基础扎实，学东西快，接触面广。** 十岁开始学习 Pascal 参加信息学奥赛；初中获得青岛市竞赛第一名；后自学 C 和 C++ 并从事 HTTP 抓包分析和 MFC 开发；高中退学专注于编程。
 
-**思维灵活，擅长独立解决问题。** 欢迎阅读本人技术博客 [WTF 分类](https://wi1dcard.dev/categories/wtf/)。日常折腾，以爱好为驱动研究过无人机、树莓派、音频设备、网络设备等。
+**思维灵活，擅长独立解决问题。** 欢迎阅读本人技术博客 [WTF 分类](https://wi1dcard.dev/categories/wtf/)。日常折腾，以爱好为驱动研究过各种稀奇古怪的玩意儿。
 
 **热爱技术，热爱钻研，规范与性能强迫症，做事追求极致优雅，享受写代码带来的成就感。**
 
-**后端和运维向** 是我的强项，暂时的不足：
+**后端和运维向** 是我的强项，不足：
 
-- 熟悉与前端交互（前端能得到什么、后端需要提供什么），但不了解前端的具体实现和最新技术。
-- 在 MySQL 等关系型数据库中，缺乏处理大量数据以及深入调优的经验。
+- 不了解前端和最新技术，暂时没有这方面的学习计划。
+- 不具备对数据库的调优经验，没有实际参与过相关工作。
 
 }
