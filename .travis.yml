@@ -3,12 +3,16 @@ language: node_js
 node_js: [ "12" ]
 services: [ docker ]
 
+cache:
+  yarn: true
+
 git:
   depth: 1
 
 env:
   global:
-    - DOCKER_IMAGE=wi1dcard/blog
+    - DOCKER_USERNAME=wi1dcard
+    - DOCKER_IMAGE=$DOCKER_USERNAME/blog
     - DOCKER_TAG=build-$TRAVIS_BUILD_NUMBER
 
 branches:
