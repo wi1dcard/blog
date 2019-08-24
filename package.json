@@ -6,12 +6,11 @@
   },
   "scripts": {
     "build": "hexo generate",
-    "lint": "lint/lint-categories.sh && lint-md source/_posts --config lint/lint-md.json"
+    "lint": "build/lint-categories.sh && lint-md source/_posts --config build/lint-md.json"
   },
   "dependencies": {
     "hexo": "^3.9",
     "hexo-cli": "^2.0",
-    "hexo-deployer-git": "^1.0",
     "hexo-generator-archive": "^0.1",
     "hexo-generator-category": "^0.1",
     "hexo-generator-feed": "^1.2",
@@ -21,10 +20,10 @@
     "hexo-generator-tag": "^0.2",
     "hexo-renderer-ejs": "^0.3",
     "hexo-renderer-less": "^1.0",
-    "hexo-renderer-marked": "^1.0",
+    "hexo-renderer-marked": "^2.0",
     "hexo-renderer-stylus": "^0.3",
     "hexo-server": "^0.3",
-    "hexo-util": "^0.6.3",
+    "hexo-util": "^1.0",
     "hexo-wordcount": "^6.0",
     "lint-md-cli": "*"
   }
