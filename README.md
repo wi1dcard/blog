@@ -26,5 +26,5 @@ The site would be available at <http://localhost/>.
 ## TODOs
 
 1. Migrate to GitLab CI.
-2. Publish the website to GKE.
+2. Use MozJPEG and pngquant to optimize images and reduce the size.
 
