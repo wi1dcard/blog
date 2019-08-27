@@ -22,6 +22,12 @@ ingress:
   annotations:
     # kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
+    ingress.kubernetes.io/ssl-redirect: "true"
+    ingress.kubernetes.io/browser-xss-filter: "true" # X-XSS-Protection: 1; mode=block
+    ingress.kubernetes.io/content-type-nosniff: "true" # X-Content-Type-Options: nosniff
+    ingress.kubernetes.io/referrer-policy: strict-origin-when-cross-origin # Referrer-Policy: same-origin
+    ingress.kubernetes.io/custom-frame-options-value: SAMEORIGIN # X-Frame-Options: SAMEORIGIN
+    ingress.kubernetes.io/custom-response-headers: X-Powered-By:Wi1dcard Kubernetes Engine
   hosts:
     - host: chart-example.local
       paths: []
