@@ -103,19 +103,22 @@ public static function getList(&$arr, $level = 0, $parent_id = 1, $floor = 3)
 ### 优化后
 
 ```php
-public static function getList($catList)
+function getStructuredTree($list)
 {
-    $treeData = [];
-    foreach ($catList as &$item) {
+    $tree = [];
+
+    foreach ($list as &$item) {
         $parent_id = $item['parent_id'];
-        if (isset($catList[$parent_id]) && !empty($catList[$parent_id])) {
-            $catList[$parent_id]['list'][] = $item;
+
+        if (isset($list[$parent_id]) && !empty($list[$parent_id])) {
+            $list[$parent_id]['list'][] = &$item;
         } else {
-            $treeData[] = $item;
+            $tree[] = &$item;
         }
     }
-    unset($item);
-    return $treeData[0]['list']; // 根节点只有中华人民共和国，所以直接返回中国的所有子节点
+    // unset($item);
+
+    return $tree[0]['list']; // 根节点只有中华人民共和国，所以直接返回中国的所有子节点
 }
 ```
 
