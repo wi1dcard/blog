@@ -19,8 +19,8 @@ The site would be available at <http://localhost/>.
 - [athenapdf](https://github.com/arachnys/athenapdf) - Drop-in replacement for wkhtmltopdf built on Go, Electron and Docker.
 - [Caddy](https://caddyserver.com/) - Easy-configured HTTP server.
 - [lint-md](https://github.com/hustcc/lint-md) - A library with the CLI tool, used to lint markdown files that in Chinese.
-- [Travis CI](https://travis-ci.com) - CI and CD. Ensure my writing style good, render the markdown posts and my resume into HTML or PDF files, and deploy them.
-- GitHub Pages - Where my blog published to.
+- [Travis CI](https://travis-ci.com) - CI and CD. Ensure my writing style good, render the markdown posts and my resume into HTML or PDF files, and deploy them to Kubernetes.
+- Google Kubernetes Engine (GKE) - Where my blog was deployed to.
 - Hexo plugins - More plugins described in [packages.json](https://github.com/wi1dcard/blog/blob/master/package.json).
 
 ## TODOs
