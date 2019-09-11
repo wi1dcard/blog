@@ -19,9 +19,6 @@ branches:
   only:
     - master
 
-install:
-  - yarn install --production
-
 before_script:
   - build/build.sh
 

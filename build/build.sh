@@ -6,6 +6,7 @@ set -exuo pipefail
 # So I have to put multi-stage builds into a single job.
 # Waiting for GitHub Action or I would prefer to moving this blog to GitLab.
 
+yarn install --production
 yarn run lint
 yarn run build
 
