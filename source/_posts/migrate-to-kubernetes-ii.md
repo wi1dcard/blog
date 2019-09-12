@@ -84,9 +84,9 @@ releases:
               hosts: [ {{ requiredEnv "INGRESS_HOST" }} ]
 ```
 
-与 Helm 类似，Helmfile 会将 `helmfile.yaml` 作为 Go Template 渲染。如你所见，在以上片段中，我使用了 `{{ ... }}` 语法和 `requiredEnv` 函数。
+与 Helm 类似，Helmfile 会将 `helmfile.yaml` 作为 Go Template 渲染。如你所见，在以上片段中，我使用了 `{% raw %}{{ ... }}{% endraw %}` 语法和 `requiredEnv` 函数。
 
-`requiredEnv` 是 Helmfile 提供的功能之一，能够获取指定环境变量的值，并参与模板渲染，例如 `{{ requiredEnv "INGRESS_HOST" }}` 即为读取 `INGRESS_HOST` 变量。
+`requiredEnv` 是 Helmfile 提供的功能之一，能够获取指定环境变量的值，并参与模板渲染，例如 `{% raw %}{{ requiredEnv "INGRESS_HOST" }}{% endraw %}` 即为读取 `INGRESS_HOST` 变量。
 
 配合覆盖 Chart 默认的 Values，便能够实现上文中提到的第「4」点。
 
