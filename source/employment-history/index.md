@@ -1,5 +1,5 @@
 ---
-title: "Go be a wild card."
+title: "Employment History"
 thumbnail: "/resources/legacy/5b12c21dd5284.jpg"
 comments: false
 ---
@@ -14,7 +14,7 @@ comments: false
 
 }
 
-### 浙江禾匠信息科技有限公司
+### 浙江禾匠信息科技
 
 @card{
 
@@ -147,7 +147,7 @@ comments: false
 
 }
 
-### 长沙异次元网络科技有限公司
+### 长沙异次元网络科技
 
 @card{
 
