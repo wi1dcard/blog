@@ -1,6 +1,6 @@
 # Wi1dcard's blog
 
-Hey, welcome to my technical blog. This repo stands for the source codes of it. You can view the rendered website at <https://wi1dcard.dev/> or <https://wi1dcard.github.io/>.
+Hey, welcome to my technical blog. This repo stands for the source codes of it. You can view the rendered website at <https://wi1dcard.dev/>.
 
 ## The Docker Image
 
