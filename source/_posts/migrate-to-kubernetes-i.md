@@ -59,9 +59,7 @@ before_script:
   - build/build.sh
 ```
 
-由于构建、发布过程比较复杂，同时为了未来（可能）迁移到 GitLab CI，我没有将所有脚本罗列在 `.travis.yml` 里，像 [alipay-sdk-php](https://github.com/wi1dcard/alipay-sdk-php) 等开源项目那样。
-
-所有与 CI 相关的内容我都放在了 `build/` 目录。
+由于构建、发布过程比较复杂，同时为了未来（可能）迁移到 GitLab CI，我没有将所有脚本罗列在 `.travis.yml` 里。所有与 CI 相关的内容我都放在了 `build/` 目录。
 
 [build/build.sh](https://github.com/wi1dcard/blog/blob/master/build/build.sh) 的主要任务是：
 
