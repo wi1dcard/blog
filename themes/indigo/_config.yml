@@ -9,7 +9,7 @@
 #    target: _blank    是否跳出，省略则在当前页面打开
 menu:
   home:
-    text: 主页
+    text: Index
     url: /
   archives:
     url: /archives/
@@ -23,10 +23,10 @@ menu:
     url: https://github.com/wi1dcard
     target: _blank
   male:
-    text: 求职简历
+    text: My Résumé
     url: /resume/
   pencil:
-    text: 关于本博客
+    text: About this blog
     url: /tags/blogging/
 
 # 你的头像url
@@ -146,8 +146,8 @@ about: false
 
 # “不蒜子”访问量统计，详见 http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:
-  site_uv: 总访客：
-  site_pv: 总访问量：
+  site_uv: "Visitors: "
+  site_pv: "Pages views: "
 
 # 动态定义title
 title_change: false
