@@ -23,6 +23,7 @@
     "hexo-renderer-marked": "^2.0",
     "hexo-renderer-stylus": "^0.3",
     "hexo-server": "^0.3",
+    "hexo-stop-tag-plugins": "^0.1.7",
     "hexo-util": "^1.0",
     "hexo-wordcount": "^6.0",
     "lint-md-cli": "*"
