@@ -30,13 +30,13 @@ menu:
     url: /tags/blogging/
 
 # 你的头像url
-avatar: "https://en.gravatar.com/userimage/142329077/dd998d3b9a6685cd15da5c805eebec1f"
+avatar: /img/avatar.png
 # avatar link
 avatar_link: /
 # 头像背景图
 brand: /img/brand.jpg
 # favicon
-favicon: "https://en.gravatar.com/userimage/142329077/dd998d3b9a6685cd15da5c805eebec1f"
+favicon: /img/avatar.png
 
 # email
 email: wi1dcard.cn@gmail.com
