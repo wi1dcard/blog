@@ -2,10 +2,6 @@ repositories:
   - name: stable
     url: https://kubernetes-charts.storage.googleapis.com
 
-helmDefaults:
-  tillerless: true
-  tillerNamespace: blog
-
 releases:
   - name: blog
     namespace: blog

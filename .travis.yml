@@ -14,6 +14,7 @@ env:
     - DOCKER_USERNAME=wi1dcard
     - DOCKER_IMAGE=$DOCKER_USERNAME/blog
     - DOCKER_TAG=build-$TRAVIS_BUILD_NUMBER
+    - HELMFILE_IMAGE=quay.io/roboll/helmfile:helm3-v0.92.3
 
 branches:
   only:

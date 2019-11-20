@@ -14,4 +14,4 @@ docker run --rm -v "$PWD/deploy:/deploy" \
     -e KUBECONFIG_BASE64="$KUBECONFIG_BASE64" \
     -e DOCKER_TAG="$DOCKER_TAG" \
     -e INGRESS_HOST="$INGRESS_HOST" \
-    quay.io/roboll/helmfile:v0.82.0 /deploy/helmfile.sh
+    "$HELMFILE_IMAGE" /deploy/helmfile.sh
