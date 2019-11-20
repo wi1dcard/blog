@@ -2,14 +2,14 @@
   "name": "wi1dcards-blog",
   "private": true,
   "hexo": {
-    "version": "4.0.0"
+    "version": "3.9.0"
   },
   "scripts": {
     "build": "hexo generate",
     "lint": "build/lint-categories.sh && lint-md source/_posts --config build/lint-md.json"
   },
   "dependencies": {
-    "hexo": "^4.0",
+    "hexo": "^3.9",
     "hexo-cli": "^3.1",
     "hexo-generator-archive": "^1.0",
     "hexo-generator-category": "^1.0",
