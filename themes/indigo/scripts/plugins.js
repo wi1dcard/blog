@@ -23,10 +23,6 @@ function renderImage(src, alt = '', title = '') {
             </figure>`
 }
 
-hexo.extend.tag.register('image', ([src, alt = '', title = '']) => {
-    return hexo.theme.config.lightbox ? renderImage(src, alt, title) : `<img src="${src}" alt="${alt}" title="${title}">`
-})
-
 hexo.extend.filter.register('before_post_render', data => {
     if (hexo.theme.config.lightbox) {
         // 包含图片的代码块 <escape>[\s\S]*\!\[(.*)\]\((.+)\)[\s\S]*<\/escape>
@@ -41,7 +37,7 @@ hexo.extend.filter.register('before_post_render', data => {
             return match.replace(/\!\[(.*)\]\((.+)\)/, (img, alt, src) => {
                 const attrs = src.split(' ')
                 const title = (attrs[1] && attrs[1].replace(/\"|\'/g, '')) || ''
-                return `{% image ${attrs[0]} '${alt}' '${title}' %}`
+                return hexo.theme.config.lightbox ? renderImage(src, alt, title) : `<img src="${src}" alt="${alt}" title="${title}">`
             })
         })
     }
