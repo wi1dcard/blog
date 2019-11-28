@@ -14,13 +14,13 @@ comments: false
 ### 概览
 
 - **Wi1dcard**／男／1998-02
-- 学习编程：2010年至今
-- 项目经验：2013年至今
-- 职场经验：2015年至今
-- 期望岗位：暂无跳槽计划
-- 真实性格：[INFJ](mbti.pdf)
-- 工作癖好：听电音写代码效率极高（很嗨的那种）
-- E-Mail：[wi1dcard.cn@gmail.com](mailto:wi1dcard.cn@gmail.com)
+- Email: `wi1dcard.cn@gmail.com`
+- 学习编程: 2010 年至今
+- 项目经验: 2013 年至今
+- 职场经验: 2015 年至今
+- 期望岗位: 暂无跳槽计划
+- 真实性格: [INFJ](mbti.pdf)
+- 工作癖好: 听电音写代码效率极高（很嗨的那种）
 
 }
 
