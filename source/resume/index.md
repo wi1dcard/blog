@@ -19,7 +19,8 @@ comments: false
 - 职场经验：2015年至今
 - 期望岗位：暂无跳槽计划
 - 真实性格：[INFJ](mbti.pdf)
-- 工作癖好：听电音写代码效率飞快（很嗨的那种）
+- 工作癖好：听电音写代码效率极高（很嗨的那种）
+- E-Mail：[wi1dcard.cn@gmail.com](mailto:wi1dcard.cn@gmail.com)
 
 }
 
@@ -30,13 +31,8 @@ comments: false
 我希望我所处的团队是这样的：
 
 - 盈利状态。
-- 热情，年轻，灵活。
+- 热情，年轻，开放。
 - 鼓励创新，适当放权，结果导向。
-- 领导务实、稳重。
-
-}
-
-@card{
 
 ### 作品
 
@@ -45,27 +41,19 @@ comments: false
 
 }
 
-@card{
-
-### 联系我
-
-- E-Mail：[wi1dcard.cn@gmail.com](mailto:wi1dcard.cn@gmail.com)
-- Telegram：[@wi1dcard_cn](https://t.me/wi1dcard_cn)
-
 }
 
-}
-
-## 个人修养
+## 自我修养
 
 @card{
 
 - 优良的开发、测试、文档习惯，对自己一贯高标准要求。
-- 相比 GUI 更喜欢 CLI。
-- 坚持写技术博客，总结工作中的经验教训，同时锻炼表达能力。
-- 热爱科学上网，重度 Google 用户，但抵制 Koolshare 和 iKuai。
+- 坚持写技术博客；以总结工作中的经验教训，同时锻炼表达能力。
+- 重度 Google 用户；具备相关知识和技术，并不是「翻墙娱乐圈」中的一员。
+- 倾向于使用 CLI。
 - 社区活跃，积极参与开源；你可以登录 GitHub 后查看我的 [Pull Requests](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+sort%3Aupdated-desc+author%3Awi1dcard)。
-- 喜爱英语，至少不是短板，[LearnKu 翻译审阅者](https://learnku.com/users/32249/translations)，欢迎阅读本人技术博客 [Translations 分类](/categories/translations/)。
+- 关注应用安全，了解常见漏洞。
+- 喜爱英语，至少不是短板；[LearnKu 翻译审阅者](https://learnku.com/users/32249/translations)，技术博客 [Translations 分类](/categories/translations/)。
 - 正努力成为 [T 型人才](https://en.wikipedia.org/wiki/T-shaped_skills)。
 
 }
@@ -74,12 +62,15 @@ comments: false
 
 @card{
 
-- 新时代运维开发，具备一定网络知识，日常工作环境 macOS + Zsh。
-- 熟练使用 Ubuntu、Bash、Zsh、Terraform、Ansible、Prometheus、Docker、Nginx、PHP-FPM、AWS、GCP、GitLab CI/CD、Travis CI、Git Workflow、Regex、Unifi、OpenWrt 等。
-- 了解 Grafana、NewRelic、StatusCake、OpsGenie、Jira、Circle CI、Coveralls、Cloud-Init、Meraki 等。
-- 关注应用安全，了解常见漏洞，熟悉 HTTP 1.1 协议。
-- 前 PHP 工程师，目前仍熟悉 Composer、PSR-N 以及 PHP-CS-Fixer、PHPStan 等工具类项目。
-- 正在学习 Kubernetes、Helm 和 Rust。
+- 新时代 [DevSecOps](https://www.redhat.com/en/topics/devops/what-is-devsecops) 工程师，同时拥有一定网维和 IT 经验，日常工作环境 macOS + Ubuntu。
+- 具备丰富 Git Workflow 和 CI/CD 实践经验，熟练使用 Ansible、Terraform、Helm 等。
+- 具备监控预警和 On-Call 经验，了解 Prometheus、Grafana、NewRelic、StatusCake、OpsGenie 等。
+- 具备网络调试经验，了解 HTTP 等协议。
+- 熟悉 PHP 及周边生态，具备丰富 PHP-FPM + Nginx 运维经验，参与过虚拟机到 Kubernetes 的应用改造。
+- 熟悉 AWS 和 GCP，阿里云国际版也稍有了解。
+- 熟悉 UniFi 及周边生态，熟悉 Office 365 for Business 全家桶。
+- 前 PHP 工程师，目前仍在参与公司 Composer 私有仓库以及 PHP-CS-Fixer、PHPStan 等工具类项目的集成和维护。
+- 正在深入学习 Kubernetes。
 
 }
 
@@ -105,13 +96,13 @@ comments: false
 
 @card{
 
-**基础扎实，学东西快，接触面广。** 十岁开始学习 Pascal 参加信息学奥赛；初中获得青岛市竞赛第一名；后自学 C 和 C++ 并从事 HTTP 抓包分析和 MFC 开发；高中退学专注于编程。
+**基础扎实，学东西快，接触面广。** 小学开始学习 Pascal 参加信息学奥赛；初中获得青岛市竞赛第一名；后自学 C 和 C++ 并从事 HTTP 抓包分析和 MFC 开发；高中退学专注于编程。
 
-**思维灵活，擅长独立解决问题。** 日常折腾，以爱好为驱动研究过各种稀奇古怪的玩意儿；欢迎阅读本人技术博客 [WTF 分类](https://wi1dcard.dev/categories/wtf/)。
+**思维灵活，擅长独立解决问题。** 日常折腾，以爱好为驱动研究过各种稀奇古怪的玩意儿。
 
 **热爱技术，热爱钻研，规范强迫症，做事追求极致，享受写代码带来的成就感。**
 
-后端和运维是我的强项，不足：
+我目前的不足：
 
 - 不了解前端和最新技术，暂时没有这方面的学习计划。
 - 不具备对数据库的调优经验，没有实际参与过相关工作。
