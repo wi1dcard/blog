@@ -10,7 +10,7 @@ tags: [Chrome, Laravel]
 
 ### 0x01
 
-最开始意味是 dnsmasq 挂了，经过一番谷歌和 ping 检查，发现能够正常解析到 127.0.0.1。
+最开始以为是 dnsmasq 挂了，经过一番谷歌和 ping 检查，发现能够正常解析到 127.0.0.1。
 
 [Valet (Laravel): DNS address can not be found](https://stackoverflow.com/questions/37172691/valet-laravel-dns-address-can-not-be-found/37174256)
 
