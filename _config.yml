@@ -76,3 +76,6 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: indigo
 stop_tag_plugins: true
+
+uglify:
+  es6: true

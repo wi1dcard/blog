@@ -48,7 +48,7 @@
     <meta name="keywords" content="<%= keyWords %>">
     <%- // open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
     <%- favicon_tag(theme.favicon) %>
-    <link rel="stylesheet" href="<%- url_for(theme_css('/css/style', cache)) %>">
+    <link rel="stylesheet" href="<%- url_for('/css/style.css') %>">
     <script>window.lazyScripts=[]</script>
 
     <% if (site.data.head) { %>
