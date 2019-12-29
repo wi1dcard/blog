@@ -27,7 +27,8 @@ script:
   # - deploy/deploy.sh
   - eval $(ssh-agent -s)
   - base64 -d <<<"$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
-  - tar -cvzf - -C ./public . | ssh -v -o StrictHostKeyChecking=no "$SCP_USER@wi1dcard.dev" "tar --no-same-owner -xzf - -C $SCP_DEST"
+  - ssh-keyscan -H wi1dcard.dev >> ~/.ssh/known_hosts
+  - rsync -vh -rtz --delete "./public/" "$SCP_USER@wi1dcard.dev:$SCP_DEST"
 
 after_script:
   - docker stop $(docker container ls -q)
