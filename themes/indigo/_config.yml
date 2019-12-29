@@ -9,7 +9,7 @@
 #    target: _blank    是否跳出，省略则在当前页面打开
 menu:
   home:
-    text: Index
+    text: Home
     url: /
   archives:
     url: /archives/
@@ -22,7 +22,7 @@ menu:
     text: GitHub
     url: https://github.com/wi1dcard
     target: _blank
-  male:
+  book:
     text: My Résumé
     url: /resume/
   pencil:
