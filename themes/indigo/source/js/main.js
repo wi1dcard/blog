@@ -536,7 +536,7 @@
     if (w.Waves) {
         Waves.init();
         Waves.attach('.global-share li', ['waves-block']);
-        Waves.attach('.article-tag-list-link, #page-nav a, #page-nav span', ['waves-button']);
+        Waves.attach('#page-nav a, #page-nav span', ['waves-button']);
     } else {
         console.error('Waves loading failed.')
     }

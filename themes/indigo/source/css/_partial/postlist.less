@@ -22,8 +22,8 @@
 .post-meta {
     margin: 0 0 10px;
     line-height: 14px;
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: 400;
     color: @secondaryTextColor;
     overflow: hidden;
     >*:not(:first-child) {
@@ -62,46 +62,31 @@
 }
 
 .article-tag-list {
-    overflow: hidden;
-    margin: 0;
+    position: relative;
+    display: inline;
+    list-style: none;
     padding: 0;
-    font-size: 13px;
-}
-.article-tag-list-item {
-    display: inline-block;
-    margin: 0 8px 8px 0;
-    border-radius: 2px;
-    font-weight: 300;
-    &:nth-child(n+1) {
-        background: @tag-color-1
+    * {
+        display: inline;
     }
-    &:nth-child(n+2) {
-        background: @tag-color-2
+    ul {
+        padding-left: 0
     }
-    &:nth-child(n+3) {
-        background: @tag-color-3
-    }
-    &:nth-child(n+4) {
-        background: @tag-color-4
-    }
-    &:nth-child(n+5) {
-        background: @tag-color-5
-    }
-    &:nth-child(n+6) {
-        background: @tag-color-6
+    >*:not(:first-child) {
+        &:before {
+            content: "/";
+            padding: 0 .5em;
+        }
     }
 }
+
+.article-tag-list-item {}
 
 
 .article-tag-list-link {
-    display: block;
-    padding: 0 16px;
-    line-height: 28px;
-    color: rgba(255, 255, 255, .8);
-    .transition(.2s);
+    color: @accentColor;
     &:hover {
-        color: #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, .26);
+        color: @accentColor;
     }
 }
 
