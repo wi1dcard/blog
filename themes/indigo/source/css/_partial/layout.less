@@ -7,7 +7,6 @@
     position: absolute;
     top: 0;
     left: 100%;
-    .transition(.4s);
 }
 
 #menu {
@@ -20,7 +19,7 @@
     min-height: 100%;
     background: #fff;
     box-shadow: @boxShadow;
-    .transition(.4s, cubic-bezier(.18, .81, .3, .89));
+    .transition(.4s, cubic-bezier(.25,.1,.25,1));
     will-change: transform, -webkit-transform;
 
     &.hide {

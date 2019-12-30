@@ -274,7 +274,7 @@
             el.parentNode.parentNode.classList.toggle('expand')
         },
         page: (function () {
-            var $elements = $$('.fade, .fade-scale');
+            var $elements = $$('.fade');
             var visible = false;
 
             return {

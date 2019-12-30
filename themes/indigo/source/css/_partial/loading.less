@@ -25,8 +25,7 @@
     }
 }
 
-.fade,
-.fade-scale {
+.fade {
     opacity: 0;
 
     &.in {
@@ -36,16 +35,11 @@
 }
 .fade {
     .transition(.4s);
-    .transform(translateY(50px));
-}
-.fade-scale {
-    .transition(.6s);
-    .transform(translate(10%, 20%) scale(.6));
+    .transform(translateY(80px));
 }
 
 @media screen and (max-width:480px) {
-    .fade,
-    .fade-scale {
+    .fade {
         opacity: 1;
         .transform(none);
     }
