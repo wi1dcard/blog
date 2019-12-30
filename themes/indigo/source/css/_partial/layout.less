@@ -7,6 +7,7 @@
     position: absolute;
     top: 0;
     left: 100%;
+    display: none;
 }
 
 #menu {
@@ -118,7 +119,7 @@
 #main {
     padding-left: @menuWidth;
     min-height: 100%;
-    .transition(.4s);
+    // .transition(.4s);
 }
 
 .body-wrap {
@@ -149,7 +150,7 @@
     background: #000;
     opacity: 0;
     pointer-events: none;
-    .transition(.3s);
+    .transition(.1s);
 
     &.in {
         visibility: visible;
