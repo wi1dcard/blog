@@ -2,7 +2,7 @@
 id: mysql-bloody-lessons
 date: 2018-07-17 16:47:34
 title: 数据库血的教训
-categories: Documents
+categories: Misc
 tags: [MySQL]
 ---
 

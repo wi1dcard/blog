@@ -2,7 +2,7 @@
 id: packagist-mirror-in-china
 date: 2018-09-05 09:31:33
 title: Packagist（Composer）中国镜像
-categories: Documents
+categories: Misc
 tags: [PHP, Package]
 ---
 

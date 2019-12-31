@@ -2,7 +2,7 @@
 title: "技术博客填坑之路"
 date: 2018-03-11 00:00:00
 id: jootu-blog-change-log
-categories: Documents
+categories: Misc
 tags: [Legacy, Blogging]
 ---
 

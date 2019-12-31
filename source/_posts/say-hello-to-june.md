@@ -2,7 +2,7 @@
 title: "六月，你好。"
 date: 2018-06-01 00:00:00
 id: say-hello-to-june
-categories: Documents
+categories: Misc
 tags: [Legacy]
 ---
 

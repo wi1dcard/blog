@@ -3,7 +3,7 @@ id: you-wouldnt-base64-a-password-cryptography-decoded
 tags: [Reprinted]
 date: 2019-01-30 10:19:19
 title: You Wouldn't Base64 a Password - Cryptography Decoded
-categories: Documents
+categories: Misc
 ---
 
 一篇深入讲解 Encode / Hash / Cryptography / Encrypt 的好文。转自：<https://paragonie.com/blog/2015/08/you-wouldnt-base64-a-password-cryptography-decoded>。

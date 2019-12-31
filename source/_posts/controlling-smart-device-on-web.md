@@ -2,7 +2,7 @@
 title: "纠结！纯内网 Web 控制智能硬件的技术选型之路"
 date: 2018-03-11 12:22:48
 id: controlling-smart-device-on-web
-categories: Documents
+categories: Misc
 tags: [PHP, Swoole, Node.js, .NET, Legacy]
 ---
 

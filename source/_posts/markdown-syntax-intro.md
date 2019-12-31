@@ -2,7 +2,7 @@
 title: "Markdown 语法简明介绍"
 date: 2018-05-30 10:21:12
 id: markdown-syntax-intro
-categories: Documents
+categories: Misc
 tags: []
 ---
 

@@ -2,7 +2,7 @@
 title: "Jootu Copywriting Style Guide"
 date: 2017-11-10 13:00:38
 id: jootu-copywriting-style-guide
-categories: Documents
+categories: Misc
 tags: [Legacy]
 ---
 

@@ -2,7 +2,7 @@
 title: "实验室技术方案解析"
 date: 2017-08-28 19:07:53
 id: lims-tech-stack
-categories: Documents
+categories: Misc
 tags: [Legacy]
 ---
 

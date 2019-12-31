@@ -2,7 +2,7 @@
 id: say-goodbye-to-macdown
 date: 2018-07-10 13:27:35
 title: 对 MacDown 说再见
-categories: Documents
+categories: Misc
 tags: []
 ---
 

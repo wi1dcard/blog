@@ -2,7 +2,7 @@
 id: merlin-koolshare-shadowsocks-transferred
 date: 2018-09-06 20:43:05
 title: Koolshare 梅林固件 Shadowsocks 易主
-categories: Documents
+categories: Misc
 tags: [GFW]
 ---
 
