@@ -21,5 +21,5 @@ image:
 	docker build -f build/Dockerfile -t "${DOCKER_IMAGE}" -t "${DOCKER_IMAGE}:${DOCKER_TAG}" .
 
 image-push:
-	echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin
+	@echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin
 	docker push "${DOCKER_IMAGE}"
