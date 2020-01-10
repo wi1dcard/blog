@@ -1,0 +1,79 @@
+stages:
+  - build html
+  - build pdf
+  - build image
+  - deploy
+
+variables:
+  GIT_DEPTH: "1"
+  DOCKER_USERNAME: wi1dcard
+  DOCKER_IMAGE: $DOCKER_USERNAME/blog
+  DOCKER_TAG: build-$CI_PIPELINE_ID
+
+default:
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+
+.yarn:
+  image: node:12-alpine
+  before_script:
+    - yarn install --production
+
+.docker:
+  image: docker:19.03.1
+  services:
+    - docker:19.03.1-dind
+  before_script:
+    - apk add make
+    - docker info
+
+.deploy:
+  rules:
+    - if: '$CI_COMMIT_REF_NAME == "master"'
+      when: on_success
+    - when: manual
+
+build html:
+  extends: .yarn
+  stage: build html
+  script:
+    - yarn run lint
+    - yarn run build
+  artifacts:
+    paths:
+      - public/
+    expire_in: 1 week
+
+build pdf:
+  extends: .docker
+  stage: build pdf
+  script:
+    - make pdf
+  dependencies:
+    - build html
+  artifacts:
+    paths:
+      - public/resume/wi1dcard.pdf
+    expire_in: 1 week
+
+build image:
+  extends: .docker
+  stage: build image
+  script:
+    - make image
+    - make image-push
+
+deploy vm:
+  extends: .deploy
+  stage: deploy
+  image: alpine
+  before_script:
+    - apk add rsync openssh-client
+  script:
+    - eval $(ssh-agent -s)
+    - echo -n "$SSH_PRIVATE_KEY" | base64 -d | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - ssh-keyscan -H wi1dcard.dev >> ~/.ssh/known_hosts
+    - rsync -vh -rtz --delete "./public/" "$RSYNC_USER@wi1dcard.dev:$RSYNC_DEST"
