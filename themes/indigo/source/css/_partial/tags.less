@@ -5,38 +5,17 @@
     overflow: hidden;
     background: @primaryColor;
 
-    &.expand {
-        overflow: visible;
-        text-shadow: none;
-        .tags-list {
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: block;
-            padding: 16px;
-            white-space: normal;
-            background: #fff;
-            border-radius: 4px;
-            box-shadow: @boxShadow;
-        }
-        
-        .tags-list .tags-list-item {
-            padding: 6px 1em;
-            margin-bottom: 6px;
-            color: @secondaryTextColor;
-            &:hover {
-                opacity: .7;
-                text-decoration: underline;
-            }
-            &:after {
-                display: none;
-            }
-            &.active {
-                color: #fff;
-                background: @accentColor;
-                border-radius: .2em
-            }
-        }
+    overflow: visible;
+    text-shadow: none;
+    .tags-list {
+        display: block;
+        white-space: normal;
+        margin-top: 30px;
+    }
+
+    .tags-list .tags-list-item {
+        padding: 6px 0.5em;
+        margin: 0 2px 6px 2px;
     }
 }
 .tags-list {
@@ -49,7 +28,6 @@
     list-style: none;
     padding: 0;
     white-space: nowrap;
-    .transition(.2s);
 
     .flex-row;
 }
@@ -63,7 +41,7 @@
     padding: 12px 1em;
     line-height: 20px;
     color: rgba(255, 255, 255, 0.8);
-    border-radius: .2em .2em 0 0;
+    border-radius: .2em;
     &:after {
         content: '';
         position: absolute;
@@ -74,8 +52,9 @@
     }
     &.active {
         color: #fff;
+        border-radius: .2em .2em 0 0;
         &:after {
-            background: @accentColor
+            background: @accentColor;
         }
     }
     &:hover,
@@ -93,7 +72,7 @@
     height: 44px;
     padding-left: 1em;
     background: @primaryColor!important;
-    
+
     .action {
         width: 44px;
         height: 44px;
@@ -117,7 +96,7 @@
             display: none
         }
     }
-    
+
     .tags-list-more {
         display: none;
     }
