@@ -7,36 +7,44 @@ comments: false
 
 <!--more-->
 
+@card{
+
+### 自我介绍
+
+你好，我是 **Wi1dcard**，一名生于 1998 年但具备 5 年工作经验的软件工程师。
+
+在学生时代，从 2010 年接触 Pascal 编程起，即对代码产生了极为浓厚的兴趣。由此自学 MFC 和 WinForm 开发，并在 2013 年开始接揽外包项目。2015 年起进入职场并逐渐转型 PHP 与后端方向，现就职于某外企从事 **DevSecOps** 以及 IT 相关工作。
+
+如果用一个词来形容我，我认为应当是 「**个性**」。我的职业规划大多基于兴趣驱动，我喜欢做与众不同或是未曾有人尝试过的事。我热爱钻研，善于规划并独立思考问题的更优解；但我有一点强迫症，有时会把自己推到极限。我乐于高效地协作或提供帮助，但我不喜欢被打扰 —— 写代码时习惯戴着耳机听电音，这能让我专注。
+
+我热爱软件行业，享受写代码带来的成就感，希望能成为一名「**终身编程者**」，这是我的 [MBTI 性格报告](https://www.16personalities.com/ch/intj-%E4%BA%BA%E6%A0%BC)。
+
+你可以通过 `wi1dcard.cn@gmail.com` 找到我，我将在工作日（UTC+8）的 48 小时内与您取得联系。
+
+期待与你合作。
+
+}
+
 @column-2{
 
 @card{
 
-### 概览
+## 对您的期望
 
-- **Wi1dcard**／男／1998-02
-- Email: `wi1dcard.cn@gmail.com`
-- 学习编程: 2010 年至今
-- 项目经验: 2013 年至今
-- 职场经验: 2015 年至今
-- 期望岗位: 暂无跳槽计划
-- 真实性格: [INFJ](mbti.pdf)
-- 工作癖好: 听电音写代码效率极高（很嗨的那种）
+我理想中所处的团队是这样的：
+
+1. 盈利状态。
+2. 热情，年轻，开放。
+3. 鼓励创新，适当放权，结果导向。
 
 }
 
 @card{
 
-### 期望
-
-我希望我所处的团队是这样的：
-
-- 盈利状态。
-- 热情，年轻，开放。
-- 鼓励创新，适当放权，结果导向。
-
-### 作品
+### 外部链接
 
 - [GitHub Repositories](https://github.com/wi1dcard?utf8=%E2%9C%93&tab=repositories&q=&type=source&language=)
+- [GitLab Profile](https://gitlab.com/wi1dcard)
 - 技术博客: <https://wi1dcard.dev/>
 
 }
@@ -51,9 +59,9 @@ comments: false
 - 坚持写技术博客；以总结工作中的经验教训，同时锻炼表达能力。
 - 重度 Google 用户；具备相关知识和技术，并不是「翻墙娱乐圈」中的一员。
 - 倾向于使用 CLI。
-- 社区活跃，积极参与开源；你可以登录 GitHub 后查看我的 [Pull Requests](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+sort%3Aupdated-desc+author%3Awi1dcard)。
+- 社区活跃，积极参与开源；[我的 Pull Requests](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+sort%3Aupdated-desc+author%3Awi1dcard)。
 - 关注应用安全，了解常见漏洞。
-- 喜爱英语，至少不是短板；[LearnKu 翻译审阅者](https://learnku.com/users/32249/translations)，技术博客 [Translations 分类](/categories/translations/)。
+- 喜爱英语，至少不是短板；[LearnKu 翻译审阅者](https://learnku.com/users/32249/translations)。
 - 正努力成为 [T 型人才](https://en.wikipedia.org/wiki/T-shaped_skills)。
 
 }
@@ -92,19 +100,13 @@ comments: false
 [浙江椒图科技]: /employment-history/#浙江椒图科技
 [长沙异次元网络科技]: /employment-history/#长沙异次元网络科技
 
-## 自我评价
+## 我的不足
 
 @card{
 
-**基础扎实，学东西快，接触面广。** 小学开始学习 Pascal 参加信息学奥赛；初中获得青岛市竞赛第一名；后自学 C 和 C++ 并从事 HTTP 抓包分析和 MFC 开发；高中退学专注于编程。
-
-**思维灵活，擅长独立解决问题。** 日常折腾，以爱好为驱动研究过各种稀奇古怪的玩意儿。
-
-**热爱技术，热爱钻研，规范强迫症，做事追求极致，享受写代码带来的成就感。**
-
-我目前的不足：
-
 - 不了解前端和最新技术，暂时没有这方面的学习计划。
 - 不具备对数据库的调优经验，没有实际参与过相关工作。
+
+}
 
 }
