@@ -25,18 +25,15 @@ menu:
   book:
     text: My Résumé
     url: /resume/
-  pencil:
-    text: About this blog
-    url: /tags/blogging/
 
 # 你的头像url
-avatar: /img/avatar.png
+avatar: &avatar https://www.gravatar.com/avatar/9f1da8f9f5768d71d3f2e996e04af47a?s=200
 # avatar link
 avatar_link: /
 # 头像背景图
 brand: /img/brand.jpg
 # favicon
-favicon: /img/avatar.png
+favicon: *avatar
 
 # email
 email: wi1dcard.cn@gmail.com
