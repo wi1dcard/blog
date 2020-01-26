@@ -6,7 +6,7 @@ post:
   last_updated: "Last Updated: "
 
 footer:
-  license: 'This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.'
+  license: 'This blog is <a rel="help" href="https://github.com/wi1dcard/blog">open-source</a> and licensed under <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.'
 
 tag:
   all: "All"
