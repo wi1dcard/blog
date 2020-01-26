@@ -4,10 +4,6 @@
   "hexo": {
     "version": "3.9.0"
   },
-  "scripts": {
-    "build": "hexo generate",
-    "lint": "build/lint-categories.sh && lint-md source/_posts --config build/lint-md.json"
-  },
   "dependencies": {
     "hexo": "^3.9",
     "hexo-clean-css": "^1.0.0",
@@ -28,6 +24,9 @@
     "hexo-uglify": "^1.1.0",
     "hexo-util": "^1.5",
     "hexo-wordcount": "^6.0",
+    "imagemin-cli": "^5.1.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
     "lint-md-cli": "*"
   }
 }

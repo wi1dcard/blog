@@ -15,11 +15,13 @@ default:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
       - node_modules/
+      - public/resources/
 
 .yarn:
-  image: node:12-alpine
+  image: node:12
   before_script:
     - yarn install --production
+    - export PATH="$PATH:$PWD/node_modules/.bin"
 
 .docker:
   image: docker:19.03.1
@@ -35,12 +37,23 @@ default:
       when: on_success
     - when: manual
 
+optimize images:
+  extends: .yarn
+  stage: build html
+  script:
+    - build/optimize-images.sh
+  artifacts:
+    paths:
+      - public/resources/
+    expire_in: 1 week
+
 build html:
   extends: .yarn
   stage: build html
   script:
-    - yarn run lint
-    - yarn run build
+    - build/lint-categories.sh
+    - lint-md source/_posts --config build/lint-md.json
+    - hexo generate
   artifacts:
     paths:
       - public/

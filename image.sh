@@ -1,12 +1,12 @@
 #!/bin/bash -eu
 
-dir=$(dirname $0)
-tmp_file=$(mktemp)
+DIR=$(dirname $0)
+TMPFILE=$(mktemp)
 
-pngpaste $tmp_file
+pngpaste "$TMPFILE"
 
-hash=$(md5 < $tmp_file)
-img="/resources/$hash.png"
+HASH=$(md5 < "$TMPFILE")
+IMG="/resources/$HASH.png"
 
-mv $tmp_file "$dir/source$img"
-echo "![]($img)" | tee >(pbcopy)
+mv $TMPFILE "$DIR$IMG"
+echo "![]($IMG)" | tee >(pbcopy)
