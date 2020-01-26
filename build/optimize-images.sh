@@ -13,6 +13,7 @@ for IMG in **/*; do
     DEST="$DEST_DIR$IMG"
     test -d "$IMG" && continue
     test -e "$DEST" && continue
+    mkdir -p "$(dirname $DEST)"
 
     imagemin \
         --plugin.pngquant.quality=0.3 \
@@ -28,7 +29,8 @@ for IMG in **/*; do
     echo "$IMG -- $(($OPTI_SIZE*100/$ORIG_SIZE))%"
 
     if [ $OPTI_SIZE -lt $ORIG_SIZE ]; then
-        mkdir -p "$(dirname $DEST)"
         cp "$TMPFILE" "$DEST"
+    else
+        cp "$IMG" "$DEST"
     fi
 done
