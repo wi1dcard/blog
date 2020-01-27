@@ -33,4 +33,6 @@ for IMG in **/*; do
     else
         cp "$IMG" "$DEST"
     fi
+
+    chmod 644 "$DEST"
 done

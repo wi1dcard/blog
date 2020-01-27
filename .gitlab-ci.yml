@@ -92,3 +92,4 @@ deploy vm:
     - mkdir -p ~/.ssh
     - ssh-keyscan -H "$RSYNC_HOST" >> ~/.ssh/known_hosts
     - rsync -vh -rtz --delete "./public/" "$RSYNC_USER@$RSYNC_HOST:$RSYNC_DEST"
+    - ssh "$RSYNC_USER@$RSYNC_HOST" "chmod -R a+rX '$RSYNC_DEST'"
