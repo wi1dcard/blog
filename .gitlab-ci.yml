@@ -1,7 +1,6 @@
 stages:
-  - build html
+  - build
   - build pdf
-  - build image
   - deploy
 
 variables:
@@ -40,7 +39,7 @@ default:
 
 optimize images:
   extends: .yarn
-  stage: build html
+  stage: build
   script:
     - build/optimize-images.sh
   artifacts:
@@ -50,10 +49,9 @@ optimize images:
 
 build html:
   extends: .yarn
-  stage: build html
+  stage: build
   script:
-    - build/lint-categories.sh
-    - lint-md source/_posts --config build/lint-md.json
+    - make lint
     - hexo generate
   artifacts:
     paths:
@@ -65,16 +63,14 @@ build pdf:
   stage: build pdf
   script:
     - make pdf
-  dependencies:
-    - build html
   artifacts:
     paths:
       - public/resume/wi1dcard.pdf
     expire_in: 1 week
 
-build image:
+publish image:
   extends: .docker
-  stage: build image
+  stage: deploy
   script:
     - make image
     - make image-push

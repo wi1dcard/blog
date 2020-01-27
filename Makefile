@@ -2,6 +2,10 @@ prepare:
 	docker pull abiosoft/caddy
 	docker pull arachnysdocker/athenapdf
 
+lint:
+	build/lint-categories.sh
+	lint-md source/_posts --config build/lint-md.json
+
 pdf:
 	docker run --net host -d \
 	    -v "${PWD}/build/Caddyfile:/etc/Caddyfile:ro" \
