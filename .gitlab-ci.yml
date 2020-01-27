@@ -32,6 +32,7 @@ default:
     - docker info
 
 .deploy:
+  stage: deploy
   rules:
     - if: '$CI_COMMIT_REF_NAME == "master"'
       when: on_success
@@ -80,13 +81,14 @@ build image:
 
 deploy vm:
   extends: .deploy
-  stage: deploy
   image: alpine
+  variables:
+    RSYNC_HOST: wi1dcard.dev
   before_script:
     - apk add rsync openssh-client
   script:
     - eval $(ssh-agent -s)
     - echo -n "$SSH_PRIVATE_KEY" | base64 -d | tr -d '\r' | ssh-add -
     - mkdir -p ~/.ssh
-    - ssh-keyscan -H wi1dcard.dev >> ~/.ssh/known_hosts
-    - rsync -vh -rtz --delete "./public/" "$RSYNC_USER@wi1dcard.dev:$RSYNC_DEST"
+    - ssh-keyscan -H "$RSYNC_HOST" >> ~/.ssh/known_hosts
+    - rsync -vh -rtz --delete "./public/" "$RSYNC_USER@$RSYNC_HOST:$RSYNC_DEST"
