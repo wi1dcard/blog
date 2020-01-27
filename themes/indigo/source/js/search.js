@@ -9,7 +9,7 @@
         back = $('#back'),
         searchPanel = $('#search-panel'),
         searchResult = $('#search-result'),
-        searchTpl = $('#search-tpl').innerHTML,
+        searchTpl = '<li class="item"><a href="{path}" class="waves-block waves-effect"><div class="title ellipsis" title="{title}">{title}</div></a><div class="flex-row flex-middle"><time class="flex-col time">{date}</time><div class="tags ellipsis">{tags}</div></div></li>',
         JSON_DATA = (G.BLOG.ROOT + '/content.json').replace(/\/{2}/g, '/'),
         searchData;
 

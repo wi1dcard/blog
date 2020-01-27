@@ -79,3 +79,6 @@ stop_tag_plugins: true
 
 uglify:
   es6: true
+
+jsonContent:
+  pages: false

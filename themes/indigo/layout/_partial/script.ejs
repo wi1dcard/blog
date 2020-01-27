@@ -9,7 +9,9 @@ lazyScripts.push('//s95.cnzz.com/z_stat.php?id=<%-theme.cnzz %>&web_id=<%-theme.
 
 <script src="<%- url_for('/js/main.js') %>"></script>
 <% if (theme.search){ %>
-<%- partial('search') %>
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
 <script src="<%- url_for('/js/search.js') %>" async></script>
 <% } %>
 
