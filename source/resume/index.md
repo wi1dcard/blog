@@ -13,7 +13,7 @@ comments: false
 
 你好，我是 **Wi1dcard**，一名生于 1998 年但具备 5 年工作经验的软件工程师。
 
-从 2010 年接触 Pascal 编程、参加竞赛起，即对代码产生了极为浓厚的兴趣。由此自学 MFC 和 WinForm 开发，并在 2013 年开始接触外包项目。2015 年起进入职场并逐渐转型 PHP 与后端方向，现就职于某外企从事 **DevSecOps** 以及 IT 相关工作。
+从 2010 年接触 Pascal 编程、参加竞赛起，即对代码产生了极为浓厚的兴趣。由此自学 MFC 和 WinForm 开发，并在 2013 年开始接触外包项目。2015 年起进入职场并逐渐转型 PHP 与后端方向，现就职于某外企从事 [**DevSecOps**](https://www.redhat.com/en/topics/devops/what-is-devsecops) 以及 IT 相关工作。
 
 如果用一个词来形容我，我认为应当是 「**个性**」。我的职业规划大多基于兴趣驱动，我喜欢做与众不同或是未曾有人尝试过的事。我热爱钻研，善于规划并独立思考问题的更优解；但我有一点强迫症，有时会把自己推到极限。我乐于高效地协作或提供帮助，但我不喜欢被打扰 —— 写代码时习惯戴着耳机听电音，这能让我专注。
 
@@ -36,6 +36,7 @@ comments: false
 1. 盈利状态。
 2. 热情，年轻，开放。
 3. 鼓励创新，适当放权，结果导向。
+4. 鼓励工程师使用 macOS 或 Linux。
 
 }
 
@@ -55,6 +56,7 @@ comments: false
 
 @card{
 
+- 日常工作环境 macOS + Ubuntu，不使用 Windows，不使用盗版软件。
 - 优良的开发、测试、文档习惯，对自己一贯高标准要求。
 - 坚持写技术博客；以总结工作中的经验教训，同时锻炼表达能力。
 - 重度 Google 用户；具备相关知识和技术，并不是「翻墙娱乐圈」中的一员。
@@ -70,14 +72,12 @@ comments: false
 
 @card{
 
-- 新时代 [DevSecOps](https://www.redhat.com/en/topics/devops/what-is-devsecops) 工程师，同时拥有一定网维和 IT 经验，日常工作环境 macOS + Ubuntu。
-- 具备丰富 Git Workflow 和 CI/CD 实践经验，熟练使用 Ansible、Terraform、Helm 等。
+- 具备丰富 Git Workflow 和 CI/CD 实践经验，熟练使用 GitLab CI、Ansible、Terraform、Helm 等。
 - 具备监控预警和 On-Call 经验，了解 Prometheus、Grafana、NewRelic、StatusCake、OpsGenie 等。
-- 具备网络调试经验，了解 HTTP 等协议。
-- 熟悉 PHP 及周边生态，具备丰富 PHP-FPM + Nginx 运维经验，参与过虚拟机到 Kubernetes 的应用改造。
+- 熟悉 PHP 及周边生态，具备丰富 PHP-FPM + Nginx 运维经验；参与虚拟机到 Kubernetes 的应用改造，目前仍负责公司 Composer 私有仓库以及 PHP-CS-Fixer、PHPStan 等工具类项目的集成和维护。
+- 了解网络相关知识，具备 BIRD、IPTables、IPSec、WireGuard、UBNT 全家桶运维经验，了解 HTTP 协议。
+- 了解 Office 365 for Business 及相关产品，具备 Azure AD 运维经验，熟练通过 Ticket、邮件、Slack 等方式为美国同事提供 IT Support。
 - 熟悉 AWS 和 GCP，阿里云国际版也稍有了解。
-- 熟悉 UniFi 及周边生态，熟悉 Office 365 for Business 全家桶。
-- 前 PHP 工程师，目前仍在参与公司 Composer 私有仓库以及 PHP-CS-Fixer、PHPStan 等工具类项目的集成和维护。
 - 正在深入学习 Kubernetes。
 
 }
@@ -86,11 +86,11 @@ comments: false
 
 @card{
 
-| 公司 / 组织                  | 岗位                                  | 时间                   |
-| ---------------------------- | ------------------------------------- | ---------------------- |
-| [RightCapital]               | PHP 工程师 -> DevOps 工程师           | 2018年11月 ~           |
+| 公司 / 组织          | 岗位                                  | 时间                   |
+| -------------------- | ------------------------------------- | ---------------------- |
+| [RightCapital]       | DevSecOps 工程师 + IT 工程师          | 2018年11月 ~           |
 | [浙江禾匠信息科技]   | 高级 PHP 工程师                       | 2018年5月 ~ 2018年10月 |
-| [浙江椒图科技]               | .NET 工程师 -> PHP 工程师 -> 技术管理 | 2017年2月 ~ 2018年5月  |
+| [浙江椒图科技]       | .NET 工程师 -> PHP 工程师 -> 技术管理 | 2017年2月 ~ 2018年5月  |
 | [长沙异次元网络科技] | C++ 工程师                            | 2015年5月 ~ 2016年12月 |
 
 }
