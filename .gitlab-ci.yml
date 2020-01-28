@@ -9,18 +9,21 @@ variables:
   DOCKER_IMAGE: $DOCKER_USERNAME/blog
   DOCKER_TAG: build-$CI_PIPELINE_ID
 
-default:
-  cache:
-    key: ${CI_COMMIT_REF_SLUG}
-    paths:
-      - node_modules/
-      - public/resources/
-
 .yarn:
   image: node:12
   before_script:
     - yarn install --production
     - export PATH="$PATH:$PWD/node_modules/.bin"
+
+.generate:
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+      - public/
+      - db.json
+  artifacts:
+    expire_in: 1 week
 
 .docker:
   image: docker:19.03.1
@@ -38,17 +41,16 @@ default:
     - when: manual
 
 optimize images:
-  extends: .yarn
+  extends: [.yarn, .generate]
   stage: build
   script:
     - build/optimize-images.sh
   artifacts:
     paths:
       - public/resources/
-    expire_in: 1 week
 
 build html:
-  extends: .yarn
+  extends: [.yarn, .generate]
   stage: build
   script:
     - make lint
@@ -56,17 +58,15 @@ build html:
   artifacts:
     paths:
       - public/
-    expire_in: 1 week
 
 build pdf:
-  extends: .docker
+  extends: [.docker, .generate]
   stage: build pdf
   script:
-    - make pdf
+    - make validate-pdf || make pdf
   artifacts:
     paths:
       - public/resume/wi1dcard.pdf
-    expire_in: 1 week
 
 publish image:
   extends: .docker
