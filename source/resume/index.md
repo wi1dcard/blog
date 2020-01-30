@@ -56,13 +56,11 @@ comments: false
 
 @card{
 
-- 日常工作环境 macOS + Ubuntu，不使用 Windows，不使用盗版软件。
-- 优良的开发、测试、文档习惯，对自己一贯高标准要求。
+- 高标准自我要求；日常工作环境 macOS + Ubuntu，习惯 CLI，不使用 Windows，不使用盗版软件。
+- 良好的 Testing, Documentation, Capitalization, Commit Message, Commit Tree 习惯。
 - 坚持写技术博客；以总结工作中的经验教训，同时锻炼表达能力。
 - 重度 Google 用户；具备相关知识和技术，并不是「翻墙娱乐圈」中的一员。
-- 倾向于使用 CLI。
 - 社区活跃，积极参与开源；[我的 Pull Requests](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+sort%3Aupdated-desc+author%3Awi1dcard)。
-- 关注应用安全，了解常见漏洞。
 - 喜爱英语，至少不是短板；[LearnKu 翻译审阅者](https://learnku.com/users/32249/translations)。
 - 正努力成为 [T 型人才](https://en.wikipedia.org/wiki/T-shaped_skills)。
 
@@ -78,6 +76,7 @@ comments: false
 - 了解网络相关知识，具备 BIRD、IPTables、IPSec、WireGuard、UBNT 全家桶运维经验，了解 HTTP 协议。
 - 了解 Office 365 for Business 及相关产品，具备 Azure AD 运维经验，熟练通过 Ticket、邮件、Slack 等方式为美国同事提供 IT Support。
 - 熟悉 AWS 和 GCP，阿里云国际版也稍有了解。
+- 关注应用安全。
 - 正在深入学习 Kubernetes。
 
 }
