@@ -18,7 +18,7 @@ comments: false
 
 @card{
 
-公司业务方向为电商小程序，本人主要负责项目如下，面试时均可展示。
+公司业务方向为电商小程序，本人主要负责项目如下，面试时可展示代码。
 
 #### 禾匠小程序商城
 
@@ -29,7 +29,7 @@ comments: false
 - [支付宝开放平台第三方 PHP SDK](https://gitee.com/wi1dcard/alipay-sdk-php)
 - [百度小程序第三方 PHP SDK](https://gitee.com/wi1dcard/baidu-mini-program-sdk)
 
-另外在本项目中，我进行了大量的[性能优化和局部重构](/resources/legacy/5bbb618f61beb.png)，对 Yii 框架进行了一些定制和调整：集成 dotenv、集成 Sentry（一款类似 Bugsnag 的异常追踪系统）、规范 API 响应、环境检测脚本等。
+另外在本项目中，我进行了大量的 [性能优化和局部重构](/resources/legacy/5bbb618f61beb.png)，对 Yii 框架进行了一些定制和调整，包括集成 DotEnv、Sentry；规范 API 响应、环境检测脚本等。
 
 #### 榜店（被砍）
 
@@ -39,7 +39,7 @@ comments: false
 
 由于是全新开始，没有历史包袱，且运行环境不受制于客户服务器，所以我采用了 `PHP 7.2` + `Laravel` + `MySQL 5.7` 进行开发，完全遵循 PSR-1、PSR-2 以及未完成的 PSR-12。
 
-虽然，此项目中途被砍十分遗憾，但整个后端从零到基本架构到各类服务到部署脚本到 HTTP API，都是我一手编写，进行了大量的前期工作，面试时可展示代码。
+虽然此项目中途被砍十分遗憾，但整个后端从零到基本架构到各类服务到部署脚本到 HTTP API，都是我一手编写，进行了大量的前期工作，面试时可展示相关代码。
 
 贴一张改过好多次的 E-R 图，就挂在自己工位旁边，便于开展头脑风暴。
 
@@ -69,7 +69,7 @@ comments: false
 
 公司主要业务方向为公安部门（浙江椒图物联网科技有限公司）以及电力部门（浙江椒图电力科技有限公司 / 嘉兴市鸿云电力设备有限公司）。
 
-[从零开始](https://www.tianyancha.com/reportContent/2353553379/2016) 组建 [30 人](https://www.tianyancha.com/reportContent/2353553379/2017) 技术团队，初步尝试并积累了一定的研发管理经验。以下列出部分任职期间负责或参与的项目，展示本人职能。
+[从零开始](https://www.tianyancha.com/reportContent/2353553379/2016) 组建 [30 人](https://www.tianyancha.com/reportContent/2353553379/2017) 技术团队，初步尝试并积累了一定的研发管理经验。以下列出部分任职期间负责或参与的项目。
 
 }
 
