@@ -17,7 +17,7 @@ for IMG in **/*; do
 
     imagemin \
         --plugin.pngquant.quality=0.3 \
-        --plugin.pngquant.quality=0.5 \
+        --plugin.pngquant.quality=0.8 \
         --plugin.pngquant.strip \
         --plugin.pngquant.speed=4 \
         --plugin.mozjpeg.quality=70 \
