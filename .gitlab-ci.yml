@@ -94,13 +94,18 @@ deploy vm:
     - rsync -vh -rtz --delete "./public/" "$RSYNC_USER@$RSYNC_HOST:$RSYNC_DEST"
     - ssh "$RSYNC_USER@$RSYNC_HOST" "chmod -R a+rX '$RSYNC_DEST'"
 
-deploy github:
+mirror to github:
   extends: .deploy_ssh
-  allow_failure: true
+  # allow_failure: true
+  stage: build
   variables:
     GIT_DEPTH: "0"
     # GIT_STRATEGY: clone
   script:
     - apk add git git-lfs
     - ssh-keyscan -H "github.com" >> ~/.ssh/known_hosts
-    - git push -f git@github.com:wi1dcard/blog.git HEAD:master
+    - git checkout -b master
+    - git remote add github git@github.com:wi1dcard/blog.git
+    - git fetch --all
+    - git config --local lfs.https://github.com/.locksverify false
+    - git push -f github master
