@@ -34,7 +34,7 @@ title: DevOps 自动化实践 - 定时任务监控的进化之路
 
 由于 Cronitor 只发送失败通知，如此一来，工程师们的工作从 **关注海量消息并找出失败的** 变成了 **仅关注失败的消息**，显著降低了人力负担。
 
-Cronitor 支持的 Integrations 有 Slack、Pagerduty、Opsgenie、VictorOps 等，我们配置了 Slack。
+Cronitor 支持的 Integrations 有 Slack、PagerDuty、Opsgenie、VictorOps 等，我们配置了 Slack。
 
 ![](/resources/911181c403a4af680c346a919ed122a1.png)
 
@@ -56,9 +56,9 @@ Cronitor 支持的 Integrations 有 Slack、Pagerduty、Opsgenie、VictorOps 等
 
 ## 新的问题
 
-**关注定时任务执行结果** 的工作流程完全自动化了，「创建定时任务监控项」仍需在 Web UI 上手动操作。这在少量 Cron Jobs 时似乎简单易行；但鉴于我们相对严谨的发布流程，存在 Development、Staging、UAT、Production 四套运行环境，相当于本就数量庞大的定时任务需要通过 UI 对应地、分别创建四个监控项。这意味着：
+**关注定时任务执行结果** 的工作流程完全自动化了，**创建定时任务监控项** 仍需在 Web UI 上手动操作。这在少量 Cron Jobs 时似乎简单易行，但我司大多数项目需要 Development、Staging、UAT、Production 四套运行环境，因此我们不得不为本就数量庞大的定时任务分别创建与之对应的四个监控项。这意味着：
 
-1. 工作量大，并且存在人为失误的可能性（例如同一监控项的各个环境的配置不统一）；尤其是随着时间推移，后续创建的监控项配置很有可能与先前创建的存在细微差异，这一点由于难以核对让我们非常头疼。
+1. 工作量大，并且存在人为失误的可能性（例如同一监控项的各个环境的配置不统一）；尤其是随着时间推移，后续创建的监控项配置很有可能与先前创建的存在细微差异，这一点因为难以核对让我们非常头疼。
 2. 不可追溯。Web UI 缺少操作日志，当配置变更时，不易找出变更的发起者和原因。
 3. 几乎无法实施全局改动（例如增加一套环境、修改所有监控项的配置等）。
 
@@ -111,7 +111,7 @@ resource "cronitor_heartbeat_monitor" "monitor" {
 
 > 小提示：推荐 [crontab.guru](https://crontab.guru/)，是一款可以将 Cron Expression 解析为人类可读语言的小工具。
 
-为了能够安全地将以上内容提交到代码管理系统，我们还将 Cronitor 的 API Key 解藕，使用 Terraform 的 Variables 赋值；这样既可以将它存储到 `terraform.tfvars` 文件中，又能够通过环境变量设置，方便 CI/CD。
+为了能够安全地将以上内容提交到代码管理系统，我们还将 Cronitor 的 API Key 解耦，使用 Terraform 的 Variables 赋值；这样既可以将它存储到 `terraform.tfvars` 文件中，又能够通过环境变量设置，方便 CI/CD。
 
 实际的代码当然没有这么简单，我们将多个项目所需要的监控项编写成 Terraform Modules 以便于复用，再将各个环境抽象为 Terraform Workspaces，在 Workspaces 内使用 `modules` 指令，根据需要引用模块即可；即使部分项目不存在某些环境也能够灵活编排。
 
@@ -122,24 +122,24 @@ resource "cronitor_heartbeat_monitor" "monitor" {
 ## 最终的工作流
 
 ```
-                           +--------------+
-                           | Users commit |
-                           +------+-------+
-                                  |
-                                  v
-                             +----+-----+
-                             | Git Repo |
-                             +----+-----+
-                                  |
-                                  | CI/CD <---> Terraform
-                                  v
-+-----------+    HTTP     +-------+-----------+
+                            +--------------+
+                            | Users Commit |
+                            +------+-------+
+                                   |
+                                   v
+                           +-------+--------+
+                           | Git Repository |
+                           +-------+--------+
+                                   |             +-----------+
+                                   | CI/CD <-----> Terraform |
+                                   |             +-----------+
++-----------+    HTTP     +--------+----------+
 | Cron Jobs +-------------> Cronitor Monitors |
-+-----------+   Request   +-------+-----------+
-                                  |
-                                  | Webhook
-                                  v
-                      +-----------+-----------------+
++-----------+   Request   +--------+----------+
+                                   |
+                                   | Webhook
+                                   v
+                      +------------+----------------+
                       | Cronitor Failure Dispatcher |
                       +--------+----+----+----------+
                                |    |    |
