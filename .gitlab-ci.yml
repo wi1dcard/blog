@@ -107,5 +107,6 @@ mirror to github:
     - git checkout -b master
     - git remote add github git@github.com:wi1dcard/blog.git
     - git fetch --all
+    - git lfs fetch --all
     - git config --local lfs.https://github.com/.locksverify false
     - git push -f github master
