@@ -1,10 +1,7 @@
 {
-    "excludeFiles": [
-      "**/jootu-copywriting-style-guide.md"
-    ],
-    "rules": {
-      "no-long-code": 0,
-      "no-empty-code-lang": 0,
-      "no-trailing-punctuation": 0
-    }
+  "rules": {
+    "no-long-code": 0,
+    "no-empty-code-lang": 0,
+    "no-trailing-punctuation": 0
+  }
 }
