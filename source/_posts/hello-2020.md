@@ -1,6 +1,6 @@
 ---
 id: hello-2020
-tags: []
+tags: [Life]
 date: 2019-12-31 19:23:48
 title: 一篇又长又乏味的年终总结和展望
 categories: Misc

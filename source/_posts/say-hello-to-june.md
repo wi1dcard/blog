@@ -3,7 +3,7 @@ title: "六月，你好。"
 date: 2018-06-01 00:00:00
 id: say-hello-to-june
 categories: Misc
-tags: [Legacy]
+tags: [Legacy, Life]
 ---
 
 > 我们最好的遇见，是现在这样的六月。我们最好的告别，是现在这样……
