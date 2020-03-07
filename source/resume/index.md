@@ -15,9 +15,9 @@ comments: false
 
 从 2010 年接触 Pascal 编程、参加竞赛起，即对代码产生了极为浓厚的兴趣。由此自学 MFC 和 WinForm 开发，并在 2013 年开始接触外包项目。2015 年起进入职场并逐渐转型 PHP 与后端方向，现就职于某外企从事 [**DevSecOps**](https://www.redhat.com/en/topics/devops/what-is-devsecops) 以及 IT 相关工作。
 
-如果用一个词来形容我，我认为应当是 「**个性**」。我的职业规划大多基于兴趣驱动，我喜欢做与众不同或是未曾有人尝试过的事。我热爱钻研，善于规划并独立思考问题的更优解；但我有一点强迫症，有时会把自己推到极限。我乐于高效地协作或提供帮助，但我不喜欢被打扰 —— 写代码时习惯戴着耳机听电音，这能让我专注。
+如果用一个词来形容我，我认为应当是 「**个性**」。我的职业规划大多基于兴趣驱动，我喜欢做与众不同的事或是未曾有人尝试过的东西。我善于独立思考、规划、钻研问题的更优解，在不断学习的过程中，有时会把自己推到极限，处于过度紧张和不健康的状态。我乐于高效地协作或提供帮助，但我不喜欢被打扰，因此时常戴着耳机听电音写代码，这能让我专注。
 
-我热爱软件行业，享受写代码带来的成就感，希望能成为一名「**终身编程者**」，这是我的 [MBTI 性格报告](https://www.16personalities.com/ch/intj-%E4%BA%BA%E6%A0%BC)。
+我热爱软件行业，享受发现问题并解决问题带来的成就感，希望能成为一名「**终身编程者**」，这是我的 [MBTI 性格报告](https://www.16personalities.com/ch/intj-%E4%BA%BA%E6%A0%BC)。
 
 你可以通过 `wi1dcard.cn@gmail.com` 找到我，我将在工作日（UTC+8）的 48 小时内与您取得联系。
 
@@ -36,7 +36,7 @@ comments: false
 1. 盈利状态。
 2. 热情，年轻，开放。
 3. 鼓励创新，适当放权，结果导向。
-4. 鼓励工程师使用 macOS 或 Linux。
+4. 支持工程师使用 macOS 或 Linux。
 
 }
 
@@ -70,14 +70,13 @@ comments: false
 
 @card{
 
-- 具备丰富 Git Workflow 和 CI/CD 实践经验，熟练使用 GitLab CI、Ansible、Terraform、Helm 等。
-- 具备监控预警和 On-Call 经验，了解 Prometheus、Grafana、NewRelic、StatusCake、OpsGenie 等。
-- 熟悉 PHP 及周边生态，具备丰富 PHP-FPM + Nginx 运维经验；参与虚拟机到 Kubernetes 的应用改造，目前仍负责公司 Composer 私有仓库以及 PHP-CS-Fixer、PHPStan 等工具类项目的集成和维护。
-- 了解网络相关知识，具备 BIRD、IPTables、IPSec、WireGuard、UBNT 全家桶运维经验，了解 HTTP 协议。
-- 了解 Office 365 for Business 及相关产品，具备 Azure AD 运维经验，熟练通过 Ticket、邮件、Slack 等方式为美国同事提供 IT Support。
-- 熟悉 AWS 和 GCP，阿里云国际版也稍有了解。
-- 关注应用安全。
-- 正在深入学习 Kubernetes。
+1. 具备丰富 Git Workflow 和 CI/CD 实践经验，熟练使用 GitLab CI、Ansible、Terraform、Helm 等。
+2. 具备丰富监控预警和 Incident Management 经验，熟练使用 Prometheus、Alertmanager、Grafana、OpsGenie、StatusCake、Pingdom 等。
+3. 具备从虚拟机到 Kubernetes 的传统 PHP 应用改造落地经验，正在深入学习 Kubernetes。
+4. 了解网络知识，具备 BIRD、IPTables、IPSec、WireGuard、UniFi 运维经验。
+5. 熟练通过 Ticket、Email、Slack 等方式为美国同事提供 IT Support，具备 Office 365 for Business 和 Azure AD 运维经验。
+6. 熟悉 AWS 和 GCP，了解阿里云国际版。
+7. 关注应用安全。
 
 }
 
