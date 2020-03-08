@@ -6,16 +6,13 @@
         root = $('html'),
         gotop = $('#gotop'),
         menu = $('#menu'),
-        header = $('#header'),
         mask = $('#mask'),
-        menuToggle = $('#menu-toggle'),
         menuOff = $('#menu-off'),
         loading = $('#loading'),
         animate = w.requestAnimationFrame,
         scrollSpeed = 200 / (1000 / 60),
         forEach = Array.prototype.forEach,
         even = ('ontouchstart' in w && /Mobile|Android|iOS|iPhone|iPad|iPod|Windows Phone|KFAPWI/i.test(navigator.userAgent)) ? 'touchstart' : 'click',
-        isWX = /micromessenger/i.test(navigator.userAgent),
         noop = function () { },
         offset = function (el) {
             var x = el.offsetLeft,
@@ -76,11 +73,11 @@
             }
         },
         fixedHeader: function (top) {
-            if (top > header.clientHeight) {
-                header.classList.add('fixed');
-            } else {
-                header.classList.remove('fixed');
-            }
+            // if (top > header.clientHeight) {
+            //     header.classList.add('fixed');
+            // } else {
+            //     header.classList.remove('fixed');
+            // }
         },
         toc: (function () {
             var toc = $('#post-toc');
@@ -93,7 +90,6 @@
             }
 
             var bannerH = $('.post-header').clientHeight,
-                headerH = header.clientHeight,
                 titles = $('#post-content').querySelectorAll('h1, h2, h3, h4, h5, h6');
 
             toc.querySelector('a[href="#' + titles[0].id + '"]').parentNode.classList.add('active');
@@ -135,11 +131,11 @@
 
             return {
                 fixed: function (top) {
-                    top >= bannerH - headerH ? toc.classList.add('fixed') : toc.classList.remove('fixed');
+                    top >= bannerH ? toc.classList.add('fixed') : toc.classList.remove('fixed');
                 },
                 actived: function (top) {
                     for (i = 0, len = titles.length; i < len; i++) {
-                        if (top > offset(titles[i]).y - headerH - 5) {
+                        if (top > offset(titles[i]).y - 5) {
                             var prevListEle = toc.querySelector('li.active');
                             var currListEle = toc.querySelector('a[href="#' + titles[i].id + '"]').parentNode;
 
@@ -476,10 +472,10 @@
         animate(Blog.goTop.bind(Blog, 0));
     }, false);
 
-    menuToggle.addEventListener(even, function (e) {
-        Blog.toggleMenu(true);
-        e.preventDefault();
-    }, false);
+    // menuToggle.addEventListener(even, function (e) {
+    //     Blog.toggleMenu(true);
+    //     e.preventDefault();
+    // }, false);
 
     menuOff.addEventListener(even, function () {
         menu.classList.add('hide');

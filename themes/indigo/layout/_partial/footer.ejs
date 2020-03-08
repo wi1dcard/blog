@@ -1,17 +1,20 @@
 <footer class="footer">
     <div class="top">
-        <%- partial('plugins/site-visit') %>
+        <p>
+            <span><%-config.author %> &copy; <%if (theme.since_year && theme.since_year < date(new Date(), 'YYYY')) {%><%- theme.since_year %> - <%}%><%- date(new Date(), 'YYYY') %></span>
+            <span class="post-count">Total words: <%= totalcount(site) %></span>
+        </p>
         <p>
             <span><%- __('footer.license') %></span>
         </p>
     </div>
     <div class="bottom">
-        <p><span><%-config.author %> &copy; <%if (theme.since_year && theme.since_year < date(new Date(), 'YYYY')) {%><%- theme.since_year %> - <%}%><%- date(new Date(), 'YYYY') %></span>
+        <p>
             <span>
                 <% if(theme.ICP_license) {%>
                 <a href="http://www.miitbeian.gov.cn/" target="_blank"><%- theme.ICP_license %></a><br>
                 <% } %>
-                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and a wonderful theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a> within several <a href="https://github.com/wi1dcard/blog/commits/master/themes/indigo" target="_blank">modifications</a>.
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and a <a href="https://github.com/wi1dcard/blog/commits/master/themes/indigo" target="_blank">modified</a> theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>.
             </span>
         </p>
     </div>
