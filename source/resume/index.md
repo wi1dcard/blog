@@ -44,9 +44,11 @@ comments: false
 
 ### 外部链接
 
+- 技术博客（<https://wi1dcard.dev/>）
+- [LearnKu 有价值评论](https://learnku.com/users/32249/replies)
 - [GitHub Repositories](https://github.com/wi1dcard?utf8=%E2%9C%93&tab=repositories&q=&type=source&language=)
+- [GitHub Pull Requests](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+sort%3Aupdated-desc+author%3Awi1dcard)
 - [GitLab Profile](https://gitlab.com/wi1dcard)
-- 技术博客: <https://wi1dcard.dev/>
 
 }
 
@@ -59,11 +61,11 @@ comments: false
 @card{
 
 - 高标准自我要求；日常工作环境 macOS + Ubuntu，习惯 CLI，不使用 Windows，不使用盗版软件。
-- 良好的 Testing, Documentation, Capitalization, Commit Message, Commit Tree 习惯。
+- 良好的 Testing、Documentation、Capitalization、Commit Message、Commit Tree 习惯。
 - 坚持写技术博客；以总结工作中的经验教训，同时锻炼表达能力。
-- 重度 Google 用户；具备相关知识和技术，并不是「翻墙娱乐圈」中的一员。
-- 社区活跃，积极参与开源；[我的 Pull Requests](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+sort%3Aupdated-desc+author%3Awi1dcard)。
-- 喜爱英语，至少不是短板；[LearnKu 翻译审阅者](https://learnku.com/users/32249/translations)。
+- 重度 Google 用户；具备相关知识和技术，不参与「翻墙娱乐圈」。
+- 社区活跃，积极参与开源。
+- 喜欢英语，至少不是短板。
 - 正努力成为 [T 型人才](https://en.wikipedia.org/wiki/T-shaped_skills)。
 
 }
