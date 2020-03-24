@@ -1,16 +1,16 @@
 # Wi1dcard's blog
 
-Hey, welcome to my technical blog. This repo stands for the source codes of it. You can view the rendered website at <https://wi1dcard.dev/>.
+Hello! Welcome to my technical blog. This repo hosted on [GitLab](https://gitlab.com/wi1dcard/blog) contains all the source codes of it. You can view the rendered website on <https://wi1dcard.dev/>.
 
 ## The Docker Image
 
-You can also view my blog with local service powered by Nginx in Docker:
+You can also start the local service powered by Nginx and Docker:
 
 ```bash
 docker run --rm -it -p 80:80 wi1dcard/blog
 ```
 
-The site would be available at <http://localhost/>.
+The site would be available on <http://localhost/>.
 
 ## Current Stack
 
