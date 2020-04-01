@@ -1,5 +1,7 @@
 # Wi1dcard's blog
 
+[![pipeline status](https://gitlab.com/wi1dcard/blog/badges/master/pipeline.svg)](https://gitlab.com/wi1dcard/blog/-/commits/master)
+
 Hello! Welcome to my technical blog. This repo hosted on [GitLab](https://gitlab.com/wi1dcard/blog) contains all the source codes of it. You can view the rendered website on <https://wi1dcard.dev/>.
 
 ## The Docker Image
