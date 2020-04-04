@@ -20,7 +20,7 @@ pdf:
 	    -v "${PWD}/public/resume:/converted" \
 	    --name athenapdf \
 	    arachnysdocker/athenapdf \
-	    athenapdf --margins=none --ignore-certificate-errors https://wi1dcard.dev/resume/ wi1dcard.pdf
+	    athenapdf --margins=none --ignore-certificate-errors https://wi1dcard.dev/resume/ Weizhe-Sun-DevOps-Resume.pdf
 
 	docker rm -vf caddy
 	sha256sum public/resume/index.html > public/resume/index.sha256

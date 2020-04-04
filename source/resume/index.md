@@ -3,7 +3,7 @@ title: "I'm Wi1dcard."
 comments: false
 ---
 
-> 我的 [在线简历](https://wi1dcard.dev/resume/) / [获取 PDF 版本](wi1dcard.pdf)。
+> 我的 [在线简历](https://wi1dcard.dev/resume/) / [获取 PDF 版本](Weizhe-Sun-DevOps-Resume.pdf)。
 
 <!--more-->
 
@@ -13,11 +13,11 @@ comments: false
 
 你好，我是 **Wi1dcard**，一名生于 1998 年但具备 5 年工作经验的软件工程师。
 
-从 2010 年接触 Pascal 编程、参加竞赛起，即对代码产生了极为浓厚的兴趣。由此自学 MFC 和 WinForm 开发，并在 2013 年开始接触外包项目。2015 年起进入职场并逐渐转型 PHP 与后端方向，现就职于某外企从事 [**DevSecOps**](https://www.redhat.com/en/topics/devops/what-is-devsecops) 以及 IT 相关工作。
+从 2010 年接触 Pascal 编程、参加竞赛起，我对代码产生了浓厚的兴趣。由此自学 MFC 和 WinForm 开发，并在 2013 年开始接触外包项目。2015 年起进入职场并逐渐转型 PHP 与后端方向，现就职于某外企从事 [**DevSecOps**](https://www.redhat.com/en/topics/devops/what-is-devsecops) 以及 IT 相关工作。
 
-如果用一个词来形容我，我认为应当是 「**个性**」。我的职业规划大多基于兴趣驱动，我喜欢做与众不同的事或是未曾有人尝试过的东西。我善于独立思考、规划、钻研问题的更优解，在不断学习的过程中，有时会把自己推到极限，处于过度紧张和不健康的状态。我乐于高效地协作或提供帮助，但我不喜欢被打扰，因此时常戴着耳机听电音写代码，这能让我专注。
+如果用一个词来形容我，我认为应当是 「**个性**」。我的职业规划大多基于兴趣驱动，我喜欢做与众不同的事或是未曾有人尝试过的东西。我善于独立思考、规划、钻研问题的更优解。在不断学习的过程中，有时我会把自己推到极限，处于过度紧张和不健康的状态。我乐于高效地协作或提供帮助，但我不喜欢被打扰，因此时常戴着耳机听电音写代码，这能让我专注。
 
-我热爱软件行业，享受发现问题并解决问题带来的成就感，希望能成为一名「**终身编程者**」，这是我的 [MBTI 性格报告](https://www.16personalities.com/ch/intj-%E4%BA%BA%E6%A0%BC)。
+我热爱软件行业，享受发现问题并解决问题带来的成就感，希望能成为一名「**终身编程者**」。这是我的 [MBTI 性格报告](https://www.16personalities.com/ch/intj-%E4%BA%BA%E6%A0%BC)。
 
 你可以通过 `wi1dcard.cn@gmail.com` 找到我，我将在工作日（UTC+8）的 48 小时内与您取得联系。
 
@@ -37,6 +37,7 @@ comments: false
 2. 热情，年轻，开放。
 3. 鼓励创新，适当放权，结果导向。
 4. 支持工程师使用 macOS 或 Linux。
+5. 不反对工程师使用 Google。
 
 }
 
@@ -60,12 +61,13 @@ comments: false
 
 @card{
 
-- 高标准自我要求；日常工作环境 macOS + Ubuntu，习惯 CLI，不使用 Windows，不使用盗版软件。
+- 高标准自我要求。
+- 日常工作环境 macOS + Ubuntu，习惯 CLI，不使用 Windows，不使用盗版软件。
 - 良好的 Testing、Documentation、Capitalization、Commit Message、Commit Tree 习惯。
-- 坚持写技术博客；以总结工作中的经验教训，同时锻炼表达能力。
-- 重度 Google 用户；具备相关知识和技术，不参与「翻墙娱乐圈」。
+- 关注权限和安全，对应用安全持严谨态度。
+- 良好的表达能力和总结习惯，坚持写技术博客。
+- 重度 Google 用户，熟练阅读英文文档，目前 CEFR 为 B2。
 - 社区活跃，积极参与开源。
-- 喜欢英语，至少不是短板。
 - 正努力成为 [T 型人才](https://en.wikipedia.org/wiki/T-shaped_skills)。
 
 }
@@ -77,10 +79,9 @@ comments: false
 1. 具备丰富 Git Workflow 和 CI/CD 实践经验，熟练使用 GitLab CI、Ansible、Terraform、Helm 等。
 2. 具备丰富监控预警和 Incident Management 经验，熟练使用 Prometheus、Alertmanager、Grafana、OpsGenie、StatusCake、Pingdom 等。
 3. 具备从虚拟机到 Kubernetes 的传统 PHP 应用改造落地经验，正在深入学习 Kubernetes。
-4. 了解网络知识，具备 BIRD、IPTables、IPSec、WireGuard、UniFi 运维经验。
+4. 了解网络知识，具备少量 BIRD、IPTables、IPSec、WireGuard、UniFi 运维经验。
 5. 熟练通过 Ticket、Email、Slack 等方式为美国同事提供 IT Support，具备 Office 365 for Business 和 Azure AD 运维经验。
 6. 熟悉 AWS 和 GCP，了解阿里云国际版。
-7. 关注应用安全。
 
 }
 
