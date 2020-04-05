@@ -6,10 +6,13 @@ lint:
 	build/lint-categories.sh
 	lint-md source/_posts --config build/lint-md.json
 
-validate-pdf:
-	cat public/resume/index.sha256 | sha256sum -c
+cleanup:
+	hexo clean
 
-pdf:
+html:
+	hexo generate
+
+resume-pdf:
 	docker run --net host -d \
 	    -v "${PWD}/build/Caddyfile:/etc/Caddyfile:ro" \
 	    -v "${PWD}/public:/srv:ro" \
@@ -23,7 +26,6 @@ pdf:
 	    athenapdf --margins=none --ignore-certificate-errors https://wi1dcard.dev/resume/ Weizhe-Sun-DevOps-Resume.pdf
 
 	docker rm -vf caddy
-	sha256sum public/resume/index.html > public/resume/index.sha256
 
 image:
 	docker build -f build/Dockerfile -t "${DOCKER_IMAGE}" -t "${DOCKER_IMAGE}:${DOCKER_TAG}" .

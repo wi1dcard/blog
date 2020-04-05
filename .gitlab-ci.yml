@@ -54,7 +54,7 @@ build html:
   stage: build
   script:
     - make lint
-    - hexo generate
+    - make html
   artifacts:
     paths:
       - public/
@@ -63,7 +63,7 @@ build pdf:
   extends: [.docker, .generate]
   stage: build pdf
   script:
-    - make validate-pdf || make pdf
+    - make resume-pdf
   artifacts:
     paths:
       - public/resume/Weizhe-Sun-DevOps-Resume.pdf
