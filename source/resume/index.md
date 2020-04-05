@@ -3,7 +3,7 @@ title: "I'm Wi1dcard."
 comments: false
 ---
 
-> 我的 [在线简历](https://wi1dcard.dev/resume/) / [获取 PDF 版本](Weizhe-Sun-DevOps-Resume.pdf)。
+> 我的 [在线简历](https://wi1dcard.dev/resume/) / [获取 PDF 版本](https://wi1dcard.dev/resume/Weizhe-Sun-DevOps-Resume.pdf)。
 
 <!--more-->
 
@@ -29,7 +29,7 @@ comments: false
 
 @card{
 
-### 对您的期望
+### 对您的期待
 
 我理想中所处的团队是这样的：
 
@@ -62,8 +62,8 @@ comments: false
 @card{
 
 - 高标准自我要求。
-- 日常工作环境 macOS + Ubuntu，习惯 CLI，不使用 Windows，不使用盗版软件。
-- 良好的 Testing、Documentation、Capitalization、Commit Message、Commit Tree 习惯。
+- 日常工作环境 macOS 和 Ubuntu，习惯 CLI，不使用 Windows，不使用盗版软件。
+- 良好的 testing、documentation、capitalization、git commit message 以及 git tree 习惯。
 - 关注权限和安全，对应用安全持严谨态度。
 - 良好的表达能力和总结习惯，坚持写技术博客。
 - 重度 Google 用户，熟练阅读英文文档，目前 CEFR 为 B2。
@@ -76,12 +76,14 @@ comments: false
 
 @card{
 
-1. 具备丰富 Git Workflow 和 CI/CD 实践经验，熟练使用 GitLab CI、Ansible、Terraform、Helm 等。
-2. 具备丰富监控预警和 Incident Management 经验，熟练使用 Prometheus、Alertmanager、Grafana、OpsGenie、StatusCake、Pingdom 等。
-3. 具备从虚拟机到 Kubernetes 的传统 PHP 应用改造落地经验，正在深入学习 Kubernetes。
-4. 了解网络知识，具备少量 BIRD、IPTables、IPSec、WireGuard、UniFi 运维经验。
-5. 熟练通过 Ticket、Email、Slack 等方式为美国同事提供 IT Support，具备 Office 365 for Business 和 Azure AD 运维经验。
-6. 熟悉 AWS 和 GCP，了解阿里云国际版。
+1. 具备丰富 Git workflows 和 CI/CD 实践经验，熟练使用 GitLab CI、Ansible 等。
+2. 具备丰富应用监控和预警实践经验，熟悉 Incident Management 工作流和 On-call 工作机制，熟练使用 Prometheus、Alertmanager、Grafana、OpsGenie、Pingdom。
+3. 具备将传统 PHP 应用从虚拟机到 Kubernetes 的改造落地经验，熟练使用 Docker、Helm、Helmfile，熟悉 Helm 生态圈，正在深入学习 Kubernetes。
+4. 具备丰富 Infrastructure as Code 实践经验，熟练使用 Terraform。
+5. 熟悉 AWS 和 Google Cloud Platform，了解阿里云。
+6. 具备小型公司网络运维经验，了解 BIRD、IPTables、IPsec、WireGuard、UniFi。
+7. 具备跨时区工作经验，熟练通过 Jira ServiceDesk、Email 和 Slack 等方式为美国同事提供 IT support。
+8. 具备少量 Office 365 for Business、Azure AD 和 Salesforce 运维经验。
 
 }
 
@@ -89,19 +91,16 @@ comments: false
 
 @card{
 
-| 公司 / 组织          | 岗位                                  | 时间                   |
-| -------------------- | ------------------------------------- | ---------------------- |
-| [RightCapital]       | DevSecOps 工程师 + IT 工程师          | 2018年11月 ~           |
-| [浙江禾匠信息科技]   | 高级 PHP 工程师                       | 2018年5月 ~ 2018年10月 |
-| [浙江椒图科技]       | .NET 工程师 -> PHP 工程师 -> 技术管理 | 2017年2月 ~ 2018年5月  |
-| [长沙异次元网络科技] | C++ 工程师                            | 2015年5月 ~ 2016年12月 |
+| 公司 / 组织        | 岗位                                  | 时间                   |
+| ------------------ | ------------------------------------- | ---------------------- |
+| RightCapital       | DevSecOps 工程师 + IT 工程师          | 2018年11月 ~           |
+| 浙江禾匠信息科技   | 高级 PHP 工程师                       | 2018年5月 ~ 2018年10月 |
+| 浙江椒图科技       | .NET 工程师 -> PHP 工程师 -> 技术管理 | 2017年2月 ~ 2018年5月  |
+| 长沙异次元网络科技 | C++ 工程师                            | 2015年5月 ~ 2016年12月 |
+
+详情请参阅 [Employment History](https://wi1dcard.dev/employment-history/)。
 
 }
-
-[RightCapital]: /employment-history/#RightCapital
-[浙江禾匠信息科技]: /employment-history/#浙江禾匠信息科技
-[浙江椒图科技]: /employment-history/#浙江椒图科技
-[长沙异次元网络科技]: /employment-history/#长沙异次元网络科技
 
 ## 我的不足
 
