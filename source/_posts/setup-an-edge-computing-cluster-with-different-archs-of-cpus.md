@@ -1,7 +1,7 @@
 ---
 id: setup-an-edge-computing-cluster-with-different-archs-of-cpus
 tags: [Docker, Kubernetes, RaspberryPi]
-date: 2020-04-13 00:00:38
+date: 2020-02-27 21:13:38
 title: 搭建异构 CPU 组成的边缘计算 Kubernetes 集群
 categories: Tutorials
 ---

@@ -1,7 +1,7 @@
 ---
 id: reuse-gitlab-ci-configs-across-projects
 tags: [CI/CD]
-date: 2020-04-13 00:17:06
+date: 2020-02-26 22:19:06
 title: 跨项目 GitLab CI 配置复用与管理
 categories: Tutorials
 ---
