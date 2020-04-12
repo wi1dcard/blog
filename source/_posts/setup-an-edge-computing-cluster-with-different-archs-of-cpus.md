@@ -26,7 +26,7 @@ categories: Tutorials
 
 为了能够适应较低的计算性能，我选择了使用 [K3s](https://k3s.io/) 部署 Kubernetes 集群。K3s 是一款 Rancher 开源的轻量 Kubernetes 实现，主要目标为物联网和边缘计算等场景。
 
-如果你是在搭建测试集群，不妨试试 Minikube 和 Microk8s，它们能够提供更加接近生产环境集群的体验。
+如果你是在搭建测试集群，不妨试试 Minikube 和 MicroK8s，它们能够提供更加接近生产环境集群的体验。
 
 不同于以上两款产品，K3s 除了更加轻量外，还支持多节点，因此比较符合我的使用场景。
 
@@ -97,7 +97,7 @@ spec:
 
 ## Docker Manifests
 
-如果你想要部署的应用镜像是你自己构建的话，那么强烈推荐试试看 [Docker image manifest v2](https://docs.docker.com/registry/spec/manifest-v2-2/) 的特性 —— 可创建 manifest lists 包含多个不同 platform 和 architecutre 的 image manifests。
+如果你想要部署的应用镜像是你自己构建的话，那么强烈推荐试试看 [Docker image manifest v2](https://docs.docker.com/registry/spec/manifest-v2-2/) 的特性 —— 可创建 manifest lists 包含多个不同 platforms 和 architectures 的 image manifests。
 
 Docker Client 也提供了一个实验性的命令 [`docker manifest`](https://docs.docker.com/engine/reference/commandline/manifest/) 来创建、推送 manifest lists。我结合实例来说说它的用法。
 
