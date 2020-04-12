@@ -66,7 +66,7 @@ build pdf:
     - make resume-pdf
   artifacts:
     paths:
-      - public/resume/Weizhe-Sun-DevOps-Resume.pdf
+      - public/resume/Weizhe-Sun-Resume.pdf
 
 publish image:
   extends: .docker

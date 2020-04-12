@@ -1,9 +1,9 @@
 ---
-title: "I'm Wi1dcard."
+title: "I'm Wi1dcard"
 comments: false
 ---
 
-> 我的 [在线简历](https://wi1dcard.dev/resume/) / [获取 PDF 版本](https://wi1dcard.dev/resume/Weizhe-Sun-DevOps-Resume.pdf)。
+> 我的 [在线简历](https://wi1dcard.dev/resume/) / [获取 PDF 版本](https://wi1dcard.dev/resume/Weizhe-Sun-Resume.pdf)。
 
 <!--more-->
 
@@ -13,15 +13,15 @@ comments: false
 
 你好，我是 **Wi1dcard**，一名生于 1998 年但具备 5 年工作经验的软件工程师。
 
-从 2010 年接触 Pascal 编程、参加竞赛起，我对代码产生了浓厚的兴趣。由此自学 MFC 和 WinForm 开发，并在 2013 年开始接触外包项目。2015 年起进入职场并逐渐转型 PHP 与后端方向，现就职于某外企从事 [**DevSecOps**](https://www.redhat.com/en/topics/devops/what-is-devsecops) 以及 IT 相关工作。
+从 2010 年接触 Pascal 编程、参加信息学竞赛起，我对代码产生了浓厚的兴趣。从此自学 MFC 和 WinForm 开发，并在 2013 年起接触外包项目。2015 年进入职场后逐渐转型 PHP 和后端方向，2018 年底开始学习运维和网络相关知识，现就职于某 Fintech 外企从事 **DevOps** 以及少量 IT 相关工作。
 
-如果用一个词来形容我，我认为应当是 「**个性**」。我的职业规划大多基于兴趣驱动，我喜欢做与众不同的事或是未曾有人尝试过的东西。我善于独立思考、规划、钻研问题的更优解。在不断学习的过程中，有时我会把自己推到极限，处于过度紧张和不健康的状态。我乐于高效地协作或提供帮助，但我不喜欢被打扰，因此时常戴着耳机听电音写代码，这能让我专注。
+目前，我正在深入学习 Kubernetes；对 Golang 和 Rust 兴趣很大，可惜实战机会不多，希望在实际项目中进一步学习。
 
-我热爱软件行业，享受发现问题并解决问题带来的成就感，希望能成为一名「**终身编程者**」。这是我的 [MBTI 性格报告](https://www.16personalities.com/ch/intj-%E4%BA%BA%E6%A0%BC)。
+我的职业规划大多基于兴趣驱动，我喜欢做与众不同或是未曾有人尝试过的事。我善于独立思考、规划、钻研问题的更优解。在不断实践的过程中，我甚至会把自己推到极限，处于过度紧张和不健康的状态。我乐于高效地协作或提供帮助，但在专注时不希望被打扰，因此时常戴着耳机工作。
 
-你可以通过 `wi1dcard.cn@gmail.com` 找到我，我将在工作日（UTC+8）的 48 小时内与您取得联系。
+我热爱软件行业，享受发现问题并解决问题带来的成就感，希望能成为一名「**终身编程者**」。
 
-期待与你合作。
+你可以通过 `wi1dcard.cn@gmail.com` 联系我，期待与你成为同事和朋友。
 
 }
 
@@ -31,7 +31,7 @@ comments: false
 
 ### 对您的期待
 
-我理想中所处的团队是这样的：
+我理想中所在的团队是这样的：
 
 1. 盈利状态。
 2. 热情，年轻，开放。
@@ -50,6 +50,7 @@ comments: false
 - [GitHub Repositories](https://github.com/wi1dcard?utf8=%E2%9C%93&tab=repositories&q=&type=source&language=)
 - [GitHub Pull Requests](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+sort%3Aupdated-desc+author%3Awi1dcard)
 - [GitLab Profile](https://gitlab.com/wi1dcard)
+- [MBTI 性格报告](https://www.16personalities.com/ch/intj-%E4%BA%BA%E6%A0%BC)
 
 }
 
@@ -62,12 +63,12 @@ comments: false
 @card{
 
 - 高标准自我要求。
-- 日常工作环境 macOS 和 Ubuntu，习惯 CLI，不使用 Windows，不使用盗版软件。
-- 良好的 testing、documentation、capitalization、git commit message 以及 git tree 习惯。
-- 关注权限和安全，对应用安全持严谨态度。
-- 良好的表达能力和总结习惯，坚持写技术博客。
-- 重度 Google 用户，熟练阅读英文文档，目前 CEFR 为 B2。
-- 社区活跃，积极参与开源。
+- 日常工作环境 macOS 和 Ubuntu，习惯 CLI，不使用盗版系统和软件。
+- 良好的代码结构、命名、测试、文档、大小写、Git commit messages 以及 Git tree 习惯。
+- 关注权限与安全，对安全持严谨态度。
+- 关注新技术动向，社区活跃，积极参与开源。
+- 良好的表达和总结能力，思维逻辑缜密，坚持写技术博客。
+- 重度 Google 用户。
 - 正努力成为 [T 型人才](https://en.wikipedia.org/wiki/T-shaped_skills)。
 
 }
@@ -76,39 +77,61 @@ comments: false
 
 @card{
 
-1. 具备丰富 Git workflows 和 CI/CD 实践经验，熟练使用 GitLab CI、Ansible 等。
-2. 具备丰富应用监控和预警实践经验，熟悉 Incident Management 工作流和 On-call 工作机制，熟练使用 Prometheus、Alertmanager、Grafana、OpsGenie、Pingdom。
-3. 具备将传统 PHP 应用从虚拟机到 Kubernetes 的改造落地经验，熟练使用 Docker、Helm、Helmfile，熟悉 Helm 生态圈，正在深入学习 Kubernetes。
-4. 具备丰富 Infrastructure as Code 实践经验，熟练使用 Terraform。
-5. 熟悉 AWS 和 Google Cloud Platform，了解阿里云。
-6. 具备小型公司网络运维经验，了解 BIRD、IPTables、IPsec、WireGuard、UniFi。
-7. 具备跨时区工作经验，熟练通过 Jira ServiceDesk、Email 和 Slack 等方式为美国同事提供 IT support。
-8. 具备少量 Office 365 for Business、Azure AD 和 Salesforce 运维经验。
+1. 拥有大量 Git workflows 和 CI/CD 实践经验，熟练使用 GitLab CI、Ansible 等。
+2. 拥有大量应用监控和预警实践经验，熟悉 Incident Management 工作流和 On-call 工作机制，熟练使用 Prometheus、Alertmanager、Grafana、OpsGenie、Pingdom。
+3. 拥有大量 Infrastructure as Code 实践经验，熟练使用 Terraform。
+4. 具备 Kubernetes 集群维护经验，熟练使用 Docker、Helm、Helmfile，熟悉 Helm 生态。
+5. 具备丰富的现代 PHP 开发和维护经验，熟练使用常见 Linux 命令和 Shell。
+6. 具备各大云服务商产品运维经验，熟悉 AWS 和 Google Cloud Platform，了解阿里云。
+7. 具备小型公司网络运维经验，了解 BIRD、IPTables、IPsec 和 WireGuard。
+8. 熟练读写英文文档，目前 CEFR 为 B2。
+9. 具备跨时区工作经验，熟练通过 Jira Service Desk、Email 和 Slack 等方式与美国同事沟通。
+10. 具备少量 Office 365 for Business、Atlassian 和 Salesforce 运维经验。
 
 }
 
-## 工作经历
+---
+
+## 近期工作经历
 
 @card{
 
-| 公司 / 组织        | 岗位                                  | 时间                   |
-| ------------------ | ------------------------------------- | ---------------------- |
-| RightCapital       | DevSecOps 工程师 + IT 工程师          | 2018年11月 ~           |
-| 浙江禾匠信息科技   | 高级 PHP 工程师                       | 2018年5月 ~ 2018年10月 |
-| 浙江椒图科技       | .NET 工程师 -> PHP 工程师 -> 技术管理 | 2017年2月 ~ 2018年5月  |
-| 长沙异次元网络科技 | C++ 工程师                            | 2015年5月 ~ 2016年12月 |
+目前我在某 Fintech 外企任职 **DevOps** 工程师，以下是部分工作内容。早期经历请参考 [我的任职历史](https://wi1dcard.dev/employment-history/)。
 
-详情请参阅 [Employment History](https://wi1dcard.dev/employment-history/)。
+- **把传统应用由 EC2 迁移到 Kubernetes**
 
-}
+  成功将多个拥有上千次有效 Git commits 的中大型 PHP 项目从原有 EC2 迁移到 Amazon EKS，有效提高系统资源利用率，大幅降低多个服务的编排难度。
 
-## 我的不足
+- **创建并维护 Helm Charts**
 
-@card{
+  根据业务需要，创建并维护部署应用所使用的 Helm charts，包含 Deployments、Secrets、ConfigMaps、CronJobs 等资源。通过 Helmfile 将 Helm releases 代码化，采用「面向终态」而不是「面向过程」的运维思想彻底改造原有 DevOps 流程。
 
-- 不了解前端和最新技术，暂时没有这方面的学习计划。
-- 不具备对数据库的调优经验，没有实际参与过相关工作。
+- **编写并优化 GitLab CI 配置**
 
-}
+  利用 GitLab CI 提供的 cache、artifact、rules、template job、detached job 等特性，不断优化 CI 配置，尽可能地自动化代码提交后风格检查、静态分析、单元测试、资源打包、构建镜像、部署等一系列操作。
+
+- **维护 Terraform Modules 和 AWS 基础设施**
+
+  基于 Infrastructure as Code 思想，创建并维护多个 Terraform modules 来管理位于 AWS 的基础设施，包含 EKS、S3、VPC、IAM、CloudFront、Lambda@Edge 等资源。通过 CI 自动化 apply，权限易管控、历史可追溯、随时可重建。
+
+- **搭建并优化 Prometheus 等监控系统和告警规则**
+
+  搭建 Prometheus 和 Grafana，维护 Prometheus Operator 等白盒监控和 Pingdom 等黑盒监控。根据业务需要，编写 Prometheus exporters、alert rules 和 Grafana dashboards。利用 PromQL 和可视化面板，降低排障难度，为日常监控和故障复盘提供可靠数据支持。
+
+- **处理 Alerts 和优化 Incident 工作流**
+
+  24 小时负责 On-call，本着追查到底的原则，排查、分发、追踪和处理各类 alerts。优化基于 Opsgenie 的 incident management 工作流，不断提高系统 SLA。
+
+- **发现并解决现有开发工作流的问题**
+
+  基于 GitOps 思想，通过调整配置或编写新工具，持续优化各团队的开发工作流，包括 CI pipelines 通知、cron jobs 通知、自动化 DB migrations、Slack workflows 和 unfurl 等。为业务工程师提供技术支持，包括开发系统工具、编写系统支持文档、排障、基础运维知识培训等；通过提升工程师的工作体验，进而提高开发效率。
+
+- **构建公司网络并维护 Ansible Roles**
+
+  为北京办公室提供基础网络保障，确保无障碍、无感知、快速稳定访问 Google 和位于美国数据中心的资源等，以及维护 UniFi Controller、Switch、AP 等网络设备。将网关部署和运维流程编写为 Ansible roles，并由 CI 自动化 apply。
+
+- **优化权限和为美国同事提供 IT Support**
+
+  负责员工入职与离职时在 Azure AD 和 G Suite 的 Onboarding 和 Offboarding。优化 SSO，确保各系统的用户均为合理的最小权限。为销售、市场和客户支持等团队的美国同事通过在线聊天、语音通话等方式提供 IT support。
 
 }
