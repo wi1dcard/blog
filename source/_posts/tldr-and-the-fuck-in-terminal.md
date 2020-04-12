@@ -1,6 +1,6 @@
 ---
 id: tldr-and-the-fuck-in-terminal
-tags: [CLI]
+tags: []
 date: 2019-01-31 16:59:25
 title: 命令行神器 - tldr 和 fuck
 categories: Recommendations

@@ -3,7 +3,7 @@ id: hex-viewers-and-editors-in-terminal
 date: 2019-01-11 10:08:02
 title: macOS 终端可用的 Hex 查看与编辑器
 categories: Collections
-tags: [CLI, macOS]
+tags: [macOS]
 ---
 
 在 Windows 下我们可以使用 WinHex，而在 macOS 平台上，有什么不错的十六进制查看器、编辑器呢？

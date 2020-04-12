@@ -1,6 +1,6 @@
 ---
 id: easier-curl-with-colors
-tags: [CLI, PHP]
+tags: [PHP]
 date: 2019-02-13 13:14:54
 title: 更加清晰易读的 cURL 工具
 categories: Recommendations

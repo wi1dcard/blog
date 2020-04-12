@@ -3,7 +3,7 @@ id: cli-weather-client
 date: 2019-01-13 18:13:25
 title: 命令行查询天气的正确方式
 categories: Recommendations
-tags: [CLI]
+tags: []
 ---
 
 [chubin/wttr.in](https://github.com/chubin/wttr.in) 是一款面向命令行的天气预报服务，支持多种 HTTP 客户端进行请求，例如：`curl` / `httpie` / `wget` 等。该项目的官方描述便是：

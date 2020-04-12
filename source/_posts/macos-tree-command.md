@@ -3,7 +3,7 @@ id: macos-tree-command
 date: 2018-09-05 15:19:28
 title: macOS 利用 tree 命令展示目录结构
 categories: Snippets
-tags: [macOS, CLI]
+tags: [macOS]
 ---
 
 废话不多说，展示效果。

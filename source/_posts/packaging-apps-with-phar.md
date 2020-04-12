@@ -3,7 +3,7 @@ id: packaging-apps-with-phar
 date: 2019-01-15 00:03:57
 title: 将 PHP 应用快速打包为 PHAR
 categories: Recommendations
-tags: [CLI, PHP, Package]
+tags: [PHP]
 ---
 
 [humbug/box](https://github.com/humbug/box) 是一款快速的、零配置的 PHAR 打包工具。

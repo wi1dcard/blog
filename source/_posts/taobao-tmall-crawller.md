@@ -3,7 +3,7 @@ id: taobao-tmall-crawller
 date: 2018-10-15 15:44:34
 title: 淘宝天猫商品信息简易爬虫
 categories: Snippets
-tags: [CLI, Node.js]
+tags: [Node.js]
 ---
 
 依赖 Node.js 解析 JSON 信息，几条 Bash 命令就能拿到商品信息了。

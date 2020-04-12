@@ -1,6 +1,6 @@
 ---
 id: cli-video-downloader
-tags: [CLI]
+tags: []
 date: 2019-02-04 07:38:44
 title: 在命令行下载第三方网站的视频
 categories: Recommendations

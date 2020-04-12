@@ -1,6 +1,6 @@
 ---
 id: increase-node-js-v8-memory-limit
-tags: [Node.js, CLI]
+tags: [Node.js]
 date: 2019-11-28 21:27:50
 title: Increase Node.js V8 Memory Limit
 categories: Snippets
