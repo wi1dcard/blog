@@ -13,8 +13,15 @@ categories: Collections
 
 ## 迁移至个人博客的
 
+由于相关人员长期拖延审稿、发稿，将部分文章迁移至个人博客发布。
+
 - [搭建异构 CPU 组成的边缘计算 Kubernetes 集群](/posts/setup-an-edge-computing-cluster-with-different-archs-of-cpus/)
 - [跨项目 GitLab CI 配置复用与管理](/posts/reuse-gitlab-ci-configs-across-projects/)
+- [K8s 下的应用管理 — 了解 Helm](/posts/getting-to-know-helm/)
+- [K8s 下的应用管理 — 了解 Helmfile](/posts/getting-to-know-helmfile/)
+- [K8s 下的 TLS 证书管理 — 了解 Cert-Manager](/posts/getting-to-know-cert-manager/)
+- [创建并维护商业项目的 Helm Chart](/posts/create-and-maintain-a-helm-chart/)
+- [盘点使 macOS 应用流量通过代理的多种方式](/posts/redirecting-network-traffic-of-various-apps-on-macos-to-proxies/)
 
 ## 已过审待发布的
 
@@ -22,11 +29,6 @@ categories: Collections
 - 使用 Prometheus 监控网络可用性
 - DevOps 自动化实践 — 管理 Incident 工作流
 - DevOps 自动化实践 — K8s 自动化执行 Database Migration
-- K8s 下的应用管理 — Helm 小试牛刀
-- K8s 下的应用管理 — Helmfile 小试牛刀
-- K8s 下的 TLS 证书管理 — Cert-Manager 小试牛刀
-- 创建并维护你的项目的 Helm Chart
-- 细数 MacOS 下让不同应用的网络流量通过代理的方式
 - ...
 
 欢迎持续关注 RightCapital 技术团队公众号：
