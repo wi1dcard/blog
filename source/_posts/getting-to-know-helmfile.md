@@ -22,7 +22,7 @@ categories: Tutorials
 
 ## 一键 Apply
 
-Helmfile 的文档非常简明、直接，[示例配置文件](https://github.com/roboll/helmfile#configuration)就在 README 里。我节选一小段来说几个必要的配置项：
+Helmfile 的文档非常简明、直接，[示例配置文件](https://github.com/roboll/helmfile#configuration) 就在 README 里。我节选一小段来说几个必要的配置项：
 
 ```yaml
 repositories:
@@ -45,7 +45,7 @@ releases:
 1. 添加 `repositories` 中声明的 Helm chart repo。
 2. 根据 `release` 小节内的配置，安装或更新 chart。
 
-上篇文章中提到的：
+因此，上篇文章中提到的：
 
 ```bash
 helm repo add ...
@@ -67,7 +67,7 @@ helmfile apply
 
 ### Chart 版本控制
 
-大多数社区提供的 chart 都采用 [Semver 2.0](https://semver.org/) 作为版本号。因此大多数情况下我们都希望锁定主版本，防止误升级引入 breaking change。Helmfile 提供了 `version` 参数可用于指定版本范围，例如：
+大多数社区提供的 charts 都采用 [Semver 2.0](https://semver.org/) 作为版本号。因此大多数情况下我们都希望锁定主版本，防止误升级引入 breaking change。Helmfile 提供了 `version` 参数可用于指定版本范围，例如：
 
 ```yaml
 # ...
@@ -100,11 +100,11 @@ generated: "2020-03-24T14:14:01.663801+08:00"
 
 ### 动态 Values
 
-在 CI 上部署时，有些 values 的值不是固定的，可能来自于环境变量，也可能根据环境的不同而不同。
+在 CI 上部署时，有些 values 的值不是固定的，可能来自于环境变量，也可能由于环境差异而不同。
 
-### 环境变量
+#### 环境变量
 
-在之前的文章中我们介绍过 review apps，其中有一项很重要的需求是，每次开新分支部署的 release name 不能相同，否则资源会因为重名而安装失败。所以我们要读取 GitLab CI 的 `$CI_ENVIRONMENT_SLUG` 环境变量，并拼接到最终的 Helm release name。因此可以这样做：
+在之前的文章中我们介绍过 [review apps](https://mp.weixin.qq.com/s/GCmkq0Qmis1q2Q4ByIhj7w)，其中有一项很重要的需求是，每次开新分支部署的 release 不能同名，否则资源会因为重名而安装失败。所以我们要读取 GitLab CI 的 `$CI_ENVIRONMENT_SLUG` 环境变量，并拼接到最终的 Helm release name。因此可以这样做：
 
 ```yaml
 # ...
@@ -129,7 +129,7 @@ releases:
         value: {{ requiredEnv "REDIS_CLUSTER_ENABLED" }}
 ```
 
-### 区分环境
+#### 区分环境
 
 Helmfile 提供了名为 `environments` 的配置，此处并不是指环境变量，而是一个专属于 Helmfile 的概念。来看看例子。首先创建两个文件：
 
@@ -165,14 +165,14 @@ releases:
 {{ end }}
 ```
 
-在执行 `helmfile` 时使用 `-e` 参数即可指定安装的环境：
+在执行 `helmfile` 时使用 `-e` 选项即可指定安装的环境：
 
 ```bash
 helmfile -e staging apply
 ```
 
-注意 `-e` 必须在子命令 `apply` 之前，它是一个全局参数。
+注意 `-e` 必须在子命令 `apply` 之前，它是一个全局选项。
 
 ## 小结
 
-以上就是我们关于 Helmfile 的相关实践经验。不得不说，Helmfile 的确很灵活，但采用 Go template + YAML 语法编写配置的方式稍有些难以阅读。
+不得不说，Helmfile 的确很灵活，但采用 Go template + YAML 语法编写配置的方式稍有些难以阅读和维护。

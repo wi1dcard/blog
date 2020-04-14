@@ -8,7 +8,7 @@ categories: Tutorials
 
 在 Kubernetes 中实现 TLS termination 非常容易。Ingress 资源包含一 `secretName` 属性，用于指定 Secret 资源名称。在取得证书后，通过 `kubectl create secret tls tls-secret --key tls.key --cert tls.crt` 创建 Secret 存储证书，便可以被 Ingress 使用了。
 
-唯独有些不方便的是，证书的申请以及创建 Secret 的过程需要手动执行。在证书即将过期前，还需要人工续期。想必大家都知道，在传统 VM 部署的场景下，可以使用例如 [certbot](https://certbot.eff.org/) 或 [acme.sh](https://github.com/acmesh-official/acme.sh) 等项目，配合 [Let's Encrypt](https://letsencrypt.org/) 自动申请并定期续签证书。而在 K8s 集群中如何降低证书维护成本？来看看我们是怎么做的。
+唯独有些不方便的是，证书的申请以及创建 Secret 的过程需要手动执行。在证书即将过期前，还需要人工续期。在传统 VM 部署的场景下，可以使用例如 [certbot](https://certbot.eff.org/) 或 [acme.sh](https://github.com/acmesh-official/acme.sh) 等项目，配合 [Let's Encrypt](https://letsencrypt.org/) 自动申请并定期续签证书。而在 K8s 集群中如何降低证书维护成本？来看看我们是怎么做的。
 
 <!--more-->
 
@@ -18,7 +18,7 @@ categories: Tutorials
 
 > cert-manager builds on top of Kubernetes, introducing certificate authorities and certificates as first-class resource types in the Kubernetes API. This makes it possible to provide 'certificates as a service' to developers working within your Kubernetes cluster.
 
-简单来说，cert-manager 利用 Kubernetes 的 CRD 特性提供了名为 Certificate 的资源，因此可实现「证书即服务」。请看接下来的例子。
+简单来说，cert-manager 利用 Kubernetes 的 CRD 特性提供了名为 Certificate 等资源，实现「证书即服务」。请看接下来的例子。
 
 ## 安装 Cert-Manager
 
@@ -46,9 +46,9 @@ releases:
 
 Issuer 的作用主要是指定证书以何种方式签发。目前 cert-manager 支持的 Issuer 类型有 `ACME`、`SelfSigned` 等。其中，ACME 支持的验证类型包括 HTTP01 和 DNS01。
 
-使用 HTTP01 验证 cert-manager 将会修改或创建新的 Ingress 资源用来处理 ACME 服务的验证请求。而 DNS01 则只需配置 DNS 服务提供商的密钥，cert-manager 负责维护对应的验证记录即可。我们使用的是 AWS 的 Route53 服务，正好也在 cert-manager [内置支持的 DNS provider 列表](https://cert-manager.io/docs/configuration/acme/dns01/#supported-dns01-providers)内。因此我们选用了后者。
+使用 HTTP01 验证 cert-manager 将会修改或创建新的 Ingress 资源用来处理 ACME 服务的验证请求。而 DNS01 则只需配置 DNS 服务提供商的密钥，cert-manager 负责维护对应的验证记录即可。我们使用的是 AWS 的 Route53 服务，正好也在 cert-manager [内置支持的 DNS provider 列表](https://cert-manager.io/docs/configuration/acme/dns01/#supported-dns01-providers) 内。因此我们选用了后者。
 
-另外，Cert-manager 提供了两种 Issuer — `Issuer` 和 `ClusterIssuer`，前者是仅限于 Issuer 所在的命名空间内使用的，而 ClusterIssuer 可在 Cluster 内的任意命名空间通用。
+另外，cert-manager 提供了两种 Issuer — `Issuer` 和 `ClusterIssuer`，前者仅限于 Issuer 所在的命名空间内使用，而 ClusterIssuer 可在集群内的任意命名空间通用。
 
 我们创建了两个 ClusterIssuer，名叫 `letsencrypt-prd` 和 `letsencrypt-stg`，例如：
 
@@ -88,7 +88,7 @@ ingressShim:
 
 ## 创建并使用证书
 
-由于开启了 `ingressShim` 功能，因此我们只需要按照常规思路使用 Ingress 即可。例如：
+由于开启了 `ingressShim` 功能，因此我们只要按照通常思路使用 Ingress 即可。例如：
 
 ```yaml
 apiVersion: extensions/v1beta1
@@ -113,4 +113,6 @@ spec:
 
 ## 小结
 
-根据上文的介绍，似乎这是一套完美的解决方案？不尽然。目前 cert-manager 项目还处于 beta 阶段，每次发布新的 release 都可能包含 breaking change。在我们使用的这段时间内，每隔几个版本就需要手动升级一次，升级过程中有时会出现一些意料之外的小问题。例如最近的 `0.13` -> `0.14` 升级过程中，发现新版本的 CRD manifest 硬编码必须安装到 `cert-manager` 命名空间。希望 cert-manager 官方能尽快推进正式版的发布，减少手动升级的次数和成本。
+根据上文的介绍，似乎这是一套完美的解决方案？不尽然。
+
+目前 cert-manager 项目还处于 beta 阶段，每次发布新的 release 都可能包含 breaking change。在我们使用的这段时间内，每隔几个版本就需要手动升级一次，升级过程中有时会出现一些意料之外的小问题。例如最近的 `0.13` -> `0.14` 升级过程中，发现新版本的 CRD manifests 硬编码要求相关资源必须安装到 `cert-manager` 命名空间。希望 cert-manager 官方能尽快推进正式版的发布，减少手动升级的次数和成本。

@@ -25,15 +25,15 @@ categories: Tutorials
 
 ## 部署社区提供的 Chart
 
-Chart 是 Helm 的核心概念之一，Chart 内包含 Kubernetes 应用所需的资源模板。在安装 chart 时修改 values 的值即可调整配置参数。
+charts 是 Helm 的核心概念之一，包含着 Kubernetes 应用所需的资源模板。在安装 chart 时修改 values 的值即可调整配置参数。
 
-首先你可以在 <https://hub.helm.sh/> 查找社区提供的 chart。在安装之前需要添加 chart repo，repo 内包含 chart 的声明。例如 bitnami 提供的 chart repo：
+首先你可以在 <https://hub.helm.sh/> 查找社区提供的 charts。在安装之前需要添加 chart repo，repo 内包含 chart 的声明。例如 bitnami 提供的 chart repo：
 
 ```bash
 helm repo add bitnami https://charts.bitnami.com/bitnami
 ```
 
-以 redis chart 为例，我们可以使用以下命令安装它，说白了就是部署 Chart 内的资源到 Kubernetes 集群：
+以 Redis chart 为例，我们可以使用以下命令安装它，说白了就是部署 chart 内的资源到 Kubernetes 集群：
 
 ```bash
 helm install my-release bitnami/redis
@@ -55,7 +55,7 @@ Redis can be accessed via port 6379 on the following DNS name from within your c
 ...
 ```
 
-其中，`my-release` 是 release 名称。Release 也是 Helm 的概念之一。每次安装都会产生新的 release，更新时则会产生新的 release revision。你可以使用 `helm list` 命令查看当前命名空间下的所有 release：
+其中，`my-release` 是 release 名称。Releases 也是 Helm 的概念之一。每次安装都会产生新的 release，更新时则会产生新的 release revision。你可以使用 `helm list` 命令查看当前命名空间下的所有 releases：
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable MD010 -->
@@ -69,7 +69,7 @@ my-release	staging  	1       	2020-03-23 22:24:12.345011 +0800 CST	deployed	redi
 
 ## 升级、回滚与删除
 
-使用 `helm upgrade` 命令可用于更新 release，例如当修改了某个 value 的值，需要重新部署应用：
+使用 `helm upgrade` 命令可用于更新 releases，例如当修改了某个 value 的值，需要重新部署应用：
 
 ```bash
 helm upgrade my-release bitnami/redis --set cluster.enabled=false
@@ -82,7 +82,7 @@ helm upgrade my-release bitnami/redis --set cluster.enabled=false
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable MD010 -->
 ```plain
-REVISION	UPDATED                 	STATUS    	CHART        	APP VERSION	DESCRIPTION
+REVISION	UPDATED                 	STATUS    	chart        	APP VERSION	DESCRIPTION
 1       	Mon Mar 23 22:24:12 2020	superseded	redis-10.5.11	5.0.8      	Install complete
 2       	Tue Mar 24 00:17:34 2020	deployed  	redis-10.5.11	5.0.8      	Upgrade complete
 ```
