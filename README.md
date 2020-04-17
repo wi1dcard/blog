@@ -1,4 +1,4 @@
-# Wi1dcard's blog
+# Wi1dcard's Blog
 
 [![pipeline status](https://gitlab.com/wi1dcard/blog/badges/master/pipeline.svg)](https://gitlab.com/wi1dcard/blog/-/commits/master)
 
