@@ -3,8 +3,6 @@ title: "I'm Wi1dcard"
 comments: false
 ---
 
-> 我的 [在线简历](https://wi1dcard.dev/resume/) / [获取 PDF 版本](https://wi1dcard.dev/resume/Weizhe-Sun-Resume.pdf)。
-
 <!--more-->
 
 ## 自我介绍
@@ -12,6 +10,8 @@ comments: false
 @card{
 
 你好，我是 **Wi1dcard**，一名生于 1998 年但具备 5 年工作经验的软件工程师。
+
+这是我的 [在线简历](https://wi1dcard.dev/resume/)，以及由 CI 自动渲染的 [PDF 版本](https://wi1dcard.dev/resume/Weizhe-Sun-Resume.pdf)。
 
 从 2010 年接触 Pascal 编程、参加信息学竞赛起，我对代码产生了浓厚的兴趣。从此自学 MFC 和 WinForm 开发，并在 2013 年起接触外包项目。2015 年进入职场后逐渐转型 PHP 和后端方向，2018 年底开始学习运维和网络相关知识，现就职于某 Fintech 外企从事 **DevOps** 以及少量 IT 相关工作。
 
