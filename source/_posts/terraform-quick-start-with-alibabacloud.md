@@ -1,18 +1,18 @@
 ---
-id: terraform-quick-start-with-alibabacloud
+id: terraform-quick-start-with-alibaba-cloud
 tags: [Terraform]
 date: 2020-05-29 09:00:21
-title: Terraform Quick Start with Alibabacloud
+title: Terraform Quick Start with Alibaba Cloud
 categories: Tutorials
 ---
 
 As you probably heard Terraform before, it's a great DevOps tool that can help you build your infrastructures with configurations and codes, aka Infrastructure as Code.
 
-Terraform has a bunch of great integrations with cloud platforms, some of them are maintained by Terraform official, such as Azure provider and AWS provider. However, alibabacloud (which is the biggest public cloud company in China mainland) provider is created and maintained by alibaba itself so far. Lack of quick start guide and documentation makes it a little bit hard to get started with.
+Terraform has a bunch of great integrations with cloud platforms, some of them are maintained by Terraform official, such as Azure provider and AWS provider. However, Alibaba Cloud (which is the biggest public cloud company in China mainland) provider is created and maintained by alibaba itself so far. Lack of quick start guide and documentation makes it a little bit hard to get started with.
 
 <!--more-->
 
-Therefore, this blog here might help you take a quick tour of alibabacloud provider and launch an instance from zero with the VPC, switches and security groups along. I'll list the reference docs I can find as much as possible. Let's begin!
+Therefore, this blog here might help you take a quick tour of Alibaba Cloud provider and launch an instance from zero with the VPC, switches and security groups along. I'll list the reference docs I can find as much as possible. Let's begin!
 
 ## Preparation
 
@@ -65,7 +65,7 @@ resource "alicloud_vswitch" "default" {
 }
 ```
 
-The VPC and switches are both necessary, alibabacloud doesn't allow you to create an instance without the private network and the instance must be connected to a switch.
+The VPC and switches are both necessary, Alibaba Cloud doesn't allow you to create an instance without the private network and the instance must be connected to a switch.
 
 You can also set up more switches, if you'd like to have your instances across multiple zones.
 
@@ -126,7 +126,7 @@ provider "alicloud" {
 
 ```terraform
 resource "alicloud_instance" "default" {
-  # You can enable `dry_run` and run `terraform apply` to call the alibabacloud API but not really create an instance
+  # You can enable `dry_run` and run `terraform apply` to call the Alibaba Cloud API but not really create an instance
   dry_run = false
 
   instance_name   = local.hostname # Refer to local variables
@@ -155,7 +155,7 @@ resource "alicloud_instance" "default" {
 }
 ```
 
-While the first time I tried to launch an instance, the most significant problem I found is how to find the correct image ID. Fortunately, Alibabacloud maintains a CLI tool called [`aliyun-cli`](https://github.com/aliyun/aliyun-cli) (aliyun is the Chinese pinyin of the word alibabacloud) and there's an API `DescribeImage` for listing all the images.
+While the first time I tried to launch an instance, the most significant problem I found is how to find the correct image ID. Fortunately, Alibaba Cloud maintains a CLI tool called [`aliyun-cli`](https://github.com/aliyun/aliyun-cli) (aliyun is the Chinese pinyin of the word alibabacloud) and there's an API `DescribeImage` for listing all the images.
 
 But it doesn't work as expected, so far I found 2 issues - [it shows no image if I didn't put in a specific parameter](https://github.com/aliyun/aliyun-cli/issues/179#issuecomment-635736796) and either the `--ImageID` or `--Filter.n.Key` doesn't support fuzzy matching. That means even though the first issue will get resolved, the later doesn't allow users to search the image by specifying a keyword like `ubuntu`.
 
