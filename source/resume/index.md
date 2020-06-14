@@ -9,7 +9,7 @@ comments: false
 
 @card{
 
-你好，我是 **Wi1dcard**，一名生于 1998 年但具备 5 年工作经验的软件工程师。
+你好，我是 **Wi1dcard**，一名生于 1998 年，具备 5 年工作经验的软件工程师。
 
 这是我的 [在线简历](https://wi1dcard.dev/resume/)，以及由 CI 自动渲染的 [PDF 版本](https://wi1dcard.dev/resume/Weizhe-Sun-Resume.pdf)。
 
@@ -19,9 +19,7 @@ comments: false
 
 我的职业规划大多基于兴趣驱动，我喜欢做与众不同或是未曾有人尝试过的事。我善于独立思考、规划、钻研问题的更优解。在不断实践的过程中，我甚至会把自己推到极限，处于过度紧张和不健康的状态。我乐于高效地协作或提供帮助，但在专注时不希望被打扰，因此时常戴着耳机工作。
 
-我热爱软件行业，享受发现问题并解决问题带来的成就感，希望能成为一名「**终身编程者**」。
-
-你可以通过 `wi1dcard.cn@gmail.com` 联系我，期待与你成为同事和朋友。
+我热爱软件开发，享受发现问题并解决问题带来的成就感。你可以通过 `wi1dcard.cn@gmail.com` 联系我，期待与你成为同事和朋友！
 
 }
 
@@ -33,11 +31,10 @@ comments: false
 
 我理想中所在的团队是这样的：
 
-1. 盈利状态。
-2. 热情，年轻，开放。
-3. 鼓励创新，适当放权，结果导向。
-4. 支持工程师使用 macOS 或 Linux。
-5. 不反对工程师使用 Google。
+1. 热情，年轻，开放。
+2. 鼓励创新，适当放权，结果导向。
+3. 支持工程师使用 macOS 或 Linux。
+4. 不反对工程师使用 Google。
 
 }
 
@@ -96,7 +93,7 @@ comments: false
 
 @card{
 
-目前我在某 Fintech 外企任职 **DevOps** 工程师，以下是部分工作内容。早期经历请参考 [我的任职历史](https://wi1dcard.dev/employment-history/)。
+我目前的部分工作内容如下，早期经历请参考 [我的任职历史](https://wi1dcard.dev/employment-history/)。
 
 - **把传统应用由 EC2 迁移到 Kubernetes**
 
