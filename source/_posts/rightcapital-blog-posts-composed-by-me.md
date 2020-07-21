@@ -11,6 +11,8 @@ categories: Collections
 - [DevOps 自动化实践 - 定时任务监控的进化之路](https://zhuanlan.zhihu.com/p/108589827)
 - [一次 KubeCPUOvercommit 告警排查过程小记](https://zhuanlan.zhihu.com/p/113520011)
 - [DevOps 自动化实践 — 在 K8s 上自动化执行 Database Migration](https://zhuanlan.zhihu.com/p/136630460)
+- [基于 UniFi 全家桶的企业 Wi-Fi 客户端管理](https://zhuanlan.zhihu.com/p/149949149)
+- [DevOps 自动化实践 — 管理 Incident 工作流](https://zhuanlan.zhihu.com/p/161940022)
 
 ## 迁移至个人博客的
 
@@ -26,10 +28,7 @@ categories: Collections
 
 ## 已过审待发布的
 
-- 基于 UniFi 全家桶的企业 Wi-Fi 客户端管理
 - 使用 Prometheus 监控网络可用性
-- DevOps 自动化实践 — 管理 Incident 工作流
-- ...
 
 欢迎持续关注 RightCapital 技术团队公众号：
 
