@@ -28,7 +28,7 @@ resume-pdf:
 	docker rm -vf caddy
 
 image:
-	docker build -f build/Dockerfile -t "${DOCKER_IMAGE}" -t "${DOCKER_IMAGE}:${DOCKER_TAG}" .
+	docker build -f build/image/Dockerfile -t "${DOCKER_IMAGE}" -t "${DOCKER_IMAGE}:${DOCKER_TAG}" .
 
 image-push:
 	@echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin
