@@ -38,7 +38,8 @@ variables:
   rules:
     - if: '$CI_COMMIT_REF_NAME == "master"'
       when: on_success
-    - when: manual
+    - if: '$CI_COMMIT_REF_NAME != "master" && $CI_PIPELINE_SOURCE == "push"'
+      when: manual
 
 optimize images:
   extends: [.yarn, .generate]
