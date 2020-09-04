@@ -25,9 +25,6 @@ menu:
   book:
     text: My Résumé
     url: /resume/
-  coffee:
-    text: My Thoughts
-    url: /thoughts/
 
 # 你的头像url
 avatar: &avatar https://www.gravatar.com/avatar/9f1da8f9f5768d71d3f2e996e04af47a?s=200
