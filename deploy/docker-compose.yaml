@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  nginx:
+    image: wi1dcard/blog:latest-tls
+    restart: always
+    ports:
+      - 443:443
+    volumes:
+      - /var/log/nginx:/usr/local/nginx/logs
+      - /etc/letsencrypt/live/wi1dcard.dev/fullchain.pem:/etc/nginx/tls/cert.crt:ro
+      - /etc/letsencrypt/live/wi1dcard.dev/privkey.pem:/etc/nginx/tls/cert.key:ro
+      - /etc/letsencrypt/ssl-dhparams.pem:/etc/nginx/tls/ssl-dhparams.pem:ro
