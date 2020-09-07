@@ -4,6 +4,7 @@ services:
     image: wi1dcard/blog:latest-tls
     restart: always
     ports:
+      - 80:80
       - 443:443
     volumes:
       - /var/log/nginx:/usr/local/nginx/logs
