@@ -1,6 +1,7 @@
 stages:
   - build
   - build pdf
+  - publish
   - deploy
 
 variables:
@@ -71,39 +72,38 @@ build pdf:
 
 publish image:
   extends: .docker
-  stage: deploy
+  stage: publish
   script:
     - make image
+    - make image-tls
     - make image-push
 
-.deploy_ssh:
-  extends: .deploy
-  image: wi1dcard/ssh-client:master
-  before_script:
-    - eval $(ssh-agent -s)
-    - echo -n "$SSH_PRIVATE_KEY" | base64 -d | tr -d '\r' | ssh-add -
-    - mkdir -p ~/.ssh
-
 deploy vm:
-  extends: .deploy_ssh
-  variables:
-    RSYNC_HOST: wi1dcard.dev
+  extends: .deploy
+  tags:
+    - server
   script:
-    - apk add rsync
-    - ssh-keyscan -H "$RSYNC_HOST" >> ~/.ssh/known_hosts
-    - rsync -vh -rtz --delete "./public/" "$RSYNC_USER@$RSYNC_HOST:$RSYNC_DEST"
-    - ssh "$RSYNC_USER@$RSYNC_HOST" "chmod -R a+rX '$RSYNC_DEST'"
+    - cd deploy/
+    - docker-compose pull
+    - docker-compose -p blog up -d --remove-orphans --force-recreate
 
 mirror to github:
-  extends: .deploy_ssh
   # allow_failure: true
   stage: build
   variables:
     GIT_DEPTH: "0"
     # GIT_STRATEGY: clone
-  script:
+  only:
+    - master
+  before_script:
+    ## SSH
+    - eval $(ssh-agent -s)
+    - echo -n "$SSH_PRIVATE_KEY" | base64 -d | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    ## Git
     - apk add git git-lfs
     - ssh-keyscan -H "github.com" >> ~/.ssh/known_hosts
+  script:
     - git checkout -b master
     - git remote add github git@github.com:wi1dcard/blog.git
     - git fetch --all
