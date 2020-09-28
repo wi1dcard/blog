@@ -24,10 +24,8 @@
     will-change: transform, -webkit-transform;
 
     &.hide {
-        .transform(translateX(-100%));
-        #menu-off {
-            .transform(scale(0));
-        }
+        visibility: hidden;
+
         +#main {
             padding-left: 0;
         }
@@ -131,14 +129,15 @@
 }
 
 .body-wrap {
-    padding: 30px 0 40px;
+    padding: 30px 50px 40px 50px;
     min-height: ~'calc(100vh - 340px)';
 }
 
 .container {
     max-width: @contentWidth;
     margin: 0 auto;
-    padding-left: 50px;
+    // padding-left: 50px;
+    // padding-right: 50px;
 
     &:after {
         content: "";

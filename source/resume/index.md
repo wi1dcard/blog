@@ -7,7 +7,7 @@ comments: false
 
 ## 自我介绍
 
-@card{
+<div class="card">
 
 你好，我是 **Wi1dcard**，一名生于 1998 年，具备 5 年工作经验的软件工程师。
 
@@ -21,11 +21,11 @@ comments: false
 
 我热爱软件开发，享受发现问题并解决问题带来的成就感。你可以通过 `wi1dcard.cn@gmail.com` 联系我，期待与你成为同事和朋友！
 
-}
+</div>
 
-@column-2{
+<div class="column-2">
 
-@card{
+<div class="card">
 
 ### 对您的期待
 
@@ -36,9 +36,9 @@ comments: false
 3. 支持工程师使用 macOS 或 Linux。
 4. 不反对工程师使用 Google。
 
-}
+</div>
 
-@card{
+<div class="card">
 
 ### 外部链接
 
@@ -49,15 +49,15 @@ comments: false
 - [GitLab Profile](https://gitlab.com/wi1dcard)
 - [MBTI 性格报告](https://www.16personalities.com/ch/intj-%E4%BA%BA%E6%A0%BC)
 
-}
+</div>
 
-}
+</div>
 
----
+<div class="page-break"></div>
 
 ## 自我修养
 
-@card{
+<div class="card">
 
 - 高标准自我要求。
 - 日常工作环境 macOS 和 Ubuntu，习惯 CLI，不使用盗版系统和软件。
@@ -68,11 +68,11 @@ comments: false
 - 重度 Google 用户。
 - 正努力成为 [T 型人才](https://en.wikipedia.org/wiki/T-shaped_skills)。
 
-}
+</div>
 
 ## 技能列表
 
-@card{
+<div class="card">
 
 1. 拥有大量 Git workflows 和 CI/CD 实践经验，熟练使用 GitLab CI、Ansible 等。
 2. 拥有大量应用监控和预警实践经验，熟悉 Incident Management 工作流和 On-call 工作机制，熟练使用 Prometheus、Alertmanager、Grafana、OpsGenie、Pingdom。
@@ -85,13 +85,13 @@ comments: false
 9. 具备跨时区工作经验，熟练通过 Jira Service Desk、Email 和 Slack 等方式与美国同事沟通。
 10. 具备少量 Office 365 for Business、Atlassian 和 Salesforce 运维经验。
 
-}
+</div>
 
----
+<div class="page-break"></div>
 
 ## 近期工作经历
 
-@card{
+<div class="card">
 
 我目前的部分工作内容如下，早期经历请参考 [我的任职历史](https://wi1dcard.dev/employment-history/)。
 
@@ -131,4 +131,4 @@ comments: false
 
   负责员工入职与离职时在 Azure AD 和 G Suite 的 Onboarding 和 Offboarding。优化 SSO，确保各系统的用户均为合理的最小权限。为销售、市场和客户支持等团队的美国同事通过在线聊天、语音通话等方式提供 IT support。
 
-}
+</div>

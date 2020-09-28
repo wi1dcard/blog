@@ -23,7 +23,7 @@ resume-pdf:
 	    -v "${PWD}/public/resume:/converted" \
 	    --name athenapdf \
 	    arachnysdocker/athenapdf \
-	    athenapdf --margins=none --ignore-certificate-errors https://wi1dcard.dev/resume/ Weizhe-Sun-Resume.pdf
+	    athenapdf --ignore-certificate-errors https://wi1dcard.dev/resume/ Weizhe-Sun-Resume.pdf
 
 	docker rm -vf caddy
 

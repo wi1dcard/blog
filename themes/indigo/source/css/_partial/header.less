@@ -44,7 +44,7 @@
 .content-header {
     // min-height: 210px;
     margin-left: -240px;
-    padding: 65px 16px 48px 256px;
+    padding: 65px 16px 48px 290px;
     color: @textPrimaryColor;
     background: @primaryColor;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
@@ -112,22 +112,4 @@
         }
     }
 
-}
-
-@media print {
-    #header {
-        display: none;
-    }
-    .footer {
-        display: none;
-    }
-    #gotop {
-        display: none;
-    }
-    .page-article {
-        padding: 0 80px 0 80px;
-        hr {
-            page-break-before: always;
-        }
-    }
 }

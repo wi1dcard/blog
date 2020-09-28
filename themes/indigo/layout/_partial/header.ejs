@@ -1,3 +1,4 @@
+<% if (hdClass !== 'page-header') { %>
 <header class="top-header" id="header">
     <div class="flex-row">
         <% if(theme.search){ %>
@@ -18,6 +19,7 @@
         <% } %>
     </div>
 </header>
+<% } %>
 
 <header class="content-header <%-hdClass %>">
 
@@ -34,8 +36,8 @@
         </h5>
     </div>
 
-    <% if(hdClass === 'categories' || hdClass === 'tags'){ %>
-        <%- partial('tags-bar') %>
+    <% if (hdClass === 'categories-header' || hdClass === 'tags-header') { %>
+        <%- partial('tags-bar', { type: hdClass.split('-').shift() }) %>
     <% } %>
 
 </header>
