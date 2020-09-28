@@ -7,7 +7,6 @@
         gotop = $('#gotop'),
         menu = $('#menu'),
         mask = $('#mask'),
-        menuOff = $('#menu-off'),
         loading = $('#loading'),
         animate = w.requestAnimationFrame,
         scrollSpeed = 200 / (1000 / 60),
@@ -477,9 +476,9 @@
     //     e.preventDefault();
     // }, false);
 
-    menuOff.addEventListener(even, function () {
-        menu.classList.add('hide');
-    }, false);
+    // menuOff.addEventListener(even, function () {
+    //     menu.classList.add('hide');
+    // }, false);
 
     mask.addEventListener(even, function (e) {
         Blog.toggleMenu();

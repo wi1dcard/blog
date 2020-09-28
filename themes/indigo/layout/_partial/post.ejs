@@ -10,7 +10,7 @@
             <%- partial('plugins/page-visit') %>
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <% if (moment().diff(post.date, 'days') > 180) { %>
+            <% if (moment().diff(post.date, 'days') > 365) { %>
                 <blockquote><p>Contents that posted a long time ago may be obsolete and may not reflect my current opinion.</p></blockquote>
             <% } %>
 
@@ -21,7 +21,7 @@
         <%- partial('post/reward-btn') %>
     </div>
 
-    <%- partial('post/nav') %>
+    <%- // partial('post/nav') %>
 
     <%- partial('post/comment') %>
 </article>

@@ -20,7 +20,7 @@
     min-height: 100%;
     background: #fff;
     box-shadow: @boxShadow;
-    .transition(.4s, cubic-bezier(.25,.1,.25,1));
+    // .transition(.4s, cubic-bezier(.25,.1,.25,1));
     will-change: transform, -webkit-transform;
 
     &.hide {
@@ -135,8 +135,9 @@
 }
 
 .container {
-    width: @contentWidth;
+    max-width: @contentWidth;
     margin: 0 auto;
+    padding-left: 50px;
 
     &:after {
         content: "";
@@ -210,11 +211,11 @@ a[title="站长统计"] {
     display: none;
 }
 
-@media screen and (max-width:1240px) {
-    #menu-off {
-        display: none;
+@media screen and (max-width:1040px) {
+    .container {
+        width: 100%;
+        padding: 20px 16px;
     }
-
     #menu {
         z-index: 99;
         box-shadow: none;
@@ -227,14 +228,6 @@ a[title="站长统计"] {
 
     #main {
         padding-left: 0;
-    }
-}
-
-
-@media screen and (max-width:1040px) {
-    .container {
-        width: 100%;
-        padding: 20px 16px;
     }
 }
 
