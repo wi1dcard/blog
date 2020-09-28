@@ -23,9 +23,9 @@
     "hexo-uglify": "^1.1.0",
     "hexo-util": "^1.5",
     "hexo-wordcount": "^6.0",
-    "imagemin-cli": "^5.1.0",
-    "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-pngquant": "^8.0.0",
+    "imagemin-cli": "^6.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.0",
     "lint-md-cli": "*"
   }
 }
