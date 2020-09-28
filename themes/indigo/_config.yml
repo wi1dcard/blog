@@ -27,13 +27,13 @@ menu:
     url: /resume/
 
 # 你的头像url
-avatar: &avatar https://www.gravatar.com/avatar/9f1da8f9f5768d71d3f2e996e04af47a?s=200
+avatar: https://www.gravatar.com/avatar/9f1da8f9f5768d71d3f2e996e04af47a?s=200
 # avatar link
-avatar_link: /
+avatar_link: /resume/
 # 头像背景图
 brand: /img/brand.jpg
 # favicon
-favicon: *avatar
+favicon: /favicon.ico
 
 # email
 email: wi1dcard.cn@gmail.com
