@@ -12,11 +12,13 @@ menu:
     text: Home
     url: /
   archives:
+    text: Archives
     url: /archives/
   th-list:
     text: Categories
     url: /categories/
   tags:
+    text: Tags
     url: /tags/
   github:
     text: GitHub

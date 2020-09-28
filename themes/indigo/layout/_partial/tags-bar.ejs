@@ -1,5 +1,3 @@
-<%
-if(type === 'categories' || type === 'tags'){ %>
 <div class="tabs-bar container">
     <nav class="tags-list">
         <a href="<%= url_for('/' + type) %>" style="-webkit-order:-1;order:-1" class="tags-list-item waves-effect waves-button waves-light
@@ -13,7 +11,7 @@ if(type === 'categories' || type === 'tags'){ %>
                 }
             })
 
-            var index = _.findIndex(options, function(o) {
+            var index = options.findIndex(options, function(o) {
                 return is_current(o.path)
             })
             var len = options.length
@@ -38,4 +36,3 @@ if(type === 'categories' || type === 'tags'){ %>
         <% }) %>
     </nav>
 </div>
-<% } %>
