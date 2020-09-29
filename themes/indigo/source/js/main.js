@@ -91,7 +91,7 @@
             var bannerH = $('.post-header').clientHeight,
                 titles = $('#post-content').querySelectorAll('h1, h2, h3, h4, h5, h6');
 
-            toc.querySelector('a[href="#' + titles[0].id + '"]').parentNode.classList.add('active');
+            toc.querySelector('a[href="#' + encodeURI(titles[0].id) + '"]').parentNode.classList.add('active');
 
             // Make every child shrink initially
             var tocChilds = toc.querySelectorAll('.post-toc-child');
@@ -99,7 +99,7 @@
                 tocChilds[i].classList.add('post-toc-shrink');
             }
             var firstChild =
-                toc.querySelector('a[href="#' + titles[0].id + '"]')
+                toc.querySelector('a[href="#' + encodeURI(titles[0].id) + '"]')
                     .nextElementSibling;
             if (firstChild) {
                 firstChild.classList.add('post-toc-expand');
@@ -136,7 +136,7 @@
                     for (i = 0, len = titles.length; i < len; i++) {
                         if (top > offset(titles[i]).y - 5) {
                             var prevListEle = toc.querySelector('li.active');
-                            var currListEle = toc.querySelector('a[href="#' + titles[i].id + '"]').parentNode;
+                            var currListEle = toc.querySelector('a[href="#' + encodeURI(titles[i].id) + '"]').parentNode;
 
                             handleTocActive(prevListEle, currListEle);
                         }
@@ -145,7 +145,7 @@
                     if (top < offset(titles[0]).y) {
                         handleTocActive(
                             toc.querySelector('li.active'),
-                            toc.querySelector('a[href="#' + titles[0].id + '"]').parentNode
+                            toc.querySelector('a[href="#' + encodeURI(titles[0].id) + '"]').parentNode
                         );
                     }
                 }
