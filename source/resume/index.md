@@ -9,13 +9,13 @@ comments: false
 
 <div class="card">
 
-你好，我是 **Wi1dcard**，一名生于 1998 年，具备 5 年工作经验的软件工程师。
+你好，我是 **Wi1dcard**，一名生于 1998 年，具备 6 年工作经验的软件工程师。
 
 这是我的 [在线简历](https://wi1dcard.dev/resume/)，以及由 CI 自动渲染的 [PDF 版本](https://wi1dcard.dev/resume/Weizhe-Sun-Resume.pdf)。
 
-从 2010 年接触 Pascal 编程、参加信息学竞赛起，我对代码产生了浓厚的兴趣。从此自学 MFC 和 WinForm 开发，并在 2013 年起接触外包项目。2015 年进入职场后逐渐转型 PHP 和后端方向，2018 年底开始学习运维和网络相关知识，现就职于某 Fintech 外企从事 **DevOps** 以及少量 IT 相关工作。
+从 2010 年接触 Pascal 语言起，我对代码产生了浓厚的兴趣，参加了信息学竞赛。后自学 MFC 和 WinForm，并在 2013 年开始接触外包项目。2015 年进入职场，逐渐转型 PHP 和后端方向。2018 年底开始涉足运维和网络相关。现就职于某区块链企业从事 **DevOps** 以及少量 IT 相关工作。
 
-目前，我正在深入学习 Kubernetes；对 Golang 和 Rust 兴趣很大，可惜实战机会不多，希望在实际项目中进一步学习。
+目前，我正在深入学习 **Kubernetes**；对 Golang 和 Rust 兴趣很大，可惜实战机会不多，希望在实际项目中进一步学习。
 
 我的职业规划大多基于兴趣驱动，我喜欢做与众不同或是未曾有人尝试过的事。我善于独立思考、规划、钻研问题的更优解。在不断实践的过程中，我甚至会把自己推到极限，处于过度紧张和不健康的状态。我乐于高效地协作或提供帮助，但在专注时不希望被打扰，因此时常戴着耳机工作。
 
@@ -45,7 +45,7 @@ comments: false
 - 技术博客（<https://wi1dcard.dev/>）
 - [LearnKu 有价值评论](https://learnku.com/users/32249/replies)
 - [GitHub Repositories](https://github.com/wi1dcard?utf8=%E2%9C%93&tab=repositories&q=&type=source&language=)
-- [GitHub Pull Requests](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+sort%3Aupdated-desc+author%3Awi1dcard)
+- [GitHub Profile](https://github.com/wi1dcard)
 - [GitLab Profile](https://gitlab.com/wi1dcard)
 - [MBTI 性格报告](https://www.16personalities.com/ch/intj-%E4%BA%BA%E6%A0%BC)
 
