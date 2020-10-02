@@ -2,11 +2,17 @@
 id: prometheus-severity-label-to-opsgenie-priority
 tags: [Kubernetes, Prometheus]
 date: 2020-09-30 16:11:36
-title: Convert Kubernetes-Mixin Severity to OpsGenie Priority in Prometheus
+title: Convert Kubernetes-Mixin Severities to OpsGenie Priorities in Prometheus
 categories: Snippets
 ---
 
-As a user of both [kubernetes-mixin](https://github.com/kubernetes-monitoring/kubernetes-mixin) (which is included in [kube-prometheus-stack](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack) and [prometheus-operator](https://github.com/helm/charts/tree/d0f9bcc80f0282519bee34d81175895c8a776b1f/stable/prometheus-operator) charts) and OpsGenie, I would have to convert the "severity" (`warning`, `critical`, ...) to the OpsGenie "priority" (`P1`, `P2`, ...).
+In [kubernetes-mixin][] (a dependency of [kube-prometheus-stack][] and [prometheus-operator][] charts) rules, the severity label of alrets can be `critical`, `warning`, or `info` etc. However, OpsGenie's priority field only accepts values like `P1`, `P2` ... `P5`.
+
+As a user of both of them, I would have to convert the "severity" to OpsGenie's "priority". For example, if a `critical` alert was fired, a matched `P1` alert to be created in OpsGenie is expected, and `warning` -> `P2`, `info` -> `P3`, as well.
+
+[kubernetes-mixin]: https://github.com/kubernetes-monitoring/kubernetes-mixin
+[kube-prometheus-stack]: https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
+[prometheus-operator]: https://github.com/helm/charts/tree/d0f9bcc80f0282519bee34d81175895c8a776b1f/stable/prometheus-operator
 
 <!--more-->
 
