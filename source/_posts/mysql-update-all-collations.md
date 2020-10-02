@@ -2,7 +2,6 @@
 title: "MySQL 批量更新所有字段 Collation"
 date: 2017-09-06 19:31:39
 id: mysql-update-all-collations
-categories: Snippets
 tags: [MySQL]
 ---
 
@@ -16,7 +15,7 @@ referer: <https://my.oschina.net/xuqiang/blog/507629>
 
 ```sql
 begin
-    declare f_name varchar(100); 
+    declare f_name varchar(100);
     declare b int default 0;    /*是否达到记录的末尾控制变量*/
 		-- 注意修改下面的数据库名称 wsm_aliyun
     declare table_name cursor for SELECT TABLE_NAME FROM information_schema.TABLES where TABLE_SCHEMA = 'construction_online';
@@ -25,11 +24,11 @@ begin
     OPEN table_name;
     REPEAT
     FETCH table_name INTO f_name; /*获取第一条记录*/
-				SET @STMT :=CONCAT("ALTER TABLE ",f_name," CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;");   
-			PREPARE STMT FROM @STMT;   
-    EXECUTE STMT;  
+				SET @STMT :=CONCAT("ALTER TABLE ",f_name," CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;");
+			PREPARE STMT FROM @STMT;
+    EXECUTE STMT;
 -- INSERT into TestTable(name) VALUES (f_name);
-       -- ALTER TABLE f_name CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci; 
+       -- ALTER TABLE f_name CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
     UNTIL b = 1
 		END REPEAT;
     close table_name;

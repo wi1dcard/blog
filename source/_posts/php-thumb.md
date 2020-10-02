@@ -2,7 +2,6 @@
 title: "Thumb - 自带缓存配置的单文件 PHP 缩略图库"
 date: 2018-03-09 17:22:51
 id: php-thumb
-categories: Recommendations
 tags: [PHP, Nginx]
 ---
 

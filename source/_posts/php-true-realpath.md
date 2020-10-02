@@ -2,7 +2,6 @@
 title: PHP 相对路径转绝对路径
 date: 2018-06-08 14:11:22
 id: php-true-realpath
-categories: Snippets
 tags: [PHP, Reprinted]
 ---
 

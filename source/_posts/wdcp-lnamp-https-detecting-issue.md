@@ -2,7 +2,6 @@
 title: "修复 WDCP 面板无法判断 HTTPS 的问题"
 date: 2018-05-29 14:27:08
 id: wdcp-lnamp-https-detecting-issue
-categories: WTF
 tag: [Nginx]
 ---
 

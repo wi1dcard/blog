@@ -2,7 +2,6 @@
 id: upgrade-mysql-5.7-to-8.0
 date: 2018-06-16 00:30:13
 title: 升级 MySQL 5.7 到 8.0 遇到的坑
-categories: WTF
 tags: [MySQL]
 ---
 

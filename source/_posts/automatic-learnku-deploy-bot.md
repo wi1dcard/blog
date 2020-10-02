@@ -3,7 +3,6 @@ id: automatic-learnku-deploy-bot
 tags: [Blogging, Shell, PHP]
 date: 2019-03-22 19:09:26
 title: 我如何实现 Laravel-China 全自动系列文章发布
-categories: Tutorials
 ---
 
 在早期 [轻松部署 Laravel 应用](https://github.com/wi1dcard/laravel-deployment) 课程开始编写之前，就考虑到一个非常重要的问题：**如何保证 Laravel-China 上发布的文章与 GitHub 仓库内的 Markdown 源文件保持同步**？

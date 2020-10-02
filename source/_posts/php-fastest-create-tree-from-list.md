@@ -2,7 +2,6 @@
 id: php-fastest-create-tree-from-list
 date: 2018-08-06 11:40:06
 title: PHP 快速扫描列表创建无限极分类树
-categories: WTF
 tags: [PHP]
 ---
 

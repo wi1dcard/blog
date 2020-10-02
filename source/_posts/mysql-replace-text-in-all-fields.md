@@ -2,7 +2,6 @@
 id: mysql-replace-text-in-all-fields
 date: 2018-06-12 17:12:28
 title: MySQL 在所有字段内搜索替换文本
-categories: Snippets
 tags: [MySQL]
 ---
 

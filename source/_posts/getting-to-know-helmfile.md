@@ -3,7 +3,6 @@ id: getting-to-know-helmfile
 tags: [Kubernetes, CI/CD, Helm]
 date: 2020-03-24 23:45:01
 title: K8s 下的应用管理 — 了解 Helmfile
-categories: Tutorials
 ---
 
 在上一篇文章中，为大家介绍了 Helm 的初步使用。然而这仍然不能满足我司的工作流，主要问题有：

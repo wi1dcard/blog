@@ -2,7 +2,6 @@
 id: php-reference-variable
 date: 2018-08-06 10:33:41
 title: PHP 引用详解 - 踩坑与妙用
-categories: Tutorials
 tags: [PHP]
 ---
 

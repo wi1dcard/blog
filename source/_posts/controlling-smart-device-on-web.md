@@ -2,8 +2,7 @@
 title: "纠结！纯内网 Web 控制智能硬件的技术选型之路"
 date: 2018-03-11 12:22:48
 id: controlling-smart-device-on-web
-categories: Misc
-tags: [PHP, Swoole, Node.js, .NET, Legacy]
+tags: [PHP, Swoole, Node.js, C#, Legacy]
 ---
 
 > 通常情况下，我们采用 TCP Socket 与智能硬件进行通信。外网环境中，有无数种解决方案：Swoole（PHP），Node.js，SuperSocket（.NET）…… 而在政企事业单位的内网环境，事情或许就不那么好办了。

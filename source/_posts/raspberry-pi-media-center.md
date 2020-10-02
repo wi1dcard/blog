@@ -2,7 +2,6 @@
 title: "树莓派折腾随手记——继电器+红外=客厅总控"
 date: 2018-03-24 21:28:06
 id: raspberry-pi-media-center
-categories: Tutorials
 tags: [RaspberryPi, Node.js]
 ---
 

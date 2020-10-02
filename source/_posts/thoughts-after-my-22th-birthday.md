@@ -3,7 +3,6 @@ id: thoughts-after-my-22th-birthday
 tags: [Life]
 date: 2020-02-24 13:50:52
 title: 22 岁的杂谈
-categories: Misc
 ---
 
 忽然发现农历新年已经过去了一个月。这一个月我干了啥？！？

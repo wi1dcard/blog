@@ -2,7 +2,6 @@
 id: format-sql-statements-in-php
 date: 2019-01-10 21:27:06
 title: 在 PHP 中格式化并高亮 SQL 语句
-categories: Recommendations
 tags: [PHP, MySQL]
 ---
 

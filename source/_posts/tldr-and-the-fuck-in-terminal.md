@@ -1,9 +1,8 @@
 ---
 id: tldr-and-the-fuck-in-terminal
-tags: []
+tags: [CLI]
 date: 2019-01-31 16:59:25
 title: 命令行神器 - tldr 和 fuck
-categories: Recommendations
 ---
 
 [tldr-pages/tldr-cpp-client](https://github.com/tldr-pages/tldr-cpp-client) 是 [tldr-pages/tldr](https://github.com/tldr-pages/tldr) 的 C++ 客户端实现。后者收集了一系列简化版本的命令说明手册，用于替代 `man` 命令；且项目由社区驱动，也就是说任何人都可以提交 PR 来完善它。

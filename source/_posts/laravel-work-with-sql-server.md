@@ -2,8 +2,7 @@
 title: "Laravel 5.5 连接 MS SQL（SQL Server）数据库"
 date: 2017-11-02 10:49:20
 id: laravel-work-with-sql-server
-categories: Tutorials
-tags: [Laravel]
+tags: [PHP, Laravel]
 ---
 
 因项目需要，要使用 Laravel 连接微软的 SQL Server，虽然这种组合显得非常奇葩，但经过测试还是可以成功实现的。

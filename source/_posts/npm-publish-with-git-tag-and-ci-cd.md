@@ -3,7 +3,6 @@ id: npm-publish-with-git-tag-and-ci-cd
 tags: [CI/CD, Git]
 date: 2020-09-09 10:04:25
 title: 使用 Git Tag 和 CI 干净地发布 NPM 包
-categories: Snippets
 ---
 
 最近在探索「如何发布 NPM 包」的过程中，发现多数人的思路要么完全不用 CI，修改 `package.json` 内版本号之后手动发布；要么结合 CI，但需要 CI 生成新版本号之后修改 `package.json`，最后机器人执行 Git Commit + Git Tag 并推送到仓库内。这两种做法我都不是很喜欢，前者没有 CI 不能忍，后者不仅要求 CI 有写权限，而且会仓库内增加许多形如 `Release v...` 之类的提交，强迫症表示接受不了。

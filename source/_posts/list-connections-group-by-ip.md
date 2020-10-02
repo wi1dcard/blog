@@ -1,9 +1,8 @@
 ---
 id: list-connections-group-by-ip
-tags: [Linux, Shell]
+tags: [Networking, Linux, Shell]
 date: 2019-11-13 21:20:16
 title: List All IP Addresses and the Number of Connections to a Port
-categories: Snippets
 ---
 
 It's been a while maintaining the proxy services for my work friends who are in Beijing office. These days I tried to collect some basic metrics like online IP addresses and its connections. And I found a very simple way to do it with only `netstat` and several text process tools.

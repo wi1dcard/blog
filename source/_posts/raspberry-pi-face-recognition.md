@@ -2,7 +2,6 @@
 title: "树莓派折腾随手记 - 人脸门禁"
 date: 2018-02-13 21:31:40
 id: raspberry-pi-face-recognition
-categories: Tutorials
 tags: [RaspberryPi, Node.js]
 ---
 

@@ -2,8 +2,7 @@
 id: simulate-system-load-in-linux
 date: 2019-01-22 22:50:29
 title: Linux 中模拟多种系统负载的方法
-categories: Collections
-tags: [Linux]
+tags: [Linux, Shell]
 ---
 
 近期在研究系统监控预警，包括但不限于：CPU 使用率预警、内存使用率预警、磁盘使用率预警以及 IO 预警。

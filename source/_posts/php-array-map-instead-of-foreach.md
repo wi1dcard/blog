@@ -2,7 +2,6 @@
 id: php-array-map-instead-of-foreach
 date: 2018-07-11 14:44:18
 title: PHP 使用 array_map 替代 foreach
-categories: Snippets
 tags: [PHP]
 ---
 

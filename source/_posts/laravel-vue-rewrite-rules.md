@@ -2,7 +2,6 @@
 title: "Laravel5 和 Vue.js 优雅的 Nginx 重写规则"
 date: 2017-09-26 14:42:31
 id: laravel-vue-rewrite-rules
-categories: Collections
 tags: [Laravel, Nginx]
 ---
 

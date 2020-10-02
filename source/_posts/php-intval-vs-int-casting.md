@@ -2,7 +2,6 @@
 id: php-intval-vs-int-casting
 date: 2018-06-18 20:43:46
 title: PHP intval() 与 (int) 转换的区别
-categories: Tutorials
 tags: [PHP]
 ---
 

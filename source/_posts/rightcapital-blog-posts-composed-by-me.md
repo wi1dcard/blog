@@ -3,7 +3,6 @@ id: rightcapital-blog-posts-composed-by-me
 tags: [Kubernetes, Helm, CI/CD, Reprinted]
 date: 2020-04-13 00:42:49
 title: 我撰写的 RightCapital 技术博客文章链接
-categories: Collections
 ---
 
 ## 已发布的

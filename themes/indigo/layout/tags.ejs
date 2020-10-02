@@ -6,15 +6,22 @@
     <%
         if(is_tag()) { %>
             <div class="waterfall">
-          <% page.posts.each(function(post){ %>
-
-            <%- partial('_partial/archive', {post: post, date_format: config.date_format}) %>
-
-        <% }) %>
+            <% page.posts.each(function(post){ %>
+                <%- partial('_partial/archive', {post: post, date_format: config.date_format}) %>
+            <% }) %>
             </div>
         <% } else {
-            site.tags.each(function(tag){
-                if(tag.length){
+            var tags = [];
+
+            site.tags.each(function(o) {
+                if(o.posts.length) {
+                    tags.push(o)
+                }
+            })
+
+            tags.sort((a, b) => b.posts.first().date - a.posts.first().date);
+
+            tags.forEach(function(tag) {
             %>
 
             <h3 class="archive-separator" id="tag-<%=tag.name %>"><%=tag.name %></h3>
@@ -26,8 +33,7 @@
 
             <% }) %>
             </div>
-            <% }
-            })
+            <% })
         }
     %>
     <%- partial('_partial/paginator') %>

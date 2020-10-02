@@ -2,7 +2,6 @@
 id: 100-posts
 date: 2019-01-10 21:17:54
 title: 成功达成成就 —— 100 篇博文
-categories: Misc
 tags: [Blogging]
 ---
 

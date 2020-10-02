@@ -2,8 +2,7 @@
 id: sort-markdown-tables-in-terminal
 date: 2018-08-26 10:51:16
 title: 在终端内排序 Markdown 表格
-categories: Translations
-tags: [Shell, Linux, Reprinted]
+tags: [Reprinted, Translation, Shell, Linux]
 ---
 
 ## 序

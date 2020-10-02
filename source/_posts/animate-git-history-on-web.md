@@ -3,7 +3,6 @@ id: animate-git-history-on-web
 tags: [Git]
 date: 2019-02-11 14:17:27
 title: 以动画方式直观地浏览 Git 文件历史
-categories: Recommendations
 ---
 
 查看 Git 提交历史的工具千千万，无论是 CLI 还是 GUI。而 [pomber/git-history](https://github.com/pomber/git-history) 则是一款能够以动画形式快速、直观地展现 Git 仓库内文件变动历史的 Web 工具。

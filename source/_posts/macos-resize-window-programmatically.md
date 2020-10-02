@@ -3,7 +3,6 @@ id: macos-resize-window-programmatically
 tags: [macOS, Shell, Reprinted]
 date: 2019-03-08 20:30:23
 title: 使用 AppleScript 精确地设置 macOS 窗口大小
-categories: Snippets
 ---
 
 博客又跳票一阵子，不过最近并没有闲着，而是把业余时间全部投入到了 [Laravel 部署课程](https://github.com/wi1dcard/laravel-deployment)。在写作时经常需要对窗口截图，为了提高阅读体验，需确保截图大小统一；因此如何让窗口 **快速** 地缩放为指定像素的 **精确** 大小，成了一个不可或缺的需求。

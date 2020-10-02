@@ -2,7 +2,6 @@
 title: "树莓派折腾随手记 - 修改 Swap 大小"
 date: 2018-03-01 10:11:07
 id: raspberry-pi-change-swap-size
-categories: Tutorials
 tags: [RaspberryPi, Linux]
 ---
 

@@ -3,7 +3,6 @@ id: cloud-infrastructures
 tags: [Laravel, Linux]
 date: 2019-03-01 00:27:49
 title: 你需要哪些云服务基础设施？
-categories: Misc
 ---
 
 本文为《[轻松部署 Laravel 应用](https://github.com/wi1dcard/laravel-deployment)》的预习补充篇。

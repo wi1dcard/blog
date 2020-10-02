@@ -2,7 +2,6 @@
 id: baota-open-basedir-restriction
 date: 2018-06-13 10:18:52
 title: 宝塔面板 PHP 打开文件失败原因排查
-categories: WTF
 tags: [PHP]
 ---
 

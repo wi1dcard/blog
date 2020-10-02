@@ -1,9 +1,8 @@
 ---
 id: migrate-to-kubernetes-ii
-tags: [Blogging, CI/CD, Kubernetes, Helm]
+tags: [Blogging, CI/CD, Kubernetes, Helm, TLS]
 date: 2019-09-12 18:58:42
 title: 我如何将博客迁移到 Kubernetes - II
-categories: Tutorials
 ---
 
 （接上文）

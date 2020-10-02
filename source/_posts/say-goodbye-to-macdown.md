@@ -2,8 +2,7 @@
 id: say-goodbye-to-macdown
 date: 2018-07-10 13:27:35
 title: 对 MacDown 说再见
-categories: Misc
-tags: []
+tags: [Life]
 ---
 
 这两天又在折腾编辑器，早上刚更新了关于 VSCode 的最新配置。
@@ -19,7 +18,7 @@ tags: []
 - MacDown 支持回车自动补全列表 `-` / `*`，VSCode 原生不支持。
 - MacDown 支持导出 PDF，VSCode 原生不支持。
 
-但是！就像我很早之前在 [推荐 VSCode 的博文](/tools/proud-to-use-vscode/) 里说的那样：
+但是！就像我很早之前在 [推荐 VSCode 的博文](/proud-to-use-vscode/) 里说的那样：
 
 > VS Code 强大之处不在于本身，而在于强大的可扩展性、以及日渐壮大的插件商店。
 

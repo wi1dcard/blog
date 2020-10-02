@@ -2,7 +2,6 @@
 title: "Chrome 占用 *.dev 导致 Valet 失效的解决方案"
 date: 2018-02-04 19:53:26
 id: chrome-to-force-https-valet-domain
-categories: WTF
 tags: [Chrome, Laravel]
 ---
 

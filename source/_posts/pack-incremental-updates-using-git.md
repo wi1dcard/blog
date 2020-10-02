@@ -2,7 +2,6 @@
 id: pack-incremental-updates-using-git
 date: 2018-07-08 15:06:09
 title: Git 仓库打包增量更新包
-categories: Tutorials
 tags: [Git]
 ---
 

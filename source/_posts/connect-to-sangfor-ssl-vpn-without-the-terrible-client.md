@@ -1,9 +1,8 @@
 ---
 id: connect-to-sangfor-ssl-vpn-without-the-terrible-client
-tags: []
+tags: [WTF]
 date: 2020-01-10 20:11:33
 title: Connect to Sangfor SSL VPNs Without the Terrible Client
-categories: WTF
 ---
 
 The VPN provider of Nanjing University has recently been changed to Sangfor, which is one of the biggest company who provides the corporate SDN, VPN and other enterprise network solutions in China. Although, the [SSL VPN client](https://vpn.nju.edu.cn/portal/#!/login) from Sangfor is extremely hard to use - Changing the default DNS server without any notification, hijacking all UDP packet that dport is 53, even removing all the default route generated from the CIDR of interfaces which prevents the client connect to any LAN devices except `**.**.**.1`. These issues have been described as "features" of their products from a training manual that I found in [Baidu Wenku](https://wenku.baidu.com/view/51fec468a45177232f60a2d2.html).

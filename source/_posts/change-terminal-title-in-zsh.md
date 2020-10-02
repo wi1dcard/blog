@@ -3,7 +3,6 @@ id: change-terminal-title-in-zsh
 tags: [Shell]
 date: 2019-02-21 12:59:12
 title: 在 Oh-My-Zsh 内设置命令行标题
-categories: WTF
 ---
 
 前些天给命令行设置标题遇到一奇葩问题，最终调试发现是 Oh-My-Zsh 的锅。

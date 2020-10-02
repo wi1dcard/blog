@@ -1,9 +1,8 @@
 ---
 id: inspect-network-failure-like-a-pro
-tags: []
+tags: [Networking]
 date: 2019-05-24 22:48:18
 title: 如何专业地表达「我上不了网了！」
-categories: Tutorials
 ---
 
 从事运维工程师（兼公司网管😂）以来，遇到不少各式各样的网络故障，有的来自于路由器问题，有的则是客户端配置错误。而开发人员的反馈大多类似于：

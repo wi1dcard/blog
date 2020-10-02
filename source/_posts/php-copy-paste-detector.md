@@ -2,7 +2,6 @@
 id: php-copy-paste-detector
 date: 2018-07-04 11:12:14
 title: "PHPCPD - 检查复制粘贴的 PHP 代码"
-categories: Recommendations
 tags: [PHP]
 ---
 

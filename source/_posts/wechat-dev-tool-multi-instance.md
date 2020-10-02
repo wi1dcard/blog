@@ -2,8 +2,7 @@
 id: wechat-dev-tool-multi-instance
 date: 2018-07-06 09:32:42
 title: 微信开发者工具 - 多用户多开实践
-categories: Tutorials
-tags: []
+tags: [Node.js]
 ---
 
 此方法截至本文发布时最新版本（1.02.1806120）有效。

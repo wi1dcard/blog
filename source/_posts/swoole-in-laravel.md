@@ -2,7 +2,6 @@
 title: "Laravel + Swoole 实现 TCP-UDP Socket 服务端"
 date: 2018-03-06 10:32:22
 id: swoole-in-laravel
-categories: Tutorials
 tags: [Swoole, Laravel]
 ---
 

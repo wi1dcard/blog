@@ -1,9 +1,8 @@
 ---
 id: easier-curl-with-colors
-tags: [PHP]
+tags: [CLI]
 date: 2019-02-13 13:14:54
 title: 更加清晰易读的 cURL 工具
-categories: Recommendations
 ---
 
 [reorx/httpstat](https://github.com/reorx/httpstat) 是一款更加清晰易读的 cURL 工具。其本意是将 cURL 请求的统计数据图形化、可视化，但也可作为日常的 HTTP 客户端使用。

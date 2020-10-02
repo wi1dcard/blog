@@ -2,8 +2,7 @@
 title: "Polacode - 生成优雅美观的代码片段图"
 date: 2018-05-05 22:54:15
 id: vscode-polacode
-categories: Recommendations
-tags:
+tags: [VSCode]
 ---
 
 > 妈妈再也不用担心滚动截图和截图边框了～

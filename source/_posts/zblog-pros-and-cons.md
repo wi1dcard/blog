@@ -2,7 +2,6 @@
 title: "半年小记：Z-Blog 的优势劣势"
 date: 2018-03-09 01:30:54
 id: zblog-pros-and-cons
-categories: Misc
 tags: [Legacy, Blogging]
 ---
 

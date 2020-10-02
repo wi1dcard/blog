@@ -3,7 +3,6 @@ id: setup-an-edge-computing-cluster-with-different-archs-of-cpus
 tags: [Docker, Kubernetes, RaspberryPi]
 date: 2020-02-27 21:13:38
 title: 搭建异构 CPU 组成的边缘计算 Kubernetes 集群
-categories: Tutorials
 ---
 
 平时除了维护公司和私人在公有云的 Kubernetes clusters 之外，个人网络环境下还有些需要运行在本地的 workload；比如用于监控本地路由设备（~作~ XD）的 Prometheus exporters 和一些新奇玩意儿。为了能够运行这些应用，我在家组建了一套「边缘计算集群」，来看看是怎么做的吧。

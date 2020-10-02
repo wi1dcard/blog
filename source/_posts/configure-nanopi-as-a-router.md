@@ -1,9 +1,8 @@
 ---
 id: configure-nanopi-as-a-router
-tags: [GFW, Linux, RaspberryPi]
+tags: [Networking, Linux, RaspberryPi]
 date: 2019-06-11 21:37:40
 title: 将 NanoPi 配置为单臂路由器
-categories: Tutorials
 ---
 
 在近期折腾科学上网网关的过程中，顺便研究了一下 VLAN。通过适当地配置，一台只具备单物理网口的 NanoPi NEO2，同样可以变身「单臂」路由器。

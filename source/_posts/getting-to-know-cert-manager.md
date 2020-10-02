@@ -1,9 +1,8 @@
 ---
 id: getting-to-know-cert-manager
-tags: [Kubernetes]
+tags: [Kubernetes, TLS]
 date: 2020-03-27 20:53:01
 title: K8s 下的 TLS 证书管理 — 了解 Cert-Manager
-categories: Tutorials
 ---
 
 在 Kubernetes 中实现 TLS termination 非常容易。Ingress 资源包含一 `secretName` 属性，用于指定 Secret 资源名称。在取得证书后，通过 `kubectl create secret tls tls-secret --key tls.key --cert tls.crt` 创建 Secret 存储证书，便可以被 Ingress 使用了。

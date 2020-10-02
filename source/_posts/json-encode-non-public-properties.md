@@ -2,7 +2,6 @@
 title: "json_encode() 序列化非公开属性"
 date: 2018-06-08 10:56:00
 id: json-encode-non-public-properties
-categories: Tutorials
 tags: [PHP]
 ---
 

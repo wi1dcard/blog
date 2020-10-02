@@ -3,7 +3,6 @@ id: create-and-maintain-a-helm-chart
 tags: [Helm, CI/CD]
 date: 2020-03-27 23:14:36
 title: K8s 下的应用管理 — 私有 Helm Chart 的创建与维护
-categories: Tutorials
 ---
 
 在之前的文章中，我介绍了：

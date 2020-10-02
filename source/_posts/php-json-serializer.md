@@ -2,7 +2,6 @@
 id: php-json-serializer
 date: 2018-08-21 19:14:26
 title: PHP JSON Serializer
-categories: Snippets
 tags: [PHP]
 ---
 

@@ -2,7 +2,6 @@
 id: yii2-return-array-in-controller
 date: 2018-07-13 12:01:36
 title: Yii2 允许控制器内直接返回数组
-categories: Snippets
 tags: [PHP, Yii]
 ---
 

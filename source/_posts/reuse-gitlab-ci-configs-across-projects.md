@@ -3,7 +3,6 @@ id: reuse-gitlab-ci-configs-across-projects
 tags: [CI/CD]
 date: 2020-02-26 22:19:06
 title: 跨项目 GitLab CI 配置复用与管理
-categories: Tutorials
 ---
 
 为了能够使代码在不同项目复用，我司抽象、编写了许多私有 libraries。它们的源代码被统一存放在 GitLab，由 CI 确保代码风格一致，并执行单元测试和静态检查等。由于仓库数量众多，如何有效地组织和管理 CI 配置成了问题。经过长时间的探索和优化，我整理了一些经验，希望对你有所帮助。

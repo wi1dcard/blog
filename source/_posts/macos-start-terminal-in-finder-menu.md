@@ -2,7 +2,6 @@
 title: "macOS Finder 右键启动终端（Terminal）"
 date: 2017-11-17 15:52:58
 id: macos-start-terminal-in-finder-menu
-categories: Tutorials
 tags: [macOS]
 ---
 

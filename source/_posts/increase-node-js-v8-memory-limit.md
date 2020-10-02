@@ -3,7 +3,6 @@ id: increase-node-js-v8-memory-limit
 tags: [Node.js]
 date: 2019-11-28 21:27:50
 title: Increase Node.js V8 Memory Limit
-categories: Snippets
 ---
 
 After a few days working on Salesforce integration, I finnally finished a simple CLI edtion of [DataLoader](https://github.com/forcedotcom/dataloader) using prune TypeScript. Within lots of CSV rows loaded into memory, the node engine always crashs around 130k of records. In order to get this job done as quick as possible, I have to increase the max memory of Node.js.

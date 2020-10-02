@@ -2,7 +2,6 @@
 id: hello-2019
 date: 2018-12-27 00:35:01
 title: 漫谈 2019
-categories: Misc
 tags: [Life]
 ---
 

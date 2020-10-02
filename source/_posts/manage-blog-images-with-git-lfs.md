@@ -3,7 +3,6 @@ id: manage-blog-images-with-git-lfs
 tags: [Blogging, Git]
 date: 2019-01-28 22:57:45
 title: 使用 Git-LFS + 一点技巧管理博客图片
-categories: WTF
 ---
 
 这可能是截至目前我认为最优雅的博客图片管理方案没有之一。

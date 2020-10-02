@@ -2,8 +2,7 @@
 id: git-find-large-file
 date: 2018-08-10 15:33:16
 title: Git 仓库查找已追踪的大文件
-categories: Snippets
-tags: [Git]
+tags: [Git, Shell]
 ---
 
 当我们的 Git 仓库越来越大，或者不小心提交了二进制大文件，如何快速找出仓库内的「罪魁祸首」？

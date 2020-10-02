@@ -2,7 +2,6 @@
 id: git-randomize-commit-message
 date: 2018-07-26 08:33:05
 title: 特喵的随机 Git 提交信息
-categories: Snippets
 tags: [Git]
 ---
 

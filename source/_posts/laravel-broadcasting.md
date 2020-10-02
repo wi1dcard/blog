@@ -2,8 +2,7 @@
 title: "由浅入深：Laravel Broadcast 实现 WebSocket B/S 实时通信"
 date: 2018-03-02 20:37:32
 id: laravel-broadcasting
-categories: Tutorials
-tags: [Laravel, Node.js]
+tags: [PHP, Laravel, Node.js]
 ---
 
 > Laravel 集成众多开包即用的功能, 虽然它真的很"胖", 但这并不影响它是个好框架. 本篇文章将采用 Laravel 5.6 版本由浅入深为大家演示: 如何使用内置的 Broadcast（广播）功能实现与客户端实时通信.

@@ -2,7 +2,6 @@
 id: yii2-redirect-action-in-controller
 date: 2018-07-13 12:02:50
 title: Yii2 在控制器内映射 Action 到其它动作
-categories: Tutorials
 tags: [PHP, Yii]
 ---
 

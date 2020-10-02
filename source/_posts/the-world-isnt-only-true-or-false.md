@@ -2,8 +2,7 @@
 title: "不要让脑袋里只剩 0 和 1 —— 避免思维固化"
 date: 2017-10-15 13:39:52
 id: the-world-isnt-only-true-or-false
-categories: Misc
-tags: []
+tags: [Life]
 ---
 
 ## 0x00 前言

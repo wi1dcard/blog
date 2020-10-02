@@ -3,7 +3,6 @@ id: getting-to-know-helm
 tags: [Kubernetes, Helm]
 date: 2020-03-24 00:35:55
 title: K8s 下的应用管理 — 了解 Helm
-categories: Tutorials
 ---
 
 [Helm](https://helm.sh/) 是一款针对 Kubernetes 的「包管理器」，虽说称它为包管理器，其实与应用开发过程中使用的包管理器略有不同，后者管理的是应用开发过程中的依赖，Helm 则管理着 Kubernetes 中应用部署时各项资源的依赖。

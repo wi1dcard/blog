@@ -2,7 +2,6 @@
 title: "树莓派折腾随手记 - 使用 apt-get 升级内置 Node.js"
 date: 2018-02-28 18:41:17
 id: raspberry-pi-upgrade-nodejs-via-apt
-categories: Tutorials
 tags: [RaspberryPi, Node.js]
 ---
 

@@ -2,7 +2,6 @@
 title: "树莓派折腾随手记 - 使用 apt-get 安装 Nginx+PHP"
 date: 2018-02-28 19:40:01
 id: raspberry-pi-installing-nginx-php-via-apt
-categories: Tutorials
 tags: [RaspberryPi, Nginx]
 ---
 

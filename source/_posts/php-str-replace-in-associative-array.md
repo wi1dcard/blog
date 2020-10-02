@@ -2,7 +2,6 @@
 id: php-str-replace-in-associative-array
 date: 2018-07-11 15:14:36
 title: PHP 批量替换字符串
-categories: Snippets
 tags: [PHP]
 ---
 

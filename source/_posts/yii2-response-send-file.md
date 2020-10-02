@@ -2,7 +2,6 @@
 id: yii2-response-send-file
 date: 2018-07-14 13:52:46
 title: Yii2 输出文件下载响应
-categories: Snippets
 tags: [PHP, Yii]
 ---
 

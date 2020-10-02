@@ -2,7 +2,6 @@
 title: "phpize 简易入门"
 date: 2018-04-30 22:31:53
 id: get-started-with-phpize
-categories: Tutorials
 tags: [PHP]
 ---
 

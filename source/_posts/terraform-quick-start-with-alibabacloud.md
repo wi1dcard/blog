@@ -3,7 +3,6 @@ id: terraform-quick-start-with-alibaba-cloud
 tags: [Terraform]
 date: 2020-05-29 09:00:21
 title: Terraform Quick Start with Alibaba Cloud
-categories: Tutorials
 ---
 
 As you probably heard Terraform before, it's a great DevOps tool that can help you build your infrastructures with configurations and codes, aka Infrastructure as Code.

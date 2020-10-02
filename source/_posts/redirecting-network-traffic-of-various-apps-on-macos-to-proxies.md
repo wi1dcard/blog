@@ -1,9 +1,8 @@
 ---
 id: redirecting-network-traffic-of-various-apps-on-macos-to-proxies
-tags: [macOS, GFW]
+tags: [macOS, GFW, Networking]
 date: 2020-03-28 04:29:03
 title: 盘点使 macOS 应用流量通过代理的多种方式
-categories: Tutorials
 ---
 
 在开发过程中，我们经常需要使用到国外的资源，例如各种包依赖等。国内目前比较普遍的做法是使用由知名第三方维护的国内镜像。虽然方便，但也存在一些无法避免的问题，例如：

@@ -2,7 +2,6 @@
 id: git-push-with-tags
 date: 2018-09-07 09:18:53
 title: Git 一次性推送提交和标签
-categories: Snippets
 tags: [Git]
 ---
 

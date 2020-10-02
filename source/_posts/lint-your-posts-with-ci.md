@@ -2,7 +2,6 @@
 id: lint-your-posts-with-ci
 date: 2019-01-26 08:54:58
 title: 自动化 Markdown 博文写作规范检查
-categories: Recommendations
 tags: [Blogging, CI/CD]
 ---
 

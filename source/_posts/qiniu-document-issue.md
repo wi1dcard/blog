@@ -2,8 +2,7 @@
 title: "七牛文档填坑过程回顾"
 date: 2017-10-19 21:12:08
 id: qiniu-document-issue
-categories: WTF
-tags: []
+tags: [Cloud]
 ---
 
 ## 前言

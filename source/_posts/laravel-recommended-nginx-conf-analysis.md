@@ -3,7 +3,6 @@ id: laravel-recommended-nginx-conf-analysis
 tags: [Nginx, Laravel]
 date: 2019-03-16 11:18:00
 title: 浅析 Laravel 文档推荐的 Nginx 配置
-categories: Snippets
 ---
 
 以 [Laravel 5.8 文档](https://laravel.com/docs/5.8/deployment#server-configuration) 为准，浅析 Nginx 配置。可作为 [轻松部署 Laravel 应用](https://github.com/wi1dcard/laravel-deployment) 的拓展阅读。

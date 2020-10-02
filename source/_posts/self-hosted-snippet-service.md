@@ -1,9 +1,8 @@
 ---
 id: self-hosted-snippet-service
-tags: []
+tags: [Docker]
 date: 2019-02-05 19:14:33
 title: 动手搭建代码片段托管服务
-categories: Recommendations
 ---
 
 [snibox/snibox](https://github.com/snibox/snibox) 是一款使用 Ruby on Rails + Vuex 编写的代码片段托管服务。对于一线程序员来说，经常会接触到大量的代码片段（Snippet），上传到 Gist 无法完全 Private，而 Snibox 则是个不错的选择。

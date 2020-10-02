@@ -2,8 +2,7 @@
 title: "Markdown 语法简明介绍"
 date: 2018-05-30 10:21:12
 id: markdown-syntax-intro
-categories: Misc
-tags: []
+tags: [Blogging]
 ---
 
 几乎所有 Git 平台在 `Pull request` / `Issue` 等功能上大量使用 Markdown 语法，所以在这里简单介绍并给出效果预览，以方便使用。

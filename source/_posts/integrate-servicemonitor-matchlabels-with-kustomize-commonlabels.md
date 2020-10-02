@@ -3,7 +3,6 @@ id: integrate-servicemonitor-matchlabels-with-kustomize-commonlabels
 tags: [Kustomize, Kubernetes]
 date: 2020-09-12 09:35:43
 title: Integrate ServiceMonitor matchLabels with Kustomize commonLabels
-categories: Snippets
 ---
 
 While I deploying [v2ray-exporter](https://github.com/wi1dcard/v2ray-exporter) with [Kustomize](https://kustomize.io/), I realized that `commonLabels` in `kustomization.yaml` doesn't take care of the `spec.selector.matchLabels` field in `ServiceMonitor`s. That makes sense, as ServiceMonitor is a part of CoreOS's Prometheus Operator project, neither included nor maintained by Kubernetes. But how can we direct Kustomize to fill the labels in ServiceMonitors or even any fields in customized resources?

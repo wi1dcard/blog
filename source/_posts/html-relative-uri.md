@@ -2,7 +2,7 @@
 title: "URI 相对路径写法"
 date: 2018-02-08 16:14:24
 id: html-relative-uri
-categories: Snippets
+tags: [Legacy, HTML]
 ---
 
 在前端开发过程中常见路径，在一般情况下，同站点强烈建议使用相对路径，这里简单总结一下相对路径的写法。

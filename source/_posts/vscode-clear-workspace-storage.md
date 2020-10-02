@@ -2,8 +2,7 @@
 id: vscode-clear-workspace-storage
 date: 2018-08-03 10:18:08
 title: VS Code 清理工作区文件
-categories: WTF
-tags: []
+tags: [VSCode]
 ---
 
 前些天扫描大文件的时候，发现一个目录 `~/Library/Application Support/Code/User/workspaceStorage` 占用非常大，看起来罪魁祸首像是 VSCode；

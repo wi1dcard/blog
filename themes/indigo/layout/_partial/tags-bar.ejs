@@ -11,6 +11,8 @@
                 }
             })
 
+            options.sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
+
             var index = options.findIndex(function(o) {
                 return is_current(o.path)
             })

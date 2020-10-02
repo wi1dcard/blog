@@ -3,7 +3,6 @@ id: prometheus-severity-label-to-opsgenie-priority
 tags: [Kubernetes, Prometheus]
 date: 2020-09-30 16:11:36
 title: Convert Kubernetes-Mixin Severities to OpsGenie Priorities in Prometheus
-categories: Snippets
 ---
 
 In [kubernetes-mixin][] (a dependency of [kube-prometheus-stack][] and [prometheus-operator][] charts) rules, the severity label of alrets can be `critical`, `warning`, or `info` etc. However, OpsGenie's priority field only accepts values like `P1`, `P2` ... `P5`.

@@ -3,7 +3,6 @@ id: convert-openwrt-image-to-esxi-vmdk
 tags: [ESXi, OpenWrt]
 date: 2020-09-12 09:04:26
 title: Convert OpenWrt Image to ESXi VMDK
-categories: Tutorials
 ---
 
 The official doc of [OpenWrt on VMware HowTo](https://openwrt.org/docs/guide-user/virtualization/vmware) seems already outdated, and there's no explaination of how to fix `Unsupported or invalid disk type 2 for 'scsi0:0'. Ensure that the disk has been imported.` on ESXi 6.7. Here after looked into some clues on Chinese router forums, I found an usable method to convert the image into ESXi VMDK format on macOS.

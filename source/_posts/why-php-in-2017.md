@@ -1,8 +1,7 @@
 ---
 title: "Why PHP？浅谈选择 PHP 作为后端主力开发语言的原因"
 date: 2018-01-18 13:14:59
-id: why-php
-categories: Misc
+id: why-php-in-2017
 tags: [Legacy, PHP, Swoole]
 ---
 

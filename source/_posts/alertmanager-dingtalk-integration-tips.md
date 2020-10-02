@@ -1,9 +1,8 @@
 ---
 id: alertmanager-dingtalk-integration-tips
-tags: [Prometheus]
+tags: [Prometheus, Alertmanager]
 date: 2020-10-02 15:51:18
 title: 改进 Alertmanager 的钉钉通知
-categories:
 ---
 
 多亏了 [prometheus-webhook-dingtalk](https://github.com/timonwong/prometheus-webhook-dingtalk) 项目，Alertmanager 集成钉钉消息通知得以实现。在实际使用过程中，我发现了一些可以改进的配置，例如通知消息模板可以更加清晰简洁、可以根据不同的报警优先级决定是否 Mention 某人等。

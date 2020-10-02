@@ -3,7 +3,6 @@ id: helm-chart-resource-names-conflict
 tags: [Kubernetes, Helm, CI/CD]
 date: 2019-11-05 19:23:42
 title: Helm Chart Resource Names Conflict Due to the Fullname Helper
-categories: WTF
 ---
 
 Recently, I've been working against Kubernetes and Helm for a while. Today, I faced a strange problem that could only be triggered in a very very specific condition. After determined what happened under the hood, I decided to write it down in case someone else needs it.

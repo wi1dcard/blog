@@ -1,9 +1,8 @@
 ---
 id: darwinia-validators-log-based-monitoring
-tags: []
+tags: [Darwinia]
 date: 2020-09-29 08:51:32
 title: 超简单！基于日志的 Darwinia 验证人节点监控预警
-categories: Tutorials
 ---
 
 一般来说，监控 Substrate 框架开发的区块链节点，可以使用官方推荐的 Prometheus + Grafana 技术栈。在节点数量比较多的情况下，这套方案的优势比较容易体现出来，我给公司的官方节点也是这么配的。不过近期 Darwinia 主网上线，有不少同事想要跑自己的验证人（`validator`）节点。对于他们来说：

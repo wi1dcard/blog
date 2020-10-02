@@ -2,7 +2,6 @@
 id: packaging-apps-with-phar
 date: 2019-01-15 00:03:57
 title: 将 PHP 应用快速打包为 PHAR
-categories: Recommendations
 tags: [PHP]
 ---
 

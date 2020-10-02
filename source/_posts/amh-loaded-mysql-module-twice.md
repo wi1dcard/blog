@@ -2,7 +2,6 @@
 id: amh-loaded-mysql-module-twice
 date: 2018-06-14 14:38:42
 title: AMH 面板重复加载 MySQL 扩展
-categories: WTF
 tags: [MySQL, PHP]
 ---
 

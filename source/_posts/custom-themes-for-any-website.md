@@ -2,7 +2,6 @@
 id: custom-themes-for-any-website
 date: 2018-06-14 07:26:27
 title: Stylish - 自定义 GitHub / Google / Youtube 主题
-categories: Recommendations
 tags: [Chrome]
 ---
 
