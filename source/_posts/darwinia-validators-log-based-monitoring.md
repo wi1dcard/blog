@@ -31,7 +31,7 @@ categories: Tutorials
 
 ## 具体步骤
 
-### 1. 实现检查日志
+### 1) 实现检查日志
 
 首先登录你的验证人节点，创建一个 Watchlog 脚本，例如 `/usr/bin/darwinia-watchlog.sh`：
 
@@ -61,7 +61,7 @@ fi
 
 随后运行该脚本，会发现有 `[INFO] New blocks detected.` 或是 `[WARN] No blocks deteched!` 的输出，说明它已经能够正常检测节点日志了。
 
-### 2. 持续检查节点日志
+### 2) 持续检查节点日志
 
 为了能够 **持续** 检查节点日志，我们使用 Cron job **每分钟** 调用一次该脚本就可以了。执行以下脚本新增一个每分钟执行的 Cron job：
 
@@ -69,7 +69,7 @@ fi
 (crontab -l ; echo "* * * * * /usr/bin/darwinia-watchlog.sh | logger -t darwinia-watchlog") 2>&1 | grep -v "no crontab" | sort | uniq | crontab -
 ```
 
-### 3. 预警通知和重启
+### 3) 预警通知和重启
 
 自己写通知太麻烦，不如试试 <https://healthchecks.io/> 吧。Healthchecks.io 是一款 [开源的](https://github.com/healthchecks/healthchecks) 定时任务监控、通知系统。它假设你的脚本在「某一时刻」运行，正常情况下，你的脚本运行成功并给它发送一个成功消息；如果你的脚本没有运行，或是执行出错，它能够按照指定的通知渠道，给你发送一条预警通知。
 
