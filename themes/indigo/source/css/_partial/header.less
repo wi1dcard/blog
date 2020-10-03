@@ -43,8 +43,7 @@
 
 .content-header {
     // min-height: 210px;
-    margin-left: -240px;
-    padding: 65px 16px 48px 290px;
+    padding: 48px 48px 48px;
     color: @textPrimaryColor;
     background: @primaryColor;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
@@ -78,7 +77,12 @@
     padding-bottom: 0!important
 }
 
-@media screen and (max-width:1240px) {
+@media screen and (max-width:1040px) {
+
+    .content-header {
+        margin-left: 0px;
+        padding: 20px 16px 20px;
+    }
 
     .header-title {
         text-align: left;
@@ -87,10 +91,11 @@
 }
 
 @media screen and (max-width:760px) {
+
     .content-header {
         margin: 0;
         min-height: auto;
-        padding: 72px 16px 20px;
+        padding: 0px 0px 20px;
 
         .title {
             font-size: 24px;
