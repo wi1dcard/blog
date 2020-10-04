@@ -15,7 +15,7 @@ comments: false
 
 从 2010 年接触 Pascal 语言起，我对代码产生了浓厚的兴趣，参加了信息学竞赛。后自学 MFC 和 WinForm，并在 2013 年开始接触外包项目。2015 年进入职场，逐渐转型 PHP 和后端方向。2018 年底开始涉足运维和网络相关。现就职于某区块链企业从事 **DevOps** 以及少量 IT 相关工作。
 
-目前，我正在深入学习 **Kubernetes**；对 Golang 和 Rust 兴趣很大，可惜实战机会不多，希望在实际项目中进一步学习。
+目前，我正在深入学习 **Kubernetes**；对 Golang 和 Rust 兴趣很大。
 
 我的职业规划大多基于兴趣驱动，我喜欢做与众不同或是未曾有人尝试过的事。我善于独立思考、规划、钻研问题的更优解。在不断实践的过程中，我甚至会把自己推到极限，处于过度紧张和不健康的状态。我乐于高效地协作或提供帮助，但在专注时不希望被打扰，因此时常戴着耳机工作。
 
@@ -23,50 +23,24 @@ comments: false
 
 </div>
 
-<div class="column-2">
-
-<div class="card">
-
-### 对您的期待
-
-我理想中所在的团队是这样的：
-
-1. 热情，年轻，开放。
-2. 鼓励创新，适当放权，结果导向。
-3. 支持工程师使用 macOS 或 Linux。
-4. 不反对工程师使用 Google。
-
-</div>
-
-<div class="card">
-
-### 外部链接
-
-- 技术博客（<https://wi1dcard.dev/>）
-- [LearnKu 有价值评论](https://learnku.com/users/32249/replies)
-- [GitHub Repositories](https://github.com/wi1dcard?utf8=%E2%9C%93&tab=repositories&q=&type=source&language=)
-- [GitHub Profile](https://github.com/wi1dcard)
-- [GitLab Profile](https://gitlab.com/wi1dcard)
-- [MBTI 性格报告](https://www.16personalities.com/ch/intj-%E4%BA%BA%E6%A0%BC)
-
-</div>
-
-</div>
-
-<div class="page-break"></div>
-
 ## 自我修养
 
 <div class="card">
 
-- 高标准自我要求。
-- 日常工作环境 macOS 和 Ubuntu，习惯 CLI，不使用盗版系统和软件。
-- 良好的代码结构、命名、测试、文档、大小写、Git commit messages 以及 Git tree 习惯。
-- 关注权限与安全，对安全持严谨态度。
-- 关注新技术动向，社区活跃，积极参与开源。
+- 高标准自我要求，态度严谨。
+- 关注技术动向，社区活跃，积极参与开源。
 - 良好的表达和总结能力，思维逻辑缜密，坚持写技术博客。
+- 日常工作环境 macOS 和 Ubuntu；熟悉 CLI，不使用盗版软件。
 - 重度 Google 用户。
+- 良好的代码结构、命名、测试、文档、大小写、Git commit messages 以及 Git tree 习惯。
+- 比开发者更关注权限与安全。
 - 正努力成为 [T 型人才](https://en.wikipedia.org/wiki/T-shaped_skills)。
+
+因此，我理想中所在的团队是：
+
+1. 开放，严谨，热情的。
+2. 工程师熟悉 macOS 或 Linux 的。
+3. 支持工程师使用 Google 的。
 
 </div>
 
@@ -74,26 +48,22 @@ comments: false
 
 <div class="card">
 
-1. 拥有大量 Git workflows 和 CI/CD 实践经验，熟练使用 GitLab CI、Ansible 等。
-2. 拥有大量应用监控和预警实践经验，熟悉 Incident Management 工作流和 On-call 工作机制，熟练使用 Prometheus、Alertmanager、Grafana、OpsGenie、Pingdom。
-3. 拥有大量 Infrastructure as Code 实践经验，熟练使用 Terraform。
+≈ `#Kubernetes` + `#Prometheus-stack` + `#GitOps`
+
+1. 拥有大量 Git workflows 和 CI/CD 实践经验，熟练使用 GitLab CI、GitHub Actions。
+2. 拥有大量应用监控和预警实践经验，熟悉 Incident Management 和 On-call 工作机制，熟练使用 Prometheus、Alertmanager、Grafana、OpsGenie、Stackdriver。
+3. 拥有大量 Infrastructure as Code 实践经验，熟练使用 Terraform 和 Ansible。
 4. 具备 Kubernetes 集群维护经验，熟练使用 Docker、Helm、Helmfile，熟悉 Helm 生态。
-5. 具备丰富的现代 PHP 开发和维护经验，熟练使用常见 Linux 命令和 Shell。
-6. 具备各大云服务商产品运维经验，熟悉 AWS 和 Google Cloud Platform，了解阿里云。
-7. 具备小型公司网络运维经验，了解 BIRD、IPTables、IPsec 和 WireGuard。
-8. 熟练读写英文文档，目前 CEFR 为 B2。
-9. 具备跨时区工作经验，熟练通过 Jira Service Desk、Email 和 Slack 等方式与美国同事沟通。
-10. 具备少量 Office 365 for Business、Atlassian 和 Salesforce 运维经验。
+5. 具备各大云服务商产品运维经验，熟悉 AWS 和 Google Cloud Platform，了解阿里云。
+6. 迅速定位问题，并通过社区（GitHub Issues 等）获取帮助的能力。
+7. 熟练读写英文文档，近期 OOPT 测得 CEFR 为 B2。
+8. 具备跨时区工作经验，熟练通过 Email 和 Slack 等方式与美国同事沟通。
 
 </div>
 
-<div class="page-break"></div>
-
-## 近期工作经历
+## 近期工作
 
 <div class="card">
-
-我目前的部分工作内容如下，早期经历请参考 [我的任职历史](https://wi1dcard.dev/employment-history/)。
 
 - **把传统应用由 EC2 迁移到 Kubernetes**
 
@@ -130,5 +100,20 @@ comments: false
 - **优化权限和为美国同事提供 IT Support**
 
   负责员工入职与离职时在 Azure AD 和 G Suite 的 Onboarding 和 Offboarding。优化 SSO，确保各系统的用户均为合理的最小权限。为销售、市场和客户支持等团队的美国同事通过在线聊天、语音通话等方式提供 IT support。
+
+</div>
+
+
+### 继续了解我
+
+<div class="card">
+
+- 我的技术博客（<https://wi1dcard.dev/>）
+- [LearnKu 有价值评论](https://learnku.com/users/32249/replies)
+- [GitHub Repositories](https://github.com/wi1dcard?utf8=%E2%9C%93&tab=repositories&q=&type=source&language=)
+- [GitHub Profile](https://github.com/wi1dcard)
+- [GitLab Profile](https://gitlab.com/wi1dcard)
+- [MBTI 性格报告](https://www.16personalities.com/ch/intj-%E4%BA%BA%E6%A0%BC)
+- [我的详细任职历史](https://wi1dcard.dev/employment-history/)
 
 </div>
