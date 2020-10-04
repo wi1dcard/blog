@@ -6,8 +6,6 @@
         root = $('html'),
         gotop = $('#gotop'),
         menu = $('#menu'),
-        mask = $('#mask'),
-        loading = $('#loading'),
         animate = w.requestAnimationFrame,
         scrollSpeed = 200 / (1000 / 60),
         forEach = Array.prototype.forEach,
@@ -60,14 +58,14 @@
                 menu.classList.remove('hide');
 
                 if (w.innerWidth < 1241) {
-                    mask.classList.add('in');
+                    // mask.classList.add('in');
                     menu.classList.add('show');
                     root.classList.add('lock');
                 }
 
             } else {
                 menu.classList.remove('show');
-                mask.classList.remove('in');
+                // mask.classList.remove('in');
                 root.classList.remove('lock');
             }
         },
@@ -151,66 +149,7 @@
                 }
             }
         })(),
-        hideOnMask: [],
-        modal: function (target) {
-            this.$modal = $(target);
-            this.$off = this.$modal.querySelector('.close');
 
-            var _this = this;
-
-            this.show = function () {
-                mask.classList.add('in');
-                _this.$modal.classList.add('ready');
-                setTimeout(function () {
-                    _this.$modal.classList.add('in');
-                }, 0)
-            }
-
-            this.onHide = noop;
-
-            this.hide = function () {
-                _this.onHide();
-                mask.classList.remove('in');
-                _this.$modal.classList.remove('in');
-                setTimeout(function () {
-                    _this.$modal.classList.remove('ready');
-                }, 300)
-            }
-
-            this.toggle = function () {
-                return _this.$modal.classList.contains('in') ? _this.hide() : _this.show();
-            }
-
-            Blog.hideOnMask.push(this.hide);
-            this.$off && this.$off.addEventListener(even, this.hide);
-        },
-        share: function () {
-
-            var pageShare = $('#pageShare'),
-                fab = $('#shareFab');
-
-            var shareModal = new this.modal('#globalShare');
-
-            $('#menuShare').addEventListener(even, shareModal.toggle);
-
-            if (fab) {
-                fab.addEventListener(even, function () {
-                    pageShare.classList.toggle('in')
-                }, false)
-
-                d.addEventListener(even, function (e) {
-                    !fab.contains(e.target) && pageShare.classList.remove('in')
-                }, false)
-            }
-
-            var wxModal = new this.modal('#wxShare');
-            wxModal.onHide = shareModal.hide;
-
-            forEach.call($$('.wxFab'), function (el) {
-                el.addEventListener(even, wxModal.toggle)
-            })
-
-        },
         search: function () {
             var searchWrap = $('#search-wrap');
 
@@ -220,18 +159,7 @@
 
             $('#search').addEventListener(even, toggleSearch);
         },
-        reward: function () {
-            var modal = new this.modal('#reward');
-            $('#rewardBtn').addEventListener(even, modal.toggle);
 
-            var $rewardToggle = $('#rewardToggle');
-            var $rewardCode = $('#rewardCode');
-            if ($rewardToggle) {
-                $rewardToggle.addEventListener('change', function () {
-                    $rewardCode.src = this.checked ? this.dataset.alipay : this.dataset.wechat
-                })
-            }
-        },
         waterfall: function () {
 
             if (w.innerWidth < 760) return;
@@ -251,9 +179,11 @@
             })
 
         },
+
         tabBar: function (el) {
             el.parentNode.parentNode.classList.toggle('expand')
         },
+
         page: (function () {
             var $elements = $$('.fade');
             var visible = false;
@@ -275,147 +205,7 @@
             }
 
         })(),
-        lightbox: (function () {
 
-            function LightBox(element) {
-                this.$img = element.querySelector('img');
-                this.$overlay = element.querySelector('overlay');
-                this.margin = 40;
-                this.title = this.$img.title || this.$img.alt || '';
-                this.isZoom = false;
-
-                var naturalW, naturalH, imgRect, docW, docH;
-
-                this.calcRect = function () {
-                    docW = body.clientWidth;
-                    docH = body.clientHeight;
-                    var inH = docH - this.margin * 2;
-                    var w = naturalW;
-                    var h = naturalH;
-                    var t = this.margin;
-                    var l = 0;
-                    var sw = w > docW ? docW / w : 1;
-                    var sh = h > inH ? inH / h : 1;
-                    var s = Math.min(sw, sh);
-
-                    w = w * s;
-                    h = h * s;
-
-                    return {
-                        w: w,
-                        h: h,
-                        t: (docH - h) / 2 - imgRect.top,
-                        l: (docW - w) / 2 - imgRect.left + this.$img.offsetLeft
-                    }
-                }
-
-                this.setImgRect = function (rect) {
-                    this.$img.style.cssText = 'width: ' + rect.w + 'px; max-width: ' + rect.w + 'px; height:' + rect.h + 'px; top: ' + rect.t + 'px; left: ' + rect.l + 'px';
-                }
-
-                this.setFrom = function () {
-                    this.setImgRect({
-                        w: imgRect.width,
-                        h: imgRect.height,
-                        t: 0,
-                        l: (element.offsetWidth - imgRect.width) / 2
-                    })
-                }
-
-                this.setTo = function () {
-                    this.setImgRect(this.calcRect());
-                }
-
-                // this.updateSize = function () {
-                //     var sw = sh = 1;
-                //     if (docW !== body.clientWidth) {
-                //         sw = body.clientWidth / docW;
-                //     }
-
-                //     if (docH !== body.clientHeight) {
-                //         sh = body.clientHeight / docH;
-                //     }
-
-                //     docW = body.clientWidth;
-                //     docH = body.clientHeight;
-                //     var rect = this.$img.getBoundingClientRect();
-                //     var w = rect.width * sw;
-                //     var h = rect.height * sh;
-
-                //     this.$img.classList.remove('zoom-in');
-                //     this.setImgRect({
-                //         w: w,
-                //         h: h,
-                //         t: this.$img.offsetTop - (h - rect.height) / 2,
-                //         l: this.$img.offsetLeft - (w - rect.width) / 2
-                //     })
-                // }
-
-                this.addTitle = function () {
-                    if (!this.title) {
-                        return;
-                    }
-                    this.$caption = d.createElement('div');
-                    this.$caption.innerHTML = this.title;
-                    this.$caption.className = 'overlay-title';
-                    element.appendChild(this.$caption);
-                }
-
-                this.removeTitle = function () {
-                    this.$caption && element.removeChild(this.$caption)
-                }
-
-                var _this = this;
-
-                this.zoomIn = function () {
-                    naturalW = this.$img.naturalWidth || this.$img.width;
-                    naturalH = this.$img.naturalHeight || this.$img.height;
-                    imgRect = this.$img.getBoundingClientRect();
-                    element.style.height = imgRect.height + 'px';
-                    element.classList.add('ready');
-                    this.setFrom();
-                    this.addTitle();
-                    this.$img.classList.add('zoom-in');
-
-                    setTimeout(function () {
-                        element.classList.add('active');
-                        _this.setTo();
-                        _this.isZoom = true;
-                    }, 0);
-                }
-
-                this.zoomOut = function () {
-                    this.isZoom = false;
-                    element.classList.remove('active');
-                    this.$img.classList.add('zoom-in');
-                    this.setFrom();
-                    setTimeout(function () {
-                        _this.$img.classList.remove('zoom-in');
-                        _this.$img.style.cssText = '';
-                        _this.removeTitle();
-                        element.classList.remove('ready');
-                        element.removeAttribute('style');
-                    }, 300);
-                }
-
-                element.addEventListener('click', function (e) {
-                    _this.isZoom ? _this.zoomOut() : e.target.tagName === 'IMG' && _this.zoomIn()
-                })
-
-                d.addEventListener('scroll', function () {
-                    _this.isZoom && _this.zoomOut()
-                })
-
-                w.addEventListener('resize', function () {
-                    // _this.isZoom && _this.updateSize()
-                    _this.isZoom && _this.zoomOut()
-                })
-            }
-
-            forEach.call($$('.img-lightbox'), function (el) {
-                new LightBox(el)
-            })
-        })(),
         loadScript: function (scripts) {
             scripts.forEach(function (src) {
                 var s = d.createElement('script');
@@ -425,12 +215,6 @@
             })
         }
     };
-
-    w.addEventListener('load', function () {
-        loading.classList.remove('active');
-        Blog.page.loaded();
-        w.lazyScripts && w.lazyScripts.length && Blog.loadScript(w.lazyScripts)
-    });
 
     w.addEventListener('DOMContentLoaded', function () {
         Blog.waterfall();
@@ -480,13 +264,13 @@
     //     menu.classList.add('hide');
     // }, false);
 
-    mask.addEventListener(even, function (e) {
-        Blog.toggleMenu();
-        Blog.hideOnMask.forEach(function (hide) {
-            hide()
-        });
-        e.preventDefault();
-    }, false);
+    // mask.addEventListener(even, function (e) {
+    //     Blog.toggleMenu();
+    //     Blog.hideOnMask.forEach(function (hide) {
+    //         hide()
+    //     });
+    //     e.preventDefault();
+    // }, false);
 
     d.addEventListener('scroll', function () {
         var top = rootScollTop();
@@ -495,14 +279,6 @@
         Blog.toc.fixed(top);
         Blog.toc.actived(top);
     }, false);
-
-    if (w.BLOG.SHARE) {
-        Blog.share()
-    }
-
-    if (w.BLOG.REWARD) {
-        Blog.reward()
-    }
 
     Blog.noop = noop;
     Blog.even = even;
@@ -513,12 +289,4 @@
         g[e] = Blog[e];
         return g
     }, w.BLOG);
-
-    if (w.Waves) {
-        Waves.init();
-        Waves.attach('.global-share li', ['waves-block']);
-        Waves.attach('#page-nav a, #page-nav span', ['waves-button']);
-    } else {
-        console.error('Waves loading failed.')
-    }
 })(window, document);

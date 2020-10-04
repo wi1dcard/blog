@@ -27,7 +27,6 @@
         border-bottom: 2px solid #fff;
         border-radius: 0;  // fix ios
         opacity: 0;
-        .transition(.2s);
 
         &::-webkit-input-placeholder {
             color: @lightPrimaryColor
@@ -63,13 +62,10 @@
     box-shadow: @boxShadow;
     opacity: 0;
     visibility: hidden;
-    .transform(translateY(-50%) scale(.5));
-    .transition(.3s, ease-in);
 
     &.in {
         opacity: 1;
         visibility: visible;
-        .transform(none);
     }
 }
 

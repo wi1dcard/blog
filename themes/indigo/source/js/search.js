@@ -9,8 +9,8 @@
         back = $('#back'),
         searchPanel = $('#search-panel'),
         searchResult = $('#search-result'),
-        searchTpl = '<li class="item"><a href="{path}" class="waves-block waves-effect"><div class="title ellipsis" title="{title}">{title}</div></a><div class="flex-row flex-middle"><time class="flex-col time">{date}</time><div class="tags ellipsis">{tags}</div></div></li>',
-        JSON_DATA = (G.BLOG.ROOT + '/content.json').replace(/\/{2}/g, '/'),
+        searchTpl = '<li class="item"><a href="{path}" class=""><div class="title ellipsis" title="{title}">{title}</div></a><div class="flex-row flex-middle"><time class="flex-col time">{date}</time><div class="tags ellipsis">{tags}</div></div></li>',
+        JSON_DATA = '/content.json',
         searchData;
 
     function loadData(success) {
@@ -69,7 +69,7 @@
 
                 return tpl(searchTpl, {
                     title: post.title,
-                    path: (G.BLOG.ROOT + '/' + post.path).replace(/\/{2,}/g, '/'),
+                    path: ('/' + post.path).replace(/\/{2,}/g, '/'),
                     date: new Date(post.date).toLocaleDateString(),
                     tags: post.tags.map(function (tag) {
                         return '<span>#' + tag.name + '</span>';
@@ -102,7 +102,7 @@
             return;
         }
 
-        var regExp = new RegExp(key.replace(/[ ]/g, '|'), 'gmi');
+        var regExp = new RegExp(key.replace(' ', '|'), 'gmi');
 
         loadData(function (data) {
 
@@ -116,7 +116,6 @@
 
         e.preventDefault();
     }
-
 
     searchIco.addEventListener(even, function () {
         searchWrap.classList.toggle('in');

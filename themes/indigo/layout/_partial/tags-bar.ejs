@@ -1,7 +1,6 @@
 <div class="tabs-bar container">
     <nav class="tags-list">
-        <a href="<%= url_for('/' + type) %>" style="-webkit-order:-1;order:-1" class="tags-list-item waves-effect waves-button waves-light
-            <% if (path === type + '/index.html') { %> active<%}%>"><%= __('tag.all') %></a>
+        <a href="<%= url_for('/' + type) %>" style="-webkit-order:-1;order:-1" class="tags-list-item<% if (path === type + '/index.html') { %> active<%}%>"><%= __('tag.all') %></a>
         <%
             var options = [];
 
@@ -13,28 +12,8 @@
 
             options.sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
 
-            var index = options.findIndex(function(o) {
-                return is_current(o.path)
-            })
-            var len = options.length
-            var order = 0
-            options.forEach(function(tag, i){
-
-                if(index <= 1) {
-                    order = i
-                } else {
-
-                    if( i < index - 1) {
-                        order = len - (index - 1) + i
-                    } else {
-                        order = i - (index - 1)
-                    }
-                }
-
-            %>
-
-            <a href="<%- url_for(tag.path) %>" style="-webkit-order:<%= order%>;order:<%= order%>" class="tags-list-item waves-effect waves-button waves-light<% if(is_current(tag.path)){%> active<%}%>"><%-tag.name%></a>
-
+            options.forEach(function(tag, i) { %>
+            <a href="<%- url_for(tag.path) %>" class="tags-list-item<% if(is_current(tag.path)){%> active<%}%>"><%- tag.name %></a>
         <% }) %>
     </nav>
 </div>

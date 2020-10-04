@@ -2,10 +2,6 @@
     title: page.title,
     hdClass: 'page-header'
 }) %>
-<%
-page.reward = 'reward' in page ? (theme.reward && page.reward) : theme.reward;
-page.slug = 'hexo-page-' + page.path.replace(/\/index\.html$/,'').split('/').join('-');
-%>
 <div class="container body-wrap">
     <article class="page-article" itemprop="blogPage">
         <div class="post-content page-content" id="page-content" itemprop="pageContent">
@@ -14,24 +10,5 @@ page.slug = 'hexo-page-' + page.path.replace(/\/index\.html$/,'').split('/').joi
                 return '<div class="'+ $1 +'">'
             }) %>
         </div>
-
-        <% if(theme.about){ %>
-        <div class="card page-about-me flex-row">
-            <a href="/" class="avatar waves-effect waves-circle waves-light"><%- image_tag(theme.avatar) %></a>
-            <div class="content flex-col">
-                <p><strong><%- config.author %></strong></p>
-                <p><em><%- config.subtitle %></em></p>
-                <p><%- theme.about %></p>
-            </div>
-
-            <%- partial('_partial/post/share-fab') %>
-
-        </div>
-        <% } %>
-
-        <%- partial('_partial/post/reward-btn') %>
-
-        <%- partial('_partial/post/comment', { post: page }) %>
     </article>
-    <%- partial('_partial/post/reward') %>
 </div>
