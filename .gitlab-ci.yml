@@ -36,6 +36,8 @@ variables:
 
 .deploy:
   stage: deploy
+  variables:
+    GIT_STRATEGY: none
   rules:
     - if: '$CI_COMMIT_REF_NAME == "master"'
       when: on_success
@@ -80,8 +82,8 @@ publish image:
 
 deploy vm:
   extends: .deploy
-  tags:
-    - server
+  tags: [server]
+  dependencies: []
   script:
     - cd deploy/
     - docker-compose pull
