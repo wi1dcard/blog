@@ -56,7 +56,7 @@ comments: false
 4. 具备 Kubernetes 集群维护经验，熟练使用 Docker、Helm、Helmfile，熟悉 Helm 生态。
 5. 具备各大云服务商产品运维经验，熟悉 AWS 和 Google Cloud Platform，了解阿里云。
 6. 迅速定位问题，并通过社区（GitHub Issues 等）获取帮助的能力。
-7. 熟练读写英文文档，近期 OOPT 测得 CEFR 为 B2。
+7. 熟练读写英文文档，近期 OOPT 测得英语 CEFR 为 [C1](https://www.italki.com/user/7141493)。
 8. 具备跨时区工作经验，熟练通过 Email 和 Slack 等方式与美国同事沟通。
 
 </div>
