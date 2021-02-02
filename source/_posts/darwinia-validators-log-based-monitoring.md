@@ -1,6 +1,6 @@
 ---
 id: darwinia-validators-log-based-monitoring
-tags: [Darwinia]
+tags: [Darwinia, Shell]
 date: 2020-09-29 08:51:32
 title: 超简单！基于日志的 Darwinia 验证人节点监控预警
 ---

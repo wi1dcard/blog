@@ -1,6 +1,6 @@
 ---
 id: gather-gateway-ip-and-cidr
-tags: [Linux, CLI]
+tags: [Linux, CLI, Networking]
 date: 2019-05-14 21:14:11
 title: 在 Linux 中获取默认网关和 CIDR
 ---

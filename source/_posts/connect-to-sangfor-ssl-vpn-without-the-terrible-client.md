@@ -1,6 +1,6 @@
 ---
 id: connect-to-sangfor-ssl-vpn-without-the-terrible-client
-tags: [WTF]
+tags: [Networking, Linux]
 date: 2020-01-10 20:11:33
 title: Connect to Sangfor SSL VPNs Without the Terrible Client
 ---

@@ -1,6 +1,6 @@
 ---
 id: huawei-5g-dongle-usb-tethering-with-openwrt-in-esxi
-tags: [ESXi, OpenWrt, Networking]
+tags: [ESXi, OpenWrt, Networking, IT]
 date: 2020-11-11 13:00:43
 title: ESXi OpenWrt 使用华为随身 Wi-Fi 实现 WAN 故障转移
 ---

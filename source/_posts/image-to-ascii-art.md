@@ -2,7 +2,7 @@
 id: image-to-ascii-art
 date: 2018-06-13 07:34:08
 title: 是时候秀一波真正的恩爱了
-tags: [Life, WTF]
+tags: [Life]
 ---
 
 要走创意路线好吗！`print 我爱你` 之流怕不是在小学五年级奥塞的时候就玩腻的，真丢「理科生」的脸。
