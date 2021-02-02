@@ -1,7 +1,7 @@
 ---
 id: my-work-skills-2021
 tags: [Life]
-date: 2020-02-01 17:36:18
+date: 2021-02-01 17:36:18
 title: 我的工作方法
 ---
 
