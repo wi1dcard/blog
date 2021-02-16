@@ -113,4 +113,4 @@ Finally, we can override the alerts by calling `manipulatePrometheusGroups(super
 
 ## Read More
 
-I also found a way to edit the alerts using `std.map` after I've made this, check it out: <https://github.com/prometheus-operator/kube-prometheus/discussions/607>.
+I also found a way to edit the alerts using `std.map` after I've made this: <https://github.com/prometheus-operator/kube-prometheus/discussions/607>. And a great quick-start tutorial of Jsonnet in Chinese: <https://archive.li/IWlZG>, <https://archive.li/L4k1L>.
