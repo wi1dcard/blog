@@ -9,11 +9,11 @@ comments: false
 
 <div class="card">
 
-你好，我是 **Wi1dcard**，一名生于 1998 年，具备 6 年工作经验的软件工程师。
+你好，我是 **Wi1dcard**，一名软件工程师；生于 1998 年，高中肄业，具备 6 年工作经验。
 
 这是我的 [在线简历](https://wi1dcard.dev/resume/)，以及由 CI 自动渲染的 [PDF 版本](https://wi1dcard.dev/resume/Weizhe-Sun-Resume.pdf)。
 
-从 2010 年接触 Pascal 语言起，我对代码产生了浓厚的兴趣，参加了信息学竞赛。后自学 MFC 和 WinForm，并在 2013 年开始接触外包项目。2015 年进入职场，逐渐转型 PHP 和后端方向。2018 年底开始涉足运维和网络相关。现就职于某区块链企业从事 **DevOps** 以及少量 IT 相关工作。
+我在 2010 年接触 Pascal，随即对代码产生了浓厚兴趣，参加了信息学竞赛。而后自学 MFC 和 WinForm，并在 2013 年开始接触外包项目。2015 年进入职场，逐渐转型 PHP 和后端方向。2018 年底开始专注于 DevOps 相关。现就职于某区块链企业从事 DevOps 以及 IT 相关工作。
 
 目前，我正在深入学习 **Kubernetes**；对 Golang 和 Rust 兴趣很大。
 
@@ -51,13 +51,13 @@ comments: false
 ≈ `#Kubernetes` + `#Prometheus-stack` + `#GitOps`
 
 1. 拥有大量 Git workflows 和 CI/CD 实践经验，熟练使用 GitLab CI、GitHub Actions。
-2. 拥有大量应用监控和预警实践经验，熟悉 Incident Management 和 On-call 工作机制，熟练使用 Prometheus、Alertmanager、Grafana、OpsGenie、Stackdriver。
+2. 拥有大量应用监控和预警实践经验，熟悉 Incident Management 和 On-call 工作机制，熟练使用 Prometheus、Alertmanager、Grafana 和 OpsGenie 等。
 3. 拥有大量 Infrastructure as Code 实践经验，熟练使用 Terraform 和 Ansible。
 4. 具备 Kubernetes 集群维护经验，熟练使用 Docker、Helm、Helmfile，熟悉 Helm 生态。
-5. 具备各大云服务商产品运维经验，熟悉 AWS 和 Google Cloud Platform，了解阿里云。
-6. 迅速定位问题，并通过社区（GitHub Issues 等）获取帮助的能力。
+5. 具备各大云服务商产品运维经验，熟悉 AWS 和 Google Cloud Platform。
+6. 具备迅速定位问题并通过社区（如 GitHub issues）寻求帮助的能力。
 7. 熟练读写英文文档，近期 OOPT 测得英语 CEFR 为 [C1](https://www.italki.com/user/7141493)。
-8. 具备跨时区工作经验，熟练通过 Email 和 Slack 等方式与美国同事沟通。
+8. 具备跨时区工作经验、远程工作经验，熟练通过邮件、视频会议等方式与全球同事沟通。
 
 </div>
 
@@ -102,7 +102,6 @@ comments: false
   负责员工入职与离职时在 Azure AD 和 G Suite 的 Onboarding 和 Offboarding。优化 SSO，确保各系统的用户均为合理的最小权限。为销售、市场和客户支持等团队的美国同事通过在线聊天、语音通话等方式提供 IT support。
 
 </div>
-
 
 ### 继续了解我
 
