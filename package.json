@@ -4,6 +4,9 @@
   "hexo": {
     "version": "5.2.0"
   },
+  "scripts": {
+    "serve": "hexo server"
+  },
   "dependencies": {
     "hexo": "^5.2.0",
     "hexo-clean-css": "^1.0.0",
