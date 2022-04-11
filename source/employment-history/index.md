@@ -7,7 +7,7 @@ comments: false
 
 | 公司 / 组织            | 岗位                                  | 时间                   |
 | ---------------------- | ------------------------------------- | ---------------------- |
-| Itering                | DevOps 工程师                         | 2020年6月 ~ 至今       |
+| ITERING TECH           | DevOps 架构师                         | 2020年6月 ~ 至今       |
 | [RightCapital][]       | DevOps 工程师 + IT 工程师             | 2018年11月 ~ 2020年5月 |
 | [浙江禾匠信息科技][]   | 高级 PHP 工程师                       | 2018年5月 ~ 2018年10月 |
 | [浙江椒图科技][]       | .NET 工程师 -> PHP 工程师 -> 技术管理 | 2017年2月 ~ 2018年5月  |
@@ -20,7 +20,45 @@ comments: false
 
 ### RightCapital
 
-请阅读我的简历。
+@card{
+
+- **把传统应用由 EC2 迁移到 Kubernetes**
+
+  成功将多个拥有上千次有效 Git commits 的中大型 PHP 项目从原有 EC2 迁移到 Amazon EKS，有效提高系统资源利用率，大幅降低多个服务的编排难度。
+
+- **创建并维护 Helm Charts**
+
+  根据业务需要，创建并维护部署应用所使用的 Helm charts，包含 Deployments、Secrets、ConfigMaps、CronJobs 等资源。通过 Helmfile 将 Helm releases 代码化，采用「面向终态」而不是「面向过程」的运维思想彻底改造原有 DevOps 流程。
+
+- **编写并优化 GitLab CI 配置**
+
+  利用 GitLab CI 提供的 cache、artifact、rules、template job、detached job 等特性，不断优化 CI 配置，尽可能地自动化代码提交后风格检查、静态分析、单元测试、资源打包、构建镜像、部署等一系列操作。
+
+- **维护 Terraform Modules 和 AWS 基础设施**
+
+  基于 Infrastructure as Code 思想，创建并维护多个 Terraform modules 来管理位于 AWS 的基础设施，包含 EKS、S3、VPC、IAM、CloudFront、Lambda@Edge 等资源。通过 CI 自动化 apply，权限易管控、历史可追溯、随时可重建。
+
+- **搭建并优化 Prometheus 等监控系统和告警规则**
+
+  搭建 Prometheus 和 Grafana，维护 Prometheus Operator 等白盒监控和 Pingdom 等黑盒监控。根据业务需要，编写 Prometheus exporters、alert rules 和 Grafana dashboards。利用 PromQL 和可视化面板，降低排障难度，为日常监控和故障复盘提供可靠数据支持。
+
+- **处理 Alerts 和优化 Incident 工作流**
+
+  24 小时负责 On-call，本着追查到底的原则，排查、分发、追踪和处理各类 alerts。优化基于 Opsgenie 的 incident management 工作流，不断提高系统 SLA。
+
+- **发现并解决现有开发工作流的问题**
+
+  基于 GitOps 思想，通过调整配置或编写新工具，持续优化各团队的开发工作流，包括 CI pipelines 通知、cron jobs 通知、自动化 DB migrations、Slack workflows 和 unfurl 等。为业务工程师提供技术支持，包括开发系统工具、编写系统支持文档、排障、基础运维知识培训等；通过提升工程师的工作体验，进而提高开发效率。
+
+- **构建公司网络并维护 Ansible Roles**
+
+  为北京办公室提供基础网络保障，确保无障碍、无感知、快速稳定访问 Google 和位于美国数据中心的资源等，以及维护 UniFi Controller、Switch、AP 等网络设备。将网关部署和运维流程编写为 Ansible roles，并由 CI 自动化 apply。
+
+- **优化权限和为美国同事提供 IT Support**
+
+  负责员工入职与离职时在 Azure AD 和 G Suite 的 Onboarding 和 Offboarding。优化 SSO，确保各系统的用户均为合理的最小权限。为销售、市场和客户支持等团队的美国同事通过在线聊天、语音通话等方式提供 IT support。
+
+}
 
 ### 浙江禾匠信息科技
 
