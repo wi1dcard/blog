@@ -1,20 +1,8 @@
-# Wi1dcard's Blog
+# [DEPRECATED] Wi1dcard's blog
 
-[![pipeline status](https://gitlab.com/wi1dcard/blog/badges/master/pipeline.svg)](https://gitlab.com/wi1dcard/blog/-/commits/master)
+**This repo has now been deprecated and archived in favor of my new [blog v3](https://github.com/wi1dcard/blog-v3). All posts have been migrated. Check out there to get better expierence provided by Hugo.**
 
-Hello! Welcome to my technical blog. This repo hosted on [GitLab](https://gitlab.com/wi1dcard/blog) contains all the source codes of it. You can view the rendered website on <https://wi1dcard.dev/>.
-
-## The Docker Image
-
-You can also start the local service powered by Nginx and Docker:
-
-```bash
-docker run --rm -it -p 80:80 wi1dcard/blog
-```
-
-The site would be available on <http://localhost/>.
-
-## Current Stack
+## Legacy Stack
 
 - [Hexo.io](https://hexo.io/) - A static blog generator.
 - [indigo](https://github.com/yscoder/hexo-theme-indigo) - Theme for hexo with Material Design.
